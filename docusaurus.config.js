@@ -11,8 +11,8 @@ module.exports = {
     navbar: {
       title: 'Sense-i',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Sense-i Logo',
+        src: 'img/logo.png',
       },
       items: [
         {
