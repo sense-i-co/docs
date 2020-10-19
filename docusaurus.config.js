@@ -1,15 +1,15 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  title: 'Sense-i',
+  tagline: 'View documentation for Sense-i Management Systems',
+  url: 'https://scotthallauer.github.io',
+  baseUrl: '/sense-i/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'scotthallauer', // Usually your GitHub org/user name.
+  projectName: 'sense-i', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Sense-i',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
