@@ -18,15 +18,26 @@ module.exports = {
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Documentation',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {
+          to: 'download',
+          label: 'Download',
+          position: 'left',
+        },
+        /*
+        {
+          to: 'blog', 
+          label: 'Blog', 
+          position: 'left'
+        },
         {
           href: 'https://github.com/scotthallauer/sense-i',
           label: 'GitHub',
           position: 'right',
         },
+        */
       ],
     },
     footer: {
