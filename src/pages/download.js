@@ -19,16 +19,7 @@ function Download() {
                     height: '50vh',
                 }}>
                 <main>
-                    <h1 className="hero__title">
-                        Sense-i&nbsp;
-                        <code 
-                            style={{
-                                fontSize: '20px', 
-                                verticalAlign: 'middle', 
-                            }}>
-                            v10.0.1
-                        </code>
-                    </h1>
+                    <h1 className="hero__title">Sense-i Installer</h1>
                     <div className={styles.buttons}>
                         <Link
                             className={clsx(
