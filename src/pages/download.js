@@ -2,10 +2,13 @@ import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 function Download() {
+    const context = useDocusaurusContext();
+    const {siteConfig = {}} = context;
     return (
         <Layout title="Download">
             <div
@@ -32,7 +35,8 @@ function Download() {
                                 'button button--secondary button--lg',
                                 styles.getStarted,
                             )}
-                            to={useBaseUrl('software/SenseiInstall.exe')}>
+                            // Prepend the absolute URL to make React treat this like an external URL (rather than an internal web page)
+                            to={`${siteConfig.url}${siteConfig.baseUrl}software/SenseiInstall.exe`}>
                             Download
                         </Link>
                     </div>
