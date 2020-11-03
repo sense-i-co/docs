@@ -48,11 +48,11 @@ module.exports = {
           items: [
             {
               label: 'Style Guide',
-              to: 'docs/',
+              to: 'docs/original/styles',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'MDX',
+              to: 'docs/original/mdx',
             },
           ],
         },
