@@ -3,7 +3,7 @@ id: mdx
 title: Powered by MDX
 ---
 
-import YouTube from '../src/components/YouTube.tsx';
+import YouTube from '../../src/components/YouTube.tsx';
 
 You can write JSX and use React components within your Markdown thanks to [MDX](https://mdxjs.com/).
 
