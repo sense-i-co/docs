@@ -1,12 +1,12 @@
 module.exports = {
   title: 'Sense-i',
   tagline: 'View documentation for SEMS (Sense-i Enterprise Management Systems)',
-  url: 'https://scotthallauer.github.io',
-  baseUrl: '/sense-i/',
+  url: 'https://sense-i-co.github.io',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'scotthallauer', // Usually your GitHub org/user name.
-  projectName: 'sense-i', // Usually your repo name.
+  organizationName: 'sense-i-co', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Sense-i',
@@ -33,7 +33,7 @@ module.exports = {
           position: 'left'
         },
         {
-          href: 'https://github.com/scotthallauer/sense-i',
+          href: 'https://github.com/sense-i-co/docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -82,7 +82,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/scotthallauer/sense-i',
+              href: 'https://github.com/sense-i-co/docs',
             },
           ],
         },
@@ -98,13 +98,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/scotthallauer/sense-i/edit/main/',
+            'https://github.com/sense-i-co/docs/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/scotthallauer/sense-i/edit/main/blog/',
+            'https://github.com/sense-i-co/docs/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
