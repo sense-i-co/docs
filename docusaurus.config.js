@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Sense-i',
-  tagline: 'View documentation for Sense-i Management Systems',
+  tagline: 'View documentation for SEMS (Sense-i Enterprise Management Systems)',
   url: 'https://scotthallauer.github.io',
   baseUrl: '/sense-i/',
   onBrokenLinks: 'throw',
