@@ -6,7 +6,7 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 3rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -29,6 +29,15 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+}
+
+.titleLogoImage {
+  width: 300px;
+  margin-bottom: 2rem;
+}
+
+.subtitleText {
+  color: #FFF !important; /* keep text white in dark mode */
 }
 
 .featureImage {
