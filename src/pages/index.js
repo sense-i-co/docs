@@ -64,14 +64,24 @@ function Home() {
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
+          <div className={clsx('home-page-button-container', styles.buttons)}>
             <Link
               className={clsx(
                 'button button--secondary button--lg',
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
-              Get Started
+              View Documentation
+            </Link>
+          </div>
+          <div className={clsx('home-page-button-container', styles.buttons)}>
+            <Link
+              className={clsx(
+                'button button--secondary button--lg',
+                styles.getStarted,
+              )}
+              to='https://elfworks.co.za'>
+              Download Application
             </Link>
           </div>
         </div>

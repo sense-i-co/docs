@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Sense-i',
-  tagline: 'View documentation for SEMS (Sense-i Enterprise Management Systems)',
+  tagline: 'View documentation for Sense-i Enterprise Management Systems (SEMS)',
   url: 'https://sense-i-co.github.io',
   baseUrl: '/docs/',
   onBrokenLinks: 'throw',
@@ -19,11 +19,6 @@ module.exports = {
           to: 'docs/',
           activeBasePath: 'docs',
           label: 'Documentation',
-          position: 'left',
-        },
-        {
-          to: 'download',
-          label: 'Download',
           position: 'left',
         },
         /*
