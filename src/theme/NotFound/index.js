@@ -2,11 +2,12 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import location from 'location-href';
 
 import styles from './styles.module.css';
 
 function NotFound() {
-  if(window.location.href.match(/\/docs\/[0-9]+$/)) {
+  if(location().match(/\/docs\/[0-9]+$/)) {
     var message = (<div><p>The requested help document has not yet been published.</p><p>Please browse the available documentation <a href={useBaseUrl("/")+"docs/"}>here</a> instead.</p></div>); // append 'docs/' onto baseUrl for the situation where baseUrl is 'docs' (which results in useBaseUrl('/docs/') returning '/docs/' rather than '/docs/docs')
   } else {
     var message = (<div><p>We could not find what you were looking for.</p><p>Please contact the owner of the site that linked you to the original URL and let them know their link is broken.</p></div>);
