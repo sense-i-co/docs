@@ -74,6 +74,7 @@ function Home() {
               View Documentation
             </Link>
           </div>
+          {/*
           <div className={clsx('home-page-button-container', styles.buttons)}>
             <Link
               className={clsx(
@@ -84,6 +85,7 @@ function Home() {
               Download Application
             </Link>
           </div>
+          */}
         </div>
       </header>
       <main>
