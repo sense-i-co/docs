@@ -9,30 +9,30 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    imageUrl: 'img/undraw_researching_22gp.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
+        Sense-i was designed from the ground up to be easily installed and
         used to get your website up and running quickly.
       </>
     ),
   },
   {
     title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    imageUrl: 'img/undraw_dev_focus_b9xo.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        Sense-i lets you focus on your docs, and we&apos;ll do the chores. Go
         ahead and move your docs into the <code>docs</code> directory.
       </>
     ),
   },
   {
     title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    imageUrl: 'img/undraw_online_collaboration_7pfp.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
+        Extend or customize your website layout by reusing React. Sense-i can
         be extended while reusing the same header and footer.
       </>
     ),
@@ -62,18 +62,30 @@ function Home() {
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
+          <img src={useBaseUrl("/img/text_logo_white.png")} className={styles.titleLogoImage}/>
+          <p className={clsx("hero__subtitle", styles.subtitleText)}>{siteConfig.tagline}</p>
+          <div className={clsx('home-page-button-container', styles.buttons)}>
             <Link
               className={clsx(
                 'button button--secondary button--lg',
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
-              Get Started
+              View Documentation
             </Link>
           </div>
+          {/*
+          <div className={clsx('home-page-button-container', styles.buttons)}>
+            <Link
+              className={clsx(
+                'button button--secondary button--lg',
+                styles.getStarted,
+              )}
+              to='https://elfworks.co.za'>
+              Download Application
+            </Link>
+          </div>
+          */}
         </div>
       </header>
       <main>
