@@ -8,11 +8,11 @@
 */
 module.exports = {
   docs: {
-    "Introduction to Sense-i": ["SCL-000"],
+    "Introduction to Sense-i": ["INT-001"],
     "Level of Work": ["XXX-000"],
     "Business Processes": [{
       "Operations Management": [
-		{"Sales Quote & Order Entry": ["SQO-101", "SOE-002","EMP-001"]},
+		{"Sales Quote & Order Entry": ["SQO-101", "CUP-004", "PRC-008", "SOE-002", "SOE-006", "EMP-001"]},
         {"Production Control": ["XXX-000"]},
         {"Material Cost Control": ["XXX-000"]},
         {"Labour Cost Control": ["XXX-000"]},
@@ -20,5 +20,6 @@ module.exports = {
       "Financial Management": ["XXX-000"],
       "Performance Management": ["XXX-000"],
     }],
+    "Reference Detail": ["SCL-000", "CRM-007"],	
   },
 };
