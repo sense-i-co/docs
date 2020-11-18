@@ -38,7 +38,7 @@
 }
 
 .subtitleText {
-  color: #FFF !important; /* keep text white in dark mode */
+  color: #FFF !important; /* use !important flag to keep text white in dark mode */
 }
 
 .featureImage {

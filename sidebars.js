@@ -12,7 +12,7 @@ module.exports = {
     "Level of Work": ["XXX-000"],
     "Business Processes": [{
       "Operations Management": [
-		{"Sales Quote & Order Entry": ["SQO-101", "CUP-004", "PRC-008", "SOE-002", "SOE-006", "EMP-001"]},
+		    {"Sales Quote & Order Entry": ["SQO-101", "CUP-004", "PRC-008", "SOE-002", "SOE-006", "EMP-001"]},
         {"Production Control": ["XXX-000"]},
         {"Material Cost Control": ["XXX-000"]},
         {"Labour Cost Control": ["XXX-000"]},

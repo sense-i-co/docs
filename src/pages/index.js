@@ -74,7 +74,9 @@ function Home() {
               View Documentation
             </Link>
           </div>
-          {/*
+          {
+          /* Temporarily hide the download button until the download page is finalised */
+          /*
           <div className={clsx('home-page-button-container', styles.buttons)}>
             <Link
               className={clsx(
