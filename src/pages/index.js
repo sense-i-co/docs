@@ -12,8 +12,9 @@ const features = [
     imageUrl: 'img/undraw_researching_22gp.svg',
     description: (
       <>
-        Sense-i was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Sense-i was designed from the ground up to be quick to install and easy 
+        to use to get your business running on a single platform faster than any 
+        other solution available to small and medium sized companies.
       </>
     ),
   },
@@ -22,18 +23,22 @@ const features = [
     imageUrl: 'img/undraw_dev_focus_b9xo.svg',
     description: (
       <>
-        Sense-i lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Clear job descriptions and user profiles with easy to understand reports 
+        keeps everyone in your team focused on the priority tasks for the day. 
+        This leads to faster processing of orders, reduce overheads and greater 
+        sales and customer satisfaction.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_online_collaboration_7pfp.svg',
+    title: 'Real-time Control',
+    imageUrl: 'img/undraw_real-time_sync_o57k.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Sense-i can
-        be extended while reusing the same header and footer.
+        Powerful reporting tools give owners and managers access to up-to-date, 
+        accurate and comprehensive information about every transaction and aspect 
+        of your business so that you can monitor the business performance in 
+        real-time.
       </>
     ),
   },
