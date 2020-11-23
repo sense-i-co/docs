@@ -14,22 +14,6 @@ It includes all the reports you need to review the performance and to-do actions
 keep on top of your interactions with your customer contacts. Additionally, you can capture
 details about your customers and products.  
 
-:::note  
-
-We use the term "**Process**" to describe the work that must be done in a specific area of your business
-and the term "**Module**" to refer to the set of functions in the Sense-i software that allows you to perform
-that work.  
-
-:::
-
-:::tip
-To better understand the flowchart please read the **Business PowerPoint, Levels of Work,** and
-**Understanding Function Types** documents. These documents provide essential background information
-to understanding how the work and information in your business and the Sense-i system is structured.
-
-:::  
-___
-
 The functions in the Sales Quote & Order Entry module can be best
 described in the following flowchart.
 
@@ -38,16 +22,31 @@ described in the following flowchart.
 You can access the step by step guides and video demonstrations for each function from the
 list below.
 
-:::important
+:::note Terms: Process & Module
+
+We use the term "**Process**" to describe the work that must be done in a specific area of your business
+and the term "**Module**" to refer to the set of functions in the Sense-i software that allows you to perform
+that work.  
+
+:::
+
+:::note background information
+To better understand the flowchart please read the **Business PowerPoint, Levels of Work,** and
+**Understanding Function Types** documents. These documents provide essential background information
+to understanding how the work and information in your business and the Sense-i system is structured.
+
+:::  
+
+:::note
 
 There are several variations of this process, and within each, also several different ways a function or
 step in the process can be performed. Each industry has a unique set of rules and procedures that
 implement the best way to achieve a result. While the process flowchart above might look simple, the
-unique requirements for the industry and for each company are implemented are implemented in each of
+unique requirements for the industry and for each company are implemented in each of
 the functions in the Sense-i system.
 
 :::
-
+___
 ## Functions in the module  
 
 The Sales Quote & Order Entry module contains the following functions;
@@ -68,6 +67,7 @@ sales reps are added to the database. The profile functions are:
 
 - Product Profiles (PRD-001)  
 
+___
 ### Transactions:
 
 The transactions enable you to capture details about the various
@@ -80,20 +80,23 @@ The transactions in this module are:
 
 - Sales Order (SOE-005)  
 
+___
 ### Report Functions:
 
 The report functions in the system fall into two groups. Management
 reports help with the daily workflow and focus on what transactions are
 outstanding at any point in the **Order Admin and Management Process**,
 while **Executive Reports** enable you to review the
-financial performance in the business.
+financial performance in the business.  
 
+___
 ### Management Reports
 
 - Sales Opportunities Outstanding Report (SOE-010)  
 
 - Release Order / Credit Check (SOE-011)  
 
+___
 ### Executive Reports
 
 - Sales Opportunities Received (SOE-020)  
@@ -102,10 +105,10 @@ financial performance in the business.
 
 - Sales Quotes Outstanding (SOE-022)  
 
-- Sales Orders Confirmed (SOE-023)
+- Sales Orders Confirmed (SOE-023)  
 
-:::note
-**Detailed Step-by-Step Procedures **
+___
+:::note Detailed Step-by-Step Procedures
 
 Detailed Step-by-Step procedures and video guides exist for each of the
 functions in this module that will explain every action you need to take
@@ -116,6 +119,7 @@ Step-by-Step instruction.
 
 :::
 
+___
 ### Setup Functions:
 
 To use the functions in the module, key information needs to be entered
@@ -128,6 +132,7 @@ which changes very rarely. The setup functions are:
 
 - Standard VAT Rates (FIN-001)  
 
+___
 ## Related Modules  
 
 The Sales Quote & Order Entry module works with the following modules:
