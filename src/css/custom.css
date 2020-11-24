@@ -7,8 +7,6 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-font-color-base: #00235F;
-  --ifm-font-color-base-inverse: #fff;
   --ifm-color-primary: #08349f;
   --ifm-color-primary-dark: #072f8f;
   --ifm-color-primary-darker: #072c87;
@@ -17,6 +15,11 @@
   --ifm-color-primary-lighter: #093cb7;
   --ifm-color-primary-lightest: #0a44cf;
   --ifm-code-font-size: 95%;
+}
+
+/* set custom dark blue as default font colour for light theme */
+html[data-theme='light'] {
+  --ifm-font-color-base: #00235F;
 }
 
 .docusaurus-highlight-code-line {
