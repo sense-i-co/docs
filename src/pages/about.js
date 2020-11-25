@@ -2,7 +2,6 @@ import React from 'react';
 import Template from '../templates/Level1/Template';
 import Highlight from '../templates/Highlight';
 import Link from '@docusaurus/Link';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const metadata = {
   title: "About Us",
@@ -28,7 +27,7 @@ const sections = [
           focused on maintaining high performance levels throughout the company. Implementing such systems requires the right combination 
           of;
         </p>
-        <img src={useBaseUrl("img/pages/about-systems.png")}/>
+        <img src="img/pages/about-systems.png"/>
       </>
     )
   },
