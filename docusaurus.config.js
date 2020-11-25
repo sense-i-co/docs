@@ -1,8 +1,8 @@
 module.exports = {
   title: 'Sense-i',
   tagline: 'View documentation for Sense-i Enterprise Management Systems (SEMS)',
-  url: 'https://sense-i-co.github.io',
-  baseUrl: '/docs/',
+  url: 'https://sense-i.co',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'sense-i-co', // Usually your GitHub org/user name.
