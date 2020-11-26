@@ -1,3 +1,16 @@
+/**
+ * The YouTube component is used to embed a YouTube video in a web page.
+ * You are required to provide the video ID (i.e. the part at the end of the 
+ * YouTube URL) as well as the title to display at the top of the embedded video.
+ * 
+ * Parameters:
+ * - id (required): The YouTube video ID (from the video's URL)
+ * - title (required): The title to display for the embedded video.
+ * 
+ * Example Usage:
+ * (1) <YouTube id="w-PRhPMp-h8" title="SEMS - Ocean Inspection & Maintenance"/>
+ */
+
 import React, { useState } from 'react';
 
 /**

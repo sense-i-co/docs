@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import "./styles.bannerpage.css";
+import "./styles.default.css";
 
 function Template(props) {
   const {metadata, banner, sections} = props;
@@ -9,7 +9,7 @@ function Template(props) {
     <Layout
       title={metadata && metadata.title}
       description={metadata && metadata.description}
-      wrapperClassName="template-bannerpage">
+      wrapperClassName="template-default">
         {
           banner && banner.heading && 
           (<header className="hero hero--primary">
