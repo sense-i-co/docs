@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import Section from './Section';
-import "./template.css";
+import "./styles.template1.css";
 
 function Template(props) {
   const {metadata, banner, sections} = props;
@@ -10,7 +9,7 @@ function Template(props) {
     <Layout
       title={metadata && metadata.title}
       description={metadata && metadata.description}
-      wrapperClassName="template-level-1">
+      wrapperClassName="template1">
         {
           banner && banner.heading && 
           (<header className="hero hero--primary">
@@ -27,6 +26,19 @@ function Template(props) {
         ))}
         </main>
     </Layout>
+  );
+}
+
+function Section(props) {
+  const {heading, children} = props;
+
+  return (
+    <section>
+      <div className="container">
+        {heading && (<h2>{heading}</h2>)}
+        {children}
+      </div>
+    </section>
   );
 }
 

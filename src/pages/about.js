@@ -1,6 +1,6 @@
 import React from 'react';
-import Template from '../templates/Level1/Template';
-import Highlight from '../templates/Highlight';
+import Template from '../templates/Template1';
+import Highlight from '../components/Highlight';
 import Link from '@docusaurus/Link';
 
 const metadata = {

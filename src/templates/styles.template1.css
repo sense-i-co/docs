@@ -1,0 +1,20 @@
+.template1 .hero {
+    padding: 2rem 2rem;
+}
+
+.template1 .hero h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.template1 section {
+    padding-top: 2rem;
+}
+
+.template1 .hero h1 span.component-highlight {
+    color: #f8cc46;
+}
+
+.template1 h2 span.component-highlight {
+    color: #f7b902;
+}
