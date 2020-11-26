@@ -17,11 +17,6 @@
   --ifm-code-font-size: 95%;
 }
 
-/* set custom dark blue as default font colour for light theme */
-html[data-theme='light'] {
-  --ifm-font-color-base: #00235F;
-}
-
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
