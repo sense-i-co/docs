@@ -1,5 +1,5 @@
 import React from 'react';
-import Template from '../templates/BannerPage';
+import Template from '../templates/Default';
 import Highlight from '../components/Highlight';
 import Link from '@docusaurus/Link';
 
