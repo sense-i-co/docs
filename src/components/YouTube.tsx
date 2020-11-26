@@ -5,10 +5,11 @@
  * 
  * Parameters:
  * - id (required): The YouTube video ID (from the video's URL)
- * - title (required): The title to display for the embedded video.
+ * - title (optional): The title to display for the embedded video.
  * 
  * Example Usage:
- * (1) <YouTube id="w-PRhPMp-h8" title="SEMS - Ocean Inspection & Maintenance"/>
+ * (1) <YouTube id="w-PRhPMp-h8"/>
+ * (2) <YouTube id="w-PRhPMp-h8" title="SEMS - Ocean Inspection & Maintenance"/>
  */
 
 import React, { useState } from 'react';
