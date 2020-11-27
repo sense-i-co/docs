@@ -17,6 +17,17 @@
   --ifm-code-font-size: 95%;
 }
 
+/* Change primary colours to lighter variant in dark mode */
+html[data-theme='dark'] {
+  --ifm-color-primary: #2663f4;
+  --ifm-color-primary-dark: #0c50f2;
+  --ifm-color-primary-darker: #0c4ce4;
+  --ifm-color-primary-darkest: #0a3ebc;
+  --ifm-color-primary-light: #4176f5;
+  --ifm-color-primary-lighter: #4e80f6;
+  --ifm-color-primary-lightest: #779df8;
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
