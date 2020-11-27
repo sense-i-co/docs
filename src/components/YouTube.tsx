@@ -3,9 +3,9 @@
  * You are required to provide the video ID (i.e. the part at the end of the 
  * YouTube URL) as well as the title to display at the top of the embedded video.
  * 
- * Parameters:
- * - id (required): The YouTube video ID (from the video's URL)
- * - title (optional): The title to display for the embedded video.
+ * Properties (? = optional, * = required):
+ * - id: String (*)     = The YouTube video ID (from the video's URL)
+ * - title: String (?)  = The title to display for the embedded video (default: "")
  * 
  * Example Usage:
  * (1) <YouTube id="w-PRhPMp-h8"/>
