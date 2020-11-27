@@ -31,7 +31,7 @@ module.exports = {
         {"Sales Delivery": ["XXX-000"]},		
       ],
       "Financial Management": [
-        {"Accounts Payable": ["SAF-720", "SAF-1203", "SAF-4001", "SAF-4050", "SAF-4053", "SAF-40301", "SAF-149", "SAF-4030", "SAF-4054", "SAF-4056", "SAF-4057", "SAF-4058"]},
+        {"Accounts Payable": ["SAF-720", "SAF-1203", "SAF-4001", "SAF-4050", "SAF-4053", "SAF-149", "SAF-4030", "SAF-4054", "SAF-4056", "SAF-4057", "SAF-4058"]},
         {"Accounts Receivable": ["SAF-4041"]},
         {"Employee Payroll": ["XXX-000"]},		
         {"Cashbook Management": ["XXX-000"]},
