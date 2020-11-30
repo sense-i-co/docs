@@ -30,30 +30,30 @@ const sections = [
         </p>
         <ImageMap 
           src="img/pages/about-systems.png"
-          links={[
+          areas={[
             {
-              to: "/",
+              link: "/",
               boundary: {
                 topLeft: [100, 110],
                 bottomRight: [605, 510]
               }
             },
             {
-              to: "/",
+              link: "/",
               boundary: {
                 topLeft: [645, 110],
                 bottomRight: [1150, 510]
               }
             },
             {
-              to: "/",
+              link: "/",
               boundary: {
                 centre: [1450, 320],
                 radius: 200
               }
             },
             {
-              to: "/",
+              link: "/",
               boundary: {
                 points: [
                   [90, 570],
