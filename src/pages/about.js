@@ -1,6 +1,7 @@
 import React from 'react';
 import Template from '../templates/Default';
 import Highlight from '../components/Highlight';
+import ImageMap from '../components/ImageMap';
 import Link from '@docusaurus/Link';
 
 const metadata = {
@@ -27,7 +28,42 @@ const sections = [
           focused on maintaining high performance levels throughout the company. Implementing such systems requires the right combination 
           of;
         </p>
-        <img src="img/pages/about-systems.png"/>
+        <ImageMap 
+          src="img/pages/about-systems.png"
+          links={[
+            {
+              to: "/",
+              boundary: {
+                topLeft: [100, 110],
+                bottomRight: [605, 510]
+              }
+            },
+            {
+              to: "/",
+              boundary: {
+                topLeft: [645, 110],
+                bottomRight: [1150, 510]
+              }
+            },
+            {
+              to: "/",
+              boundary: {
+                centre: [1450, 320],
+                radius: 200
+              }
+            },
+            {
+              to: "/",
+              boundary: {
+                points: [
+                  [90, 570],
+                  [2270, 750],
+                  [90, 750]
+                ]
+              }
+            }
+          ]}
+          />
       </>
     )
   },
