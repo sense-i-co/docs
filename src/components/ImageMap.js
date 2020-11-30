@@ -57,7 +57,7 @@ class ImageMap extends React.Component {
       </>
     );
   }
-  
+
 }
 
 function Area(props) {
@@ -68,20 +68,16 @@ function Area(props) {
   var coords = [];
 
   if (boundary.topLeft && boundary.bottomRight) {
-
     shape = "rect";
     coords = boundary.topLeft.concat(boundary.bottomRight);
 
   } else if (boundary.centre && boundary.radius) {
-
     shape = "circle";
     coords = boundary.centre.concat([boundary.radius]);
 
   } else if (boundary.points) {
-
     shape = "poly";
     coords = [].concat.apply([], boundary.points); // flatten 2D array into 1D array (source: https://stackoverflow.com/questions/10865025/merge-flatten-an-array-of-arrays)
-
   }
 
   return (
