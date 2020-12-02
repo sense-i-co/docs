@@ -1,5 +1,24 @@
 /**
- * ImageMap component
+ * The ImageMap component is used to display an image with multiple overlayed
+ * hyperlinks. These links are defined as regions (or "areas") of the image
+ * with a particular bounding box that is directed to a specified URL. Three
+ * types of bounding box are supported for these areas: rect (rectangle), 
+ * circle and poly (polygon). The provided area coordinates are based on the 
+ * original size of the image, where the origin, [0,0], is the top left corner 
+ * of the image. The component automatically handles the scaling of these
+ * coordinates when the image is resized (for example, when the user changes
+ * the size of the browser window).
+ * 
+ * Properties (? = optional, * = required):
+ * - src: String (*)                      = The path to the image to be used as the background for this image map
+ * - areas: Array[Object] (*)
+ *   - link: String (*)                   = The URL for the clickable link associated with this area
+ *   - boundary: Object (*)
+ *     - topLeft: Array[Float] (?)        = Rectangle Area: The [X, Y] coordinates for the top left of the bounding box
+ *     - bottomRight: Array[Float] (?)    = Rectangle Area: The [X, Y] coordinates for the bottom right of the bounding box
+ *     - centre: Array[Float] (?)         = Circle Area: The [X, Y] coordinates for the centre of the bounding circle
+ *     - radius: Float (?)                = Circle Area: The length of the radius for the bounding circle
+ *     - points: Array[Array[Float]] (?)  = Polygon Area: The array of [X, Y] coordinates for the vertices of the bounding polygon
  */
 
 import React from 'react';
@@ -16,26 +35,26 @@ class ImageMap extends React.Component {
     this.imgID = [filename, random, "img"].join("-");
     this.mapID = [filename, random, "map"].join("-");
     this.naturalWidth = null;
-    this.state = {displayRatio: 1};
+    this.state = {displayRatio: 1}; // initialise the display ratio (i.e. displayed image width / natural image width) to 1
   }
 
   init() {
-    if(!this.naturalWidth) {
+    if(!this.naturalWidth) { // only run init if we have not already calculated the natural image width
       var component = this;
-      var naturalImg = new Image();
+      var naturalImg = new Image(); // create an image object to load the original image
       var displayImg = document.getElementById(this.imgID);
-      naturalImg.onload = function() {
+      naturalImg.onload = function() { // when this image loads, the width represents the actual size of the image
         component.naturalWidth = naturalImg.width;
-        component.setState({displayRatio: displayImg.width / naturalImg.width});
+        component.setState({displayRatio: displayImg.width / naturalImg.width}); // updating state triggers re-render
       }
-      naturalImg.src = this.src;
+      naturalImg.src = this.src; // set src after defining onload
     }
   }
 
   resize() {
     if (this.naturalWidth) {
       var displayImg = document.getElementById(this.imgID);
-      this.setState({displayRatio: displayImg.width / this.naturalWidth});
+      this.setState({displayRatio: displayImg.width / this.naturalWidth}); // updating state triggers re-render
     }
   }
 
