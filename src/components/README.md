@@ -6,10 +6,10 @@ focus on only the page content.
 
 The following components are available to use:
 
-- **[Highlight](##Highlight)**: Set the font colour of the contained text.
-- **[ImageMap](##ImageMap)**: Display an image with overlayed clickable links.
-- **[Link](##Link)**: Create a clickable link for the contained text.
-- **[YouTube](##YouTube)**: Embed an interactive YouTube video.
+- **[Highlight](#Highlight)**: Set the font colour of the contained text.
+- **[ImageMap](#ImageMap)**: Display an image with overlayed clickable links.
+- **[Link](#Link)**: Create a clickable link for the contained text.
+- **[YouTube](#YouTube)**: Embed an interactive YouTube video.
 
 **Note**: All relative paths in the below documentation assume that your page resides in 
 `/src/pages/`. Please adjust the paths for your page accordingly if this is not the case.
