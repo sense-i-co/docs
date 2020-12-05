@@ -36,8 +36,6 @@ import Highlight from '../components/Highlight';
 | ------- | ------ | -------- | ------- | ----------- |
 | `color` | String | No | #f7b902 | The name or code of the font colour to use for the contained text. |
 
-<br/>
-
 ### Usage Example
 
 ```javascript
@@ -77,24 +75,20 @@ import ImageMap from '../components/ImageMap';
 | `src` | String | Yes | None | The path to the image to be used as the background for this image map. |
 | `areas` | [Area] | Yes | None | Array of area definitions, each representing an clickable region of the image. |
 
-<br/>
-
 #### Area
 
 |  Name   | Type   | Required | Default | Description |
 | ------- | ------ | -------- | ------- | ------------ |
 | `link` | String | Yes | None | The URL (either relative or absolute) for the clickable link associated with this area. |
-| `boundary` | Boundary | Yes | None | The set of coordinates specifying the bounding box of the clickable region, which can either be a rectangle (provide `topLeft` and `bottomRight`), circle (provide `centre` and `radius`) or polygon (provide `points`).
-
-<br/>
+| `boundary` | Boundary | Yes | None | The set of coordinates specifying the bounding box of the clickable region, which can either be a rectangle (provide `topLeft` and `bottomRight`), circle (provide `centre` and `radius`) or polygon (provide `points`). |
 
 #### Boundary
 
 The properties for a boundary are conditionally required:
 
-- If you are defining a **rectangle**, you must provide `topLeft` and `bottomRight`
-- If you are defining a **circle**, you must provide `centre` and `radius`
-- If you are defining a **polygon**, you must provide `points`
+- If you are defining a **rectangle**, you must provide `topLeft` and `bottomRight`.
+- If you are defining a **circle**, you must provide `centre` and `radius`.
+- If you are defining a **polygon**, you must provide `points`.
 
 |  Name   | Type   | Required | Default | Description |
 | ------- | ------ | -------- | ------- | ----------- |
@@ -103,8 +97,6 @@ The properties for a boundary are conditionally required:
 | `centre` | [Float] | Yes (circle) | None | The [X, Y] coordinates for the centre of the bounding circle. |
 | `radius` | Float | Yes (circle) | None | The length of the radius for the bounding circle. |
 | `points` | [[Float]] | Yes (poly) | None | The array of [X, Y] coordinates for the vertices of the bounding polygon. |
-
-<br/>
 
 ### Usage Example
 
@@ -168,8 +160,6 @@ import Link from '@docusaurus/Link';
 | ------- | ------ | -------- | ------- | ----------- |
 | `to` | String | Yes | None | The URL (either relative or absolute) for the clickable link. |
 
-<br/>
-
 ### Usage Example
 
 ```javascript
@@ -198,8 +188,6 @@ import YouTube from '../components/YouTube';
 | ------- | ------ | -------- | ------- | ----------- |
 | `id` | String | Yes | None | The YouTube video ID (from the video's URL). |
 | `title` | String | No | None | The title to display for the embedded video. |
-
-<br/>
 
 ### Usage Example
 
