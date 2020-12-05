@@ -187,7 +187,7 @@ import YouTube from '../components/YouTube';
 |  Name   | Type   | Required | Default | Description |
 | ------- | ------ | -------- | ------- | ----------- |
 | `id` | String | Yes | None | The YouTube video ID (from the video's URL). |
-| `title` | String | No | None | The title to display for the embedded video. |
+| `title` | String | No | "" | The title to display for the embedded video. |
 
 ### Usage Example
 
