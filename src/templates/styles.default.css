@@ -1,0 +1,12 @@
+.template-default .hero {
+    padding: 2rem 2rem;
+}
+
+.template-default .hero h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.template-default section {
+    padding-top: 2rem;
+}

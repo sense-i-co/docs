@@ -21,6 +21,12 @@ module.exports = {
           label: 'Documentation',
           position: 'left',
         },
+        {
+          to: 'about',
+          activeBasePath: 'about',
+          label: 'About Us',
+          position: 'left',
+        },
         /*
         {
           href: 'https://github.com/sense-i-co/docs',

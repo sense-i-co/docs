@@ -1,0 +1,9 @@
+/* default highlight colour is yellow */
+span.component-highlight {
+    color: #f7b902;
+}
+
+/* lighter yellow in banner with blue background */
+.hero span.component-highlight {
+    color: #f8cc46;
+}
