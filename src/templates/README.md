@@ -1,4 +1,4 @@
-# Using Templates – Tutorial
+# Tutorial: Using Templates
 
 To create a new stand-alone page on the website, you must complete the following tasks:
 
@@ -76,7 +76,7 @@ To create a new stand-alone page on the website, you must complete the following
 
 6. Finally, add a link to your page on the website's navigation bar so that user's can get to the page. Do this by adding the appropriate entry to the `navbar.items` property in the `docusaurus.config.js` file.
 
-    - **Example Code**:
+    - **Code Example**:
 
         ```javascript
         module.exports = {
