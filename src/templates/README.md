@@ -74,7 +74,7 @@ To create a new stand-alone page on the website, you must complete the following
         export default About;
         ```
 
-6. Finally, add a link to your page on the website's navigation bar so that user's can get to the page. Do this by adding the appropriate entry to the `navbar.items` property in the `docusaurus.config.js` file.
+6. Finally, add a link to your page on the website's navigation bar so that users can get to the page. Do this by adding the appropriate entry to the `navbar.items` property in the `docusaurus.config.js` file.
 
     - **Code Example**:
 

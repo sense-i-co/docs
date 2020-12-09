@@ -4,7 +4,7 @@
  * with a particular bounding box that is directed to a specified URL. Three
  * types of bounding box are supported for these areas: rect (rectangle), 
  * circle and poly (polygon). The provided area coordinates are based on the 
- * original size of the image, where the origin, [0,0], is the top left corner 
+ * original size of the image, where the origin [0,0] is the top left corner 
  * of the image. The component automatically handles the scaling of these
  * coordinates when the image is resized (for example, when the user changes
  * the size of the browser window).
