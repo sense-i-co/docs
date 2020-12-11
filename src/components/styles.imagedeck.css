@@ -1,0 +1,94 @@
+.component-imagedeck {
+  position: relative;
+  text-align: center;
+  max-width: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+}
+
+.component-imagedeck .hide {
+  display: none;
+}
+
+.component-imagedeck:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.component-imagedeck .prev-button, .component-imagedeck .next-button {
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  width: 44px;
+  height: 44px;
+  line-height: 37px;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.component-imagedeck .prev-button:hover, .component-imagedeck .next-button:hover {
+  background-color: #ddd;
+}
+
+.component-imagedeck .prev-button {
+  left: 10px;
+}
+
+.component-imagedeck .next-button {
+  right: 10px;
+}
+
+.component-imagedeck .image-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.component-imagedeck img {
+  vertical-align: middle;
+  max-height: 100%;
+}
+
+.component-imagedeck img[data-selected=false] {
+  display: none;
+}
+
+.component-imagedeck .indicator-wrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+  text-align: center;
+}
+
+.component-imagedeck .indicator-container {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.component-imagedeck .indicator-dot {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  float: left;
+  margin: 2.5px;
+}
+
+.component-imagedeck .indicator-dot[data-selected=true] {
+  background-color: rgba(0, 0, 0, 0.3);
+}

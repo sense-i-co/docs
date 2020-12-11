@@ -2,6 +2,7 @@ import React from 'react';
 import Template from '../templates/Default';
 import Highlight from '../components/Highlight';
 import ImageMap from '../components/ImageMap';
+import ImageDeck from '../components/ImageDeck';
 import Link from '@docusaurus/Link';
 
 const metadata = {
@@ -64,6 +65,13 @@ const sections = [
             }
           ]}
           />
+          <ImageDeck
+            src={[
+              "img/pages/about-systems.png",
+              "img/undraw_researching_22gp.svg",
+              "img/undraw_dev_focus_b9xo.svg"
+            ]}
+            />
       </>
     )
   },
