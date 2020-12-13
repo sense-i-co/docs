@@ -1,3 +1,21 @@
+/**
+ * The ImageDeck component is used to display a rotating slideshow of images.
+ * The aspect ratio of the slideshow container conforms to the size of the
+ * first image in the src list (and remains the same as you rotate between
+ * images). Multiple UI options are available, including navigation buttons 
+ * and position indicator dots. Furthermore, an automatic advance timer can be 
+ * used to move on to the next image after a specific timeout interval (without 
+ * user interaction).
+ * 
+ * Properties (? = optional, * = required):
+ * - src: Array[String] (*)               = The array of paths to the images used in this slideshow
+ * - options: Object (?)
+ *   - buttons: Boolean (?)               = Whether or not to display the next and previous buttons (default: true)
+ *   - dots: Boolean (?)                  = Whether or not to display the position indicator dots (default: true)
+ *   - timer: Boolean (?)                 = Whether or not to use a timer to automatically advance to the next image (default: true)
+ *   - interval: Float (?)                = The timeout interval (in seconds) to wait before advancing to the next image (default: 5)
+ */
+
 import React from 'react';
 import ReactElementResize from 'react-element-resize';
 import clsx from 'clsx';
@@ -47,17 +65,13 @@ class ImageDeck extends React.Component {
     }
   }
 
-  next() {
-    this.startTimer();
-    this.setState({selected: (this.state.selected+1)%this.src.length});
-  }
-
-  prev() {
-    this.startTimer();
-    this.setState({selected: (this.state.selected-1 == -1 ? this.src.length-1 : this.state.selected-1)});
-  }
-
   change(idx) {
+    if (idx == "next") {
+      idx = this.state.selected+1;
+    } else if (idx == "prev") {
+      idx = this.state.selected-1;
+    }
+    idx = (idx < 0) ? this.src.length-1 : idx%this.src.length;
     this.startTimer();
     this.setState({selected: idx});
   }
@@ -68,7 +82,7 @@ class ImageDeck extends React.Component {
       if (this.timer != null) {
         clearInterval(component.timer);
       }
-      this.timer = setInterval(function() {component.next(); }, component.options.interval);
+      this.timer = setInterval(function() {component.change("next"); }, component.options.interval);
     }
   }
 
@@ -77,9 +91,9 @@ class ImageDeck extends React.Component {
       <>
         <ReactElementResize onResize={() => this.resize()}/>
         <div id={this.id} onLoad={() => this.init()} className="component-imagedeck" style={{height: this.state.height}}>
-          <div className={clsx("prev-button", (this.options.buttons ? "" : "hide"))} onClick={() => this.prev()}>&#8249;</div>
-          <div className={clsx("next-button", (this.options.buttons ? "" : "hide"))} onClick={() => this.next()}>&#8250;</div>
-          <div className="image-container" onClick={() => this.next()}>
+          <div className={clsx("prev-button", (this.options.buttons ? "" : "hide"))} onClick={() => this.change("prev")}>&#8249;</div>
+          <div className={clsx("next-button", (this.options.buttons ? "" : "hide"))} onClick={() => this.change("next")}>&#8250;</div>
+          <div className="image-container" onClick={() => this.change("next")}>
             {this.src.map((props, idx) => (
               <img key={idx} src={props} data-selected={(idx == this.state.selected)}/>
             ))}

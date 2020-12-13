@@ -7,6 +7,7 @@ focus on only the page content.
 The following components are available to use:
 
 - **[Highlight](#Highlight)**: Set the font colour of the contained text.
+- **[ImageDeck](#ImageDeck)**: Display an interactive slideshow with multiple images.
 - **[ImageMap](#ImageMap)**: Display an image with overlayed clickable links.
 - **[Link](#Link)**: Create a clickable link for the contained text.
 - **[YouTube](#YouTube)**: Embed an interactive YouTube video.
@@ -44,6 +45,71 @@ const heading = <h1>Providing <Highlight>Systems For Success</Highlight></h1>;
 
 // Example 2
 const heading = <h1>Providing <Highlight color="red">Systems For Success</Highlight></h1>;
+```
+
+---
+
+## ImageDeck
+
+### Description
+
+The `ImageDeck` component is used to display a rotating slideshow of images.
+The aspect ratio of the slideshow container conforms to the size of the
+first image in the src list (and remains the same as you rotate between
+images). Multiple UI options are available, including navigation buttons 
+and position indicator dots. Furthermore, an automatic advance timer can be 
+used to move on to the next image after a specific timeout interval (without 
+user interaction).
+
+### Import Code
+
+```javascript
+import ImageDeck from '../components/ImageDeck';
+```
+
+### Properties
+
+#### ImageDeck
+
+|  Name   | Type   | Required | Default | Description |
+| ------- | ------ | -------- | ------- | ----------- |
+| `src` | [String] | Yes | None | Array of paths to the images used in this slideshow. |
+| `options` | Options | No | See Below | Various customisable options for the slideshow interface. |
+
+#### Options
+
+|  Name   | Type   | Required | Default | Description |
+| ------- | ------ | -------- | ------- | ------------ |
+| `buttons` | Boolean | No | true | Whether or not to display the next and previous buttons. |
+| `dots` | Boolean | No | true | Whether or not to display the position indicator dots. |
+| `timer` | Boolean | No | true | Whether or not to use a timer to automatically advance to the next image |
+| `interval` | Float | No | 5 | The timeout interval (in seconds) to wait before advancing to the next image. |
+
+### Usage Example
+
+```javascript
+// Example 1
+const content = 
+    <ImageDeck 
+        src={[
+            "img/pages/about-systems.png",
+            "img/undraw_researching_22gp.svg",
+            "img/undraw_dev_focus_b9xo.svg"
+        ]}
+    />;
+// Example 2
+const content = 
+    <ImageDeck 
+        src={[
+            "img/pages/about-systems.png",
+            "img/undraw_researching_22gp.svg",
+            "img/undraw_dev_focus_b9xo.svg"
+        ]}
+        options={{
+            buttons: false,
+            timer: false
+        }}
+    />;
 ```
 
 ---

@@ -29,7 +29,8 @@
   line-height: 37px;
   font-size: 30px;
   cursor: pointer;
-  background-color: #f1f1f1;
+  background-color: rgba(240, 240, 240, 0.9);
+  color: #000;
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border: 1px solid #ddd;
@@ -67,7 +68,7 @@
 .component-imagedeck .indicator-wrapper {
   position: absolute;
   width: 100%;
-  bottom: 5px;
+  bottom: 0;
   text-align: center;
 }
 
@@ -87,6 +88,10 @@
   background-color: rgba(0, 0, 0, 0.1);
   float: left;
   margin: 2.5px;
+}
+
+.component-imagedeck .indicator-dot:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .component-imagedeck .indicator-dot[data-selected=true] {
