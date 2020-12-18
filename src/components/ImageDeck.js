@@ -26,7 +26,7 @@ class ImageDeck extends React.Component {
   constructor(props) {
     super(props);
     const random = Math.floor((Math.random() * 10000) + 1);
-    this.id = ["imagedeck", random].join("-");
+    this.id = ["imagedeck", random].join("-"); // add a random identifier to avoid conflicts when multiple ImageDeck components are on the same page
     this.src = props.src;
     this.options = {
       buttons: (props.options && props.options.buttons != null ? props.options.buttons : true),
@@ -36,31 +36,31 @@ class ImageDeck extends React.Component {
     }
     this.aspectRatio = null;
     this.timer = null;
-    this.state = {selected: 0, height: "auto"};
+    this.state = {selected: 0, height: "auto"}; // initialise with first image selected and height based on that image
   }
 
   init() {
-    if (this.aspectRatio == null) {
+    if (this.aspectRatio == null) { // only run if we have not yet calculated the aspect ratio
       var component = this;
-      var firstImg = new Image();
+      var firstImg = new Image(); // create an image object to load the first image
       firstImg.onload = function() {
-        component.aspectRatio = firstImg.height / firstImg.width;
-        component.setState({height: component.calcHeight()});
+        component.aspectRatio = firstImg.height / firstImg.width; // calculate and store the aspect ratio of the first image
+        component.setState({height: component.calcHeight()}); // update component state with calculated height
       }
-      firstImg.src = this.src[0];
+      firstImg.src = this.src[0]; // set src to first image after defining onload
     }
-    this.startTimer();
+    this.startTimer(); // after initialising, start the auto-advance timer
   }
 
   calcHeight() {
-    if (this.aspectRatio != null) {
+    if (this.aspectRatio != null) { // if initialisation has completed, calculate height based on aspect ratio
       return document.getElementById(this.id).offsetWidth * this.aspectRatio;
     }
     return "auto";
   }
 
   resize() {
-    if (this.aspectRatio != null) {
+    if (this.aspectRatio != null) { // if initialisation has completed, resize component based on aspect ratio
       this.setState({height: this.calcHeight()});
     }
   }
@@ -71,18 +71,18 @@ class ImageDeck extends React.Component {
     } else if (idx == "prev") {
       idx = this.state.selected-1;
     }
-    idx = (idx < 0) ? this.src.length-1 : idx%this.src.length;
-    this.startTimer();
+    idx = (idx < 0) ? this.src.length-1 : idx%this.src.length; // make sure index is not out-of-bounds
+    this.startTimer(); // start/reset auto-advance timer just before we switch to the next image
     this.setState({selected: idx});
   }
 
   startTimer() {
-    if (this.options.timer) {
+    if (this.options.timer) { // only start a timer if this option is enabled
       var component = this;
-      if (this.timer != null) {
+      if (this.timer != null) { // if there is already a timer running, clear it
         clearInterval(component.timer);
       }
-      this.timer = setInterval(function() {component.change("next"); }, component.options.interval);
+      this.timer = setInterval(function() {component.change("next"); }, component.options.interval); // start a new timer to change to the next image
     }
   }
 

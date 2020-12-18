@@ -97,6 +97,7 @@ const content =
             "img/undraw_dev_focus_b9xo.svg"
         ]}
     />;
+    
 // Example 2
 const content = 
     <ImageDeck 

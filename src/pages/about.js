@@ -65,13 +65,21 @@ const sections = [
             }
           ]}
           />
-          <ImageDeck
-            src={[
-              "img/pages/about-systems.png",
-              "img/undraw_researching_22gp.svg",
-              "img/undraw_dev_focus_b9xo.svg"
-            ]}
-            />
+      </>
+    )
+  },
+  {
+    heading: "Example Slideshow",
+    content: (
+      <>
+        <p>Below is an example of an embedded ImageDeck component.</p>
+        <ImageDeck
+          src={[
+            "img/pages/about-systems.png",
+            "img/undraw_researching_22gp.svg",
+            "img/undraw_dev_focus_b9xo.svg"
+          ]}
+          />
       </>
     )
   },
