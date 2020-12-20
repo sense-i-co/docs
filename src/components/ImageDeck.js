@@ -78,12 +78,20 @@ class ImageDeck extends React.Component {
 
   startTimer() {
     if (this.options.timer) { // only start a timer if this option is enabled
+      this.stopTimer();
       var component = this;
-      if (this.timer != null) { // if there is already a timer running, clear it
-        clearInterval(component.timer);
-      }
       this.timer = setInterval(function() {component.change("next"); }, component.options.interval); // start a new timer to change to the next image
     }
+  }
+
+  stopTimer() {
+    if (this.timer != null) { // if there is already a timer running, clear it
+      clearInterval(this.timer);
+    }
+  }
+
+  componentWillUnmount() {
+    this.stopTimer(); // we must stop any active timer when the component is about to be destroyed (e.g. user switches page)
   }
 
   render() {
