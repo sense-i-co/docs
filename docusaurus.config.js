@@ -84,6 +84,34 @@ module.exports = {
         {
           to: 'about',
           activeBasePath: 'about',
+          label: 'Test',
+          position: 'left',
+          items: [
+            {
+              to: 'about',
+              label: 'Test 2',
+              items: [
+                'Test 3', 'about',
+                'Test 4', 'docs'
+              ].join("|")
+            },
+            {
+              to: 'about',
+              label: 'Test 5',
+            },
+            {
+              to: 'about',
+              label: 'Test 6',
+              items: [
+                'Test 7', 'about',
+                'Test 8', 'docs'
+              ].join("|")
+            }
+          ]
+        },
+        {
+          to: 'about',
+          activeBasePath: 'about',
           label: 'About Us',
           position: 'left',
         },
