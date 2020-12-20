@@ -40,6 +40,19 @@ html[data-theme='dark'] {
   margin: 0 0.5rem;
 }
 
+a.dropdown__link[items]::after {
+  background: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem;
+  content: ' ';
+  display: inline-block;
+  float: right;
+  height: 1.0rem;
+  width: 1.0rem;
+  margin-top: 3px;
+  transition: transform var(--ifm-transition-fast) linear;
+  transform: rotate(90deg);
+  filter: var(--ifm-menu-link-sublist-icon-filter);
+}
+
 @media screen and (max-width: 996px) {
   .home-page-button-container {
     display: block !important;
