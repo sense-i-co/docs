@@ -43,7 +43,7 @@ html[data-theme='dark'] {
 a.dropdown__link[items]::after {
   background: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem;
   content: ' ';
-  display: inline-block;
+  display: block;
   float: right;
   height: 1.0rem;
   width: 1.0rem;
@@ -51,6 +51,18 @@ a.dropdown__link[items]::after {
   transition: transform var(--ifm-transition-fast) linear;
   transform: rotate(90deg);
   filter: var(--ifm-menu-link-sublist-icon-filter);
+}
+
+ul.dropdown__menu__level3 {
+  left: 100%;
+  top: auto;
+  margin-top: -43px;
+  margin-left: -8px;
+  display: none;
+}
+
+li.dropdown__submenu:hover ul.dropdown__menu__level3, ul.dropdown__menu__level3:hover {
+  display: block;
 }
 
 @media screen and (max-width: 996px) {
