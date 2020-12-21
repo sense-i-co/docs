@@ -1,4 +1,5 @@
 import $ from "jquery";
+import location from 'location-href'; 
 
 var NAVBAR_MUTATION = {
   required: null,
@@ -68,7 +69,11 @@ function executeMutation() {
     var html = "<ul class='dropdown__menu dropdown__menu__level3'>";
     for (var i = 0; i < items.length; i += 2) {
       console.log(idx + ": " + items[i] + " (" + items[i+1] + ")");
-      html += "<li><a class='dropdown__link' href='" + items[i+1] + "'>" + items[i] + "</a></li>";
+      var classes = "dropdown__link";
+      if (location().endsWith(items[i+1])) {
+        classes += " dropdown__link--active";
+      }
+      html += `<li><a class='${classes}' href='${items[i+1]}'>${items[i]}</a></li>`;
     }
     html += "</ul>";
     parent.append(html);
