@@ -22,29 +22,33 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'about',
-          activeBasePath: 'about',
-          label: 'Test',
+          to: 'example/',
+          activeBasePath: 'example',
+          label: 'Example',
           position: 'left',
           items: [
             {
-              to: 'about',
-              label: 'Test 2',
+              to: 'example/example1/',
+              activeBasePath: 'example/example1',
+              label: 'Example 1',
               items: [
-                'Test 3', 'about',
-                'Test 4', 'docs'
+                'Example 1A', '/example/example1/example1a',
+                'Example 1B', '/example/example1/example1b',
+                'Example 1C', '/example/example1/example1c'
               ].join("|")
             },
             {
-              to: 'about',
-              label: 'Test 5',
+              to: 'example/example2/',
+              activeBasePath: 'example/example2',
+              label: 'Example 2',
             },
             {
-              to: 'about',
-              label: 'Test 6',
+              to: 'example/example3/',
+              activeBasePath: 'example/example3',
+              label: 'Example 3',
               items: [
-                'Test 7', 'about',
-                'Test 8', 'docs'
+                'Example 3A', '/example/example3/example3a',
+                'Example 3B', '/example/example3/example3b'
               ].join("|")
             }
           ]
