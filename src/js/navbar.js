@@ -16,7 +16,7 @@ var NavBarMutator = {
       } else if ($("nav a.dropdown__link[items]").length > 0) {
         NavBarMutator.stopTimer();
         NavBarMutator.required = true;
-        NavBarMutator.mutate();
+        NavBarMutator.wait();
       } else if (NavBarMutator.count >= 10) {
         NavBarMutator.stopTimer();
         NavBarMutator.required = false;
@@ -24,28 +24,20 @@ var NavBarMutator = {
     }
   },
 
-  mutate: function() {
-    NavBarMutator.waitToMutate();
-  },
-
-  isReady: function() {
-    return (
-      NavBarMutator.required &&
-      $("nav").length > 0 &&
-      $("nav a.dropdown__link[data-mutated]").length == 0
-    );
-  },
-
-  waitToMutate: function() {
-    if (NavBarMutator.isReady()) {
+  wait: function() {
+    if (
+        NavBarMutator.required &&
+        $("nav").length > 0 &&
+        $("nav a.dropdown__link[data-mutated]").length == 0
+      ) {
       NavBarMutator.stopTimer();
-      NavBarMutator.executeMutate();
+      NavBarMutator.mutate();
     } else {
-      NavBarMutator.startTimer(NavBarMutator.waitToMutate, 100);
+      NavBarMutator.startTimer(NavBarMutator.wait, 100);
     }
   },
 
-  executeMutate: function() {
+  mutate: function() {
     $("nav a.dropdown__link[items]:not([data-mutated])").each(function(idx) {
       var parent = $(this).parent();
       var items = $(this).attr("items").split("|");
@@ -62,7 +54,7 @@ var NavBarMutator = {
       parent.attr("class", "dropdown__submenu");
       $(this).attr("data-mutated", true);
     });
-    $("a").on("click", function() { NavBarMutator.mutate(); });
+    $("a").on("click", function() { NavBarMutator.wait(); });
   },
 
   startTimer: function(callback, interval) {
