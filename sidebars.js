@@ -59,7 +59,7 @@ module.exports = {
       "Financial Management": [
         {"Accounts Payable": ["SAF-720", 
 							"SAF-1203", 
-							"SAF-4001", 
+							"SAF-4014", 
 							"SAF-4050", 
 							"SAF-4053", 
 							"SAF-4030", 
@@ -83,6 +83,6 @@ module.exports = {
         {"Incentive Management": ["XXX-000"]},		
       ],
     }],
-    "Setup & Implementation": ["SCL-000", "SAF-1218"],	
+    "Setup & Implementation": ["DOWNLOAD", "LAUNCH", "SAF-1218"],	
   },
 };
