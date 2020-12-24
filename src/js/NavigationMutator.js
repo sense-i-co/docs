@@ -13,6 +13,7 @@ class NavigationMutator {
     this.SIDEBAR_LINK_CLASS = "menu__link";
     this.SIDEBAR_LINK_ACTIVE_PATH_CLASS = this.NAVBAR_LINK_ACTIVE_PATH_CLASS; // class for link representing parent page (i.e. active base path)
     this.SIDEBAR_LINK_CURRENT_PAGE_CLASS = "menu__link--active"; // class for link representing current page (i.e. active page)
+    this.SIDEBAR_LINK_COLLAPSED_CLASS = "menu__list-item--collapsed";
     this.NAVBAR_SELECTOR = "nav.navbar";
     this.NAVBAR_EXPANDABLE_LINK_SELECTOR = `${this.NAVBAR_SELECTOR} a.${this.NAVBAR_LINK_CLASS}[items]`;
     this.SIDEBAR_SELECTOR = "div.navbar-sidebar";
@@ -20,32 +21,26 @@ class NavigationMutator {
     this.MUTATED_FLAG = "data-mutated";
   
     // Attributes
-    this.required = null;
+    this.ready = false;
     this.count = 0;
   }
 
-
-  // Functions
   init() {
-    if(this.required == null) {
-      if($(`${this.NAVBAR_EXPANDABLE_LINK_SELECTOR}, ${this.SIDEBAR_EXPANDABLE_LINK_SELECTOR}`).length > 0) {
-        this.required = true;
-      } else if (this.count >= 10) {
-        this.required = false;
-      } else {
-        setTimeout(this.init.bind(this), 100);
-        this.count++;
-      }
+    if($(`${this.NAVBAR_EXPANDABLE_LINK_SELECTOR}, ${this.SIDEBAR_EXPANDABLE_LINK_SELECTOR}`).length > 0) {
+      this.ready = true;
+    } else if (this.count < 10) {
+      setTimeout(this.init.bind(this), 100);
+      this.count++;
     }
-    if(this.required) this.wait();
+    if(this.ready) this.wait();
   }
 
   wait() {
     if (
-      this.required &&
+      this.ready &&
       $(this.NAVBAR_SELECTOR).length > 0 &&
       $(`${this.NAVBAR_EXPANDABLE_LINK_SELECTOR}[${this.MUTATED_FLAG}], ${this.SIDEBAR_EXPANDABLE_LINK_SELECTOR}[${this.MUTATED_FLAG}]`).length == 0
-      ) {
+    ) {
       this.mutate();
     } else {
       setTimeout(this.wait.bind(this), 100);
@@ -94,16 +89,16 @@ class NavigationMutator {
       }
       html += "</ul>";
       parent.append(html);
-      parent.addClass("menu__list-item--collapsed");
+      parent.addClass(mutator.SIDEBAR_LINK_COLLAPSED_CLASS);
       $(this).on("click", function() { 
         var sublist = parent.find("ul.menu__list");
         var heightChange = ((items.length/2)*mutator.SIDEBAR_ITEM_HEIGHT+mutator.SIDEBAR_LIST_PADDING);
-        if(parent.hasClass("menu__list-item--collapsed")) {
-          parent.removeClass("menu__list-item--collapsed");
+        if(parent.hasClass(mutator.SIDEBAR_LINK_COLLAPSED_CLASS)) {
+          parent.removeClass(mutator.SIDEBAR_LINK_COLLAPSED_CLASS);
           sublist.css("height", heightChange + "px");
         } else {
+          parent.addClass(mutator.SIDEBAR_LINK_COLLAPSED_CLASS);
           sublist.css("height", "");
-          parent.addClass("menu__list-item--collapsed");
         }
         if(self.hasClass(mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS) || !self.is("[href]")) { 
           return false; 
@@ -113,7 +108,7 @@ class NavigationMutator {
       $(this).attr(mutator.MUTATED_FLAG, true);
     });
     $(`a.${this.SIDEBAR_LINK_CLASS}.${mutator.SIDEBAR_LINK_ACTIVE_PATH_CLASS}, 
-       a.${this.SIDEBAR_LINK_CLASS}.${mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS}`).parent().removeClass("menu__list-item--collapsed");
+       a.${this.SIDEBAR_LINK_CLASS}.${mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS}`).parent().removeClass(mutator.SIDEBAR_LINK_COLLAPSED_CLASS);
     $(`a.${this.SIDEBAR_LINK_CLASS}.${mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS}`).parent().find("ul.menu__list").each(function(idx) {
       $(this).css("height", $(this).height());
     });
