@@ -47,6 +47,8 @@ var NavBarMutator = {
         var classes = "dropdown__link";
         if (location().endsWith(items[i+1])) {
           classes += " dropdown__link--active";
+          $(this).addClass("navbar__link--active");
+          $(this).removeClass("dropdown__link--active");
         }
         html += `<li><a class='${classes}' href='${items[i+1]}'>${items[i]}</a></li>`;
       }
