@@ -137,6 +137,6 @@ module.exports = {
     ],
   ],
   clientModules: [
-    require.resolve('./src/js/NavBarMutator.js'),
+    require.resolve('./src/js/NavigationMutator.js'),
   ],
 };
