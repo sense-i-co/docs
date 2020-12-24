@@ -39,6 +39,7 @@ var NavBarMutator = {
   },
 
   mutate: function() {
+    // desktop navigation bar
     $("nav a.dropdown__link[items]:not([data-mutated])").each(function(idx) {
       var parent = $(this).parent();
       var items = $(this).attr("items").split("|");
@@ -57,11 +58,12 @@ var NavBarMutator = {
       parent.attr("class", "dropdown__submenu");
       $(this).attr("data-mutated", true);
     });
+    // mobile navigation menu
     $("div.navbar-sidebar a.menu__link[items]:not([data-mutated])").each(function(idx) {
       var self = $(this);
       var parent = $(this).parent();
       var items = $(this).attr("items").split("|");
-      var html = "<ul class='menu__list menu__sublist__level3'>";
+      var html = "<ul class='menu__list'>";
       for (var i = 0; i < items.length; i += 2) {
         var classes = "menu__link";
         if (location().endsWith(items[i+1])) {
@@ -74,10 +76,27 @@ var NavBarMutator = {
       html += "</ul>";
       parent.append(html);
       parent.addClass("menu__list-item--collapsed");
-      $(this).on("click", function() { parent.toggleClass("menu__list-item--collapsed", 1000); if(self.hasClass("menu__link--active") || !self.is("[href]")) { return false; } });
+      $(this).on("click", function() { 
+        var sublist = parent.find("ul.menu__list");
+        var heightChange = ((items.length/2)*36+4);
+        if(parent.hasClass("menu__list-item--collapsed")) {
+          parent.removeClass("menu__list-item--collapsed");
+          sublist.css("height", heightChange + "px");
+        } else {
+          sublist.css("height", "");
+          parent.addClass("menu__list-item--collapsed");
+        }
+        if(self.hasClass("menu__link--active") || !self.is("[href]")) { 
+          return false; 
+        } 
+      });
+      $(this).addClass("menu__link--sublist");
       $(this).attr("data-mutated", true);
     });
     $("a.menu__link.navbar__link--active, a.menu__link.menu__link--active").parent().removeClass("menu__list-item--collapsed");
+    $("a.menu__link.menu__link--active").parent().find("ul.menu__list").each(function(idx) {
+      $(this).css("height", $(this).height());
+    });
     $("a").on("click", function() { NavBarMutator.wait(); });
   },
 
