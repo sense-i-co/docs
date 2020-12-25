@@ -47,32 +47,3 @@ html[data-theme='dark'] {
     margin: 1rem 0;
   }
 }
-
-/* NAVBAR LEVEL 3 MENU */
-a.dropdown__link[items]::after{
-  background: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem;
-  content: ' ';
-  display: block;
-  float: right;
-  height: 1.0rem;
-  width: 1.0rem;
-  margin-top: 0.215rem;
-  filter: var(--ifm-menu-link-sublist-icon-filter);
-  transform: rotate(90deg);
-}
-
-ul.dropdown__menu__level3 {
-  left: 100%;
-  top: auto;
-  margin-top: -2.7rem;
-  margin-left: -0.5rem;
-  visibility: hidden !important; /* !important flag required to override displaying the level 3 submenu on level 1 hover */
-  opacity: 0 !important;
-  transform: scale(.8) !important;
-}
-
-li.dropdown__submenu:hover ul.dropdown__menu__level3, ul.dropdown__menu__level3:hover {
-  opacity: 1 !important;
-  transform: scale(1) !important;
-  visibility: visible !important;
-}
