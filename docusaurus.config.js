@@ -136,7 +136,7 @@ module.exports = {
       },
     ],
   ],
-  clientModules: [
-    require.resolve('./src/plugins/NavigationMutator.js'),
+  plugins: [
+    require.resolve('./plugins/navigation-level-3')
   ],
 };
