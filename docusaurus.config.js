@@ -22,13 +22,11 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'example/',
           activeBasePath: 'example',
           label: 'Example',
           position: 'left',
           items: [
             {
-              to: 'example/example1/',
               activeBasePath: 'example/example1',
               label: 'Example 1',
               items: [
@@ -43,7 +41,6 @@ module.exports = {
               label: 'Example 2',
             },
             {
-              to: 'example/example3/',
               activeBasePath: 'example/example3',
               label: 'Example 3',
               items: [
