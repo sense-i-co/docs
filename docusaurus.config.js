@@ -136,8 +136,7 @@ module.exports = {
       },
     ],
   ],
-  scripts: [
-    'https://code.jquery.com/jquery-3.5.1.min.js',
-    'https://raw.githubusercontent.com/sense-i-co/docs/navbar/src/plugins/NavigationMutator.js',
+  plugins: [
+    require.resolve('./plugins/navigation-level-3')
   ],
 };
