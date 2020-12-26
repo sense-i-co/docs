@@ -136,7 +136,8 @@ module.exports = {
       },
     ],
   ],
-  clientModules: [
-    require.resolve('./src/plugins/NavigationMutator.js'),
+  scripts: [
+    'https://code.jquery.com/jquery-3.5.1.min.js',
+    'https://raw.githubusercontent.com/sense-i-co/docs/navbar/src/plugins/NavigationMutator.js',
   ],
 };

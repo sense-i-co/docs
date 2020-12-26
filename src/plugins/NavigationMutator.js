@@ -85,8 +85,13 @@
  * 
  */
 
+/* 
 import $ from "jquery";
 import location from 'location-href'; 
+*/
+function location() {
+  return window.location.href;
+}
 
 class NavigationMutator {
 
