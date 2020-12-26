@@ -8,7 +8,7 @@
  * module.exports = {
  *   ...
  *   clientModules: [
- *     require.resolve('./src/js/NavigationMutator.js'),
+ *     require.resolve('./src/plugins/NavigationMutator.js'),
  *   ],
  *   ...
  * };
