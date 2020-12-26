@@ -2,11 +2,11 @@ import React from 'react';
 import Template from '../../../templates/Default';
 
 const metadata = {
-  title: "Example 1C"
+  title: "Category 2"
 }
 
 const banner = {
-  heading: "Example 1C"
+  heading: "Category 2"
 }
 
 const sections = [
@@ -20,7 +20,7 @@ const sections = [
   }
 ]
 
-function Example1C() {
+function Category2() {
   return (
     <Template
       metadata={metadata}
@@ -29,4 +29,4 @@ function Example1C() {
   );
 }
 
-export default Example1C;
+export default Category2;

@@ -2,11 +2,11 @@ import React from 'react';
 import Template from '../../templates/Default';
 
 const metadata = {
-  title: "Example Index"
+  title: "Example"
 }
 
 const banner = {
-  heading: "Example Index"
+  heading: "Example"
 }
 
 const sections = [
