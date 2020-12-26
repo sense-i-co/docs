@@ -27,26 +27,26 @@ module.exports = {
           position: 'left',
           items: [
             {
-              activeBasePath: 'example/example1',
-              label: 'Example 1',
+              activeBasePath: 'example/category1',
+              label: 'Category 1',
               items: [
-                'Example 1A', '/example/example1/example1a',
-                'Example 1B', '/example/example1/example1b',
-                'Example 1C', '/example/example1/example1c'
+                'Item 1A', '/example/category1/item1a',
+                'Item 1B', '/example/category1/item1b',
+                'Item 1C', '/example/category1/item1c'
               ].join("|")
             },
             {
-              to: 'example/example2/',
-              activeBasePath: 'example/example2',
-              label: 'Example 2',
+              to: 'example/category2/',
+              activeBasePath: 'example/category2',
+              label: 'Category 2',
             },
             {
-              to: 'example/example3/',
-              activeBasePath: 'example/example3',
-              label: 'Example 3',
+              to: 'example/category3/',
+              activeBasePath: 'example/category3',
+              label: 'Category 3',
               items: [
-                'Example 3A', '/example/example3/example3a',
-                'Example 3B', '/example/example3/example3b'
+                'Item 3A', '/example/category3/item3a',
+                'Item 3B', '/example/category3/item3b'
               ].join("|")
             }
           ]
