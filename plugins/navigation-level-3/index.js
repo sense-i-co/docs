@@ -221,7 +221,7 @@ module.exports = function (context) {
                     var title = linkInfoL3[i];
                     var href = linkInfoL3[i+1];
                     var classes = (isNavBar ? mutator.NAVBAR_LINK_CLASS : mutator.SIDEBAR_LINK_CLASS);
-                    if(window.location.href.endsWith(href)) {
+                    if(window.location.href.match(new RegExp("(.)+" + href.replace("/", "\\/") + "(\/)?"))) {
                       classes += " " + (isNavBar ? mutator.NAVBAR_LINK_CURRENT_PAGE_CLASS : mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS);
                       linkL2.addClass(isNavBar ? mutator.NAVBAR_LINK_ACTIVE_PATH_CLASS : mutator.SIDEBAR_LINK_ACTIVE_PATH_CLASS);
                       linkL2.removeClass(isNavBar ? mutator.NAVBAR_LINK_CURRENT_PAGE_CLASS : mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS);
@@ -277,7 +277,7 @@ module.exports = function (context) {
                   var linkL2 = $(this);
                   var linkInfoL3 = $(this).attr("items").split("|");
             
-                  if(window.location.href.endsWith(linkL1.attr("href"))) {
+                  if(window.location.href.match(new RegExp("(.)+" + linkL1.attr("href").replace("/", "\\/") + "(\/)?"))) {
                     linkL1.addClass(mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS);
                   }
                   
