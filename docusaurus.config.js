@@ -41,6 +41,7 @@ module.exports = {
               label: 'Example 2',
             },
             {
+              to: 'example/example3/',
               activeBasePath: 'example/example3',
               label: 'Example 3',
               items: [
