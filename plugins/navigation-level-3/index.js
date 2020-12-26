@@ -225,10 +225,8 @@ module.exports = function (context) {
                       classes += " " + (isNavBar ? mutator.NAVBAR_LINK_CURRENT_PAGE_CLASS : mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS);
                       linkL2.addClass(isNavBar ? mutator.NAVBAR_LINK_ACTIVE_PATH_CLASS : mutator.SIDEBAR_LINK_ACTIVE_PATH_CLASS);
                       linkL2.removeClass(isNavBar ? mutator.NAVBAR_LINK_CURRENT_PAGE_CLASS : mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS);
-                      if(!isNavBar) {
-                        var linkL1 = linkL2.closest("ul").prev("a");
-                        linkL1.addClass(mutator.NAVBAR_LINK_ACTIVE_PATH_CLASS);
-                      }
+                      var linkL1 = linkL2.closest("ul").prev("a");
+                      linkL1.addClass(isNavBar ? mutator.NAVBAR_LINK_ACTIVE_PATH_CLASS : mutator.SIDEBAR_LINK_ACTIVE_PATH_CLASS);
                     }
                     html += "<li " + (isNavBar ? "" : "class='menu__list-item'") + "><a class='" + classes + "' href='" + href + "'>" + title + "</a></li>";
                   }
@@ -340,6 +338,18 @@ module.exports = function (context) {
                 $("ul." + mutator.SIDEBAR_SUBMENU_CLASS).each(function(idx) {
                   $(this).css("height", $(this).height());
                 });
+
+                // highlight level 1 item in navbar if level 2 item is selected
+                $("a." + mutator.NAVBAR_LINK_CURRENT_PAGE_CLASS)
+                  .closest("ul")
+                  .prev("a")
+                  .addClass(mutator.NAVBAR_LINK_ACTIVE_PATH_CLASS);
+
+                // highlight level 1 item in sidebar if level 2 item is selected
+                $("a." + mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS)
+                  .closest("ul")
+                  .prev("a")
+                  .addClass(mutator.SIDEBAR_LINK_ACTIVE_PATH_CLASS);
             
                 // bind all navigation clicks to call the navigation mutator (i.e. update navbar and sidebar on react page change)
                 $("a").on("click", function() { mutator.wait(); });
