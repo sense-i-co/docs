@@ -52,6 +52,10 @@ class NavigationMutator {
         transform: scale(1) !important;
         visibility: visible !important;
       }
+
+      .menu__link--active {
+        background: var(--ifm-menu-color-background-active);
+      }
     `;
   
     // ATTRIBUTES
@@ -68,7 +72,9 @@ class NavigationMutator {
       this.count++;
     }
     if(this.ready){
-      $("body").append(`<style type="text/css">${this.STYLES}</style>`); // inject CSS styles
+      if($("#nav-level-3-styles").length == 0) {
+        $("body").append(`<style id="nav-level-3-styles" type="text/css">${this.STYLES}</style>`); // inject CSS styles
+      }
       this.wait();
     }
   }
@@ -100,11 +106,52 @@ class NavigationMutator {
           classes += ` ${isNavBar ? mutator.NAVBAR_LINK_CURRENT_PAGE_CLASS : mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS}`;
           parent.addClass(isNavBar ? mutator.NAVBAR_LINK_ACTIVE_PATH_CLASS : mutator.SIDEBAR_LINK_ACTIVE_PATH_CLASS);
           parent.removeClass(isNavBar ? mutator.NAVBAR_LINK_CURRENT_PAGE_CLASS : mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS);
+          if(!isNavBar) {
+            parent.closest("ul").prev("a").addClass(mutator.NAVBAR_LINK_ACTIVE_PATH_CLASS);
+          }
         }
         html += `<li ${isNavBar ? "" : "class='menu__list-item'"}><a class='${classes}' href='${href}'>${title}</a></li>`;
       }
       html += "</ul>";
       return html;
+    }
+
+    var getNumVisibleItems = function(list) {
+      if(list.parent().hasClass(mutator.SIDEBAR_LINK_COLLAPSED_CLASS)) {
+        return 0;
+      } else {
+        var items = list.children("li");
+        var count = 0;
+        items.each(function() {
+          count++;
+          var sublist = $(this).children("ul");
+          if(!$(this).hasClass(mutator.SIDEBAR_LINK_COLLAPSED_CLASS) && sublist.length == 1) {
+            count += getNumVisibleItems(sublist);
+          }
+        });
+        return count;
+      }
+    }
+
+    var toggleLevel1Link = function(link) {
+      var container = link.parent();
+      var toplist = $(`div.menu > ul.${mutator.SIDEBAR_SUBMENU_CLASS}`);
+      var midlist = link.next("ul");
+      if(container.hasClass(mutator.SIDEBAR_LINK_COLLAPSED_CLASS)) {
+        container.removeClass(mutator.SIDEBAR_LINK_COLLAPSED_CLASS);
+        var numItems = getNumVisibleItems(midlist);
+        console.log(`Visible Items: ${numItems}`);
+        var heightChange = (numItems * mutator.SIDEBAR_ITEM_HEIGHT + mutator.SIDEBAR_LIST_PADDING);
+        toplist.css("height", (toplist.height() + heightChange) + "px");
+        midlist.css("height", (midlist.height() + heightChange) + "px");
+      } else {
+        container.addClass(mutator.SIDEBAR_LINK_COLLAPSED_CLASS);
+        var numItems = getNumVisibleItems(midlist);
+        console.log(`Visible Items: ${numItems}`);
+        var heightChange = (numItems * mutator.SIDEBAR_ITEM_HEIGHT + mutator.SIDEBAR_LIST_PADDING);
+        toplist.css("height", (toplist.height() - heightChange) + "px");
+        midlist.css("height", (midlist.height() - heightChange) + "px");
+      }
     }
 
     // NAVBAR MUTATION (DESKTOP)
@@ -127,20 +174,32 @@ class NavigationMutator {
       var container = $(this).parent();
       var parentLink = $(this);
       var childLinks = $(this).attr("items").split("|");
+
+      var level1Link = parentLink.closest("ul").prev("a");
+      if(location().endsWith(level1Link.attr("href"))) {
+        level1Link.addClass(mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS);
+      }
       
       container.append(getMenuHTML("sidebar", parentLink, childLinks));
       container.addClass(mutator.SIDEBAR_LINK_COLLAPSED_CLASS);
 
-      parentLink.on("click", function() { 
-        var sublist = container.find("ul.menu__list");
+      parentLink.on("click", function() {
+        var toplist = $(`div.menu > ul.${mutator.SIDEBAR_SUBMENU_CLASS}`);
+        var midlist = container.parent();
+        var sublist = container.find(`ul.${mutator.SIDEBAR_SUBMENU_CLASS}`);
         var heightChange = ((childLinks.length/2) * mutator.SIDEBAR_ITEM_HEIGHT + mutator.SIDEBAR_LIST_PADDING);
         if(container.hasClass(mutator.SIDEBAR_LINK_COLLAPSED_CLASS)) {
           container.removeClass(mutator.SIDEBAR_LINK_COLLAPSED_CLASS);
+          toplist.css("height", (toplist.height() + heightChange) + "px");
+          midlist.css("height", (midlist.height() + heightChange) + "px");
           sublist.css("height", heightChange + "px");
         } else {
           container.addClass(mutator.SIDEBAR_LINK_COLLAPSED_CLASS);
+          toplist.css("height", (toplist.height() - heightChange) + "px");
+          midlist.css("height", (midlist.height() - heightChange) + "px");
           sublist.css("height", "");
         }
+        
         if(parentLink.hasClass(mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS) || !parentLink.is("[href]")) { 
           return false; 
         } 
@@ -150,9 +209,14 @@ class NavigationMutator {
       parentLink.attr(mutator.MUTATED_FLAG, true);
 
     });
-
-    $(`a.${mutator.SIDEBAR_LINK_ACTIVE_PATH_CLASS}, a.${mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS}`).parent().removeClass(mutator.SIDEBAR_LINK_COLLAPSED_CLASS);
-    $(`a.${mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS}`).parent().find(`ul.${mutator.SIDEBAR_SUBMENU_CLASS}`).each(function(idx) {
+    $("div.menu > ul > li > ul").prev("a").on("click", function() {
+      if($(this).hasClass(mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS) || !$(this).is("[href]")) { 
+        toggleLevel1Link($(this));
+        return false;
+      }
+    });
+    $(`a.${mutator.SIDEBAR_LINK_ACTIVE_PATH_CLASS}, a.${mutator.SIDEBAR_LINK_CURRENT_PAGE_CLASS}`).parents(`li.${mutator.SIDEBAR_LINK_COLLAPSED_CLASS}`).removeClass(mutator.SIDEBAR_LINK_COLLAPSED_CLASS);
+    $(`ul.${mutator.SIDEBAR_SUBMENU_CLASS}`).each(function(idx) {
       $(this).css("height", $(this).height());
     });
 
