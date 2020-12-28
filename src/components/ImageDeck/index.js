@@ -19,7 +19,7 @@
 import React from 'react';
 import ReactElementResize from 'react-element-resize';
 import clsx from 'clsx';
-import "./styles.imagedeck.css";
+import "./styles.css";
 
 class ImageDeck extends React.Component {
 
