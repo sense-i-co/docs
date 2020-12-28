@@ -13,7 +13,7 @@
  */
 
 import React from 'react';
-import "./styles.highlight.css";
+import "./styles.css";
 
 function Highlight(props) {
   const {children, color} = props;
