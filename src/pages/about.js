@@ -3,6 +3,7 @@ import Template from '../templates/Default';
 import Highlight from '../components/Highlight';
 import ImageMap from '../components/ImageMap';
 import ImageDeck from '../components/ImageDeck';
+import DownloadButton from '../components/DownloadButton';
 import Link from '@docusaurus/Link';
 
 const metadata = {
@@ -80,6 +81,15 @@ const sections = [
             "img/undraw_dev_focus_b9xo.svg"
           ]}
           />
+      </>
+    )
+  },
+  {
+    heading: "Example Download",
+    content: (
+      <>
+        <p>Below is an example of an embedded DownloadButton component.</p>
+        <DownloadButton to="https://elfworks.co.za/subdomains/sense-i/Install/download.html">Sense-i Installer</DownloadButton>
       </>
     )
   },
