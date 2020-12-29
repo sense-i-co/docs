@@ -12,7 +12,7 @@ This **step-by-step guide** will show you **how to download and install** the **
 Once you have linked to the Sense-i Launcher Download site, these are the necessary steps to be followed.
 
 :::note
-The links displayed on the images in this guide are **NOT ACTIVE** and soley used for **reference purposes**.
+The buttons & links displayed on the images in this guide are **NOT ACTIVE** and soley used for **reference purposes**.
 :::
 
 ![](../static/img/docs/LAUNCH/image00.png)  
@@ -29,7 +29,9 @@ Depending on your Windows security settings, a warning dialogue box will display
 The colour of this dialogue box may vary depending on your chosen Windows theme settings.
 :::
 
-3.	**NB!** Select the **More info** link.
+3.	**NB!** Select the **More info** link.  
+
+----
 
 ![](../static/img/docs/LAUNCH/image03.png)  
 
@@ -117,7 +119,9 @@ Refer to the **[Sense-i Launcher](LAUNCH)** page for information on using the ap
 
 ## Download and Install 
 
-Access the latest version of the [Sense-i Launcher Installation files here.](https://elfworks.co.za/subdomains/sense-i/Install/download.html)  
+Access the latest version of the [Sense-i Launcher Installation files **here.**](https://elfworks.co.za/subdomains/sense-i/Install/download.html)  
+
+----
 
 
 
