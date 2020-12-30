@@ -1,6 +1,6 @@
 /**
  * The Highlight component is used to style the contained text in a custom colour.
- * This defaults to a yellow colour (defined in styles.highlight.css), but can be
+ * This defaults to a yellow colour (defined in styles.css), but can be
  * customised by passing the desired color code as a property when calling the 
  * component.
  * 
@@ -13,7 +13,7 @@
  */
 
 import React from 'react';
-import "./styles.highlight.css";
+import "./styles.css";
 
 function Highlight(props) {
   const {children, color} = props;

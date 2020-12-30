@@ -1,0 +1,43 @@
+.component-download-button {
+  margin: 20px 0;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+}
+
+.component-download-button div {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color: var(--ifm-color-primary);
+  box-shadow: rgba(0, 0, 0, 0.8) 0 2px 5px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.component-download-button div::before {
+  content: " ";
+  display: block;
+  float: left;
+  width: 30px;
+  height: 36px;
+  margin-right: 10px;
+  background-size: contain;
+  background-image: url(data:image/png;base64,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);
+}
+
+.component-download-button div:hover {
+  background-color: var(--ifm-color-primary-lighter);
+}
+
+.component-download-button div:active {
+  background-color: var(--ifm-color-primary-dark);
+  margin-top: 2px;
+  margin-bottom: -2px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 5px, inset rgba(0, 0, 0, 0.5) 0 2px 5px;
+}
