@@ -10,8 +10,6 @@ Level 3 navigation items are defined in the `docusaurus.config.js` file in a sim
 to level 1 and level 2 items. However, please see the documentation and example below which
 explains the differences.
 
----
-
 ## Installation
 
 To install the plugin, simply import this file in the `docusaurus.config.js` file as follows 
@@ -26,8 +24,6 @@ module.exports = {
   // ...
 };
 ```
-
----
 
 ## Compatibility
 
@@ -54,8 +50,6 @@ be needed which accessing sub-items directly from the `siteConfig` variable befo
 injection (i.e. it will have to be handled in the plugin and outside of the injected JQuery
 script).
 
----
-
 ## Usage
 
 To use the plugin, add your level 1 and 2 navigation items as usual in the `docusaurus.config.js` 
@@ -69,8 +63,6 @@ pages that can be navigated to, whereas level 1 and 2 items can either represent
 just categories (for sub-items) which are only visible in the navigation bar. However, if a 
 level 1 or 2 item has no sub-items (e.g. 'Category 2' in the example below), then it must have a 
 link (i.e. all leaf nodes must have links).
-
----
 
 ## Example
 
@@ -88,7 +80,7 @@ Example (Level 1)  <-- no link
     └── Item 3B (Level 3)
 ```
 
-The code for this structure would be in the docusaurus.config.js file as follows:
+The code for this structure would be in the `docusaurus.config.js` file as follows:
 
 ```javascript
 module.exports = {
