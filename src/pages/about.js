@@ -89,7 +89,7 @@ const sections = [
     content: (
       <>
         <p>Below is an example of an embedded DownloadButton component.</p>
-        <DownloadButton to="https://elfworks.co.za/subdomains/sense-i/Install/download.html">Sense-i Installer</DownloadButton>
+        <DownloadButton title="Sense-i Installer" link="/img/logo.png"/>
       </>
     )
   },

@@ -6,6 +6,7 @@ focus on only the page content.
 
 The following components are available to use:
 
+- **[DownloadButton](#DownloadButton)**: Display a download button for the associated file.
 - **[Highlight](#Highlight)**: Set the font colour of the contained text.
 - **[ImageDeck](#ImageDeck)**: Display an interactive slideshow with multiple images.
 - **[ImageMap](#ImageMap)**: Display an image with overlayed clickable links.
@@ -17,12 +18,46 @@ The following components are available to use:
 
 ---
 
+## DownloadButton
+
+### Description
+
+The `DownloadButton` component is used to embed a simple button into the page which,
+when pressed, initiates the download of a linked file. The button's title defaults 
+to "Download" but can be customised by providing a title property. The background 
+colour of the button matches the primary colour of website.
+
+### Import Code
+
+```javascript
+import DownloadButton from '../components/DownloadButton';
+```
+
+### Properties
+
+|  Name   | Type   | Required | Default | Description |
+| ------- | ------ | -------- | ------- | ----------- |
+| `title` | String | No | "Download" | The text to display on the embedded button. |
+| `link` | String | Yes | None | The relative or absolute path to the file which will be downloaded. |
+
+### Usage Example
+
+```javascript
+// Example 1
+const content = <DownloadButton link="/img/logo.png"/>;
+
+// Example 2
+const content = <DownloadButton title="Sense-i Installer" link="https://elfworks.co.za/subdomains/sense-i/Install/SenseiInstall.exe"/>;
+```
+
+---
+
 ## Highlight
 
 ### Description
 
 The `Highlight` component is used to style the contained text in a custom colour. This 
-defaults to a yellow colour (defined in styles.highlight.css), but can be customised 
+defaults to a yellow colour (defined in styles.css), but can be customised 
 by passing the desired color code as a property when calling the component.
 
 ### Import Code
@@ -35,7 +70,7 @@ import Highlight from '../components/Highlight';
 
 |  Name   | Type   | Required | Default | Description |
 | ------- | ------ | -------- | ------- | ----------- |
-| `color` | String | No | #f7b902 | The name or code of the font colour to use for the contained text. |
+| `color` | String | No | "#f7b902" | The name or code of the font colour to use for the contained text. |
 
 ### Usage Example
 
