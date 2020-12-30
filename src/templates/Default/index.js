@@ -16,7 +16,7 @@
 
 import React from 'react';
 import Layout from '@theme/Layout';
-import "./styles.default.css";
+import "./styles.css";
 
 function Template(props) {
   const {metadata, banner, sections} = props;
