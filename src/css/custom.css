@@ -35,6 +35,7 @@ html[data-theme='dark'] {
   padding: 0 var(--ifm-pre-padding);
 }
 
+/* HOME PAGE BANNER BUTTONS */
 .home-page-button-container {
   display: inline-block !important;
   margin: 0 0.5rem;
