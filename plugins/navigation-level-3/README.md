@@ -41,14 +41,14 @@ and styles. The plugin's mutation process depends on a specific set of JQuery se
 which must be updated accordingly if they are changed. Most of these selectors have been
 declared as constants at the top of the injected script.
 
-One other potential breaking change worth investigating, if the above does not resolve 
-compatibility issues, is that level 3 sub-items declared in the `docusaurus.config.js` file
-are not being published as a String to the `items` attribute of the level 2 links in the
+Another potential breaking change worth investigating, if the above does not resolve 
+compatibility issues, is that level 3 sub-items (declared in the `docusaurus.config.js` file)
+might have stopped being published to the `items` attribute of the level 2 links in the 
 generated HTML. The plugin's mutation process depends on accessing sub-items from this
 attribute. If this is the issue you are facing, a pretty hefty rewrite of the plugin will
-be needed which accessing sub-items directly from the `siteConfig` variable before script
-injection (i.e. it will have to be handled in the plugin and outside of the injected JQuery
-script).
+be needed which accesses sub-items directly from the `siteConfig` variable before script
+injection (i.e. it will have to be handled inside the plugin and outside of the injected 
+JQuery script).
 
 ## Usage
 
