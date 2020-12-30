@@ -31,7 +31,7 @@ module.exports = {
 - **@docusaurus/core**: 2.0.0-alpha.70
 - **@docusaurus/preset-classic**: 2.0.0-alpha.70
 
-This plugin was written for, and verified to with, the above-mentioned version of Docusaurus. 
+This plugin was written for, and verified to work with, the above-mentioned version of Docusaurus. 
 Compatibility with future releases of Docusaurus is not guaranteed due to the nature of the
 implementation. 
 
