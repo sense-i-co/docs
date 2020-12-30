@@ -1,88 +1,12 @@
 /**
- * The NavigationMutator plugin enables a third level of navigation in Docusaurus (on top of the built-in support for two levels).
+ * navigation-level-3 Plugin
  * 
- * INSTALLATION
- * ------------
- * To install the plugin, simply import this file in the docusaurus.config.js file as follows (changing the path if necessary):
+ * The navigation-level-3 plugin enables a third level of navigation in Docusaurus (on top of 
+ * the built-in support for two levels). Please see the associated README.md for installation,
+ * compatibility and usage instructions.
  * 
- * module.exports = {
- *   ...
- *   plugins: [
- *     require.resolve('./plugins/navigation-level-3')
- *   ],
- *   ...
- * };
- * 
- * USAGE
- * -----
- * To use the plugin, add your level 1 and 2 navigation items as usual in the docusaurus.config.js file. For level 3 navigation
- * items, add an 'items' array to your level 2 parent item consisting of pairs of strings representing each item's title and
- * link respectively. After this array, remember to add '.join("|")' to concatenate this array into a single string.
- * 
- * Note: It is optional for level 1 and 2 navigation items to have a link (i.e. 'to' attribute) but it is required for level 3
- * items. In other words, your level 3 items must represent actual pages that can be navigated to, whereas level 1 and 2 items
- * can either represent actual pages or just categories (for sub-items) visible in the navigation bar. If a level 1 or 2 item
- * has no sub-items (e.g. 'Category 2' in the example below), then it must have a link (i.e. only leaf nodes must have links).
- * 
- * EXAMPLE
- * -------
- * This example will define a 3 level navigation system with the following structure:
- * 
- * Example (Level 1)  <-- no link
- * ├── Category 1 (Level 2)  <-- no link
- * │   └── Item 1A (Level 3)
- * │   └── Item 1B (Level 3)
- * │   └── Item 1C (Level 3)
- * ├── Category 2 (Level 2)  <-- link
- * └── Category 3 (Level 2)  <-- link
- *     └── Item 3A (Level 3)
- *     └── Item 3B (Level 3)
- * 
- * The code for this structure would be in the docusaurus.config.js file as follows:
- * 
- * module.exports = {
- *   ...
- *   themeConfig: {
- *     navbar: {
- *       ...
- *       items: [
- *         {
- *           activeBasePath: 'example',
- *           label: 'Example (Level 1)',
- *           position: 'left',
- *           items: [
- *             {
- *               activeBasePath: 'example/category1',
- *               label: 'Category 1 (Level 2)',
- *               items: [
- *                 'Item 1A (Level 3)', '/example/category1/item1a',
- *                 'Item 1B (Level 3)', '/example/category1/item1b',
- *                 'Item 1C (Level 3)', '/example/category1/item1c'
- *               ].join("|")
- *             },
- *             {
- *               to: 'example/category2/',
- *               activeBasePath: 'example/category2',
- *               label: 'Category 2 (Level 2)',
- *             },
- *             {
- *               to: 'example/category3/',
- *               activeBasePath: 'example/category3',
- *               label: 'Category 3 (Level 2)',
- *               items: [
- *                 'Item 3A (Level 3)', '/example/category3/item3a',
- *                 'Item 3B (Level 3)', '/example/category3/item3a'
- *               ].join("|")
- *             }
- *           ]
- *         },
- *       ],
- *     },
- *     ...
- *   },
- *   ...
- * };
- * 
+ * Author: Scott Hallauer
+ * Date: 30/12/2020
  */
 
 module.exports = function (context) {
