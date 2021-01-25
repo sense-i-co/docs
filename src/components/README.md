@@ -89,12 +89,13 @@ const heading = <h1>Providing <Highlight color="red">Systems For Success</Highli
 ### Description
 
 The `ImageDeck` component is used to display a rotating slideshow of images.
-The aspect ratio of the slideshow container conforms to the size of the
-first image in the src list (and remains the same as you rotate between
-images). Multiple UI options are available, including navigation buttons 
-and position indicator dots. Furthermore, an automatic advance timer can be 
-used to move on to the next image after a specific timeout interval (without 
-user interaction).
+Each image in the slideshow can optionally have an associated link which
+directs the user to a specific URL when the slide is clicked. The aspect 
+ratio of the slideshow container conforms to the size of the first image in 
+the src list (and remains the same as you rotate between images). Multiple 
+UI options are available, including navigation buttons and position indicator 
+dots. Furthermore, an automatic advance timer can be used to move on to the 
+next image after a specific timeout interval (without user interaction).
 
 ### Import Code
 
@@ -108,8 +109,15 @@ import ImageDeck from '../components/ImageDeck';
 
 |  Name   | Type   | Required | Default | Description |
 | ------- | ------ | -------- | ------- | ----------- |
-| `src` | [String] | Yes | None | Array of paths to the images used in this slideshow. |
+| `images` | [Image] | Yes | None | Array of images used in this slideshow. |
 | `options` | Options | No | See Below | Various customisable options for the slideshow interface. |
+
+#### Image
+
+|  Name   | Type   | Required | Default | Description |
+| ------- | ------ | -------- | ------- | ------------ |
+| `src` | Boolean | Yes | None | The path to the image for this slide in the ImageDeck. |
+| `link` | Boolean | No | "" | The URL for the clickable link associated with this slide. |
 
 #### Options
 
@@ -117,7 +125,7 @@ import ImageDeck from '../components/ImageDeck';
 | ------- | ------ | -------- | ------- | ------------ |
 | `buttons` | Boolean | No | true | Whether or not to display the next and previous buttons. |
 | `dots` | Boolean | No | true | Whether or not to display the position indicator dots. |
-| `timer` | Boolean | No | true | Whether or not to use a timer to automatically advance to the next image |
+| `timer` | Boolean | No | true | Whether or not to use a timer to automatically advance to the next image. |
 | `interval` | Float | No | 5 | The timeout interval (in seconds) to wait before advancing to the next image. |
 
 ### Usage Example
@@ -126,10 +134,10 @@ import ImageDeck from '../components/ImageDeck';
 // Example 1
 const content = 
     <ImageDeck 
-        src={[
-            "img/pages/about-systems.png",
-            "img/undraw_researching_22gp.svg",
-            "img/undraw_dev_focus_b9xo.svg"
+        images={[
+            {src: "img/pages/about-systems.png"},
+            {src: "img/undraw_researching_22gp.svg"},
+            {src: "img/undraw_dev_focus_b9xo.svg"}
         ]}
     />;
     
@@ -137,9 +145,17 @@ const content =
 const content = 
     <ImageDeck 
         src={[
-            "img/pages/about-systems.png",
-            "img/undraw_researching_22gp.svg",
-            "img/undraw_dev_focus_b9xo.svg"
+            {
+                src: "img/pages/about-systems.png",
+                link: "/about"
+            },
+            {
+                src: "img/undraw_researching_22gp.svg"
+            },
+            {
+                src: "img/undraw_dev_focus_b9xo.svg",
+                link: "/docs/"
+            }
         ]}
         options={{
             buttons: false,
