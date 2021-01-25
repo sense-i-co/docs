@@ -116,8 +116,8 @@ import ImageDeck from '../components/ImageDeck';
 
 |  Name   | Type   | Required | Default | Description |
 | ------- | ------ | -------- | ------- | ------------ |
-| `src` | Boolean | Yes | None | The path to the image for this slide in the ImageDeck. |
-| `link` | Boolean | No | "" | The URL for the clickable link associated with this slide. |
+| `src` | String | Yes | None | The path to the image for this slide in the ImageDeck. |
+| `link` | String | No | "" | The URL for the clickable link associated with this slide. |
 
 #### Options
 
