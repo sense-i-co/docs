@@ -31,7 +31,7 @@ const sections = [
           of;
         </p>
         <ImageMap 
-          src="img/pages/about-systems.png"
+          src="/img/pages/about-systems.png"
           areas={[
             {
               link: "/",
@@ -74,13 +74,21 @@ const sections = [
     content: (
       <>
         <p>Below is an example of an embedded ImageDeck component.</p>
-        <ImageDeck
-          src={[
-            "img/pages/about-systems.png",
-            "img/undraw_researching_22gp.svg",
-            "img/undraw_dev_focus_b9xo.svg"
-          ]}
-          />
+          <ImageDeck
+            images={[
+              {
+                src: "/img/pages/about-systems.png",
+                link: "/"
+              },
+              {
+                src: "/img/undraw_researching_22gp.svg"
+              },
+              {
+                src: "/img/undraw_dev_focus_b9xo.svg",
+                link: "/docs/"
+              }
+            ]}
+            />
       </>
     )
   },
