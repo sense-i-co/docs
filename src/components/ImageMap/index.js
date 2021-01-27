@@ -58,11 +58,15 @@ class ImageMap extends React.Component {
     }
   }
 
+  componentDidMount() {
+    this.init();
+  }
+
   render() {
     return (
       <>
         <ReactElementResize onResize={() => this.resize()}/>
-        <img ref={this.imgRef} onLoad={() => this.init()} src={this.src} useMap={"#" + this.mapID}/>
+        <img ref={this.imgRef} src={this.src} useMap={"#" + this.mapID}/>
         <map name={this.mapID} ref={this.mapRef}>
           {this.areas.map((props, idx) => (
             <Area

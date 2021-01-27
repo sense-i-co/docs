@@ -55,7 +55,6 @@ class ImageDeck extends React.Component {
   }
 
   calcHeight() {
-    if(this.aspectRatio == null) this.init(); // if initialisation has not completed, first run that
     return this.ref.current.offsetWidth * this.aspectRatio; // calculate height based on aspect ratio
   }
 
@@ -90,7 +89,17 @@ class ImageDeck extends React.Component {
     }
   }
 
+  componentDidMount() {
+    console.log("Mounted");
+    this.init();
+  }
+
+  componentDidUpdate() {
+    console.log("Updated");
+  }
+
   componentWillUnmount() {
+    console.log("Unmounting");
     this.stopTimer(); // we must stop any active timer when the component is about to be destroyed (e.g. user switches page)
   }
 
@@ -98,7 +107,7 @@ class ImageDeck extends React.Component {
     return (
       <>
         <ReactElementResize onResize={() => this.resize()}/>
-        <div ref={this.ref} onLoad={() => this.init()} className="component-imagedeck" style={{height: this.state.height}}>
+        <div ref={this.ref} className="component-imagedeck" style={{height: this.state.height}}>
           <div className={clsx("prev-button", (this.options.buttons ? "" : "hide"))} onClick={() => this.change("prev")}>&#8249;</div>
           <div className={clsx("next-button", (this.options.buttons ? "" : "hide"))} onClick={() => this.change("next")}>&#8250;</div>
           <div className="image-container" onClick={() => this.change("next")}>
