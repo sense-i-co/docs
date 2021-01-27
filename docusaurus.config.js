@@ -16,6 +16,12 @@ module.exports = {
       },
       items: [
         {
+          to: 'systems',
+          activeBasePath: 'systems',
+          label: 'Systems',
+          position: 'left',
+        },
+        {
           to: 'docs/',
           activeBasePath: 'docs',
           label: 'Documentation',
