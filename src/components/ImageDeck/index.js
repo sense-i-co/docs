@@ -28,8 +28,7 @@ class ImageDeck extends React.Component {
 
   constructor(props) {
     super(props);
-    const random = Math.floor((Math.random() * 10000) + 1);
-    this.id = ["imagedeck", random].join("-"); // add a random identifier to avoid conflicts when multiple ImageDeck components are on the same page
+    this.ref = React.createRef(); // reference to the component's HTML element, used for accessing element dimensions
     this.images = props.images;
     this.options = {
       buttons: (props.options && props.options.buttons != null ? props.options.buttons : true),
@@ -57,7 +56,7 @@ class ImageDeck extends React.Component {
 
   calcHeight() {
     if (this.aspectRatio != null) { // if initialisation has completed, calculate height based on aspect ratio
-      return document.getElementById(this.id).offsetWidth * this.aspectRatio;
+      return this.ref.current.offsetWidth * this.aspectRatio;
     }
     return "auto";
   }
@@ -101,7 +100,7 @@ class ImageDeck extends React.Component {
     return (
       <>
         <ReactElementResize onResize={() => this.resize()}/>
-        <div id={this.id} onLoad={() => this.init()} className="component-imagedeck" style={{height: this.state.height}}>
+        <div ref={this.ref} onLoad={() => this.init()} className="component-imagedeck" style={{height: this.state.height}}>
           <div className={clsx("prev-button", (this.options.buttons ? "" : "hide"))} onClick={() => this.change("prev")}>&#8249;</div>
           <div className={clsx("next-button", (this.options.buttons ? "" : "hide"))} onClick={() => this.change("next")}>&#8250;</div>
           <div className="image-container" onClick={() => this.change("next")}>

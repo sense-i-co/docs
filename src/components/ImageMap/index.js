@@ -28,12 +28,12 @@ class ImageMap extends React.Component {
 
   constructor(props) {
     super(props);
+    this.imgRef = React.createRef(); // reference to the component's image HTML element, used for accessing element dimensions
     const filename = props.src.split("/").slice(-1)[0]; // use the image file name as the base for both the image and map IDs
     const random = Math.floor((Math.random() * 10000) + 1); // add a random identifier to avoid conflicts when the same image is used for two maps on the same page
+    this.mapID = [filename, random, "map"].join("-");
     this.src = props.src;
     this.areas = props.areas;
-    this.imgID = [filename, random, "img"].join("-");
-    this.mapID = [filename, random, "map"].join("-");
     this.naturalWidth = null;
     this.state = {displayRatio: 1}; // initialise the display ratio (i.e. displayed image width / natural image width) to 1
   }
@@ -42,7 +42,7 @@ class ImageMap extends React.Component {
     if(!this.naturalWidth) { // only run init if we have not already calculated the natural image width
       var component = this;
       var naturalImg = new Image(); // create an image object to load the original image
-      var displayImg = document.getElementById(this.imgID);
+      var displayImg = this.imgRef.current;
       naturalImg.onload = function() { // when this image loads, the width represents the actual size of the image
         component.naturalWidth = naturalImg.width;
         component.setState({displayRatio: displayImg.width / naturalImg.width}); // updating state triggers re-render
@@ -53,7 +53,7 @@ class ImageMap extends React.Component {
 
   resize() {
     if (this.naturalWidth) {
-      var displayImg = document.getElementById(this.imgID);
+      var displayImg = this.imgRef.current;
       this.setState({displayRatio: displayImg.width / this.naturalWidth}); // updating state triggers re-render
     }
   }
@@ -62,8 +62,8 @@ class ImageMap extends React.Component {
     return (
       <>
         <ReactElementResize onResize={() => this.resize()}/>
-        <img id={this.imgID} onLoad={() => this.init()} src={this.src} useMap={"#" + this.mapID}/>
-        <map name={this.mapID}>
+        <img ref={this.imgRef} onLoad={() => this.init()} src={this.src} useMap={"#" + this.mapID}/>
+        <map name={this.mapID} ref={this.mapRef}>
           {this.areas.map((props, idx) => (
             <Area
               key={idx}
