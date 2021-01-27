@@ -90,16 +90,10 @@ class ImageDeck extends React.Component {
   }
 
   componentDidMount() {
-    console.log("Mounted");
     this.init();
   }
 
-  componentDidUpdate() {
-    console.log("Updated");
-  }
-
   componentWillUnmount() {
-    console.log("Unmounting");
     this.stopTimer(); // we must stop any active timer when the component is about to be destroyed (e.g. user switches page)
   }
 
