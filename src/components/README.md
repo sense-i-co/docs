@@ -144,7 +144,7 @@ const content =
 // Example 2
 const content = 
     <ImageDeck 
-        src={[
+        images={[
             {
                 src: "/img/pages/about-systems.png",
                 link: "/about"
