@@ -31,7 +31,7 @@ const sections = [
           of;
         </p>
         <ImageMap 
-          src="img/pages/about-systems.png"
+          src="/img/pages/about-systems.png"
           areas={[
             {
               link: "/",
@@ -77,14 +77,14 @@ const sections = [
           <ImageDeck
             images={[
               {
-                src: "img/pages/about-systems.png",
+                src: "/img/pages/about-systems.png",
                 link: "/"
               },
               {
-                src: "img/undraw_researching_22gp.svg"
+                src: "/img/undraw_researching_22gp.svg"
               },
               {
-                src: "img/undraw_dev_focus_b9xo.svg",
+                src: "/img/undraw_dev_focus_b9xo.svg",
                 link: "/docs/"
               }
             ]}
