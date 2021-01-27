@@ -55,10 +55,8 @@ class ImageDeck extends React.Component {
   }
 
   calcHeight() {
-    if (this.aspectRatio != null) { // if initialisation has completed, calculate height based on aspect ratio
-      return this.ref.current.offsetWidth * this.aspectRatio;
-    }
-    return "auto";
+    if(this.aspectRatio == null) this.init(); // if initialisation has not completed, first run that
+    return this.ref.current.offsetWidth * this.aspectRatio; // calculate height based on aspect ratio
   }
 
   resize() {
@@ -105,7 +103,7 @@ class ImageDeck extends React.Component {
           <div className={clsx("next-button", (this.options.buttons ? "" : "hide"))} onClick={() => this.change("next")}>&#8250;</div>
           <div className="image-container" onClick={() => this.change("next")}>
             {this.images.map((props, idx) => (
-              <a href={props.link}>
+              <a key={idx} href={props.link}>
                 <img key={idx} src={props.src} data-selected={(idx == this.state.selected)}/>
               </a>
             ))}
