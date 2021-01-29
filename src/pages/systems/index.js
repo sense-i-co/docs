@@ -1,8 +1,8 @@
 import React from 'react';
-import Template from '../templates/Default';
-import Highlight from '../components/Highlight';
-import ImageDeck from '../components/ImageDeck';
-import ImageMap from '../components/ImageMap';
+import Template from '../../templates/Default';
+import Highlight from '../../components/Highlight';
+import ImageDeck from '../../components/ImageDeck';
+import ImageMap from '../../components/ImageMap';
 import Link from '@docusaurus/Link';
 
 const metadata = {
@@ -17,12 +17,24 @@ const sections = [
         <ImageDeck 
           images={[
             {
-              src: "/img/pages/systems-banner-1.png",
-              link: "/"
+              src: "/img/pages/systems/banner-1.png",
+              //link: "/"
             },
             {
-              src: "/img/pages/systems-banner-2.png",
-              link: "/about"
+              src: "/img/pages/systems/banner-2.png",
+              //link: "/"
+            },
+            {
+              src: "/img/pages/systems/banner-3.png",
+              //link: "/"
+            },
+            {
+              src: "/img/pages/systems/banner-4.png",
+              //link: "/"
+            },
+            {
+              src: "/img/pages/systems/banner-5.png",
+              //link: "/"
             }
           ]}
           options={{
@@ -47,13 +59,48 @@ const sections = [
           and marketing to work as a single team to keep your customers happy and your business competitive.
         </p>
         <ImageMap 
-          src="/img/pages/systems-map.png"
+          src="/img/pages/systems/systems-map.png"
           areas={[
             {
-              link: "/",
+              link: "/systems/product-design",
               boundary: {
                 topLeft: [18, 40],
                 bottomRight: [395, 271]
+              }
+            },
+            {
+              link: "/systems/sales-marketing",
+              boundary: {
+                topLeft: [423, 40],
+                bottomRight: [800, 271]
+              }
+            },
+            {
+              link: "/systems/operations-management",
+              boundary: {
+                topLeft: [828, 40],
+                bottomRight: [1205, 271]
+              }
+            },
+            {
+              link: "/systems/e-commerce",
+              boundary: {
+                topLeft: [1231, 40],
+                bottomRight: [1609, 271]
+              }
+            },
+            {
+              link: "/systems/financial-management",
+              boundary: {
+                topLeft: [1636, 40],
+                bottomRight: [2014, 271]
+              }
+            },
+            {
+              link: "/systems/performance-management",
+              boundary: {
+                topLeft: [2041, 40],
+                bottomRight: [2418, 271]
               }
             }
           ]}
@@ -62,7 +109,7 @@ const sections = [
    )
   },
   {
-    heading: "Product Design & Costing System",
+    heading: (<Link to="/systems/product-design">Product Design & Costing System</Link>),
     content: (
       <>
         <p>
@@ -78,7 +125,7 @@ const sections = [
     )
   },
   {
-    heading: "Sales & Marketing Management System",
+    heading: (<Link to="/systems/sales-marketing">Sales & Marketing System</Link>),
     content: (
       <>
         <p>
@@ -91,7 +138,7 @@ const sections = [
     )
   },
   {
-    heading: "Operations Management System",
+    heading: (<Link to="/systems/operations-management">Operations Management System</Link>),
     content: (
       <>
         <p>
@@ -106,7 +153,17 @@ const sections = [
     )
   },
   {
-    heading: "Financial Management System",
+    heading: (<Link to="/systems/e-commerce">Integrated E-Commerce System</Link>),
+    content: (
+      <>
+        <p>
+          Content Needed.
+        </p>
+      </>
+    )
+  },
+  {
+    heading: (<Link to="/systems/financial-management">Financial Management System</Link>),
     content: (
       <>
         <p>
@@ -120,7 +177,7 @@ const sections = [
     )
   },
   {
-    heading: "Performance Management System",
+    heading: (<Link to="/systems/performance-management">Performance Management System</Link>),
     content: (
       <>
         <p>

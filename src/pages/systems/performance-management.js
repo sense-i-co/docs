@@ -1,12 +1,12 @@
 import React from 'react';
-import Template from '../../../templates/Default';
+import Template from '../../templates/Default';
 
 const metadata = {
-  title: "Category 2"
+  title: "Performance Management System"
 }
 
 const banner = {
-  heading: "Category 2"
+  heading: "Performance Management System"
 }
 
 const sections = [
@@ -20,7 +20,7 @@ const sections = [
   }
 ]
 
-function Category2() {
+function PerformanceManagement() {
   return (
     <Template
       metadata={metadata}
@@ -29,4 +29,4 @@ function Category2() {
   );
 }
 
-export default Category2;
+export default PerformanceManagement;
