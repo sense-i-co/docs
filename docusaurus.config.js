@@ -48,15 +48,26 @@ module.exports = {
           ]
         },
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Documentation',
-          position: 'left',
-        },
-        {
           to: 'about',
           activeBasePath: 'about',
           label: 'About Us',
+          position: 'left',
+          items: [
+            {
+              activeBasePath: 'clients',
+              label: 'Clients',
+              items: [
+                'Pierre Cronje', '/about/clients/pierre-cronje',
+                'Ergoform', '/about/clients/ergoform',
+                'Wunders', '/about/clients/wunders'
+              ].join("|")
+            }
+          ]
+        },
+        {
+          to: 'docs/',
+          activeBasePath: 'docs',
+          label: 'Documentation',
           position: 'left',
         },
         /*

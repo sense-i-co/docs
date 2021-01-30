@@ -17,24 +17,22 @@ const sections = [
         <ImageDeck 
           images={[
             {
-              src: "/img/pages/systems/banner-1.png",
-              //link: "/"
+              src: "/img/pages/systems/banner-1.png"
             },
             {
-              src: "/img/pages/systems/banner-2.png",
-              //link: "/"
+              src: "/img/pages/systems/banner-2.png"
             },
             {
               src: "/img/pages/systems/banner-3.png",
-              //link: "/"
+              link: "/about/clients/pierre-cronje"
             },
             {
               src: "/img/pages/systems/banner-4.png",
-              //link: "/"
+              link: "/about/clients/ergoform"
             },
             {
               src: "/img/pages/systems/banner-5.png",
-              //link: "/"
+              link: "/about/clients/wunders"
             }
           ]}
           options={{
