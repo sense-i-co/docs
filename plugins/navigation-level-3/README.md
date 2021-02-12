@@ -12,7 +12,7 @@ explains the differences.
 
 ## Installation
 
-To install the plugin, simply import this file in the `docusaurus.config.js` file as follows 
+To install the plugin, simply import the required files in the `docusaurus.config.js` file as follows 
 (changing the path if necessary):
 
 ```javascript
@@ -35,6 +35,7 @@ This plugin was written for, and verified to work with, the above-mentioned vers
 Compatibility with future releases of Docusaurus is not guaranteed due to the nature of the
 implementation. 
 
+### Breaking Changes
 If updating Docusaurus causes this plugin to break, it is most likely because of changes to
 either the HTML structure of Docusaurus's navigation elements or their associated CSS classes
 and styles. The plugin's mutation process depends on a specific set of JQuery selectors 
