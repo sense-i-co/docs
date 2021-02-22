@@ -30,7 +30,7 @@ module.exports = {
               label: 'Sales & Marketing'
             },
             {
-              to: 'systems/operations-management',
+              to: 'systems/operations-management/',
               label: 'Operations Management'
             },
             {

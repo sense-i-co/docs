@@ -74,7 +74,7 @@ const sections = [
               }
             },
             {
-              link: "/systems/operations-management",
+              link: "/systems/operations-management/",
               boundary: {
                 topLeft: [828, 40],
                 bottomRight: [1205, 271]
@@ -136,7 +136,7 @@ const sections = [
     )
   },
   {
-    heading: (<Link to="/systems/operations-management">Operations Management System</Link>),
+    heading: (<Link to="/systems/operations-management/">Operations Management System</Link>),
     content: (
       <>
         <p>
