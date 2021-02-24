@@ -8,6 +8,7 @@ The following components are available to use:
 
 - **[DownloadButton](#DownloadButton)**: Display a download button for the associated file.
 - **[Highlight](#Highlight)**: Set the font colour of the contained text.
+- **[Image](#Image)**: Display a basic image with an optional caption.
 - **[ImageDeck](#ImageDeck)**: Display an interactive slideshow with multiple images.
 - **[ImageMap](#ImageMap)**: Display an image with overlayed clickable links.
 - **[Link](#Link)**: Create a clickable link for the contained text.
@@ -86,6 +87,39 @@ const heading = <h1>Providing <Highlight color="red">Systems For Success</Highli
 
 // Example 3
 const heading = <h1>Providing <Highlight mode="background" color="orange">Systems For Success</Highlight></h1>;
+```
+
+---
+
+## Image
+
+### Description
+
+The `Image` component is used to display a basic image on the page with an 
+optional text caption below it.
+
+### Import Code
+
+```javascript
+import Image from '../components/Image';
+```
+
+### Properties
+
+|  Name   | Type   | Required | Default | Description |
+| ------- | ------ | -------- | ------- | ----------- |
+| `src` | String | Yes | None | The path to the image file. |
+| `caption` | String | No | None | The text caption to display below the image. |
+| `maxWidth` | String | No | None | The maximum display width (in px) for this image. |
+
+### Usage Example
+
+```javascript
+// Example 1
+const content = <Image src="/img/pages/systems/operations-management/report.png"/>;
+
+// Example 2
+const content = <Image src="/img/pages/systems/operations-management/report.png" caption="Example Report"/>;
 ```
 
 ---
@@ -197,6 +231,7 @@ import ImageMap from '../components/ImageMap';
 |  Name   | Type   | Required | Default | Description |
 | ------- | ------ | -------- | ------- | ----------- |
 | `src` | String | Yes | None | The path to the image to be used as the background for this image map. |
+| `caption` | String | No | None | The text caption to display below the image map. |
 | `areas` | [Area] | Yes | None | Array of area definitions, each representing an clickable region of the image. |
 
 #### Area

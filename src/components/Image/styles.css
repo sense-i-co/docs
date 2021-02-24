@@ -1,0 +1,9 @@
+.component-image {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.component-image figcaption {
+  font-style: italic;
+}

@@ -3,6 +3,7 @@ import Template from '../../../templates/Default';
 
 import Link from '@docusaurus/Link';
 import Highlight from '../../../components/Highlight';
+import Image from '../../../components/Image';
 import ImageMap from '../../../components/ImageMap';
 
 const metadata = {
@@ -65,7 +66,7 @@ const sections = [
           used. This is essential if you want to eliminate recapturing information, reduce mistakes and overhead 
           costs and speed up order processing and be competitive in the market, which is essential for success.
         </p>
-        <img src="/img/pages/systems/operations-management/report.png"/>
+        <Image src="/img/pages/systems/operations-management/report.png"/>
         <p>
           Each of the modules in the Sense-I Operations Management System can be implemented and customized to suit 
           the exact needs of your business. Modules can be implemented separately to focus on specific business issues 

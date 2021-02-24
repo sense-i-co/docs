@@ -11,6 +11,7 @@
  * 
  * Properties (? = optional, * = required):
  * - src: String (*)                      = The path to the image to be used as the background for this image map
+ * - caption: String (?)                  = The text caption to display below the image map (default: none)
  * - areas: Array[Object] (*)
  *   - link: String (*)                   = The URL for the clickable link associated with this area
  *   - boundary: Object (*)
@@ -23,6 +24,7 @@
 
 import React from 'react';
 import ReactElementResize from 'react-element-resize';
+import "./styles.css";
 
 class ImageMap extends React.Component {
 
@@ -33,6 +35,7 @@ class ImageMap extends React.Component {
     const random = Math.floor((Math.random() * 10000) + 1); // add a random identifier to avoid conflicts when the same image is used for two maps on the same page
     this.mapID = [filename, random, "map"].join("-");
     this.src = props.src;
+    this.caption = props.caption;
     this.areas = props.areas;
     this.naturalWidth = null;
     this.state = {displayRatio: 1}; // initialise the display ratio (i.e. displayed image width / natural image width) to 1
@@ -64,7 +67,7 @@ class ImageMap extends React.Component {
 
   render() {
     return (
-      <>
+      <figure className="component-imagemap">
         <ReactElementResize onResize={() => this.resize()}/>
         <img ref={this.imgRef} src={this.src} useMap={"#" + this.mapID}/>
         <map name={this.mapID} ref={this.mapRef}>
@@ -77,7 +80,8 @@ class ImageMap extends React.Component {
             />
           ))}
         </map>
-      </>
+        <figcaption>{this.caption}</figcaption>
+      </figure>
     );
   }
 
