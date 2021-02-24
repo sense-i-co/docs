@@ -60,7 +60,7 @@ const sections = [
           src="/img/pages/systems/systems-map.png"
           areas={[
             {
-              link: "/systems/product-design",
+              link: "/systems/product-design/",
               boundary: {
                 topLeft: [18, 40],
                 bottomRight: [395, 271]
@@ -107,7 +107,7 @@ const sections = [
    )
   },
   {
-    heading: (<Link to="/systems/product-design">Product Design & Costing System</Link>),
+    heading: (<Link to="/systems/product-design/">Product Design & Costing System</Link>),
     content: (
       <>
         <p>

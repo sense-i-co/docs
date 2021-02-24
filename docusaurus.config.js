@@ -22,7 +22,7 @@ module.exports = {
           position: 'left',
           items: [
             {
-              to: 'systems/product-design',
+              to: 'systems/product-design/',
               label: 'Product Design & Costing'
             },
             {
