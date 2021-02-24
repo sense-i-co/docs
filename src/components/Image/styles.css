@@ -4,6 +4,10 @@
   margin: 1em 0;
 }
 
+.component-image img {
+  width: 100%;
+}
+
 .component-image figcaption {
   font-style: italic;
 }
