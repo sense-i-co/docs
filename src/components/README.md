@@ -56,9 +56,11 @@ const content = <DownloadButton title="Sense-i Installer" link="https://elfworks
 
 ### Description
 
-The `Highlight` component is used to style the contained text in a custom colour. This 
-defaults to a yellow colour (defined in styles.css), but can be customised 
-by passing the desired color code as a property when calling the component.
+The `Highlight` component is used to style the contained text in a custom colour. The 
+highlighting can be achieved in one of two modes: (1) changing the font colour ("text" 
+mode), and (2) changing the background colour of the line ("background" mode).
+The highlight colour defaults to a yellow colour (defined in styles.css), but can be 
+customised by passing the desired color code as a property when calling the component.
 
 ### Import Code
 
@@ -70,7 +72,8 @@ import Highlight from '../components/Highlight';
 
 |  Name   | Type   | Required | Default | Description |
 | ------- | ------ | -------- | ------- | ----------- |
-| `color` | String | No | "#f7b902" | The name or code of the font colour to use for the contained text. |
+| `mode` | String | No | "text" | The highlighting mode, either "text" or "background". |
+| `color` | String | No | "#f7b902" | The name or code of the colour to use for highlighting. |
 
 ### Usage Example
 
@@ -80,6 +83,9 @@ const heading = <h1>Providing <Highlight>Systems For Success</Highlight></h1>;
 
 // Example 2
 const heading = <h1>Providing <Highlight color="red">Systems For Success</Highlight></h1>;
+
+// Example 3
+const heading = <h1>Providing <Highlight mode="background" color="orange">Systems For Success</Highlight></h1>;
 ```
 
 ---

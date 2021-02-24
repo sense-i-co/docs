@@ -4,7 +4,6 @@ import Template from '../../../templates/Default';
 import Link from '@docusaurus/Link';
 import Highlight from '../../../components/Highlight';
 import ImageMap from '../../../components/ImageMap';
-import YouTube from '../../../components/YouTube';
 
 const metadata = {
   title: "Operations Management System",
