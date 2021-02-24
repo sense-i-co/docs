@@ -232,6 +232,7 @@ import ImageMap from '../components/ImageMap';
 | ------- | ------ | -------- | ------- | ----------- |
 | `src` | String | Yes | None | The path to the image to be used as the background for this image map. |
 | `caption` | String | No | None | The text caption to display below the image map. |
+| `maxWidth` | String | No | None | The maximum display width (in px) for this image map. |
 | `areas` | [Area] | Yes | None | Array of area definitions, each representing an clickable region of the image. |
 
 #### Area

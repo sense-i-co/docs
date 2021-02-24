@@ -38,7 +38,7 @@ module.exports = {
               label: 'Integrated E-Commerce'
             },
             {
-              to: 'systems/financial-management',
+              to: 'systems/financial-management/',
               label: 'Financial Management'
             },
             {

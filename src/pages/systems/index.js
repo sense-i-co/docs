@@ -88,7 +88,7 @@ const sections = [
               }
             },
             {
-              link: "/systems/financial-management",
+              link: "/systems/financial-management/",
               boundary: {
                 topLeft: [1636, 40],
                 bottomRight: [2014, 271]
@@ -161,7 +161,7 @@ const sections = [
     )
   },
   {
-    heading: (<Link to="/systems/financial-management">Financial Management System</Link>),
+    heading: (<Link to="/systems/financial-management/">Financial Management System</Link>),
     content: (
       <>
         <p>

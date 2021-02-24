@@ -12,6 +12,7 @@
  * Properties (? = optional, * = required):
  * - src: String (*)                      = The path to the image to be used as the background for this image map
  * - caption: String (?)                  = The text caption to display below the image map (default: none)
+ * - maxWidth: String (?)                 = The maximum display width (in px) for this image (default: none)
  * - areas: Array[Object] (*)
  *   - link: String (*)                   = The URL for the clickable link associated with this area
  *   - boundary: Object (*)
@@ -36,6 +37,7 @@ class ImageMap extends React.Component {
     this.mapID = [filename, random, "map"].join("-");
     this.src = props.src;
     this.caption = props.caption;
+    this.maxWidth = props.maxWidth;
     this.areas = props.areas;
     this.naturalWidth = null;
     this.state = {displayRatio: 1}; // initialise the display ratio (i.e. displayed image width / natural image width) to 1
@@ -69,7 +71,7 @@ class ImageMap extends React.Component {
     return (
       <figure className="component-imagemap">
         <ReactElementResize onResize={() => this.resize()}/>
-        <img ref={this.imgRef} src={this.src} useMap={"#" + this.mapID}/>
+        <img ref={this.imgRef} src={this.src} useMap={"#" + this.mapID} style={this.maxWidth && {maxWidth: this.maxWidth}}/>
         <map name={this.mapID} ref={this.mapRef}>
           {this.areas.map((props, idx) => (
             <Area

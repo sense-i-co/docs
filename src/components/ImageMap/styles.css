@@ -4,6 +4,10 @@
   margin: 1em 0;
 }
 
+.component-imagemap img {
+  width: 100%;
+}
+
 .component-imagemap figcaption {
   font-style: italic;
 }
