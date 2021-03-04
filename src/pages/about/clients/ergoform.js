@@ -2,11 +2,11 @@ import React from 'react';
 import Template from '../../../templates/Default';
 
 const metadata = {
-  title: "Category 3"
+  title: "Clients - Ergoform"
 }
 
 const banner = {
-  heading: "Category 3"
+  heading: "Ergoform"
 }
 
 const sections = [
@@ -20,7 +20,7 @@ const sections = [
   }
 ]
 
-function Category3() {
+function ClientErgoform() {
   return (
     <Template
       metadata={metadata}
@@ -29,4 +29,4 @@ function Category3() {
   );
 }
 
-export default Category3;
+export default ClientErgoform;

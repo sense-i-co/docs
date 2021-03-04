@@ -8,6 +8,7 @@ The following components are available to use:
 
 - **[DownloadButton](#DownloadButton)**: Display a download button for the associated file.
 - **[Highlight](#Highlight)**: Set the font colour of the contained text.
+- **[Image](#Image)**: Display a basic image with an optional caption.
 - **[ImageDeck](#ImageDeck)**: Display an interactive slideshow with multiple images.
 - **[ImageMap](#ImageMap)**: Display an image with overlayed clickable links.
 - **[Link](#Link)**: Create a clickable link for the contained text.
@@ -56,9 +57,11 @@ const content = <DownloadButton title="Sense-i Installer" link="https://elfworks
 
 ### Description
 
-The `Highlight` component is used to style the contained text in a custom colour. This 
-defaults to a yellow colour (defined in styles.css), but can be customised 
-by passing the desired color code as a property when calling the component.
+The `Highlight` component is used to style the contained text in a custom colour. The 
+highlighting can be achieved in one of two modes: (1) changing the font colour ("text" 
+mode), and (2) changing the background colour of the line ("background" mode).
+The highlight colour defaults to a yellow colour (defined in styles.css), but can be 
+customised by passing the desired color code as a property when calling the component.
 
 ### Import Code
 
@@ -70,7 +73,8 @@ import Highlight from '../components/Highlight';
 
 |  Name   | Type   | Required | Default | Description |
 | ------- | ------ | -------- | ------- | ----------- |
-| `color` | String | No | "#f7b902" | The name or code of the font colour to use for the contained text. |
+| `mode` | String | No | "text" | The highlighting mode, either "text" or "background". |
+| `color` | String | No | "#f7b902" | The name or code of the colour to use for highlighting. |
 
 ### Usage Example
 
@@ -80,6 +84,42 @@ const heading = <h1>Providing <Highlight>Systems For Success</Highlight></h1>;
 
 // Example 2
 const heading = <h1>Providing <Highlight color="red">Systems For Success</Highlight></h1>;
+
+// Example 3
+const heading = <h1>Providing <Highlight mode="background" color="orange">Systems For Success</Highlight></h1>;
+```
+
+---
+
+## Image
+
+### Description
+
+The `Image` component is used to display a basic image on the page with an 
+optional text caption below it.
+
+### Import Code
+
+```javascript
+import Image from '../components/Image';
+```
+
+### Properties
+
+|  Name   | Type   | Required | Default | Description |
+| ------- | ------ | -------- | ------- | ----------- |
+| `src` | String | Yes | None | The path to the image file. |
+| `caption` | String | No | None | The text caption to display below the image. |
+| `maxWidth` | String | No | None | The maximum display width (in px) for this image. |
+
+### Usage Example
+
+```javascript
+// Example 1
+const content = <Image src="/img/pages/systems/operations-management/report.png"/>;
+
+// Example 2
+const content = <Image src="/img/pages/systems/operations-management/report.png" caption="Example Report"/>;
 ```
 
 ---
@@ -191,6 +231,8 @@ import ImageMap from '../components/ImageMap';
 |  Name   | Type   | Required | Default | Description |
 | ------- | ------ | -------- | ------- | ----------- |
 | `src` | String | Yes | None | The path to the image to be used as the background for this image map. |
+| `caption` | String | No | None | The text caption to display below the image map. |
+| `maxWidth` | String | No | None | The maximum display width (in px) for this image map. |
 | `areas` | [Area] | Yes | None | Array of area definitions, each representing an clickable region of the image. |
 
 #### Area

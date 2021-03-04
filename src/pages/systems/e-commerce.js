@@ -1,12 +1,12 @@
 import React from 'react';
-import Template from '../../../templates/Default';
+import Template from '../../templates/Default';
 
 const metadata = {
-  title: "Item 3B"
+  title: "Integrated E-Commerce System"
 }
 
 const banner = {
-  heading: "Item 3B"
+  heading: "Integrated E-Commerce System"
 }
 
 const sections = [
@@ -20,7 +20,7 @@ const sections = [
   }
 ]
 
-function Item3B() {
+function ECommerce() {
   return (
     <Template
       metadata={metadata}
@@ -29,4 +29,4 @@ function Item3B() {
   );
 }
 
-export default Item3B;
+export default ECommerce;

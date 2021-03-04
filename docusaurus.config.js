@@ -16,38 +16,34 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Documentation',
-          position: 'left',
-        },
-        {
-          activeBasePath: 'example',
-          label: 'Example',
+          to: 'systems/',
+          activeBasePath: 'systems',
+          label: 'Systems',
           position: 'left',
           items: [
             {
-              activeBasePath: 'example/category1',
-              label: 'Category 1',
-              items: [
-                'Item 1A', '/example/category1/item1a',
-                'Item 1B', '/example/category1/item1b',
-                'Item 1C', '/example/category1/item1c'
-              ].join("|")
+              to: 'systems/product-design/',
+              label: 'Product Design & Costing'
             },
             {
-              to: 'example/category2/',
-              activeBasePath: 'example/category2',
-              label: 'Category 2',
+              to: 'systems/sales-marketing',
+              label: 'Sales & Marketing'
             },
             {
-              to: 'example/category3/',
-              activeBasePath: 'example/category3',
-              label: 'Category 3',
-              items: [
-                'Item 3A', '/example/category3/item3a',
-                'Item 3B', '/example/category3/item3b'
-              ].join("|")
+              to: 'systems/operations-management/',
+              label: 'Operations Management'
+            },
+            {
+              to: 'systems/e-commerce',
+              label: 'Integrated E-Commerce'
+            },
+            {
+              to: 'systems/financial-management/',
+              label: 'Financial Management'
+            },
+            {
+              to: 'systems/performance-management',
+              label: 'Performance Management'
             }
           ]
         },
@@ -55,6 +51,23 @@ module.exports = {
           to: 'about',
           activeBasePath: 'about',
           label: 'About Us',
+          position: 'left',
+          items: [
+            {
+              activeBasePath: 'clients',
+              label: 'Clients',
+              items: [
+                'Pierre Cronje', '/about/clients/pierre-cronje',
+                'Ergoform', '/about/clients/ergoform',
+                'Wunders', '/about/clients/wunders'
+              ].join("|")
+            }
+          ]
+        },
+        {
+          to: 'docs/',
+          activeBasePath: 'docs',
+          label: 'Documentation',
           position: 'left',
         },
         /*

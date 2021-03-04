@@ -1,12 +1,12 @@
 import React from 'react';
-import Template from '../../../templates/Default';
+import Template from '../../templates/Default';
 
 const metadata = {
-  title: "Item 1A"
+  title: "Sales & Marketing System"
 }
 
 const banner = {
-  heading: "Item 1A"
+  heading: "Sales & Marketing System"
 }
 
 const sections = [
@@ -20,7 +20,7 @@ const sections = [
   }
 ]
 
-function Item1A() {
+function SalesMarketing() {
   return (
     <Template
       metadata={metadata}
@@ -29,4 +29,4 @@ function Item1A() {
   );
 }
 
-export default Item1A;
+export default SalesMarketing;

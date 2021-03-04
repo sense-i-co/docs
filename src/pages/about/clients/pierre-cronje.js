@@ -1,12 +1,12 @@
 import React from 'react';
-import Template from '../../templates/Default';
+import Template from '../../../templates/Default';
 
 const metadata = {
-  title: "Example"
+  title: "Clients - Pierre Cronje"
 }
 
 const banner = {
-  heading: "Example"
+  heading: "Pierre Cronje"
 }
 
 const sections = [
@@ -20,7 +20,7 @@ const sections = [
   }
 ]
 
-function ExampleIndex() {
+function ClientPierreCronje() {
   return (
     <Template
       metadata={metadata}
@@ -29,4 +29,4 @@ function ExampleIndex() {
   );
 }
 
-export default ExampleIndex;
+export default ClientPierreCronje;

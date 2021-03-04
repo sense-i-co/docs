@@ -1,9 +1,9 @@
 import React from 'react';
-import Template from '../templates/Default';
-import Highlight from '../components/Highlight';
-import ImageMap from '../components/ImageMap';
-import ImageDeck from '../components/ImageDeck';
-import DownloadButton from '../components/DownloadButton';
+import Template from '../../templates/Default';
+import Highlight from '../../components/Highlight';
+import ImageMap from '../../components/ImageMap';
+import ImageDeck from '../../components/ImageDeck';
+import DownloadButton from '../../components/DownloadButton';
 import Link from '@docusaurus/Link';
 
 const metadata = {
