@@ -35,7 +35,8 @@ function Home() {
             {src: "/img/pages/index/ergoform-testimonial.png"}
           ]}
           options={{
-            buttons: false
+            buttons: false,
+            maxWidth: "1500px"
           }}
         />
         <ImageMap

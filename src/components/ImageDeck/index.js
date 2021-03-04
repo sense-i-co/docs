@@ -17,6 +17,7 @@
  *   - dots: Boolean (?)                  = Whether or not to display the position indicator dots (default: true)
  *   - timer: Boolean (?)                 = Whether or not to use a timer to automatically advance to the next image (default: true)
  *   - interval: Float (?)                = The timeout interval (in seconds) to wait before advancing to the next image (default: 5)
+ *   - maxWidth: String (?)               = The maximum display width (in px) for all slides (default: none)
  */
 
 import React from 'react';
@@ -35,6 +36,7 @@ class ImageDeck extends React.Component {
       dots: (props.options && props.options.dots != null ? props.options.dots : true),
       timer: (props.options && props.options.timer != null ? props.options.timer : true),
       interval: (props.options && props.options.interval != null ? props.options.interval*1000 : 5000),
+      maxWidth: (props.options && props.options.maxWidth),
     }
     this.aspectRatio = null;
     this.timer = null;
@@ -101,7 +103,7 @@ class ImageDeck extends React.Component {
     return (
       <>
         <ReactElementResize onResize={() => this.resize()}/>
-        <div ref={this.ref} className="component-imagedeck" style={{height: this.state.height}}>
+        <div ref={this.ref} className="component-imagedeck" style={{height: this.state.height, maxWidth: this.options.maxWidth}}>
           <div className={clsx("prev-button", (this.options.buttons ? "" : "hide"))} onClick={() => this.change("prev")}>&#8249;</div>
           <div className={clsx("next-button", (this.options.buttons ? "" : "hide"))} onClick={() => this.change("next")}>&#8250;</div>
           <div className="image-container" onClick={() => this.change("next")}>

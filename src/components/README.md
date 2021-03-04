@@ -167,6 +167,7 @@ import ImageDeck from '../components/ImageDeck';
 | `dots` | Boolean | No | true | Whether or not to display the position indicator dots. |
 | `timer` | Boolean | No | true | Whether or not to use a timer to automatically advance to the next image. |
 | `interval` | Float | No | 5 | The timeout interval (in seconds) to wait before advancing to the next image. |
+| `maxWidth` | String | No | None | The maximum display width (in px) for all slides. |
 
 ### Usage Example
 
