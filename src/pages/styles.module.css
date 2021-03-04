@@ -5,43 +5,73 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 2.5rem 0;
-  text-align: center;
+.heroContainer {
   position: relative;
+  height: 100%;
+  max-height: calc(100vh - 60px);
+  width: 100%;
   overflow: hidden;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
+.heroBanner {
+  min-width: 100%;
   width: 100%;
 }
 
-.titleLogoImage {
-  width: 300px;
-  margin-top: -0.5em;
-  margin-bottom: 1.5rem;
+.heroTitleWrapper {
+  position: absolute;
+  width: 30%;
+  min-width: 400px;
+  top: 100px;
+  left: 60px;
 }
 
-.subtitleText {
-  color: #FFF !important; /* use !important flag to keep text white in dark mode */
+.heroTitle {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  color: #FFF;
+  font-size: 34px;
+  font-weight: bold;
+  background-color: var(--ifm-color-primary);
 }
 
-.featureImage {
-  height: 200px;
-  width: 200px;
+.heroSubtitle {
+  width: 75%;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.headlineWrapper {
+  text-align: center;
+}
+
+.headline {
+  display: inline-block;
+  margin: 50px 0;
+  width: 50%;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 966px) {
+  .heroTitleWrapper {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .heroTitle {
+    margin-bottom: 0;
+  }
+  .heroSubtitle {
+    width: 100%;
+  }
+  .headline {
+    margin: 40px 0;
+    width: 90%;
+    font-size: 30px;
+  }
 }
