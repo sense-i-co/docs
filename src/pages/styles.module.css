@@ -68,10 +68,11 @@
   }
   .heroSubtitle {
     width: 100%;
+    font-weight: 500;
   }
   .headline {
     margin: 40px 0;
     width: 90%;
-    font-size: 30px;
+    font-size: 25px;
   }
 }

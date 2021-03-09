@@ -12,6 +12,7 @@ The following components are available to use:
 - **[ImageDeck](#ImageDeck)**: Display an interactive slideshow with multiple images.
 - **[ImageMap](#ImageMap)**: Display an image with overlayed clickable links.
 - **[Link](#Link)**: Create a clickable link for the contained text.
+- **[SlideDeck](#SlideDeck)**: Display an interactive carousel with multiple slides of text and images.
 - **[YouTube](#YouTube)**: Embed an interactive YouTube video.
 
 **Note**: All relative paths in the below documentation assume that your page resides in 
@@ -325,6 +326,122 @@ import Link from '@docusaurus/Link';
 
 ```javascript
 const content = <p>Chat to a Sense-i Advisor, email us at <Link to="mailto:info@sense-i.co.za">info@sense-i.co.za</Link> or view our systems.</p>;
+```
+
+---
+
+## SlideDeck
+
+### Description
+
+The `SlideDeck` component is used to display a rotating carousel of slides.
+Each slide in the carousel can contain an image (optionally with a title
+and subtitle) and some textual content. The image can be set to be 
+positioned to the right or left of the text. The SlideDeck has both a 
+desktop and mobile layout. For desktop, the image is positioned to the
+side of the text (either right or left). For mobile, the image is always
+positioned above the text.
+
+Multiple UI options are available, including navigation buttons and position 
+indicator dots. Furthermore, an automatic advance timer can be used to move 
+on to the next slide after a specific timeout interval (without user 
+interaction).
+
+### Import Code
+
+```javascript
+import ImageDeck from '../components/SlideDeck';
+```
+
+### Properties
+
+#### ImageDeck
+
+|  Name   | Type   | Required | Default | Description |
+| ------- | ------ | -------- | ------- | ----------- |
+| `slides` | [Slide] | Yes | See Below | Array of slides used in this carousel. |
+| `options` | Options | No | See Below | Various customisable options for the slideshow interface. |
+
+#### Slide
+
+|  Name   | Type   | Required | Default | Description |
+| ------- | ------ | -------- | ------- | ------------ |
+| `image` | Image | Yes | See Below | The image for this slide in the SlideDeck. |
+| `text` | String | Yes | None | The text content to display on the slide. |
+
+#### Image
+
+|  Name   | Type   | Required | Default | Description |
+| ------- | ------ | -------- | ------- | ------------ |
+| `src` | String | Yes | None | The path to the image for this slide in the SlideDeck. |
+| `title` | String | No | "" | The title to display in the caption for the slide's image. |
+| `subtitle` | String | No | "" | The subtitle to display in the caption for the slide's image. |
+| `position` | String | No | "right" | Whether to position the slide's image on the right or left of the text content. |
+
+#### Options
+
+|  Name   | Type   | Required | Default | Description |
+| ------- | ------ | -------- | ------- | ------------ |
+| `buttons` | Boolean | No | true | Whether or not to display the next and previous buttons. |
+| `dots` | Boolean | No | true | Whether or not to display the position indicator dots. |
+| `timer` | Boolean | No | true | Whether or not to use a timer to automatically advance to the next image. |
+| `interval` | Float | No | 5 | The timeout interval (in seconds) to wait before advancing to the next image. |
+| `maxWidth` | String | No | None | The maximum display width (in px) for all slides. |
+
+### Usage Example
+
+```javascript
+const content = 
+    <SlideDeck
+        slides={[
+            {
+                image: {
+                    src: "/img/pages/index/ergoform-portrait.png",
+                    title: "Leon Roodt",
+                    subtitle: "Founder & CEO – Ergoform",
+                    position: "right"
+                },
+                text: (
+                    <>
+                        <p>
+                            His continuous passion and endurance to solve the issues and complexity has been one of the major factors 
+                            that have enabled our business to grow and excel.
+                        </p>
+                        <p>
+                            As a direct result of our developmental relationship we were awarded the National Productivity Award 2014 
+                            in South Africa, across all business and enterprise sectors. Without the input from Mirko and his systems 
+                            this would not have been possible.
+                        </p>
+                    </>
+                )
+            },
+            {
+                image: {
+                    src: "/img/pages/index/company-portrait.png",
+                    title: "John Appleseed",
+                    subtitle: "Founder & CEO – Company",
+                    position: "left"
+                },
+                text: (
+                    <>
+                        <p>
+                            His continuous passion and endurance to solve the issues and complexity has been one of the major factors 
+                            that have enabled our business to grow and excel.
+                        </p>
+                        <p>
+                            As a direct result of our developmental relationship we were awarded the National Productivity Award 2014 
+                            in South Africa, across all business and enterprise sectors. Without the input from Mirko and his systems 
+                            this would not have been possible.
+                        </p>
+                    </>
+                )
+            }
+        ]}
+        options={{
+            buttons: false,
+            maxWidth: "1500px"
+        }}
+    />;
 ```
 
 ---

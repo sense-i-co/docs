@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import ImageMap from "../components/ImageMap";
 import ImageDeck from "../components/ImageDeck";
+import SlideDeck from "../components/SlideDeck";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
@@ -29,10 +30,50 @@ function Home() {
             Over 20 years, leading SME’s have used Sense-i to build successful, well-run, profitable companies
           </div>
         </div>
-        <ImageDeck 
-          images={[
-            {src: "/img/pages/index/ergoform-testimonial.png"},
-            {src: "/img/pages/index/ergoform-testimonial.png"}
+        <SlideDeck
+          slides={[
+            {
+              image: {
+                src: "/img/pages/index/ergoform-portrait.png",
+                title: "Leon Roodt",
+                subtitle: "Founder & CEO – Ergoform",
+                position: "right"
+              },
+              text: (
+                <>
+                  <p>
+                    His continuous passion and endurance to solve the issues and complexity has been one of the major factors 
+                    that have enabled our business to grow and excel.
+                  </p>
+                  <p>
+                    As a direct result of our developmental relationship we were awarded the National Productivity Award 2014 
+                    in South Africa, across all business and enterprise sectors. Without the input from Mirko and his systems 
+                    this would not have been possible.
+                  </p>
+                </>
+              )
+            },
+            {
+              image: {
+                src: "/img/pages/index/ergoform-portrait.png",
+                title: "Leon Roodt",
+                subtitle: "Founder & CEO – Ergoform",
+                position: "left"
+              },
+              text: (
+                <>
+                  <p>
+                    His continuous passion and endurance to solve the issues and complexity has been one of the major factors 
+                    that have enabled our business to grow and excel.
+                  </p>
+                  <p>
+                    As a direct result of our developmental relationship we were awarded the National Productivity Award 2014 
+                    in South Africa, across all business and enterprise sectors. Without the input from Mirko and his systems 
+                    this would not have been possible.
+                  </p>
+                </>
+              )
+            }
           ]}
           options={{
             buttons: false,
