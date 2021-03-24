@@ -26,6 +26,7 @@ const sections = [
         </p>
         <ImageMap 
           src="/img/pages/systems/product-design/modules.png"
+          maxWidth="700px"
           areas={[
             {
               link: "/",

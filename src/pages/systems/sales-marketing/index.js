@@ -1,5 +1,5 @@
 import React from 'react';
-import Template from '../../templates/Default';
+import Template from '../../../templates/Default';
 
 const metadata = {
   title: "Sales & Marketing System"
