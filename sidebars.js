@@ -17,14 +17,14 @@ module.exports = {
 							"SUI-003", 
 							"USS-005"],
 	"Business Processes": [{
-			"Operations Management": ["OPMO-001",
+		"Sales Quote & Order Process": ["SQO-001",
 				{
-					"Sales Quote & Order Entry": ["SQO-001",
-						"SAF-1202",
-						"SAF-441",
+					"Sales Quote & Order Entry": ["SAF-1202",
 						"SAF-502",
 						"SAF-154"]
 				},
+			],		
+		"Operations Management": ["OPMO-001",
 				{
 					"Internal Order Management": ["IOM-000"]
 				},
