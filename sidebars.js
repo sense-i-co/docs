@@ -23,8 +23,62 @@ module.exports = {
 						"SAF-1202",
 						"SAF-441",
 						"SAF-502",
-						"SAF-154",
-						"SAF-1204"]
+						"SAF-154"]
+				},
+				{
+					"Internal Order Management": ["IOM-000"]
+				},
+				{
+					"Replenishment Module": ["REP-001",
+						"REP-002",
+						"REP-003"]
+				},
+				{
+					"Production Planning & Scheduling": ["PPS-000"]
+				},
+				{
+					"Purchases Transaction Stream": ["SAF-720",
+						"SAF-1203",
+						"MAS-009",
+						"MPO-003",
+						"MPO-004",
+						"SAF-149",
+						"MAT-002",
+						"MAT-006",
+						"REP-003"]
+				},
+				{
+					"Material Planning & Purchasing": ["MPP-000"]
+				},
+				{
+					"Material Issuing Control": ["MAT-003",
+						"MAT-004",
+						"MAT-005",
+						"MAT-006",
+						"MAT-007"]
+				},
+				{
+					"Labour Cost Control": ["LCC-000"]
+				},
+				{
+					"Labour Cost - Time & Attendance": ["TAA-001",
+						"TAA-003",
+						"TAA-004",
+						"TAA-005",
+						"TAA-006",
+						"TAA-007",
+						"TAA-009",
+						"TAA-010"]
+				},
+				{
+					"Task Management Module": ["TM-01",
+						"TM-04",
+						"TM-05",
+						"TM-06"]
+				},
+				{
+					"Process Order Complete": ["PMD-001",
+						"FGC-002"]
 				},
 			],
 			"Financial Management": ["FMO-001",
