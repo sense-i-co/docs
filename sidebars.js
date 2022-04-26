@@ -20,8 +20,11 @@ module.exports = {
 		"Sales Quote & Order Process": ["SQO-001",
 				{
 					"Sales Quote & Order Entry": ["SAF-1202",
-						"SAF-502",
-						"SAF-154"]
+						"PRC-008",
+						"SAF-502",						
+						"SAF-154",
+						"DIM-001",						
+						"SAF-710"]
 				},
 			],		
 		"Operations Management": ["OPMO-001",
@@ -133,6 +136,12 @@ module.exports = {
 				},
 			],
 	}],
-    "Additional": ["SAF-1218"], 
+    "Additional Features & Modules": ["SAF-1218",
+	{
+		"Rating & Review System": ["RRS-000",
+			"RRS-001",
+			"RRS-002"]
+	},
+],
 	},
 };
