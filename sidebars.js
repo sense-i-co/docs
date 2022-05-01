@@ -34,10 +34,14 @@ module.exports = {
 				{
 					"Replenishment Module": ["REP-001",
 						"REP-002",
-						"REP-003"]
+						"REP-003",						
+						"MRP-001"]
 				},
 				{
-					"Production Planning & Scheduling": ["PPS-000"]
+					"Production Planning & Scheduling": ["PPS-000",
+					"CAP-001",
+					"CAP-002",						
+					"CAP-005"]
 				},
 				{
 					"Purchases Transaction Stream": ["SAF-720",
