@@ -29,7 +29,9 @@ module.exports = {
 			],		
 		"Operations Management": ["OPMO-001",
 				{
-					"Internal Order Management": ["IOM-000"]
+					"Internal Order Management": ["IOM-000",
+						"INO-001",
+						"INO-002"]
 				},
 				{
 					"Replenishment Module": ["REP-001",
