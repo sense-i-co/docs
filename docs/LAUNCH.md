@@ -306,7 +306,7 @@ Access the **Menu** by selecting the menu icon near the top left corner of the S
 
 When a new version of the ElfWorks Launcher software becomes available, the system will automatically notify you of such.  
 
-The following steps will upgrade the Sense-i Launcher sofware to the latest version;  
+The following steps will upgrade the Sense-i Launcher software to the latest version;  
 
 Access the **Menu** by selecting the menu icon near the top left corner of the Sense-i Launcher application.
 
@@ -320,7 +320,7 @@ Access the **Menu** by selecting the menu icon near the top left corner of the S
 
 2.	Select [ **Software Update** ].  
 
-	The **Sofware Update** screen is displayed.
+	The **Software Update** screen is displayed.
 
 ![](../static/img/docs/LAUNCH/upgrade3.png)  
 
