@@ -196,13 +196,15 @@ Access the **Menu** by selecting the menu icon near the top left corner of the S
 
 The **Menu** options screen slides into display.
 
-Note: To close the Menu options screen, click the **X** button... or click on the underlying screen.  
+:::info  
+To close the Menu options screen, select the **Home** option... or click on the underlying screen.  
+:::  
 
 ----
 
 ### Menu Options
 
-![](../static/img/docs/LAUNCH/image12.png)  
+![](../static/img/docs/LAUNCH/UpgradeM.png)  
 
 The **Home** button will take you back to the initial landing screen.  
 
@@ -224,7 +226,7 @@ The **Exit** button will close the Sense-i Launcher application.
 
 The **Tools** button will open **additional options** on the Menu.
 
-![](../static/img/docs/LAUNCH/image13.png)  
+![](../static/img/docs/LAUNCH/Upgrade1.png)  
 
 ----
 
@@ -300,24 +302,69 @@ Access the **Menu** by selecting the menu icon near the top left corner of the S
 ![](../static/img/docs/LAUNCH/menuIcon.png)  
 
 ----
+### Update Launcher
 
+When a new version of the ElfWorks Launcher software becomes available, the system will automatically notify you of such.  
+
+The following steps will upgrade the Sense-i Launcher sofware to the latest version;  
+
+Access the **Menu** by selecting the menu icon near the top left corner of the Sense-i Launcher application.
+
+![](../static/img/docs/LAUNCH/menuIcon.png)  
+
+
+![](../static/img/docs/LAUNCH/upgrade2.png)  
+
+
+1.	Ensure the **Tools** option is selected.  
+
+2.	Select [ **Software Update** ].  
+
+	The **Sofware Update** screen is displayed.
+
+![](../static/img/docs/LAUNCH/upgrade3.png)  
+
+3.	Click on the [ **Check for updates** ] button.
+
+![](../static/img/docs/LAUNCH/upgrade4.png)  
+
+4.  Click on [ **Upgrade Software** ].
+
+![](../static/img/docs/LAUNCH/upgrade5.png)  
+
+The **Launcher Upgrade** dialogue box is displayed.
+
+5.	Click on the [ **Continue** ] button.  
+
+The system will download the relevant .ZIP file, automatically extract the necessary files and install the latest version of the Launcher.
+
+From the **Home** screen connect to the SEMS application & relevant database.
+
+----
 ### Launch (specific) Application  
 
 The **SEMS toggle button** is set to active by default.  
 
-![](../static/img/docs/LAUNCH/image33.png)  
+![](../static/img/docs/LAUNCH/upgrade8.png)  
 
 1.	When the **SEMS toggle button** is active, clicking on the [ **Connect** ] button 
-(underlying **Home Page**) will launch the SEMS application.  
+_(underlying **Home Page**)_ will launch the SEMS application.  
 
 2.	Click on the [ **Factory Floor** ] toggle button to activate the **Sphere_Mini** application.  
-	Then click on the [ **Connect** ] button (underlying **Home Page**).  
-	
-3.	Click on the [ **Administrator** ] toggle button to activate the **System_Administrator** application.  
-	Then click on the [ **Connect** ] button (underlying **Home Page**).  
+
+![](../static/img/docs/LAUNCH/upgrade9.png)  
+
+Select [ **Yes** ] to set **Factory Floor** _(**Sphere_Mini**)_ as the default application.  
+
+Select [ **No**]  to keep **SEMS** as the default application.  
+
+:::note  
+The default application, **SEMS** or **Sphere_Mini** will now always run when selecting the **Connect** button on the **Home** screen.  
+:::
 
 ----
 
+**This is the end of the _Sense-i Launcher_ procedure.**
 
 
 
