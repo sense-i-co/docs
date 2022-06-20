@@ -22,7 +22,8 @@ module.exports = {
 					"Sales Quote & Order Entry": ["SAF-1202",
 						"PRC-008",
 						"SAF-502",						
-						"SAF-154",
+						"SAF-154",						
+						"DIM-003",
 						"DIM-001",						
 						"SAF-710"]
 				},
@@ -31,7 +32,9 @@ module.exports = {
 				{
 					"Internal Order Management": ["IOM-000",
 						"INO-001",
-						"INO-002"]
+						"INO-002",
+						"SAF-163",
+						"SAF-161"]
 				},
 				{
 					"Replenishment Module": ["REP-001",
@@ -88,6 +91,10 @@ module.exports = {
 				{
 					"Process Order Complete": ["PMD-001",
 						"FGC-002"]
+				},
+				{
+					"Sales Delivery Process": ["DIM-001",
+						"DIM-003"]
 				},
 			],
 			"Financial Management": ["FMO-001",
