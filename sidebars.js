@@ -150,6 +150,7 @@ module.exports = {
 			],
 	}],
     "Additional Features & Modules": ["SAF-1218",
+						"CRT-001",
 	{
 		"Rating & Review System": ["RRS-000",
 			"RRS-001",
