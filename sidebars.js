@@ -14,7 +14,13 @@ module.exports = {
 	"Working with Sense-i Software": ["SUI-001", 
 							"SUI-002", 
 							"USS-004", 
-							"SUI-003", 
+							{
+								"SEMS List Information": ["LST-001",
+									"LST-002",
+									"LST-003",						
+									"LST-004",					
+									"LST-005"]
+							},
 							"USS-005"],
 	"Business Processes": [{
 		"Sales Quote & Order Process": ["SQO-001",
