@@ -7,69 +7,97 @@ slug: /LAUNCH
 
 ## Introduction  
 
+The **Sense-i Launcher** allows you access the **SEMS application** and **connect to the relevant database(s)**.
+
 This **step-by-step guide** will show you how to use the **Sense-i Launcher** application.  
-
-Access the latest version of the [Sense-i Launcher Installation files here.](https://elfworks.co.za/subdomains/sense-i/Install/download.html)  
-
-Once you have linked to the Sense-i Launcher Download site, these are the necessary steps to be followed.
 
 :::note
 The buttons & links displayed on the images in this guide are **NOT ACTIVE** and soley used for **reference purposes**.
-:::
+:::  
 
-The **Sense-i Launcher** allows you access the **SEMS application** and **connect to the relevant database(s)**.
+If you are continuing directly with the process from the previous step, the program will display the Sense-i Launcher home screen.  
 
-Access the **Sense-i Launcher** by clicking on the Sense-i Launcher **desktop shortcut**.
+![](../static/img/docs/LAUNCH/image11.png)  
+
+Alternatively, if you are not continuing directly from the previous step, you will need to open the Sense-i Launcher by clicking on the following shortcut icon on your desktop;  
 
 ![](../static/img/docs/LAUNCH/launchericon1.png)  
 
-The **Sense-i Launcher application** opens.
-
-![](../static/img/docs/LAUNCH/image11.png)  
+## How to Set Up the Connection  
 
 :::note
 There will be no **SEMS connections** available when using the **Sense-i Launcher** for the first time.  
 :::
 
-## Quick Connect  
+1.	To set up a connection, select the connection string information in your welcome email...  
 
-The quickest method to setup initial **SEMS connections** is described below.  
+2.	Then click the right mouse button and choose the **Copy** option.  
 
-:::note
-The necessary Connection Settings must be available to complete the **Load Connection** process.  
+![](../static/img/docs/LAUNCH/image200.png)  
 
-These settings can be obtained from your **Sense-i Systems Administrator** and/or 
-the [Sense-i Help Desk](mailto:help@sense-i.co).  
-
-These settings, in text format, can then be accessed from the **relevant location** on your computer.
-
-**Proceed once this information is available**.  
-:::
-
+3.	Click the [ **Connect** ] button.  
 
 ![](../static/img/docs/LAUNCH/image11a.png)  
 
-1.	Click the [ **Connect** ] button.  
-
-A warning pop-up box appears with;  
+The program will display a pop-up dialog box as follows;  
 
 ![](../static/img/docs/LAUNCH/image17.png)  
 
 2.	Click the [ **Yes** ] button.  
 
 ----  
+### Copy and Paste
 
-## Load Connection  
+1.	Selecting this option will enable you to copy the relevant settings from:
+	- an e-mail message, 
+	- an exsisting .INI file or 
+	- an appropriate text file.
 
-### 
+![](../static/img/docs/LAUNCH/image30.png)  
+
+2.	Click the [ **Paste** ] button.  
+
+----
+
+The **connection settings** now appear in the text box field.
+
+![](../static/img/docs/LAUNCH/image32.png)  
+
+3.  Click the [ **Load** ] button.  
+
+----
+
+Warning pop-up boxes confirming database and connection type appear.  
+
+![](../static/img/docs/LAUNCH/image18.png)
+
+4.  Select [ **Yes** ] to load the desired connection(s).  
+
+----
+
+Once the relevant connection(s) have been loaded an **Information** dialogue box is displayed.  
+
+![](../static/img/docs/LAUNCH/image22.png)  
+
+5.  Click the [ **Ok** ] button.  
+
+----
+
+The **Load Connection** screen is now active again.  
+
+![](../static/img/docs/LAUNCH/image27.png)  
+
+6.  Click on the [ **Home** ] button to return to the main screen.  
+
+----
+
+## Load Connection from File  
 
 The **Load Connection** screen will offer two options;  
 
 ![](../static/img/docs/LAUNCH/image15.png)  
 
-### Open Config file (.INI)  
-
-1.	Selecting this option and then clicking the [ **Load** ] button will open the MS Windows **File Explorer**.
+1.	Selecting the **Open Config file (.INI)** option and then clicking the [ **Load** ] button will open the MS Windows **File Explorer**.
 
 ![](../static/img/docs/LAUNCH/image16.png)  
 
@@ -112,59 +140,6 @@ The **Load Connection** screen is now active again.
 ![](../static/img/docs/LAUNCH/image23.png)  
 
 5.  Click on the [ **Home** ] button to return to the main screen.  
-
-----
-
-### Copy and Paste
-
-1.	Selecting this option will enable you to copy the relevant settings from:
-	- an e-mail message, 
-	- an exsisting .INI file or 
-	- an appropriate text file.
-
-![](../static/img/docs/LAUNCH/image25.png)  
-
-----
-
-2.	Copy the relevant **text** from the **e-mail** / **text file** received.  
-
-3.	Once copied, return to the **Sense-i Launcher** application.  
-
-![](../static/img/docs/LAUNCH/image30.png)  
-
-4.	Click the [ **Paste** ] button.  
-
-----
-
-The **connection settings** now appear in the text box field.
-
-![](../static/img/docs/LAUNCH/image32.png)  
-
-5.  Click the [ **Load** ] button.  
-
-----
-
-Warning pop-up boxes confirming database and connection type appear.  
-
-![](../static/img/docs/LAUNCH/image18.png)
-
-6.  Select [ **Yes** ] to load the desired connection(s).  
-
-----
-
-Once the relevant connection(s) have been loaded an **Information** dialogue box is displayed.  
-
-![](../static/img/docs/LAUNCH/image22.png)  
-
-7.  Click the [ **Ok** ] button.  
-
-----
-
-The **Load Connection** screen is now active again.  
-
-![](../static/img/docs/LAUNCH/image27.png)  
-
-8.  Click on the [ **Home** ] button to return to the main screen.  
 
 ----
 
@@ -364,7 +339,7 @@ The default application, **SEMS** or **Sphere_Mini** will now always run when se
 
 ----
 
-**This is the end of the _Sense-i Launcher_ procedure.**
+SEMS System Administrators should click on this link, **[Sense-i Launcher - Advanced Configuration](INSTCONF)**, for instructions on how to configure specific database connections.
 
 
 

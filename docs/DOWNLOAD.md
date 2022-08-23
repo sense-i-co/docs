@@ -9,21 +9,33 @@ slug: /DOWNLOAD
 
 This **step-by-step guide** will show you **how to download and install** the **Sense-i Launcher** application.  
 
-Once you have linked to the Sense-i Launcher Download site, these are the necessary steps to be followed.
-
 :::note
 The buttons & links displayed on the images in this guide are **NOT ACTIVE** and soley used for **reference purposes**.
 :::
 
+First, download the files from the follwing link...
+
+## Download and Install 
+
+Access the latest version of the [Sense-i Launcher Installation files **here.**](https://elfworks.co.za/subdomains/sense-i/Install/download.html)  
+
+Once you have linked to the download site, perform the steps as outlined below to install the necessary software on your device.
+
 ![](../static/img/docs/LAUNCH/image00.png)  
 
-1.  Select **Download Sense-i Launcher**.  
+1.  Click the **Download Sense-i Launcher** button.  
 
-1.  Once downloaded, run the file **SenseiInstall.exe**.  
+The browser will download the install file and once complete will display some form of confirmation. The exact format will depend on which browser you are using but will result in something similar to the following;
 
-Depending on your Windows security settings, a warning dialogue box will display titled **Windows protected your PC**.  
+![](../static/img/docs/LAUNCH/image100.png)  
 
-![](../static/img/docs/LAUNCH/image02a.png)  
+2.  As you move the cursor from your mouse over the down load file the display may change to the following, when it does click the **Open File** option.
+
+![](../static/img/docs/LAUNCH/image101.png)  
+
+Depending on your Windows security settings, a warning dialogue box MAY display titled **Windows protected your PC**.  
+
+![](../static/img/docs/LAUNCH/image102.png)  
 
 :::note
 The colour of this dialogue box may vary depending on your chosen Windows theme settings.
@@ -33,7 +45,7 @@ The colour of this dialogue box may vary depending on your chosen Windows theme 
 
 ----
 
-![](../static/img/docs/LAUNCH/image03.png)  
+![](../static/img/docs/LAUNCH/image103.png)  
 
 4.	Click on the [ **"Run anyway"** ] button.  
 
@@ -115,11 +127,9 @@ The **Launch Application** option is checked by default.
 
 7.	Click the [ **Finish** ] button to complete the installation.  
 
-Refer to the **[Sense-i Launcher](LAUNCH)** page for information on using the application.
+----
 
-## Download and Install 
-
-Access the latest version of the [Sense-i Launcher Installation files **here.**](https://elfworks.co.za/subdomains/sense-i/Install/download.html)  
+Click on this link, **[Using the Sense-i Launcher](LAUNCH)**, for instructions on how to proceed with the process.
 
 ----
 

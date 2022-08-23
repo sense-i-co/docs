@@ -10,7 +10,8 @@ module.exports = {
   docs: {
 	"Introduction to Sense-i": ["INT-001"],	
 	"Install your System": ["DOWNLOAD", 
-							"LAUNCH"], 
+							"LAUNCH",
+							"INSTCONF"], 
 	"Working with Sense-i Software": ["SUI-001", 
 							"SUI-002", 
 							"USS-004", 
