@@ -53,7 +53,8 @@ module.exports = {
 					"Production Planning & Scheduling": ["PPS-000",
 					"CAP-001",
 					"CAP-002",						
-					"SAF-774"]
+					"SAF-774",						
+					"SMS-001"]
 				},
 				{
 					"Purchases Transaction Stream": ["SAF-720",
