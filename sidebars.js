@@ -27,7 +27,7 @@ module.exports = {
 		"Sales Quote & Order Process": ["SQO-001",
 				{
 					"Sales Quote & Order Entry": ["SAF-1202",
-						"PRC-008",
+						"SAF-441",
 						"SAF-502",						
 						"SAF-154",						
 						"DIM-003",
