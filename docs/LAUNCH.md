@@ -161,7 +161,7 @@ This download process will only occur again when the database is been upgraded.
 ----
 
 SEMS System Administrators should click on this link,
-**[Sense-i Launcher - Advanced Configuration](INSTCONF)**, for instructions on how to configure specific database connections.
+**[Sense-i Launcher - Advanced Configuration](https://sense-i.co/docs/INSTCONF)**, for instructions on how to configure specific database connections.
 
 
 

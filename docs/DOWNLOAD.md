@@ -35,17 +35,19 @@ The browser will download the install file and once complete will display some f
 
 Depending on your Windows security settings, a warning dialogue box MAY display titled **Windows protected your PC**.  
 
-![](../static/img/docs/LAUNCH/image102.png)  
-
 :::note
 The colour of this dialogue box may vary depending on your chosen Windows theme settings.
 :::
+
+
+![](../static/img/docs/LAUNCH/image201.png)  
+
 
 3.	**NB!** Select the **More info** link.  
 
 ----
 
-![](../static/img/docs/LAUNCH/image103.png)  
+![](../static/img/docs/LAUNCH/image202.png)  
 
 4.	Click on the [ **"Run anyway"** ] button.  
 
@@ -129,7 +131,7 @@ The **Launch Application** option is checked by default.
 
 ----
 
-Click on this link, **[Using the Sense-i Launcher](LAUNCH)**, for instructions on how to proceed with the process.
+Click on this link, **[Using the Sense-i Launcher](https://sense-i.co/docs/LAUNCH)**, for instructions on how to proceed with the process.
 
 ----
 
