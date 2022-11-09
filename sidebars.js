@@ -30,9 +30,9 @@ module.exports = {
 						"SAF-441",
 						"SAF-502",						
 						"SAF-154",						
-						"DIM-003",
-						"DIM-001",						
-						"SAF-710"]
+						"SAF-156",						
+						"SAF-158",
+						"DIM-001"]
 				},
 			],		
 		"Operations Management": ["OPMO-001",
@@ -101,8 +101,9 @@ module.exports = {
 						"FGC-002"]
 				},
 				{
-					"Sales Delivery Process": ["DIM-001",
-						"DIM-003"]
+					"Sales Delivery Process": ["SAF-156",						
+						"SAF-156",
+						"DIM-001"]
 				},
 			],
 			"Financial Management": ["FMO-001",
