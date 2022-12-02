@@ -23,6 +23,7 @@ module.exports = {
 									"LST-005"]
 							},
 							"USS-005"],
+	"System Setup & Configuration": ["CNF-002"],	
 	"Business Processes": [{
 		"Sales Quote & Order Process": ["SQO-001",
 				{
@@ -59,7 +60,7 @@ module.exports = {
 				{
 					"Purchases Transaction Stream": ["SAF-720",
 						"SAF-1203",
-						"MAS-009",
+						"SAF-442",
 						"MPO-003",
 						"MPO-004",
 						"SAF-149",
