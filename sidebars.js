@@ -61,7 +61,7 @@ module.exports = {
 					"Purchases Transaction Stream": ["SAF-720",
 						"SAF-1203",
 						"SAF-442",
-						"MPO-003",
+						"SAF-148",
 						"MPO-004",
 						"SAF-149",
 						"MAT-002",
