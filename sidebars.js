@@ -62,8 +62,8 @@ module.exports = {
 						"SAF-1203",
 						"SAF-442",
 						"SAF-148",
-						"SAF-130",
 						"SAF-149",
+						"SAF-130",
 						"MAT-002",
 						"MAT-006",
 						"REP-003"]
@@ -102,8 +102,7 @@ module.exports = {
 						"FGC-002"]
 				},
 				{
-					"Sales Delivery Process": ["SAF-156",						
-						"SAF-156",
+					"Sales Delivery Process": ["SAF-156",
 						"DIM-001"]
 				},
 			],
@@ -114,7 +113,6 @@ module.exports = {
 						"SAF-1203",
 						"SAF-149",
 						"SAF-152",
-						"SAF-153",
 						"SAF-4050",
 						"SAF-4053",
 						"SAF-4051",
