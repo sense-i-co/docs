@@ -2,7 +2,7 @@
 id: STC-PV
 title: Provisional (Projected) Supply
 sidebar_label: Provisional (Projected) Supply
-<slug: /STC-PV
+slug: /STC-PV
 ---
 
 This view shows the date and amount for the provisional supply. Below the screen is filtered to only return rows with data. 

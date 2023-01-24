@@ -2,7 +2,7 @@
 id: STC-CPV
 title: Consolidated with Provisional (Projected) Supply
 sidebar_label: Consolidated with Provisional Supply
-<slug: /STC-CPV
+slug: /STC-CPV
 ---
 
 This is arguably the most powerful view of the Stock Analysis. Using the consolidated Stock to proactively order stock we need to be aware of provisional supplies in the pipeline. IE A Purchase order may be being prepared. This view is geared especially for replenishing by stock. It is advantageous to keep a record in the provisional state allowing us to up the order Quantity and gather other items into the order preventing small and piecemeal orders.

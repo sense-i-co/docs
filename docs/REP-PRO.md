@@ -2,7 +2,7 @@
 id: REP-PRO
 title: Replenishing (Process Orders) from Scheduled Batches
 sidebar_label: Replenishing (Process Orders) from Scheduled Batches
-<slug: /REP-PRO
+slug: /REP-PRO
 ---
 
 If you replenish to process order prior to scheduling, the system will determine a scheduled date and place the job in the calendar. In order to schedule the jobs yourself, you would need to schedule the items first and then Replenish by generating the Process Orders.

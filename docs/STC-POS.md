@@ -2,7 +2,7 @@
 id: STC-POS
 title: Outstanding Projected Supply
 sidebar_label: Outstanding Projected Supply
-<slug: /STC-POS
+slug: /STC-POS
 ---
 
 

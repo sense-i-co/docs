@@ -2,7 +2,7 @@
 id: STC-SET
 title: Stock Reorder Information
 sidebar_label: Stock Reorder Information
-<slug: /STC-SET
+slug: /STC-SET
 ---
 
 Stock Reorder Information is used to help manage stock. The data can be set for each stock item for each department.

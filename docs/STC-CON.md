@@ -2,7 +2,7 @@
 id: STC-CON
 title: Consolidated Stock
 sidebar_label: Consolidated Stock
-<slug: /STC-CON
+slug: /STC-CON
 ---
 
 :::tip

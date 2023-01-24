@@ -2,7 +2,7 @@
 id: STC-PD
 title: Projected Demand
 sidebar_label: Projected Demand
-<slug: /STC-PD
+slug: /STC-PD
 ---
 
 :::tip

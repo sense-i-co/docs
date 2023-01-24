@@ -2,7 +2,7 @@
 id: STC-SAV
 title: Set Average Daily Demand based on Projected Demand
 sidebar_label: Set Average Daily Demand based on Projected Demand
-<slug: /STC-SAV
+slug: /STC-SAV
 ---
 
 From the main menu, navigate to Inventory / Stock Analysis.

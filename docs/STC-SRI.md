@@ -2,7 +2,7 @@
 id: STC-SRI
 title: Set Stock Reorder Information
 sidebar_label: Set Stock Reorder Information
-<slug: /STC-SRI
+slug: /STC-SRI
 ---
 
 Reorder information is set from the Stock Analysis screen. It is specific to each stock item for each department.

@@ -2,7 +2,7 @@
 id: STC-POD
 title: Outstanding Projected Demand
 sidebar_label: Outstanding Projected Demand
-<slug: /STC-POD
+slug: /STC-POD
 ---
 
 

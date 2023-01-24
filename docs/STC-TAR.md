@@ -2,7 +2,7 @@
 id: STC-TAR
 title: Stock Target
 sidebar_label: Stock Target
-<slug: /STC-TAR
+slug: /STC-TAR
 ---
 
 ## Generating the Target Quantity

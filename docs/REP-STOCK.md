@@ -2,7 +2,7 @@
 id: REP-STOCK
 title: Replenish from Stock
 sidebar_label: Replenish from Stock
-<slug: /300
+slug: /300
 ---
 
 :::tip
