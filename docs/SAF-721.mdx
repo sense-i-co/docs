@@ -1,0 +1,129 @@
+---
+id: SAF-721
+title: Stock Overview
+sidebar_label: Stock Overview
+<slug: /721
+---
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Stock-on-hand is the amount of stock available.
+Stock increases by adding new **Supply** and is depleted by removing **Demand**. Stock can also be manually **adjusted**.
+
+
+
+
+**Stock** = <Highlight color="#25c2a0">∑Supply</Highlight> - <Highlight color="#F98192">∑Demand</Highlight> (+ <Highlight color="#81c2f9">Adjustments</Highlight>)
+
+## Actual Stock.
+
+Actual <Highlight color="#25c2a0">Supply</Highlight> refers to the acquisition of physical Stock.
+
+- Purchase Orders received from Suppliers
+- Internal Orders received from another Department
+- Completion of manufactured/finished goods.
+
+Actual <Highlight color="#F98192">Demand</Highlight> refers to the depletion of Physical Stock.
+
+- Sales Orders Delivered
+- Internal Orders Delivered
+- Materials Issued to a job (process order) for manufacturing.
+
+Stock Take allows one to <Highlight color="#81c2f9">Adjust</Highlight> the Stock Quanitity to reflect the quantity in the store.
+
+- Stock Adjustment.
+
+**Typical movement of Actual Stock in a Manufacturing company.**
+
+- Purchase order received <Highlight color="#25c2a0">supply</Highlight> the raw materials.
+- The raw materials are issued to the process order jobs (Actual <Highlight color="#F98192">Demand</Highlight>)
+- The raw materials are used to manufacture the finished goods which on completion increases the Actual <Highlight color="#25c2a0">supply</Highlight> of the finished goods.
+- The Finished goods are then Shipped/delivered (Actual <Highlight color="#F98192">Demand</Highlight>) to the customer
+
+![](../static/img/docs/STC-000/ActualStock.png) 
+
+## Projected Stock and the Replenishment Chain
+
+Prior to **Actual Stock** changing hands we have the **Request for Stock** and the chain of replenishment requests that consequently follow.
+
+**Typical ordering chain**
+
+- A <Highlight color="#F98192">Sales order</Highlight> is requested for finished goods. This is Projected <Highlight color="#F98192">Demand</Highlight>.
+
+In order to satisfy this demand we replenish/ create Projected <Highlight color="#25c2a0">Supply</Highlight>.
+ Either
+
+- <Highlight color="#25c2a0">Internal Order to a supplying department</Highlight> to provide/manufacture the finished goods.
+- <Highlight color="#25c2a0">Process Order</Highlight> (if this department is a factory, for items we make) or
+- <Highlight color="#25c2a0">Purchase Order</Highlight> to a supplier for an item that is pure "buy-out" (something not made, just bought and sold)
+
+- An <Highlight color="#F98192">Internal order from a customer department</Highlight> will, in turn, require a <Highlight color="#25c2a0">Process order</Highlight> to satisfy it.
+- A Process order requires materials.
+ The <Highlight color="#F98192">Process Order Batch Input Requirement</Highlight> are the Projected Demand for the raw materials.
+- A <Highlight color="#25c2a0">Purchase Order</Highlight> is placed in order to fulfil/supply the demand for the raw materials.
+
+![](../static/img/docs/STC-000/ProjectedStock.png) 
+
+Projected Demand represents the request for Stock
+
+- Sales Order from Customer
+- Internal Order from Customer/Requesting Department
+- Materials requirement for a Process Order
+
+Projected Supply represents the anticipated arrival of ordered Stock
+
+- Purchase Order to Supplier
+- Internal Order to Supplying Department
+- Process Order planned to manufacture stock
+
+## Consolidated Stock
+
+Consolidated stock looks at the **cumulative** values of both the Actual and the Projected Stock. This, in essence, lets us see what we expect to have in stock at a given time.
+
+Example.
+
+10 cushions in stock today (Monday)
+
+12 are due to be shipped on Tuesday
+
+5 are expected to be supplied on Wednesday.
+
+A further 10 to be shipped on Thursday and another 1 on Friday
+
+The consolidated stock view alerts us to the fact that we will be 2 cushions short on Tuesday. They can be shipped on Wednesday when the extra supply arrives.
+
+By Thursday we will be 7 short, and 8 short by Friday.
+
+![](../static/img/docs/STC-000/ConsolidExample.png) 
+
+When considering stock future needs and being timeously **alerted to future stock shortages** is a extremely important. It does, however, rely on the fact that your data is being kept up-to-date.
+
+## Consolidated Stock with Provisional Supply.
+
+This view adds Provisional Supply to the Consolidated Balance and is especially useful for Replenishment.
+
+The Actual, Projected and Consolidated Data use records which have been ACTIVATED. For Replenishment, and particularly material replenishment and items with the replenishment policy of STOCK, we have a mechanism to keep adding to an order (eg. A Purchase Order) for a couple of days BEFORE we activate and send to the supplier.
+
+The Transactions which are included in the Provisional Supply refer to Provisional Projected Supply.
+
+- Purchase Orders
+- Internal orders from Supplying Department
+- Process Orders
+
+Using the same example shown above, but also include the Provisional Supply. We have a provisional Purchase order ear-marked for Friday with an Additional 10 items
+
+![](../static/img/docs/STC-000/ConsolidProv1.png) 
+
+Looking at this view we see that Friday will not be a problem and **if we bring the due date of the provisional order forward** to Thursday (bearing in mind the Suppliers Lead days) we will ensure that Thursday's orders are not late. Thus the beauty of the provisional state of the order, allowing the Due Date to change.
+
+![](../static/img/docs/STC-000/ConsolidProv2.png) 
+
