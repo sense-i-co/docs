@@ -27,7 +27,7 @@ _**Items with this setting:** Standard common finished goods
 
 Before we can set a realistic target quantity, we should have a good idea of the amount of stock we generally use on a daily basis.
 You can set this manually, or better yet, let the 
-system [set this based on the recent historical projected demand](./STC-SAV).
+system [set this based on the recent historical projected demand](../docs/STC-SAV.md).
 
 ### 3. Stock Target Quantity
 

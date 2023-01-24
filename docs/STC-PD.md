@@ -22,4 +22,4 @@ maximum, average and total Quantities, and the Total Cost across the full range.
 The screen above is showing finished goods (sofas) but applies also to raw materials. 
 The demand for raw materials can assist with future cash flow planning.
 
-This view is used for [Setting the Average Daily demand](./STC-SAV).
+This view is used for [Setting the Average Daily demand](../docs/STC-SAV.md).

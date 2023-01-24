@@ -19,7 +19,7 @@ The colour coding gives a visual picture of records with warnings. Three warning
 - Below Target   (Orange)
 - Above Maximum  (Purple)
 
-**Negative Stock** is detected if the stock quantity drops below zero. Both **Below Target** and **Above Maximum** states require a **[Stock Target](./STC-TAR)** to have been set.
+**Negative Stock** is detected if the stock quantity drops below zero. Both **Below Target** and **Above Maximum** states require a **[Stock Target](../docs/STC-TAR.md)** to have been set.
 
 Drill through to the **Detail View** and choose the **Consolidated** Page/Tab to see the breakdown of the data.
 

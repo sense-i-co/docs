@@ -28,7 +28,8 @@ From the Replenish screen choose the Resource group to Replenish.
 - (A) Search parameter **Plan Day Count** returns the number of dates to show in the calendar and determines the values in the Stock Planning Band as they are calculated up to the end date. (IE Current Date + Plan Day Count)
 - (B) The **Need from Value** can be used to refine the search to only show records whose need equals or exceeds a certain value.
 
-The grid returns the expected stock values for a range of dates. The values correspond to the [**Consolidated with Provisional Supply Stock View**](./STC-CON), as can be seen by those numbers underlined in blue. 
+The grid returns the expected stock values for a range of dates. The values correspond to 
+the [**Consolidated with Provisional Supply Stock View**](../docs/STC-CON.md), as can be seen by those numbers underlined in blue. 
 
 ![](../static/img/docs/REP-STOCK/reps1.png) 
 
