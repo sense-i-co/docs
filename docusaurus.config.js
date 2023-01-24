@@ -10,6 +10,7 @@ const config = {
   tagline: 'View documentation for Sense-i Enterprise Management Systems (SEMS)',
   url: 'https://sense-i.co',
   baseUrl: '/',
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
