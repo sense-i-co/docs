@@ -3,7 +3,7 @@ import Template from '../../../templates/Default';
 
 import Highlight from '../../../components/Highlight';
 import Image from '../../../components/Image';
-import ImageMap from '../../../components/ImageMap';
+//import ImageMap from '../../../components/ImageMap';
 import Link from '@docusaurus/Link';
 
 const metadata = {
@@ -24,19 +24,9 @@ const sections = [
           control over the entire costing process</Highlight> and <Highlight mode="background">ensures consistently, reliable cost estimates 
           are created in minutes</Highlight>.
         </p>
-        <ImageMap 
+        <Image 
           src="/img/pages/systems/product-design/modules.png"
-          maxWidth="700px"
-          areas={[
-            {
-              link: "/",
-              boundary: {
-                topLeft: [44, 265],
-                bottomRight: [633, 610]
-              }
-            }
-          ]}
-        />
+          maxWidth="700px"/>
         <p>
           Over 20 years Sense-i has worked with leading manufacturers to develop a unique system for calculating 
           accurate costs for all the products and services a company sells. Based on a best practice known as 

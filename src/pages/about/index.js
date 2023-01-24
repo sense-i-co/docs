@@ -1,8 +1,8 @@
 import React from 'react';
 import Template from '../../templates/Default';
 import Highlight from '../../components/Highlight';
-import ImageMap from '../../components/ImageMap';
-import ImageDeck from '../../components/ImageDeck';
+//import ImageMap from '../../components/ImageMap';
+//import ImageDeck from '../../components/ImageDeck';
 import DownloadButton from '../../components/DownloadButton';
 import Link from '@docusaurus/Link';
 
@@ -30,6 +30,7 @@ const sections = [
           focused on maintaining high performance levels throughout the company. Implementing such systems requires the right combination 
           of;
         </p>
+        {/*
         <ImageMap 
           src="/img/pages/about-systems.png"
           areas={[
@@ -66,38 +67,7 @@ const sections = [
             }
           ]}
           />
-      </>
-    )
-  },
-  {
-    heading: "Example Slideshow",
-    content: (
-      <>
-        <p>Below is an example of an embedded ImageDeck component.</p>
-          <ImageDeck
-            images={[
-              {
-                src: "/img/pages/about-systems.png",
-                link: "/"
-              },
-              {
-                src: "/img/undraw_researching_22gp.svg"
-              },
-              {
-                src: "/img/undraw_dev_focus_b9xo.svg",
-                link: "/docs/"
-              }
-            ]}
-            />
-      </>
-    )
-  },
-  {
-    heading: "Example Download",
-    content: (
-      <>
-        <p>Below is an example of an embedded DownloadButton component.</p>
-        <DownloadButton title="Sense-i Installer" link="/img/logo.png"/>
+        */}
       </>
     )
   },
@@ -130,7 +100,7 @@ const sections = [
           the most advanced information management system available today. All tailored to address the specific needs of your business.
         </p>
         <p>
-          Chat to a Sense-i Advisor, email us at <Link to="mailto:info@sense-i.co.za">info@sense-i.co.za</Link> or view our systems.
+          Chat to a Sense-i Advisor, email us at <Link to="mailto:info@sense-i.co">info@sense-i.co</Link> or view our systems.
         </p>
       </>
     )

@@ -1,8 +1,8 @@
 import React from 'react';
 import Template from '../../templates/Default';
 import Highlight from '../../components/Highlight';
-import ImageDeck from '../../components/ImageDeck';
-import ImageMap from '../../components/ImageMap';
+//import ImageDeck from '../../components/ImageDeck';
+//import ImageMap from '../../components/ImageMap';
 import Link from '@docusaurus/Link';
 
 const metadata = {
@@ -14,32 +14,6 @@ const sections = [
   {
     content: (
       <>
-        <ImageDeck 
-          images={[
-            {
-              src: "/img/pages/systems/banner-1.png"
-            },
-            {
-              src: "/img/pages/systems/banner-2.png"
-            },
-            {
-              src: "/img/pages/systems/banner-3.png",
-              link: "/about/clients/pierre-cronje"
-            },
-            {
-              src: "/img/pages/systems/banner-4.png",
-              link: "/about/clients/ergoform"
-            },
-            {
-              src: "/img/pages/systems/banner-5.png",
-              link: "/about/clients/wunders"
-            }
-          ]}
-          options={{
-            buttons: false,
-            dots: false,
-          }}
-          />
       </>
    )
   },
@@ -56,53 +30,6 @@ const sections = [
           every aspect of your business. Our systems integrate all areas of your business, from operations through to finance, management, sales 
           and marketing to work as a single team to keep your customers happy and your business competitive.
         </p>
-        <ImageMap 
-          src="/img/pages/systems/systems-map.png"
-          areas={[
-            {
-              link: "/systems/product-design/",
-              boundary: {
-                topLeft: [18, 40],
-                bottomRight: [395, 271]
-              }
-            },
-            {
-              link: "/systems/sales-marketing",
-              boundary: {
-                topLeft: [423, 40],
-                bottomRight: [800, 271]
-              }
-            },
-            {
-              link: "/systems/operations-management/",
-              boundary: {
-                topLeft: [828, 40],
-                bottomRight: [1205, 271]
-              }
-            },
-            {
-              link: "/systems/e-commerce",
-              boundary: {
-                topLeft: [1231, 40],
-                bottomRight: [1609, 271]
-              }
-            },
-            {
-              link: "/systems/financial-management/",
-              boundary: {
-                topLeft: [1636, 40],
-                bottomRight: [2014, 271]
-              }
-            },
-            {
-              link: "/systems/performance-management",
-              boundary: {
-                topLeft: [2041, 40],
-                bottomRight: [2418, 271]
-              }
-            }
-          ]}
-          />
       </>
    )
   },

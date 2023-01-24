@@ -4,7 +4,7 @@ import Template from '../../../templates/Default';
 import Link from '@docusaurus/Link';
 import Highlight from '../../../components/Highlight';
 import Image from '../../../components/Image';
-import ImageMap from '../../../components/ImageMap';
+//import ImageMap from '../../../components/ImageMap';
 
 const metadata = {
   title: "Operations Management System",
@@ -39,18 +39,7 @@ const sections = [
           The Sense-i Operations Management System consists of 12 key process areas designed to improve the 
           performance of and control you have over key business areas.
         </p>
-        <ImageMap 
-          src="/img/pages/systems/operations-management/modules.png"
-          areas={[
-            {
-              link: "/",
-              boundary: {
-                topLeft: [8, 116],
-                bottomRight: [294, 283]
-              }
-            }
-          ]}
-          />
+          <Image src="/img/pages/systems/operations-management/modules.png"/>
         <p>
           The success of your and any business is determined by how well your team fulfills customers’ orders 
           and is on top of the communication between your company and your customers. The more your deliver exactly 

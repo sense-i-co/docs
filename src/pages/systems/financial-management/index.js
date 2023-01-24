@@ -3,7 +3,7 @@ import Template from '../../../templates/Default';
 
 import Highlight from '../../../components/Highlight';
 import Image from '../../../components/Image';
-import ImageMap from '../../../components/ImageMap';
+//import ImageMap from '../../../components/ImageMap';
 import Link from '@docusaurus/Link';
 
 const metadata = {
@@ -42,20 +42,6 @@ const sections = [
           All the modules in the System integrate seamlessly and in real-time with all the other modules in the 
           overall Sense-i Enterprise and Operations Management System.
         </p>
-        <ImageMap
-          src="/img/pages/systems/financial-management/modules.png"
-          caption="A Complete and Fully Integrated Accounting System Gives You Total Financial Control"
-          maxWidth="700px"
-          areas={[
-            {
-              link: "/",
-              boundary: {
-                topLeft: [30, 202],
-                bottomRight: [482, 465]
-              }
-            }
-          ]}
-        />
         <p>
           The system gives you complete control of all your banking transactions. You can quickly capture customer 
           receipts, supplier payments and bank charges. And you can easily reconcile your bank accounts to ensure 
