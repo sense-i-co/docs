@@ -5,13 +5,18 @@ sidebar_label: Stock Target
 slug: /STC-TAR
 ---
 
+Stock Target is the level of Stock one intends to keep in the store to ensure that we have sufficient amount (under average usage) to last until the next supply order arrives.
+
+To this end we need to know how much stock we use on a daily basis and the frequency of our supply orders.
+
+
 ## Generating the Target Quantity
 
-If you choose to generate the Target quantities, it is based on the formula given above.
+If you choose to generate the Target quantities, it is based on the formula: 
 
-**Target = (Average Daily Demand) \* (Reorder Frequency days + Buffer days)**
+`**Target = (Average Daily Demand) \* (Reorder Frequency days + Buffer days)**`
 
-It follows that the values used to determine the Target have been set prior to (or at the same time as) generating the target.
+It follows that the values used to determine the Target have been _set prior to (or at the same time as)_ generating the target.
 
 - Average Daily Demand
 - Reorder Frequency

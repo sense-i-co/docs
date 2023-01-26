@@ -1,7 +1,7 @@
 ---
 id: REP-PRO
-title: Replenishing (Process Orders) from Scheduled Batches
-sidebar_label: Replenishing (Process Orders) from Scheduled Batches
+title: Replenish Orders for Scheduled Batches
+sidebar_label: Replenish Orders for Scheduled Batches
 slug: /REP-PRO
 ---
 

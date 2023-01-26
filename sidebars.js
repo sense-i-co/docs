@@ -195,30 +195,39 @@ const sidebars = {
             items: [
               "STC-000",
               { type: 'category',
-                label: 'Stock Analysis',
-                items: [
-                  "STC-ACT",
-                  "STC-AS",
-                  "STC-AD",
-                  "STC-PST",
-                  "STC-PS",
-                  "STC-PD",
-                  "STC-POS",
-                  "STC-POD",
-                  "STC-CON",
-                  "STC-CPV",
-                  "STC-PV",
-                ],   
-			        },
-              { type: 'category',
+              label: 'Stock Analysis',
+              link: {
+                type: 'doc',
+                id: 'SAF-721',
+              },
+               items: [
+                "STC-ACT",
+                "STC-AS",
+                "STC-AD",
+                "STC-PST",
+                "STC-PS",
+                "STC-PD",
+                "STC-POS",
+                "STC-POD",
+                "STC-CON",
+                "STC-CPV",
+                "STC-PV",
+                              ],   
+                },
+
+
+
+
+
+               { type: 'category',
                 label: 'Stock Reorder Information',
                 link: {
                   type: 'doc',
-                  id: 'STC-SET',
+                  id: 'STC-SRI',
                 },
                  items: [
                        "STC-SAV",
-                  "STC-SRI",
+                  "STC-SET",
                    ],   
                   },
                   "STC-TAR",
