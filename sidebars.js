@@ -99,10 +99,11 @@ const sidebars = {
                 items: [
                   "REP-000",
                   "SAF-301",
-                  "SAF-312",
                   "SAF-308",
+                  "SAF-306",
                   "REP-PRO",
                   "SAF-307",
+                  "SAF-312",
                   "REP-STOCK",
                 ],   
 			        },
