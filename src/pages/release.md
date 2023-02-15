@@ -18,7 +18,7 @@ Date: 2023-02-10
 
 Main Theme: G/L Internal orders, G/L Budgets, Performance Analysis Framework
 
-[Download Release Notes 13.0.0](/files/ReleaseNotes_v13-0-01.pdf)
+[Download Release Notes 13.0.1](/files/ReleaseNotes_v13-0-01.pdf)
 
 
 
