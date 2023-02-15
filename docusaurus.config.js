@@ -68,26 +68,14 @@ const config = {
               to: 'systems/product-design/',
               label: 'Product Design & Costing'
             },
-            {
-              to: 'systems/sales-marketing',
-              label: 'Sales & Marketing'
-            },
-            {
+           {
               to: 'systems/operations-management/',
               label: 'Operations Management'
             },
-            {
-              to: 'systems/e-commerce',
-              label: 'Integrated E-Commerce'
-            },
-            {
+           {
               to: 'systems/financial-management/',
               label: 'Financial Management'
             },
-            {
-              to: 'systems/performance-management',
-              label: 'Performance Management'
-            }
           ]
         },
         {
