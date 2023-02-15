@@ -41,7 +41,7 @@ const config = {
             'https://github.com/sense-i-co/docs/edit/main/',   */
           showLastUpdateTime: true,
         },
-        theme: {
+       theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
@@ -102,7 +102,14 @@ const config = {
           label: 'Documentation',
           position: 'left',
           },
-
+          {
+            to: 'docs/VIDCUSTSEARCH',
+            activeBasePath: 'docs',
+            label: 'Videos',
+            position: 'left',
+            },
+  
+  
           {to: '/release', label: 'Release Notes', position: 'left'},
         /*
           {
