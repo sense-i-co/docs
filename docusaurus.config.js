@@ -91,7 +91,7 @@ const config = {
           position: 'left',
           },
           {
-            to: 'docs/VIDCUSTSEARCH',
+            to: 'docs/INTROVID',
             activeBasePath: 'docs',
             label: 'Videos',
             position: 'left',

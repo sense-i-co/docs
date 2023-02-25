@@ -324,10 +324,13 @@ const sidebars= {
   ],
 
   courses: [
+              "INTROVID", 
   { type: 'category',
                 label: 'Customers and Sales',
                 items: [
             			"VIDCUSTSEARCH",
+                  "VIDADDCUST",
+                  "VIDPRODSEARCH",
                 ],  
               },
               "VIDSTOCKOVER", 
