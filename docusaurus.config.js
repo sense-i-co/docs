@@ -123,6 +123,12 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'OHC9H3SGA1',
+        apiKey: '49d06032e1d94d1923e4e5ea56f5d41e',
+        indexName: 'dev_senseidocs',
+      }
     }),
 };
 
