@@ -331,6 +331,7 @@ const sidebars= {
             			"VIDCUSTSEARCH",
                   "VIDADDCUST",
                   "VIDPRODSEARCH",
+                  "VIDADDQUOTE",                  
                 ],  
               },
               "VIDSTOCKOVER", 
