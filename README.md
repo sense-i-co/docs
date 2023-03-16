@@ -24,6 +24,12 @@ $ yarn build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
+To test a build before deploying to the livee website, you can serve it locally using the command:
+
+```
+$ yarn serve
+```
+
 ### Deployment
 
 Using SSH:
@@ -54,7 +60,7 @@ docker run -it --env-file=.env -e "CONFIG=$(cat algolia.config.json | jq -r tost
 
 **Note 1**: If not already installed, first ensure that Docker ([https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)) is set up and running on your system before running the above command.
 
-**Note 2**: You must create/obtain an .env file in the root directory of this repository with the following sensitive values:
+**Note 2**: You must first create an .env file in the root directory of this repository with the following sensitive values:
 
 ```
 APPLICATION_ID=YOUR_APP_ID
