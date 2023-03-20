@@ -1,0 +1,33 @@
+---
+id: VIDADDORDER
+title: Add New Customer Sales Order
+sidebar_label: Add Customer Sales Order
+slug: /VIDADDORDER
+---
+import ReactPlayer from 'react-player'
+
+
+
+<ReactPlayer controls url='https://www.youtube.com/watch?v=h_6oppi6FyY' />  
+
+#### Related Content;
+
+**["Customer Information (Document)"](https://sense-i.co/docs/1202)**  
+
+**["Customer Search (Video)"](https://sense-i.co/docs/VIDCUSTSEARCH)**  
+
+**["Customer Catalogue - Product Search (Video)"](https://sense-i.co/docs/VIDPRODSEARCH)**  
+
+**["Product Catalogue (Document)"](https://sense-i.co/docs/441)**  
+
+**["Add Customer Sales Quote (Video)"](https://sense-i.co/docs/VIDADDQUOTE)**  
+
+**["Sales Quote (Document)"](https://sense-i.co/docs/502)**  
+
+**["Sales Order (Document)"](https://sense-i.co/docs/154)** 
+
+**["Customising Information display"](https://sense-i.co/docs/LST004)**  
+
+**["Print, Export to PDF & Email Customer Documents"](https://sense-i.co/docs/502#print)**
+
+

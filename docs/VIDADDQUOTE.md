@@ -1,6 +1,6 @@
 ---
 id: VIDADDQUOTE
-title: Customer Sales Quote - Add New Sales Quote
+title: Add New Customer Sales Quote
 sidebar_label: Add Customer Sales Quote
 slug: /VIDADDQUOTE
 ---
