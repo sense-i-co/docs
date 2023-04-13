@@ -18,8 +18,16 @@ import ReactPlayer from 'react-player'
 
 **["Customer Catalogue - Product Search"](https://sense-i.co/docs/VIDPRODSEARCH)**  
 
-**["Customising Information display"](https://sense-i.co/docs/LST004)**  
+**["Customising Information display"](https://sense-i.co/docs/LST004)**     
 
-**["Print, Export to PDF & Email Customer Documents"](https://sense-i.co/docs/502#print)**
+**["Print Customer Sales Documents"](https://sense-i.co/docs/VIDPRNT)**
+
+**["Print, Export to PDF & Email Customer Documents"](https://sense-i.co/docs/502#print)**  
+
+**["Add Customer Sales Order (Video)"](https://sense-i.co/docs/VIDADDORDER)**   
+
+**["Sales Order (Document)"](https://sense-i.co/docs/154)** 
+
+
 
 

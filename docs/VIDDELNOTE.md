@@ -1,14 +1,14 @@
 ---
-id: VIDADDORDER
-title: Add New Customer Sales Order
-sidebar_label: Add Customer Sales Order
-slug: /VIDADDORDER
+id: VIDDELNOTE
+title: Generate Customer Sales Order Delivery Note
+sidebar_label: Sales Order Delivery Note
+slug: /VIDDELNOTE
 ---
 import ReactPlayer from 'react-player'
 
 
 
-<ReactPlayer controls url='https://www.youtube.com/watch?v=h_6oppi6FyY' />  
+<ReactPlayer controls url='https://www.youtube.com/watch?v=naUjyDwmQB4' />  
 
 #### Related Content;
 
@@ -24,11 +24,11 @@ import ReactPlayer from 'react-player'
 
 **["Sales Quote (Document)"](https://sense-i.co/docs/502)**  
 
-**["Sales Order (Document)"](https://sense-i.co/docs/154)**  
+**["Add Customer Sales Order (Video)"](https://sense-i.co/docs/VIDADDORDER)**  
 
-**["Sales Order Delivery Note (Video)"](https://sense-i.co/docs/VIDDELNOTE)** 
+**["Sales Order (Document)"](https://sense-i.co/docs/154)** 
 
-**["Customising Information display"](https://sense-i.co/docs/LST004)**     
+**["Customising Information display"](https://sense-i.co/docs/LST004)**   
 
 **["Print Customer Sales Documents"](https://sense-i.co/docs/VIDPRNT)**
 
