@@ -335,6 +335,7 @@ const sidebars= {
                   "VIDADDORDER",  
                   "VIDPRNT",  
                   "VIDDELNOTE",  
+                  "VIDSOINV1",    
                 ],  
               },
               "VIDSTOCKOVER", 
