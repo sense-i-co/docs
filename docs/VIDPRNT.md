@@ -24,6 +24,14 @@ import ReactPlayer from 'react-player'
 
 **["Delivery Note (Document)"](https://sense-i.co/docs/156)**  
 
+**["Add Customer Sales Order Invoice (Video)"](https://sense-i.co/docs/VIDSOINV1)**  
+
+**["Sales Order Invoice (Document)"](https://sense-i.co/docs/158)** 
+
+**["Generate Customer Statement (Video)"](https://sense-i.co/docs/VIDCUSTSTMNT)**  
+
+**["Customer Statement (Document)"](https://sense-i.co/docs/4041CS)** 
+
 **["Print, Export to PDF & Email Customer Documents"](https://sense-i.co/docs/502#print)**
 
 

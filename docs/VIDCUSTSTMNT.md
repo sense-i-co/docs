@@ -1,14 +1,14 @@
 ---
-id: VIDSOINV1
-title: Generate Customer Sales Order Invoice
-sidebar_label: Sales Order Invoice
-slug: /VIDSOINV1
+id: VIDCUSTSTMNT
+title: Generate Customer Statement
+sidebar_label: Customer Statement
+slug: /VIDCUSTSTMNT
 ---
 import ReactPlayer from 'react-player'
 
 
 
-<ReactPlayer controls url='https://www.youtube.com/watch?v=H03rlo3-Yqo' />  
+<ReactPlayer controls url='https://www.youtube.com/watch?v=TY5SlKN1178' />  
 
 #### Related Content;
 
@@ -31,10 +31,6 @@ import ReactPlayer from 'react-player'
 **["Sales Order Delivery Note (Video)"](https://sense-i.co/docs/VIDDELNOTE)** 
 
 **["Delivery Note (Document)"](https://sense-i.co/docs/156)**  
-
-**["Generate Customer Statement (Video)"](https://sense-i.co/docs/VIDCUSTSTMNT)**  
-
-**["Customer Statement (Document)"](https://sense-i.co/docs/4041CS)** 
 
 **["Customising Information display"](https://sense-i.co/docs/LST004)**   
 

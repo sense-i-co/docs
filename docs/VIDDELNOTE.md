@@ -28,6 +28,14 @@ import ReactPlayer from 'react-player'
 
 **["Sales Order (Document)"](https://sense-i.co/docs/154)** 
 
+**["Add Customer Sales Order Invoice (Video)"](https://sense-i.co/docs/VIDSOINV1)**  
+
+**["Sales Order Invoice (Document)"](https://sense-i.co/docs/158)** 
+
+**["Generate Customer Statement (Video)"](https://sense-i.co/docs/VIDCUSTSTMNT)**  
+
+**["Customer Statement (Document)"](https://sense-i.co/docs/4041CS)** 
+
 **["Customising Information display"](https://sense-i.co/docs/LST004)**   
 
 **["Print Customer Sales Documents"](https://sense-i.co/docs/VIDPRNT)**
