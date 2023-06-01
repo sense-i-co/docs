@@ -1,14 +1,14 @@
 ---
-id: VIDCUSTSTMNT
-title: Generate Customer Statement
-sidebar_label: Customer Statement
-slug: /VIDCUSTSTMNT
+id: VIDCUSTRCPT
+title: Capture Customer Receipt (Manual)
+sidebar_label: Customer Receipt
+slug: /VIDCUSTRCPT
 ---
 import ReactPlayer from 'react-player'
 
 
 
-<ReactPlayer controls url='https://www.youtube.com/watch?v=TY5SlKN1178' />  
+<ReactPlayer controls url='https://www.youtube.com/watch?v=DrceXCeliEc' />  
 
 #### Related Content;
 
@@ -34,9 +34,15 @@ import ReactPlayer from 'react-player'
 
 **["Add Customer Sales Order Invoice (Video)"](https://sense-i.co/docs/VIDSOINV1)**  
 
-**["Sales Order Invoice (Document)"](https://sense-i.co/docs/158)** 
+**["Sales Order Invoice (Document)"](https://sense-i.co/docs/158)**  
 
-**["Customising Information display"](https://sense-i.co/docs/LST004)**   
+**["Allocate Customer Payments (Video)"](https://sense-i.co/docs/VIDALLOC)**  
+
+**["Generate Customer Statement (Video)"](https://sense-i.co/docs/VIDCUSTSTMNT)**   
+
+**["Customer Statement (Document)"](https://sense-i.co/docs/4041CS)** 
+
+**["Customising Information Display"](https://sense-i.co/docs/LST004)**   
 
 **["Print Customer Sales Documents"](https://sense-i.co/docs/VIDPRNT)**
 

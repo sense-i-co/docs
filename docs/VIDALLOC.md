@@ -1,14 +1,14 @@
 ---
-id: VIDCUSTSTMNT
-title: Generate Customer Statement
-sidebar_label: Customer Statement
-slug: /VIDCUSTSTMNT
+id: VIDALLOC
+title: Allocate Customer Payments
+sidebar_label: Allocate Customer Payments
+slug: /VIDALLOC
 ---
 import ReactPlayer from 'react-player'
 
 
 
-<ReactPlayer controls url='https://www.youtube.com/watch?v=TY5SlKN1178' />  
+<ReactPlayer controls url='https://www.youtube.com/watch?v=LQVWdEtN99s' />  
 
 #### Related Content;
 
@@ -34,7 +34,13 @@ import ReactPlayer from 'react-player'
 
 **["Add Customer Sales Order Invoice (Video)"](https://sense-i.co/docs/VIDSOINV1)**  
 
-**["Sales Order Invoice (Document)"](https://sense-i.co/docs/158)** 
+**["Sales Order Invoice (Document)"](https://sense-i.co/docs/158)**   
+
+**["Customer Receipt (Video)"](https://sense-i.co/docs/VIDCUSTRCPT)**  
+
+**["Generate Customer Statement (Video)"](https://sense-i.co/docs/VIDCUSTSTMNT)**   
+
+**["Customer Statement (Document)"](https://sense-i.co/docs/4041CS)** 
 
 **["Customising Information display"](https://sense-i.co/docs/LST004)**   
 
