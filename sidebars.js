@@ -341,6 +341,12 @@ const sidebars= {
                   "VIDCUSTSTMNT",  
                 ],  
               },
+    { type: 'category',
+              label: 'Suppliers and Purchases',
+              items: [
+                "VIDSUPPSRCH", 
+              ],  
+            },
               "VIDSTOCKOVER", 
             ],
 
