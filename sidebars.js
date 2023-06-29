@@ -345,6 +345,7 @@ const sidebars= {
               label: 'Suppliers and Purchases',
               items: [
                 "VIDSUPPSRCH", 
+                "VIDADDSUPP", 
               ],  
             },
               "VIDSTOCKOVER", 
