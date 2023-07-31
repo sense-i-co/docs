@@ -346,7 +346,8 @@ const sidebars= {
               items: [
                 "VIDSUPPSRCH", 
                 "VIDADDSUPP",  
-                "VIDSUPPCAT", 
+                "VIDSUPPCAT",   
+                "VIDPRCHORD", 
               ],  
             },
               "VIDSTOCKOVER", 
