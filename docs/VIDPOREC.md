@@ -1,8 +1,8 @@
 ---
-id: VIDPRCHORD
-title: Add Purchase Order
-sidebar_label: Purchase Order
-slug: /VIDPRCHORD
+id: VIDPOREC
+title: Add Purchase Order Receipt
+sidebar_label: Purchase Order Receipt
+slug: /VIDPOREC
 ---
 import ReactPlayer from 'react-player'
 
@@ -10,7 +10,9 @@ import ReactPlayer from 'react-player'
 
 <ReactPlayer controls url='https://www.youtube.com/watch?v=BThCztuwJVY' />
 
-#### Related Content;
+#### Related Content;   
+
+**["Add Purchase Order (Video)"](https://sense-i.co/docs/VIDPRCHORD)**  
 
 **["Capture Purchase Orders (Document)"](https://sense-i.co/docs/148)** 
 
@@ -28,8 +30,5 @@ import ReactPlayer from 'react-player'
 
 **["Print Customer / Supplier Documents (Video)"](https://sense-i.co/docs/VIDPRNT)** 
 
-**["Print, Export to PDF & Email Documents (Document)"](https://sense-i.co/docs/502#print)** 
-
-**["Purchase Order Receipt (Video)"](https://sense-i.co/docs/VIDPOREC)**  
-
+**["Print, Export to PDF & Email Documents (Document)"](https://sense-i.co/docs/502#print)**
 
