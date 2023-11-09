@@ -2,7 +2,7 @@
 id: PCPO-001
 title: Product Costing Process
 sidebar_label: Introduction & Overview
-slug: /SQO001
+slug: /PCPO001
 ---
 
 ## Introduction & Overview  
