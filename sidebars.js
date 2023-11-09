@@ -109,7 +109,7 @@ const sidebars= {
 	        { type: 'category',
             label: 'Sales Quote & Order Process',
             items: [
-              "SQO-001",
+              "SQOP-001",
 	            { type: 'category',
                 label: 'Sales Quote & Order Entry',
                 items: [
