@@ -7,15 +7,17 @@ slug: /ADDPM001
 ## Procedure Guideline  
 ___
 
-1. Click on the Customer function on the Main Menu.  
+1. Click the **Customer** option on the Main Menu.  
 
-2. Then click the Customer Catalogue function from the drop-down list.  
+2. Then click **Customer Catalogue** in the drop-down menu.  
 	
-![](../static/img/docs/PM-001/image2.png)  
+![](../static/img/docs/PM-001/image01.png)  
 
-3. The system will open a screen titled "Maintain Customer Catalogue." This screen lists all of the Products that have been captured in the system. *For more detailed information on using this function, view the procedure titled "PRC-008 -- View Product Catalogue."*  
+3. The system will open a screen titled **"Maintain Customer Catalogue".**  
+This screen lists all of the Products that have been captured in the system.  
+_For more detailed information on using this function, view the procedure titled **[Product Catalogue (Product Costing Process)](https://sense-i.co/docs/PCPCAT)**_ 
 	
-![](../static/img/docs/PM-001/image1.png)  
+![](../static/img/docs/PM-001/image02.png)  
 
 4. Search for the Product for which you want to create a Process Model. Enter information to search for the specific product in the Search Criteria Panel.  
 
@@ -25,20 +27,71 @@ ___
 
 7. Click on the row that displays the name of the Product for which you wish to create a Process Model.  
 
-8. Then click the Process Model button on the Form Bar.  
+8. Then click the Process Model button on the Action Bar.  	
 
-9. If no Process Model has been previously defined for the selected Product, the system will display a screen titled Process Model.  
-	
-![](../static/img/docs/PM-001/image3.png)  
+![](../static/img/docs/PM-001/image03.png)  
 
-10. You will immediately notice that the Process Model Module consists of a set of 8 tabbed worksheets. Each of these worksheets enable you to define specific information needed to calculate the cost of the Product and to plan Labour and Materials Requirements once Orders are received from Customers.  
+9. If no Process Model has been previously defined for the selected Product, the system will display a screen titled **Process Model - No Record**.  
 
-11. The Profile Worksheet enables you to enter general information about a Process Module such as its Name and the Department that is responsible for running the Process. Whenever you enter the Process Model Module from the Product Catalogue, the system will automatically create a Name, assign a Department and complete the other fields on the screen.  
+![](../static/img/docs/PM-001/image04.png)  
 
-12. If you need to enter a description or notes, you can type these in directly in the Description and Notes fields.  
+:::note  
+The Process Model screen consists of a form header, with the **Outputs** side-TAB, and set of **8 tabbed worksheets**.  
 
-13. Once you have completed the Profile Screen for a Process Model you will then need to enter information about the Materials Required on the Inputs Screen, the Tasks that need to be performed when running the Process on the Tasks Screen and the Parts which make up the Product in the Part List Screen.  
+All data fields (and TABs) on this form are greyed out, and will only become accessible once a new process Model is created.  
+:::  
 
-Please refer to the other Standard Operating Procedures in the Process Model Module documentation for information on how to enter this information.  
+10. Click the **Add** button on the Action bar to create a new Process Model.  
+The data fields **Model Type** and **Process Model Name** now become accessible.
+
+![](../static/img/docs/PM-001/image06.png)  
+
+11. Click the drop-down arrow in the field under **Model Type** to selct the desired option.  
+
+12. You need to define the Model Type for the Process Model by selecting one of the options:
+    -   Template
+    -   Stand alone Instance  
+    -   Blueprint  
+
+::: Important Model Type Options explained  
+Use the **Template** option when the Process Model...  
+
+The **Stand alone Instance** Model Type is used when...  
+
+Choose the **Blueprint** option when...  
+:::  
+
+12. Enter the Process Model Name in the data field under **Process Model Name**.    
+
+13. The **Profile** TAB worksheet displays general information about a Process Model such as its Name and the Department that is responsible for running the Process.  
+
+![](../static/img/docs/PM-001/image07.png)  
+
+Whenever you enter the Process Model module from the Product Catalogue, the system will automatically display the **Department** managing the process, **Item Type Name**,  assign the **Default Duration UOM _(Unit Of Measure)_**, and display the product **Item Name**.  
+
+14. If you need to enter a description or notes, you can type these in directly in the **Description** and **Notes** fields.  
+
+15. Once you have completed the **Profile** section, click the **Save** button on the Action bar.  
+
+![](../static/img/docs/PM-001/image08.png)  
+
+::: note  
+Once saved, a sequential **Process Model No** is generated, the Product **Item Code**, **Model Status**, **Output Status** and Product **Dimensions** are displayed,  
+
+![](../static/img/docs/PM-001/image09.png)  
+
+Click the **Outputs** side-TAB to reveal the Product **Item Code** & **Item Name**.
+
+![](../static/img/docs/PM-001/image10.png)  
+
+The other TABs will be accessible, enabling you to define specific information needed to calculate the cost of the Product and to plan Labour and Materials requirements once Orders are received from Customers.  
+
+![](../static/img/docs/PM-001/image11.png)  
+
+:::  
+
+17.  You will then need to enter information about the Materials Required on the **Inputs** Screen, the Tasks that need to be performed when running the Process on the **Tasks** Screen and the Parts which make up the Product in the **Part List** Screen.  
+
+Please refer to the other documents in the Product Costing Process section for information on how to enter this information.  
 
 **This is the end of this procedure.**

@@ -70,9 +70,8 @@ const sidebars= {
 	            { type: 'category',
                 label: 'Set Up Functions',
                 items: [
-                  "PRODGRP-001",
-			            "PRODTYP-001",
-				          "SAF-441",						
+                  "PROD-GRP-TYP",
+				          "PCP-CAT",						
 				          "MATGRP-001",						
 				          "MATTYP-001",						
 				          "SAF-442",
