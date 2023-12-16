@@ -7,6 +7,8 @@ slug: /ADDPM001
 ## Procedure Guideline  
 ___
 
+### Navigate to Customer Catalogue  
+
 1. Click the **Customer** option on the Main Menu.  
 
 2. Then click **Customer Catalogue** in the drop-down menu.  
@@ -19,15 +21,19 @@ _For more detailed information on using this function, view the procedure titled
 	
 ![](../static/img/docs/PM-001/image02.png)  
 
-4. Search for the Product for which you want to create a Process Model. Enter information to search for the specific product in the Search Criteria Panel.  
+### Product Search  
 
-5. Click the Search button on the Form Bar.  
+4. To search for the Product for which you want to create a Process Model, **enter information** to search for the specific product in the **Search Criteria Panel**.  
+
+5. Click the **Search** button on the Form Bar.  
 
 6. The system will display all Products that match the Search Criteria you have entered in the Product Catalogue.  
 
 7. Click on the row that displays the name of the Product for which you wish to create a Process Model.  
 
-8. Then click the Process Model button on the Action Bar.  	
+### Create Process Model  
+
+8. Click the Process Model button on the Action Bar.  	
 
 ![](../static/img/docs/PM-001/image03.png)  
 
@@ -53,7 +59,7 @@ The data fields **Model Type** and **Process Model Name** now become accessible.
     -   Stand alone Instance  
     -   Blueprint  
 
-::: Important Model Type Options explained  
+:::Important Model Type Options explained  
 Use the **Template** option when the Process Model...  
 
 The **Stand alone Instance** Model Type is used when...  
@@ -61,21 +67,23 @@ The **Stand alone Instance** Model Type is used when...
 Choose the **Blueprint** option when...  
 :::  
 
-12. Enter the Process Model Name in the data field under **Process Model Name**.    
+13. Enter the Process Model Name in the data field under **Process Model Name**.    
 
-13. The **Profile** TAB worksheet displays general information about a Process Model such as its Name and the Department that is responsible for running the Process.  
+### Profile Information  
+
+14. The **Profile** TAB worksheet displays general information about a Process Model such as its Name and the Department that is responsible for running the Process.  
 
 ![](../static/img/docs/PM-001/image07.png)  
 
 Whenever you enter the Process Model module from the Product Catalogue, the system will automatically display the **Department** managing the process, **Item Type Name**,  assign the **Default Duration UOM _(Unit Of Measure)_**, and display the product **Item Name**.  
 
-14. If you need to enter a description or notes, you can type these in directly in the **Description** and **Notes** fields.  
+15. If you need to enter a description or notes, you can type these in directly in the **Description** and **Notes** fields.  
 
-15. Once you have completed the **Profile** section, click the **Save** button on the Action bar.  
+16. Once you have completed the **Profile** section, click the **Save** button on the Action bar.  
 
 ![](../static/img/docs/PM-001/image08.png)  
 
-::: note  
+:::note  
 Once saved, a sequential **Process Model No** is generated, the Product **Item Code**, **Model Status**, **Output Status** and Product **Dimensions** are displayed,  
 
 ![](../static/img/docs/PM-001/image09.png)  

@@ -1,7 +1,7 @@
 ---
 id: PCP-CAT
 title: Product Catalogue (Product Costing Process)
-sidebar_label: Product Catalogue _(Product Costing)_
+sidebar_label: Product Catalogue (Costing)
 slug: /PCPCAT
 ---
 ## Introduction
