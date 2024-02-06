@@ -59,7 +59,7 @@ The data fields **Model Type** and **Process Model Name** now become accessible.
     -   Stand alone Instance  
     -   Blueprint  
 
-:::Important Model Type Options explained  
+:::important Model Type Options Explained  
 Use the **Template** option when the Process Model...  
 
 The **Stand alone Instance** Model Type is used when...  
