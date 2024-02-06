@@ -59,7 +59,7 @@ const sidebars= {
 	    { type: 'category',
         label: 'System Setup & Configuration',
         items: [
-					// "CMP-001",
+					"CMP-001",
           "CNF-002",
         ],
       },        
@@ -89,7 +89,7 @@ const sidebars= {
                 label: 'Profile Functions',
                 items: [
                   "DPMNT-001",
-			            "TAA-004",						
+			            "SAF-1204",						
 				          "EMP-002",						
 				          "SAF-441",
                 ],   
