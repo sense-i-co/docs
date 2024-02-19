@@ -91,7 +91,7 @@ const sidebars= {
                 items: [
                   "DPMNT-001",
 			            "SAF-1204",
-                  "CNF-002",				
+                  "CNF-001",				
 				          "SAF-441",
                 ],   
 			        },
