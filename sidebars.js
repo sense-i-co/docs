@@ -60,6 +60,7 @@ const sidebars= {
         label: 'System Setup & Configuration',
         items: [
 					"CMP-001",
+          "CNF-001",
           "CNF-002",
         ],
       },        
@@ -89,8 +90,8 @@ const sidebars= {
                 label: 'Profile Functions',
                 items: [
                   "DPMNT-001",
-			            "SAF-1204",						
-				          "EMP-002",						
+			            "SAF-1204",
+                  "CNF-002",				
 				          "SAF-441",
                 ],   
 			        },
