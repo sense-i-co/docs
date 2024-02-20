@@ -82,7 +82,7 @@ A list of Managers will be dispayed if Employee details have been captured AND t
 Refer to the documents titled **["Employee Positions"](https://sense-i.co/docs/POS001)** and **["Capture Employee Information"](https://sense-i.co/docs/SAF1204)**.  
 :::	 
 
-3. Search for & **select** the relevant Department Manager from the list.  
+3. Search for, and **select** the relevant Department Manager from the list.  
 
 ![](../static/img/docs/DPM-001/image06.png)  
 
@@ -110,7 +110,7 @@ The Select Address screen enables you to **Add** a new address for the departmen
 
 ### Contact _(Department)_  
 
-Next we will capture the Department contact information in the fields under the **Contact** section.
+Next we will capture the Department contact information in the fields under the **Contact** section.  
 
 ![](../static/img/docs/DPM-001/image08.png)  
 
@@ -252,9 +252,9 @@ The **Add New Department Profile** screen is displayed.
 
 4.  Use this method to add all the relevant Divisions / Departments and sub-departments in your organisation.  
 
-5.  Once you have completed the process of adding Departments, click the **Close** button on the Action Bar.  
-
 ![](../static/img/docs/DPM-001/image19.png)  
+
+5.  Once you have completed the process of adding Departments, click the **Close** button on the Action Bar.  
 
 :::important  
 It is neccessary to log out of the SEMS application in order to save the department information to the database.  
