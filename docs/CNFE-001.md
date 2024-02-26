@@ -84,7 +84,7 @@ Your default **email client application** will open, enabling you to compose a n
 
 7.  Click the **Close** button.  
 
-8.  Repeat the steps above to capture email dresses for other Employees.  
+8.  Repeat the steps above to capture email addresses for other Employees.  
 ___
 
 ### Customer Profile  
@@ -117,7 +117,7 @@ Your default **email client application** will open, enabling you to compose a n
 
 7.  Click the **Close** button.  
 
-8.  Repeat the steps above to capture email dresses for other Customers.  
+8.  Repeat the steps above to capture email addresses for other Customers.  
 ___
 
 ### Supplier Profile  
@@ -150,7 +150,7 @@ Your default **email client application** will open, enabling you to compose a n
 
 7.  Click the **Close** button.  
 
-8.  Repeat the steps above to capture email dresses for other Suppliers.  
+8.  Repeat the steps above to capture email addresses for other Suppliers.  
 
 <!-- ___
 
