@@ -60,7 +60,9 @@ const sidebars= {
         label: 'System Setup & Configuration',
         items: [
 					"CMP-001",
-          "CNF-001",
+          "CNFE-001",
+          "CNFE-002",
+          "GMAIL2STEP",
           "CNF-002",
         ],
       },        
@@ -91,7 +93,8 @@ const sidebars= {
                 items: [
                   "DPMNT-001",
 			            "SAF-1204",
-                  "CNF-001",
+                  "CNFE-001",
+                  "CNFE-002",
 				          "SAF-441",
                 ],   
 			        },
