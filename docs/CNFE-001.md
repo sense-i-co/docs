@@ -160,20 +160,5 @@ Your default **email client application** will open, enabling you to compose a n
 
 8.  Repeat the steps above to capture email addresses for other Suppliers.  
 
-<!-- ___
-
-## SEMS Log in & Email Password Setup  
-
-Once the Email settings have been captured, the next step would be for the **Employee / SEMS User** to Log in to the SEMS application.  
-
-Then the **Employee / SEMS User** will be able to set his/her Email password and **test** the outgoing Email function.    -->
-
-<!-- ### Employee SEMS Log in  
-
-:::important  
-Refer to the document titled **[Log in & Maintain Password](https://sense-i.co/docs/SUI001)**.  
-:::  
-
-1.  Log in to the SEMS application with **SEMS Logon User Code** as received from the SEMS System Administrator.   -->
 ___
 **This is the end of this procedure.**

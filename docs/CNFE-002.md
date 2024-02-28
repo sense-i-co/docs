@@ -99,10 +99,6 @@ ___
 
 ## Employee Profile  
 
-<!-- The Setup and Configuration of Employee Outgoing Emails in the SEMS application is of significant importance, especially for those Employees that are **Company Representatives** and those Employees  in the Accounts / Finance departments.  
-
-The information captured in this process will be enable Employess to email Transactional documents and Reports, including **Customer documents** such as Sales Quotes, Sales Orders and Sales Invoices, as well as those documents pertaining to **Suppliers** such as Purchase Orders & Supplier Claim Forms from within the SEMS application.   -->
-
 :::important  
 Employee **Primary Email** and **Alternate Email** addresses are captured in the **Name & Details** TAB sheet, under the **Contact** section - Refer to the document titled **["Capture Email Addresses (Part 1)"](https://sense-i.co/docs/CNFE001)**.  
 :::	 
