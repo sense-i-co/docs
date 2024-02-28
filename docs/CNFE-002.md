@@ -1,6 +1,6 @@
 ---
 id: CNFE-002
-title: Configure Outgoing Email Settings (CNFE-002)
+title: Configure Outgoing Email Settings
 sidebar_label: Outgoing Email Settings
 slug: /CNFE002
 ---
@@ -8,7 +8,7 @@ slug: /CNFE002
 
 This **step-by-step guide** will show you **how to Define and Configure** the **Outgoing Email Settings** for your **Company** and **Employees** within the **SEMS** application.  
 
-This task of setting up **Company Email Settings** is typically done by the SEMS System Administrator in your Organisation.  
+The task of setting up **Company Email Settings** is typically done by the SEMS System Administrator in your Organisation.  
 
 Outgoing Email Setup in the SEMS application is important for the following reasons:  
 -  Company Profile / Outgoing Email configuration is required for the SEMS Application to automatically issue One-Time-Pins (OTP) _("Forgot Password" & related Login / System accessibility issues)_.  
@@ -29,7 +29,7 @@ Refer to the document titled **["Company Profile & Settings"](https://sense-i.co
 
 ![](../static/img/docs/CNF-001/image04.png)  
 
-The primary and alternate email addresses will be displayed in the **Email** fields, as captured previously - Refer to the document titled **["Capture Email Addresses (Part 1)"](https://sense-i.co/docs/CMPE001)**.  
+The primary and alternate email addresses will be displayed in the **Email** fields, as captured previously - Refer to the document titled **["Capture Email Addresses (Part 1)"](https://sense-i.co/docs/CNFE001)**.  
 
 :::important  
 Email configuration details will be required for the next steps in the process, and can be obtained from your **Email Service Provider**.  
@@ -104,7 +104,7 @@ ___
 The information captured in this process will be enable Employess to email Transactional documents and Reports, including **Customer documents** such as Sales Quotes, Sales Orders and Sales Invoices, as well as those documents pertaining to **Suppliers** such as Purchase Orders & Supplier Claim Forms from within the SEMS application.   -->
 
 :::important  
-Employee **Primary Email** and **Alternate Email** addresses are captured in the **Name & Details** TAB sheet, under the **Contact** section - Refer to the document titled **["Capture Email Addresses (Part 1)"](https://sense-i.co/docs/CMPE001)**.  
+Employee **Primary Email** and **Alternate Email** addresses are captured in the **Name & Details** TAB sheet, under the **Contact** section - Refer to the document titled **["Capture Email Addresses (Part 1)"](https://sense-i.co/docs/CNFE001)**.  
 :::	 
 
 ### SEMS Logon User Code  
@@ -170,7 +170,7 @@ Email configuration details will be required for the next steps in the process, 
 6.  To Activate the Employee Profile, select the **Name & Details** TAB, then click on the **Activate** button.  
 ___
 
-## SEMS Log in & Email Password Setup  
+## SEMS Log in & Email Password  
 
 Once the Email settings have been captured, the next step would be for the **Employee / SEMS User** to Log in to the SEMS application.  
 
@@ -188,7 +188,7 @@ Refer to the document titled **[Log in & Maintain Password](https://sense-i.co/d
 If Google / Gmail is used as the Mail Service Hosting Provider, refer to the document titled **["Gmail Mail Server Hosting"](https://sense-i.co/docs/GMAIL2STEP)**.  
 :::  
 
-### Setup Email Password  
+### Enter Email Password  
 
 1.  Click the **Tools** button on the Main Navigation bar.  
 

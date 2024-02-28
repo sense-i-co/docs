@@ -28,7 +28,9 @@ Refer to the document titled **["Company Profile & Settings"](https://sense-i.co
 :::	
 
 :::note  
-To make changes to the Company Profile screen, click the **Deactivate** button on the form Action Bar.  
+If the **Status** of the Company Profile screen is **Active**, the various fields will be greyed out and won't be accessible.  
+
+To enter information and/or make changes to the Company Profile screen, click the **Deactivate** button on the form Action Bar.  
 :::  
 
 Your Company's **Primary Email** and **Alternate Email** addresses are captured in the **Name & Details** TAB sheet, under the **Contact** section.  
@@ -49,7 +51,7 @@ Your default **email client application** will open, enabling you to compose a n
 
 4.  Once you have entered the necessary information, you should click on the **Save** button on the form Action Bar to save this information to the database.  
 
-5.  To Activate the Company Profile, click on the **Activate** button.  
+5.  To Activate the Company Profile, click the **Activate** button.  
 ___
 
 ### Employee Profile  
@@ -61,7 +63,9 @@ Refer to the document titled **["Capture Employee Information"](https://sense-i.
 Employee's **Primary Email** and **Alternate Email** addresses are captured in the **Name & Details** TAB sheet, under the **Contact** section.  
 
 :::note  
-To make changes to the Employee Profile, click the **Deactivate** button on the form Action Bar.  
+If the **Status** of the Employee Profile screen is **Active**, the various fields will be greyed out and won't be accessible.  
+
+To enter information and/or make changes to the Employee Profile screen, click the **Deactivate** button on the form Action Bar.  
 :::  
 
 ![](../static/img/docs/CNF-001/image12.png)  
@@ -80,7 +84,7 @@ Your default **email client application** will open, enabling you to compose a n
 
 4.  Once you have entered the necessary information, you should click on the **Save** button on the form Action Bar to save this information to the database.  
 
-6.  To Activate the Employee Profile, select the **Name & Details** TAB, then click on the **Activate** button.  
+6.  To Activate the Employee Profile, click the **Activate** button.  
 
 7.  Click the **Close** button.  
 
@@ -96,7 +100,9 @@ Refer to the document titled **["Capture Customer Profile"](https://sense-i.co/d
 Customer **Primary Email** and **Alternate Email** addresses are captured in the **Name & Details** TAB sheet, under the **Contact** section.  
 
 :::note  
-To make changes to the Customer Profile, click the **Deactivate** button on the form Action Bar.  
+If the **Status** of the Customer Profile screen is **Active**, the various fields will be greyed out and won't be accessible.  
+
+To enter information and/or make changes to the Customer Profile screen, click the **Deactivate** button on the form Action Bar.  
 :::  
 
 ![](../static/img/docs/CNF-001/image25.png)  
@@ -113,7 +119,7 @@ Your default **email client application** will open, enabling you to compose a n
 
 4.  Once you have entered the necessary information, you should click on the **Save** button on the form Action Bar to save this information to the database.  
 
-6.  To Activate the Customer Profile, select the **Name & Details** TAB, then click on the **Activate** button.  
+6.  To Activate the Customer Profile, click the **Activate** button.  
 
 7.  Click the **Close** button.  
 
@@ -129,7 +135,9 @@ Refer to the document titled **["Supplier Information"](https://sense-i.co/docs/
 Supplier **Primary Email** and **Alternate Email** addresses are captured in the **Name & Details** TAB sheet, under the **Contact** section.  
 
 :::note  
-To make changes to the Supplier Profile, click the **Deactivate** button on the form Action Bar.  
+If the **Status** of the Supplier Profile screen is **Active**, the various fields will be greyed out and won't be accessible.  
+
+To enter information and/or make changes to the Supplier Profile screen, click the **Deactivate** button on the form Action Bar.  
 :::  
 
 ![](../static/img/docs/CNF-001/image24.png)  
@@ -146,7 +154,7 @@ Your default **email client application** will open, enabling you to compose a n
 
 4.  Once you have entered the necessary information, you should click on the **Save** button on the form Action Bar to save this information to the database.  
 
-6.  To Activate the Supplier Profile, select the **Name & Details** TAB, then click on the **Activate** button.  
+6.  To Activate the Supplier Profile, click the **Activate** button.  
 
 7.  Click the **Close** button.  
 
