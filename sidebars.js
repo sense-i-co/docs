@@ -60,6 +60,7 @@ const sidebars= {
         label: 'System Setup & Configuration',
         items: [
 					"CMP-001",
+          "CNF-003",
           "CNFE-001",
           "CNFE-002",
           "GMAIL2STEP",
