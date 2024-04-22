@@ -5,7 +5,7 @@ sidebar_label: Material Classification
 slug: /MATCLASS
 ---
 
-# Introduction    
+# Introduction  
 ___
 
 Information about the Materials your company purchases from Suppliers is stored at three levels of detail in the system.  
@@ -30,7 +30,7 @@ In this procedure we will explain the process of defining, and adding **Material
 
 ## Add New Material Group  
 
-The first step in the process would entail navigating to the Material Group grid list.
+The first step in the process would entail navigating to the Material Group grid list.  
 
 ![](../static/img/docs/MAT-CLASS/image01.png)  
 
@@ -76,7 +76,7 @@ Repeat the steps above to add any further new Material Groups.
 
 11. Click the **Close** button to close the Maintain Material Group screen.  
 
-## Material Types
+## Material Types  
 
 Once the Material Groups have been defined, the next process involves adding **Material Types** associated with the appropriate Material Group.  
 
@@ -92,11 +92,11 @@ The **Resource Type** grid screen is displayed, listing all the **Item Types** t
 
 ![](../static/img/docs/PROD-GRP-TYP/image07.png)  
 
-As we are working with Material Types, we should filter the grid list to display only those Item Types that fall under the **Material** section in the **Item Category**.
+As we are working with Material Types, we should filter the grid list to display only those Item Types that fall under the **Material** section in the **Item Category**.  
 
 4.  Click the down-arrow button in the **Category** field.  
 
-5.  Then click on the **Material** option in the drop-down menu list.
+5.  Then click on the **Material** option in the drop-down menu list.  
 
 ![](../static/img/docs/MAT-CLASS/image05.png)  
 
@@ -120,7 +120,7 @@ The Resource Type grid list will be reloaded listing the Item Types previously d
 If no Item Types have been defined, the grid will be displayed without any Item Types listed.  
 :::  
 
-## Add New Material Type
+## Add New Material Type  
 
 ![](../static/img/docs/MAT-CLASS/image08.png)  
 
@@ -156,7 +156,7 @@ The system returns to the **Add New Resource Type** screen.
 
 ![](../static/img/docs/PROD-GRP-TYP/image17.png)  
 
-In this part of the process we will capture the Physical Attributes of the new Material Type being added.
+In this part of the process we will capture the Physical Attributes of the new Material Type being added.  
 
 1.  Click on the drop-down arrow in the **Physical Category** field, and then click on the appropriate option in the drop-down list.  
 

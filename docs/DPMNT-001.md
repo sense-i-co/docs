@@ -11,9 +11,9 @@ This **step-by-step guide** will show you **how to Define and Configure** the va
 
 Once the **Orginisation Structure** for your Company is in place, it is important to enter this information in the **SEMS** application.  
 
-This task is typically performed by the SEMS System Administrator in your orginisation.
+This task is typically performed by the SEMS System Administrator in your orginisation.  
 
-The transactional relationships between the Departments in the Company are of utmost importance in the Product Costing Process.   
+The transactional relationships between the Departments in the Company are of utmost importance in the Product Costing Process.  
 
 :::important Company Profile  
 Before proceeding with the setup of Departments in your company, ensure that the **Company Profile** and related information has been captured in the SEMS application.  
@@ -25,7 +25,7 @@ In this guide, we will, as an example, describe the process of defining Departme
 
 ![](../static/img/docs/DPM-001/image00.png)  
 
-We will use the above Organisation Tree diagram (also referred to as **Organisation Structure Nodes** _(OSN)_) as reference when defining the Departments in the SEMS application.
+We will use the above Organisation Tree diagram (also referred to as **Organisation Structure Nodes** _(OSN)_) as reference when defining the Departments in the SEMS application.  
 
 ## Add Department  
 
@@ -53,7 +53,7 @@ A **Confirmation dialogue** box is displayed.
 
 5.  Click the **Yes** button to add the new department under the Company.  
 
-The **Add New Department Profile** screen is displayed.
+The **Add New Department Profile** screen is displayed.  
 
 ![](../static/img/docs/DPM-001/image04.png)  
 
@@ -65,7 +65,7 @@ The **Parent Department** field displays the name of the Company.
 
 7.  Click on the drop-down arrow in the **Department Type** field to select the relevant department type.  
 
-In this example we will select the **Head Office** option.
+In this example we will select the **Head Office** option.  
 
 ![](../static/img/docs/DPM-001/image05.png)  
 
@@ -77,7 +77,7 @@ In this example we will select the **Head Office** option.
 The **Select Manager** screen is displayed.  
 
 :::important  
-A list of Managers will be dispayed if Employee details have been captured AND the relevant **Position(s)** have been assigned to those employees that hold management positions.
+A list of Managers will be dispayed if Employee details have been captured AND the relevant **Position(s)** have been assigned to those employees that hold management positions.  
 
 Refer to the documents titled **["Employee Positions"](https://sense-i.co/docs/POS001)** and **["Capture Employee Information"](https://sense-i.co/docs/SAF1204)**.  
 :::	 
@@ -86,7 +86,7 @@ Refer to the documents titled **["Employee Positions"](https://sense-i.co/docs/P
 
 ![](../static/img/docs/DPM-001/image06.png)  
 
-4. Enter an order Suffix in the **Order Suffix** field.
+4. Enter an order Suffix in the **Order Suffix** field.  
 
 :::tip  
 This is relevant where, for example, different departments generate similar orders (Sales Orders and/or Purchase Orders).  The Order Suffix is an efficient method to differentiate which department generated and managed orders and is especially useful in the reporting process.  
@@ -114,7 +114,7 @@ Next we will capture the Department contact information in the fields under the 
 
 ![](../static/img/docs/DPM-001/image08.png)  
 
-1.  Enter the main phone number for the Department in the **Phone** _(number)_ field.
+1.  Enter the main phone number for the Department in the **Phone** _(number)_ field.  
 
 2.	Enter the mobile number in the **Mobile** _(number)_ field.  
 
@@ -222,7 +222,7 @@ This is extremely useful when structuring teams in a reporting hierarchy.  The S
 
 ![](../static/img/docs/DPM-001/image15.png)  
 
-8.  Change the Sequence number by clicking on the relevant row under the **Seq No** column, and then type in the desired value. 
+8.  Change the Sequence number by clicking on the relevant row under the **Seq No** column, and then type in the desired value.  
 
 9.  Once you have linked all the relevant Department Positions, click on the **Department Profile** TAB.  
 
@@ -244,7 +244,7 @@ A **Confirmation dialogue** box is displayed.
 
 2.  Click the **Yes** button to add the new sub-department.  
 
-The **Add New Department Profile** screen is displayed.
+The **Add New Department Profile** screen is displayed.  
 
 ![](../static/img/docs/DPM-001/image18.png)  
 
