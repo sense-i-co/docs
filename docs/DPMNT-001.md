@@ -215,7 +215,7 @@ The Confirmation dialogue box will be displayed with the message **Create a new 
     In this example we will choose the **No** option, as the HR Manager reports to the Chief Operating Officer.  
 
 :::tip  
-This is extremely useful when struturing teams in a reporting hierarchy.  The SEMS system supports multiple levels in the position hierarchy.  
+This is extremely useful when structuring teams in a reporting hierarchy.  The SEMS system supports multiple levels in the position hierarchy.  
 :::  
 
 7.  Repeat steps 1 through 6 above to link additional Department Positions.  

@@ -7,12 +7,11 @@ slug: /PCPCAT
 ## Introduction
 ___ 
 
-The process of defining **Product Groups** and **Product Types** within the Products Resource Category, is detailed in the **Product Classification** document.   
+The process of searching for, and defining NEW **Product Groups** and **Product Types** within the Products Resource Category, is detailed in the **["Product Classification"](https://sense-i.co/docs/PRODGRPTYP)**. document.   
 
 The actual Products that your company sells to its customers are called **Product Profiles**.  
 
-The Product Profiles are **instances of specific products** that appear in
-the **Product Catalogue** _(also known as Price Lists)_ and are used on **Sales Orders**, **Sales Delivery Notes**, **Sales Tax Invoices** and so on.
+The Product Profiles are **instances of specific products** that appear in the **Product Catalogue** _(also known as Price Lists)_ and are used on **Sales Orders**, **Sales Delivery Notes**, **Sales Tax Invoices** and so on.
 
 ## Procedure Guideline
 
@@ -48,7 +47,7 @@ On the right of the screen is a panel that lists all the **Product Groups** and 
 This panel is very useful because at a single glance it enables you to see the entire Product Architecture for all the Products your company buys, makes and sells.  
 
 :::important  
-5.  You must ensure that you select a **Department** or **Company** before you search for any products.
+5.  You must ensure that you select a **Department** before you search for any products.
 	
 ![](../static/img/docs/SAF-441/image202.png)  
 :::  
