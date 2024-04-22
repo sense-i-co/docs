@@ -82,8 +82,9 @@ const sidebars= {
 					"CHGPW-02",
           "CNF-002",
         ],   
-        },
-      },   	       
+      },
+    ],
+  },    		
 	    { type: 'category',
         label: 'Business Processes',
         items: [
