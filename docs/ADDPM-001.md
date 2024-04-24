@@ -19,14 +19,14 @@ ___
 This screen lists all of the Products that have been captured in the system.  
 
 _For more detailed information on using this function, view the procedure titled **[Product Catalogue (Product Costing Process)](https://sense-i.co/docs/PCPCAT)**_ 
-	
-![](../static/img/docs/PM-001/image02.png)  
 
 ### Product Search  
 
 1. To search for the Product for which you want to create a Process Model, **enter information** to search for the specific product in the **Search Criteria Panel**.  
 
 2. Click the **Search** button on the form Action Bar.  
+	
+![](../static/img/docs/PM-001/image02.png)  
 
 3. The system will display a list of all Products that match the Search Criteria you have entered.  
 
@@ -34,7 +34,7 @@ _For more detailed information on using this function, view the procedure titled
 
 ### Create Process Model  
 
-1. Click the Process Model button on the Action Bar.  	
+1. Click the **Process Model** button on the Action Bar.  	
 
 ![](../static/img/docs/PM-001/image03.png)  
 
@@ -53,22 +53,26 @@ The data fields **Model Type** and **Process Model Name** now become accessible.
 
 ![](../static/img/docs/PM-001/image06.png)  
 
-4. Click the drop-down arrow in the field under **Model Type** to selct the desired option.  
+4. Click the drop-down arrow in the field under **Model Type** to select the desired option.  
 
 5. You need to define the **Model Type** for the Process Model by selecting one of the options:
     -   Template
     -   Stand alone Instance  
     -   Blueprint  
 
-:::important Model Type Options Explained  
-Use the **Template** option when the Process Model...  
-
-The **Stand alone Instance** Model Type is used when...  
-
-Choose the **Blueprint** option when...  
-:::  
 
 6. Enter the Process Model Name in the data field under **Process Model Name**.    
+
+:::important Model Type Options Described  
+**Template Model**:  
+A template process model serves as a standardized framework for a category or group of similar products. It captures common elements and workflows shared among multiple items, allowing for efficient replication and adaptation.  
+
+**Stand alone Instance**:  
+A stand-alone process model is tailored specifically to a single product or item within the inventory. It provides detailed instructions and workflows for the manufacturing process of that particular item.  
+
+**Blueprint Model:**  
+A blueprint process model provides a high-level overview of the manufacturing process, focusing on the general steps and components required for production. It outlines the essential elements and resources needed to manufacture a wide range of products.  
+:::  
 
 ### Profile Information  
 
@@ -94,14 +98,18 @@ Once saved, a sequential **Process Model No** is generated, the Product **Item C
 
 ![](../static/img/docs/PM-001/image10.png)  
 
-The other TABs will be accessible, enabling you to define specific information needed to calculate the **cost of the Product** and to plan **Labour and Materials requirements** once Orders are received from Customers.  
+The other TABs will be accessible, enabling you to define specific information needed to calculate the **Cost of the Product** and to plan **Labour and Materials requirements** once Orders are received from Customers.  
 
 ![](../static/img/docs/PM-001/image11.png)  
 
 :::  
 
-5.  You will then need to enter information about the **Materials Required** on the **Inputs** Screen, the Tasks that need to be performed when running the Process on the **Tasks** Screen, and the Parts which make up the Product in the **Part List** Screen.  
+5.  You will then need to enter information about the **Materials Required** on the **Inputs** screen, the Tasks that need to be performed when running the Process on the **Tasks** screen, and the Parts which make up the Product in the **Part List** screen.  
 
 Please refer to the other documents in the Product Costing Process section for information on how to enter this information.  
+
+-   **[Process Model Inputs](https://sense-i.co/docs/PMINPT001)**  
+-   **[Process Model Tasks](https://sense-i.co/docs/PMTSK001)**  
+-   **[Parts List](https://sense-i.co/docs/PRTLST001)** 
 
 **This is the end of this procedure.**

@@ -33,7 +33,7 @@ This sheet will list (once added) each of the **Materials** that have been defin
 
 ### Material / Item search  
 
-You can search for Materials by selecting any of the **Material Groups** in the **Selection Panel** (right-hand side of the screen).  
+1.  You can search for Materials by selecting any of the **Material Groups** in the **Selection Panel** (right-hand side of the screen).  
 
 2.  Click on the **[+]** button of the selected **Material Group** to display the list of **Material Types**.
 
@@ -75,13 +75,36 @@ Refer to the document titled **["Customising Information Display"](https://sense
 
 9.  You can repeat the steps above for each Input you need to link to the Process Model.  
 
-10. Once youve have selected all the necessary items, click the **Close** button on the form Action Bar.  
+10. Once you've selected all the necessary items, click the **Close** button on the form Action Bar.  
 
 11. The system will return you to the Process Model Inputs screen.  
 
-![](../static/img/docs/PMINPT-001/image08.png)  
+![](../static/img/docs/PMINPT-001/image09.png)  
 
-You will notice that the record fields under the **Item Code** column are coloured red, and the record fields under the **Alert / QTY Alert** column are hi-lighted in yellow with the alert information **"No QTY captured"**. 
+You will notice that the record fields under the **Item Code** column are coloured red.  
+
+![](../static/img/docs/PMINPT-001/image10.png)  
+
+12. Scroll across to the **Alert / QTY Alert** column.  
+    The alert information **"No QTY captured"** is hi-lighted in yellow. 
+
+13. Enter the Quantity for each Input Item under the **Direct Qty** column.  
+
+![](../static/img/docs/PMINPT-001/image11.png)  
+
+:::tip  
+You can enter the Direct Quantity in either the **Input UOM _(Unit of Measure)_** <u>OR</u> the **Stock UOM** band, depending on which value your product designers have determined.  
+
+The system will automatically set the other based on the conversion value between the Input and Stock UOM.  
+:::  
+
+The grid is now updated with the Item Codes no longer coloured red, and Alert(s) resolved.  
+
+![](../static/img/docs/PMINPT-001/image12.png)  
+
+14. When you have completed adding the inputs, the next step in the process would be to add a series of **Tasks** necessary to create the Product.  Refer to the document titled **[Process Model Tasks](https://sense-i.co/docs/PMTSK001)**.
+
+
 
 <!-- You will notice that the Material Type you selected in step 7 and 8 is displayed in the list. If you look at the information in the grid you will see that two of the columns have the headings Resource Type and Input. The Resource Type column displays the name of the Type of Material you have linked as an Input. If the name displayed in the Input column is the same as the name displayed in the Type column, this is an indication that you have not defined the specific Material needed. You can leave the input set at the Material Type level, but only if the Output displayed in the Selected Output field is set at the Product Type level.   -->
 
@@ -109,6 +132,6 @@ You will notice that the record fields under the **Item Code** column are colour
 
 18. You can repeat the steps above for each Input you need to link to the Process Model.   -->
 
-12. When you have completed adding the inputs you can either click on another of the tabs on the Process Model screen, or you can click the Close button.  
+
 
 **This is the end of this procedure.**
