@@ -5,7 +5,7 @@ sidebar_label: Material Classification
 slug: /MATCLASS
 ---
 
-# Introduction  
+## Introduction  
 ___
 
 Information about the Materials your company purchases from Suppliers is stored at three levels of detail in the system.  
@@ -24,7 +24,7 @@ The **Supplier Catalogue Grid** underneath the Search Criteria Panel consists of
 For detailed information on searching for existing **Specific Material Instances**, and adding **New Material Items** to the **Supplier Catalogue**, refer to the document titled **["Supplier Catalogue (Costing)"](https://sense-i.co/docs/PCP442)**.  
 :::  
 
-# Procedure Guideline  
+## Procedure Guideline  
 
 In this procedure we will explain the process of defining, and adding **Material Groups**, and **Material Types** within the **Material Resource Category** using the Setup features in the Inventory function.  
 
@@ -120,7 +120,7 @@ The Resource Type grid list will be reloaded listing the Item Types previously d
 If no Item Types have been defined, the grid will be displayed without any Item Types listed.  
 :::  
 
-## Add New Material Type  
+### Add New Material Type  
 
 ![](../static/img/docs/MAT-CLASS/image08.png)  
 
@@ -152,7 +152,7 @@ The system returns to the **Add New Resource Type** screen.
 
 6. Type a short description of the Material Type in the **Resource Type Description** field.  
 
-### Material Type, Physical Attributes  
+#### Material Type, Physical Attributes  
 
 ![](../static/img/docs/PROD-GRP-TYP/image17.png)  
 
@@ -184,7 +184,7 @@ The system will display a Warning dialogue when attempting to Save the new Mater
 
 8.  Repeat the steps above to define the **Width, Thickness** _(Height)_, **Diameter, Volume** and **Weight** attributes, as needed, for the Material Type being added.  
 
-### General / SUNDRY  
+#### General / SUNDRY  
 
 ![](../static/img/docs/PROD-GRP-TYP/image20.png)  
 
@@ -196,7 +196,7 @@ The system will display a Warning dialogue when attempting to Save the new Mater
 
 4.  Click the **Use Dictionary** check-box if your company subscribes to the SEMS Dictionary Module, and where Material Items & variants are uniquely defined using the descriptive features of this powerful module.  
 
-### Save & Activate Material Type  
+#### Save & Activate Material Type  
 
 Once you are satisfied that all the Material Type **Profile** information has been entered correctly, the next step will be saving and activating the Material Type.  
 
@@ -214,7 +214,7 @@ For further information on Dictionaries, refer to the document titled **["SEMS D
 
 The system returns to the Resource Type screen with the newly added Material Type listed as a record row.  
 
-Repeat the steps above to add other New Material Types.  
+Repeat the steps above to add additional New Material Types.  
 
 
 **This is the end of this procedure.**

@@ -4,7 +4,7 @@ title: Product Classification - Groups & Types
 sidebar_label: Product Classification
 slug: /PRODGRPTYP
 ---
-# Product Classification Overview  
+## Product Classification Overview  
 ___ 
 
 Information about Products is stored at **four levels of detail** in the Sense-i System.  
@@ -28,11 +28,11 @@ The following diagram illustrates these classification levels.
 
 ![](../static/img/docs/SAF-441/image27.png)  
 
-# Procedure Guideline  
+## Procedure Guideline  
 
 In this procedure we will explain the process of defining, and adding **Product Groups**, and **Product Types** within the **Product Resource Category** using the Setup features in the Inventory function.  
 
-## Product Groups  
+### Product Groups  
 
 The first step in the process would entail navigating to the Product Group grid list.  
 
@@ -80,7 +80,7 @@ Repeat the steps above to add any further new Product Groups.
 
 11. Click the **Close** button to close the Maintain Product Group screen.  
 
-## Product Types  
+### Product Types  
 
 Once the Product Groups have been defined, the next process involves adding **Product Types** associated with the appropriate Product Group.  
 
@@ -168,7 +168,7 @@ The system returns to the **Add New Resource Type** screen.
 
 8. Type a short description of the Product Type in the **Resource Type Description** field.  
 
-### Product Type, Physical Attributes  
+#### Product Type, Physical Attributes  
 
 ![](../static/img/docs/PROD-GRP-TYP/image17.png)  
 
@@ -200,7 +200,7 @@ The system will display a Warning dialogue when attempting to Save the new Produ
 
 8.  Repeat the steps above to define the **Width, Thickness** _(Height)_, and where relevant, the **Diameter, Volume** and **Weight** attributes for the Product Type being added.  
 
-### General / SUNDRY  
+#### General / SUNDRY  
 
 ![](../static/img/docs/PROD-GRP-TYP/image20.png)  
 
@@ -212,7 +212,7 @@ The system will display a Warning dialogue when attempting to Save the new Produ
 
 4.  Click the **Use Dictionary** check-box if your company subscribes to the SEMS Dictionary Module, and where Product Items & variants are uniquely defined using the descriptive features of this powerful module.  
 
-### Save & Activate Product Type  
+#### Save & Activate Product Type  
 
 Once you are satisfied that all the Product Type **Profile** information has been entered correctly, the next step will be saving and activating the Product Type.  
 

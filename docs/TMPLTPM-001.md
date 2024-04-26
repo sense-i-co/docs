@@ -39,7 +39,7 @@ You can search for specific Process Models by entering information in the variou
 ![](../static/img/docs/TMPLTPM-001/image03.png)  
 
 :::important  
-Choose an option from each of the se drop-down lists:  
+Choose an option from each of these drop-down lists:  
 1.  **Model Type**,  
 2.  **Model Status**, and  
 3.  **Department**.  
@@ -85,7 +85,7 @@ This screen enables you to enter the **Name** for the new Process Model you are 
 :::note  
 If you can create a **set of Template Process Models** then these become your **Master Process Models** which you then copy and use to create the specific Process Model(s) needed to make the various Products sold to the company's Customers.  
 
-If you do this, then you should start the name of these Process Models with the word **"TEMPLATE"**.  
+If you do this, it is recommended that you should start the name of these Process Models with the word **"TEMPLATE"**.  
 :::  
 
 First you need to enter a name for the new Process Model.  
@@ -98,7 +98,7 @@ If you are creating a Process Model for specific Sales Order or Project, then yo
 
 ![](../static/img/docs/TMPLTPM-001/image09.png)  
 
-3.  Click on the three-dot button in the **New Department** field, and select the epartment that owns the Process Model.  
+3.  Click on the three-dot button in the **New Department** field, and select the Department that owns the Process Model.  
 
 ![](../static/img/docs/TMPLTPM-001/image10.png)  
 
@@ -142,11 +142,11 @@ The system will create a new Process Model with the new name you have specified 
 
 2.  Click the **Search** button.  
 
-The system will display the copied Process Model with the new Name in the list.  
+The system will display the copied Process Model with the new _Process Model Name_ in the list.  
 
 ![](../static/img/docs/TMPLTPM-001/image14.png)  
 
-::tip  
+:::tip  
 An alternative Search method would be to place the cursor in the **Process Model Name** field, **right-click** the mouse and select **Paste**.  
 
 The name you copied above will be pasted into the Process Model Name field.
@@ -189,11 +189,6 @@ If you need to create new Products for the Sales Order you are processing, then 
 :::  
 
 10. Once the Products have been added to the Customer Catalogue, then you need to link them to the new Process Model you are creating.  
-___
-
-:::warning Document to be Created  
-*(You can refer to the Procedure titled "PMD-002 -- **Add Process Model Output** for more detail on how to perform this step.)*  
-:::  
 
 11. Once you have created a new Product and linked it as an **Output** to this Process Model, click the **Part List** TAB.  
 
