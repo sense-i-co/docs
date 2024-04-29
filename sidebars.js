@@ -420,6 +420,12 @@ const sidebars= {
                 "VIDMONOUTPO",  
               ],  
             },
+    { type: 'category',
+              label: 'Product Costing Process',
+              items: [
+                "VIDPMBASIC01",  
+              ],  
+            },
               "VIDSTOCKOVER", 
             ],
 
