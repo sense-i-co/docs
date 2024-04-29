@@ -423,7 +423,7 @@ const sidebars= {
     { type: 'category',
               label: 'Product Costing Process',
               items: [
-                "VIDPMBASIC01",  
+                "VID-PM-BASIC-01",  
               ],  
             },
               "VIDSTOCKOVER", 
