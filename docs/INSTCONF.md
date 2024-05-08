@@ -9,7 +9,7 @@ ___
 
 This document details the procedures needed to access the different **Sense-i software applications**, and step-by-step guidelines to **configure specific database connections**.  
 
-Once the Sense-i Launcher is open, access the **Menu** by selecting the menu icon near the top left corner of the application.
+Once the Sense-i Launcher is open, access the **Menu** by selecting the menu icon near the top-left corner of the application.
 
 ![](../static/img/docs/LAUNCH/menuIcon.png)  
 
@@ -89,7 +89,7 @@ The [ **Add** ] button activates the connection settings fields to enable and ad
 a new connection.
 
 1.	**Connection Name** - Capture the desired name (description).
-	It is recommended practise to use a consistent format that includes **company name**, 
+	It is recommended practice to use a consistent format that includes **Company name**, 
 	database type **(LIVE / TEST)** and the connection method (**Remote / LAN**),  
 	e.g. **Acme_LIVE (Remote Connect)**.
 	
@@ -97,7 +97,7 @@ a new connection.
 	the incoming **SQL port** used.  
 	The syntax is important and needs to be accurate.  
 	
-3.	**Database Name** - This too needs to reflect the exact name of the database.  
+3.	**Database Name** - This needs to reflect the **exact name** of the database.  
 
 4.	**SQL Login Name** - This is the general login setting used by all SEMS users that access the specific database.  
 
@@ -114,7 +114,7 @@ The SQL Login Name and Passwords are defined, captured and maintained by **Datab
 Click on the [ **Test** ] button to ensure the connection settings have been configured correctly.  
 
 Once the connection setting(s) have been captured and saved using the [ **Save** ] button,  
-the [ **Edit** ], [ **Delete** ] and [ **Copy** ] button options are activated for 
+the [ **Edit** ], [ **Delete** ] and [ **Copy** ] button options are enabled for 
 further amendments and to configure additional connections as necessary.  
 
 
@@ -137,7 +137,7 @@ The newly configured connection is now available and is displayed in the **Conne
 
 The following steps will upgrade the Sense-i Launcher software to the latest version;  
 
-Access the **Menu** by selecting the menu icon near the top left corner of the Sense-i Launcher application.
+Access the **Menu** by selecting the menu icon near the top-left corner of the Sense-i Launcher application.
 
 ![](../static/img/docs/LAUNCH/menuIcon.png)  
 
@@ -163,7 +163,7 @@ The **Launcher Upgrade** dialogue box is displayed.
 
 ![](../static/img/docs/LAUNCH/upgrade5.png)  
 
-6.	The system will download the relevant .ZIP file, automatically extract the necessary files and install the latest version of the Launcher.
+6.	The system will download the relevant **_.ZIP_** file, automatically extract the necessary files and install the latest version of the Launcher.
 
 When the upgrade has completed, click the **Open** button.  
 
@@ -179,7 +179,7 @@ From the **Home** screen connect to the SEMS application & relevant database.
 ----
 ### Launch (specific) Application  
 
-Access the **Menu** by selecting the menu icon near the top left corner of the Sense-i Launcher application.
+Access the **Menu** by selecting the menu icon near the top-left corner of the Sense-i Launcher application.
 
 ![](../static/img/docs/LAUNCH/menuIcon.png)  
 
@@ -191,15 +191,19 @@ The **SEMS toggle button** is set to active by default.
 
 1.	When the **SEMS toggle button** is active, clicking on the [ **Connect** ] button _(underlying **Home Page**)_ will launch the SEMS application.  
 
-2.	Click on the [ **Factory Floor** ] toggle button to activate the **Sphere_Mini** _(also known as **Maestro**)_ application.  
+2.	Click on the [ **Factory Floor** ] toggle button to use the **Sphere_Mini** _(also known as **Maestro**)_ application.  
 
 ![](../static/img/docs/LAUNCH/amend11.png)  
 
-Select [ **Yes** ] to set **Factory Floor** _(**Sphere_Mini**)_ as the default application.  
+Click [ **Yes** ] to set **Factory Floor** _(**Sphere_Mini**)_ as the default application.  
 
-Select [ **No**]  to keep **SEMS** as the default application.  
+Click [ **No**]  to keep **SEMS** as the default application.  
 
-3.	Click on the [ **Phoenix** ] toggle button to activate the newly released **Phoenix** application.  
+:::note  
+Selecting the **No** option will enable you to connect using the **Factory Floor** during the current session - and will revert back to the **SEMS** application on a subsequent _Connect_.  
+:::  
+
+3.	Click on the [ **Phoenix** ] toggle button to use the newly released **Phoenix** application.  
 
 ![](../static/img/docs/LAUNCH/amend10.png)  
 
@@ -209,12 +213,13 @@ Select [ **Yes** ] to set **Phoenix** as the default application.
 
 ![](../static/img/docs/LAUNCH/amend11.png)  
 
-4.	Click on the [ **Admin** ] toggle button to activate the **Admin** application.  
+4.	Click on the [ **Admin** ] toggle button to use the **Admin** application.  
 
 :::important  
 The default application, **SEMS** / **Factory Floor** / **Phoenix** or **Admin** (as confirmed above) will now always run when selecting the **Connect** button on the **Home** screen.  
 
-In addition, selecting the **Pin Application** option will ensure efficient connection to the relevant database using the desired Sense-i Application on a subsequent Launch!  
+In addition, selecting the **Pin Application** option will ensure efficient connection to the relevant database using the  
+desired Sense-i Application on a subsequent Launch!  
 
 ![](../static/img/docs/LAUNCH/amend12.png)  
 

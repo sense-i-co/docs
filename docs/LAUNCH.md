@@ -7,7 +7,7 @@ slug: /LAUNCH
 
 ## Introduction  
 
-The **Sense-i Launcher** allows you access the various **Sense-i applications** and **connect to the relevant database(s)**.
+The **Sense-i Launcher** allows you access to the various **Sense-i applications** and **connect to the relevant database(s)**.
 
 This **step-by-step guide** will show you how to use the **Sense-i Launcher** application.  
 
@@ -31,7 +31,7 @@ There will be no **SEMS connections** available when using the **Sense-i Launche
 
 ![](../static/img/docs/LAUNCH/image503.png)  
 
-If your company subscribes to the **Sense-i Enterprise Management System _(SEMS)_** software applications, you will receive a **SEMS Connection, welcome email** containing the **connection string information**, with the relevant **SEMSconnect.INI** file attached.  
+If your company subscribes to the **Sense-i Enterprise Management System _(SEMS)_** software applications, you will receive a **SEMS Connection email** containing the **connection string information**, with the relevant _**SEMSconnect.INI**_ file attached.  
 
 1.	Click on the **Connect** button.  
 
@@ -88,7 +88,7 @@ The Database Servers can be connected to in two ways:
 - Local Area Network **(LAN) connection** - this when the Database Server is on same LAN, e.g. Office network.  
 - **Remote connection** - this when the database server is accessed remotely, e.g. via the internet.  
 
-Therefore there are typically four connection options:  
+Therefore, there could be 4 connection options available:  
 - **Remote** connection to the **LIVE database**  
 - **Remote** connection to the **TEST database**  
 - **Local connection** to the **LIVE** database - same **LAN** as that of the Database Server  
@@ -110,7 +110,7 @@ The **Load Connection** screen is now active again.
 5.  Click on the [ **Home** ] button to return to the main screen.  
 
 :::important  
-If you used the above method to Load Connection(s), you can jump to the 
+If you used the above method to Load Connection(s), you can skip to the 
 **[Home Page - Ready to Connect](https://sense-i.co/docs/LAUNCH#home-page---ready-to-connect)** section of this document.  
 :::  
 
@@ -128,11 +128,14 @@ Selecting this option will enable you to copy the relevant settings from:
 These connection settings can be obtained from your SEMS System Administrator.  
 :::  
 
-1.	To set up a connection, **select the connection string information** from your **SEMS Config. email**, OR an exsisting **SEMSconnect.INI file** OR an appropriate **text file**.    
+1.	To set up a connection, **SELECT the connection string information** from:  
+-   your **SEMS Connection email**, or  
+-   an exsisting **SEMSconnect.INI file**, or  
+-   an appropriate **text file**.    
 
 ![](../static/img/docs/LAUNCH/image200.png)  
 
-2.	Then click the right mouse button and choose the **Copy** option.  
+2.	Then click the right-mouse button and choose the **Copy** option.  
 
 ----
 
