@@ -131,7 +131,7 @@ The **Launch Application** option is checked by default.
 
 ----
 
-Click on this link, **[Using the Sense-i Launcher](https://sense-i.co/docs/LAUNCH)**, for instructions on how to proceed with the process.
+Click on the link, **[Using the Sense-i Launcher](https://sense-i.co/docs/LAUNCH)**, for instructions on how to proceed with the process.
 
 ----
 
