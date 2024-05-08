@@ -34,7 +34,7 @@ The exact format will depend on which browser you are using but will result in s
 
 3.  Click the **Open File** option.  
 
-Depending on your Windows security settings, a warning dialogue box couldpossibly display, titled **Windows protected your PC**.  
+Depending on your Windows security settings, a warning dialogue box could possibly display, titled **Windows protected your PC**.  
 
 :::note  
 The colour of this dialogue box may vary depending on your chosen Windows theme settings.  
@@ -125,7 +125,7 @@ The relevant files are then extracted to the chosen location on your machine.
 
 The **Launch Application** option is checked by default.  
 
-7.	Click the [ **Finish** ] button to complete the installation.  
+7.	Click the [ **Finish** ] button to complete the installation, and open the Sense-i Launcher application.  
 
 ----
 
