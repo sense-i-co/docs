@@ -31,7 +31,7 @@ There will be no **SEMS connections** available when using the **Sense-i Launche
 
 ![](../static/img/docs/LAUNCH/image503.png)  
 
-If your company subcribes to the **Sense-i Enterprise Management System _(SEMS)_** software applications, you will receive a **SEMS Connection, welcome email** containing the **connection string information**, with the relevant **SEMSconnect.INI** file attached.  
+If your company subscribes to the **Sense-i Enterprise Management System _(SEMS)_** software applications, you will receive a **SEMS Connection, welcome email** containing the **connection string information**, with the relevant **SEMSconnect.INI** file attached.  
 
 1.	Click on the **Connect** button.  
 
@@ -92,7 +92,7 @@ Therefore there are typically four connection options:
 - **Remote** connection to the **LIVE database**  
 - **Remote** connection to the **TEST database**  
 - **Local connection** to the **LIVE** database - same **LAN** as that of the Database Server  
-- **Local connection** to the **TEST** database using the local network to connect to the dB Server.  
+- **Local connection** to the **TEST** database using the local network to connect to the Database Server.  
 :::  
 
 Once the relevant connection(s) have been loaded, an **Information** dialogue box is displayed.  
@@ -128,7 +128,9 @@ Selecting this option will enable you to copy the relevant settings from:
 These connection settings can be obtained from your SEMS System Administrator.  
 :::  
 
-1.	To set up a connection, select the connection string information from your **SEMS Config. email**, OR an exsisting **SEMSconnect.INI file** or an appropriate **text file**.    
+1.	To set up a connection, **select the connection string information** from your **SEMS Config. email**, OR an exsisting **SEMSconnect.INI file** OR an appropriate **text file**.    
+
+![](../static/img/docs/LAUNCH/image200.png)  
 
 2.	Then click the right mouse button and choose the **Copy** option.  
 
@@ -184,7 +186,8 @@ The application will now download and launch the Sense-i Enterprise Management S
 
 :::note  
 **Sense-i Launcher** will automatically download the latest version of the **SEMS application**.  
-This download process will only occur again when the database is been upgraded.
+
+This download process will only occur again when the **SEMS application** and **Database** is upgraded.
 :::  
 
 ----
