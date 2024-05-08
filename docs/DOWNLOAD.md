@@ -9,52 +9,51 @@ slug: /DOWNLOAD
 
 This **step-by-step guide** will show you **how to download and install** the **Sense-i Launcher** application.  
 
-:::note
-The buttons & links displayed on the images in this guide are **NOT ACTIVE** and soley used for **reference purposes**.
-:::
+:::note  
+The buttons & links displayed on the images in this guide are **NOT ACTIVE** and soley used for **reference purposes**.  
+:::  
 
-First, download the files from the follwing link...
-
-## Download and Install 
+## Download and Install  
 
 Access the latest version of the [Sense-i Launcher Installation files **here.**](https://elfworks.co.za/subdomains/sense-i/Install/download.html)  
 
-Once you have linked to the download site, perform the steps as outlined below to install the necessary software on your device.
+Once you have linked to the download site, perform the steps as outlined below to install the necessary software on your device.  
 
 ![](../static/img/docs/LAUNCH/image00.png)  
 
 1.  Click the **Download Sense-i Launcher** button.  
 
-The browser will download the install file and once complete will display some form of confirmation. The exact format will depend on which browser you are using but will result in something similar to the following;
+The browser will download the install file, and once complete will display some form of confirmation.  
+The exact format will depend on which browser you are using but will result in something similar to the following:  
 
 ![](../static/img/docs/LAUNCH/image100.png)  
 
-2.  As you move the cursor from your mouse over the down load file the display may change to the following, when it does click the **Open File** option.
+2.  As you move the mouse cursor over the download file, the display may change to the following:  
 
 ![](../static/img/docs/LAUNCH/image101.png)  
 
-Depending on your Windows security settings, a warning dialogue box MAY display titled **Windows protected your PC**.  
+3.  Click the **Open File** option.  
 
-:::note
-The colour of this dialogue box may vary depending on your chosen Windows theme settings.
-:::
+Depending on your Windows security settings, a warning dialogue box couldpossibly display, titled **Windows protected your PC**.  
 
+:::note  
+The colour of this dialogue box may vary depending on your chosen Windows theme settings.  
+:::  
 
 ![](../static/img/docs/LAUNCH/image201.png)  
 
-
-3.	**NB!** Select the **More info** link.  
+4.	**NB!** Select the **More info** link.  
 
 ----
 
 ![](../static/img/docs/LAUNCH/image202.png)  
 
-4.	Click on the [ **"Run anyway"** ] button.  
+5.	Click on the [ **"Run anyway"** ] button.  
 
 ----
 
-:::note User Account control
-The **User Account control** dialogue box will display the message:
+:::note User Account control  
+The **User Account control** dialogue box will display the message:  
 
 "Do you want to allow this app from an unknown publisher to make changes on your device?"  
 
@@ -63,9 +62,9 @@ SenseiInstall.exe
 Publisher: Unknown  
 
 File origin: Hard drive on this computer  
-:::
+:::  
 
-5.	Select [  **Yes**  ].  
+6.	Select [  **Yes**  ].  
 
 ----
 
@@ -83,31 +82,30 @@ The **License Agreement** screen is displayed.
 
 ![](../static/img/docs/LAUNCH/image06.png)  
 
-2.	Select the "**I accept the agreement**" radio button option.
+2.	Select the "**I accept the agreement**" radio-button option.  
 
 3.	Click the [ **Next >** ] button.   
 
 ----
 
-The **Select Destination Location** screen is displayed.
+The **Select Destination Location** screen is displayed.  
 
-![](../static/img/docs/LAUNCH/image07.png)
+![](../static/img/docs/LAUNCH/image07.png)  
 
-:::tip
+:::tip  
 The **recommended default location** is **C:\SEMS**  
-:::
+:::  
 
 4.	Click the [ **Next >** ] button.  
 
 ----
 
-The **Select Additional Tasks** screen is displayed.
+The **Select Additional Tasks** screen is displayed.  
 
 ![](../static/img/docs/LAUNCH/image08.png)  
 
 It is advisable to keep the **Create a desktop shortcut** option checked.  
-This for quick access to the application in the future.
-
+This for quick access to the application in the future.  
 
 5.	Click the [ **Next >** ] button.  
 
@@ -123,7 +121,7 @@ The relevant files are then extracted to the chosen location on your machine.
 
 ----
 
-![](../static/img/docs/LAUNCH/image10.png)
+![](../static/img/docs/LAUNCH/image10.png)  
 
 The **Launch Application** option is checked by default.  
 
@@ -131,7 +129,7 @@ The **Launch Application** option is checked by default.
 
 ----
 
-Click on the link, **[Using the Sense-i Launcher](https://sense-i.co/docs/LAUNCH)**, for instructions on how to proceed with the process.
+Click on the link, **[Using the Sense-i Launcher](https://sense-i.co/docs/LAUNCH)**, for instructions on how to proceed with the process.  
 
 ----
 
