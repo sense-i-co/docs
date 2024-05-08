@@ -56,14 +56,14 @@ When using this option, it is important to know the location of the **SEMSconnec
 
 From your **SEMS Connection email**, save the attached **SEMSconnect.INI** file to the **C:\SEMS\Connection\\** sub-directory on your computer,  
 
-Alternatively, obtain the Local Area Network location of the SEMSconnect.ini file from yor SEMS Administrator.  
+Alternatively, obtain the Local Area Network location of the SEMSconnect.ini file from your SEMS Administrator.  
 :::  
 
 ![](../static/img/docs/LAUNCH/image15.png)  
 
 1.	Click on the **Open Config file (.INI)** radio-button.  
 
-2.	Then click on the [ **Load** ] button.  
+2.	Then click the [ **Load** ] button.  
 
 The MS Windows **File Explorer** is displayed.
 
@@ -135,7 +135,7 @@ These connection settings can be obtained from your SEMS System Administrator.
 
 ![](../static/img/docs/LAUNCH/image200.png)  
 
-2.	Then click the right-mouse button and choose the **Copy** option.  
+2.	Then **right-click** the mouse button and choose the **Copy** option.  
 
 ----
 
@@ -177,7 +177,7 @@ The **Load Connection** screen is now active again.
 
 ----
 
-## Home Page - Ready to Connect.  
+## Home Page - Ready to Connect  
 
 Once the connections have been loaded, Sense-i Launcher is ready to connect to the **chosen database**.  
 
