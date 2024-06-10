@@ -78,6 +78,8 @@ The **Alphabetic Selection Panel** is available on all **Party List screens**.
 
 Use the **Alphabetic Selection Panel** _(Customer List, Supplier List, Employee List, etc.)_ to display only those parties whose names begin with the selected letter.  
 
+![](../static/img/docs/PHOENIXUI/image04.png)   
+
 Click on the **All** button in the Alphabetic Selection Panel to display **all parties** in the list.  
 
 #### Tree-structure Navigation  
@@ -114,13 +116,13 @@ The **TABs** at the top of the **Selection Panel** allow you to:
 
 As you click on a menu item, the system opens the **Form** associated with the function in the Main Form section of the screen.  
 
-In the example above, the **Customer List** form, the **Customer Account Group** and the **Product Groups** forms were opened.  
+In the example below, the **Customer List** form, the **Customer Account Group** and the **Product Groups** forms were opened.  
+
+![](../static/img/docs/PHOENIXUI/TAB-Nav.gif)   
 
 By clicking on the different TABs located at the bottom of the screen, you are able to quickly navigate to each of the forms.  
 
 Click the [X] button in any of the TABs to close that form.  
-
-![](../static/img/docs/PHOENIXUI/TAB-Nav.gif)   
 
 ### Action Bar, Search Panel & List Grid  
 
@@ -161,8 +163,9 @@ The List Screen allows you to view and update information in the system.
 
 The List Grid contains **Information Bands** that span over several **columns**.  
 
-In this example, the **Customer Information** band, spans over the Customer **Account Code**, Customer **Name**, **Account Group**, and **Status** columns.  
+In this example, the **Customer Profile Information** band, spans over the Customer **Account Code**, Customer **Name**, **Account Group**, and **Status** columns.  
 
+![](../static/img/docs/PHOENIXUI/image05.png)   
 
 Under the columns, the **Record Rows** displays all information related to each specific entity, in this case, each specific customer in the grid.
 
@@ -179,7 +182,7 @@ These are the three main actions that you can do on the system:
 2.  You can change or **EDIT** existing information.  
 3.  And you can **DELETE** existing information.  
 
-#### Add Information  
+### Add Information  
 
 1.  Click on the **Add** button on the **Customer List Action Bar**.  
 
@@ -195,7 +198,7 @@ There are two ways to enter information:
 
 Completing a form is simply a matter of working through each field on the different screens under the TABs, entering information using the two entry methods described above.  
 
-#### Edit existing information  
+### Edit existing information  
 
 To edit or amend an existing record:
 1.  Click on a record row, then  
@@ -209,7 +212,7 @@ To edit/update information of an existing record, click the **Deactivate** optio
 Once you have amended the relevant information, click the **Activate** button.  
 :::  
 
-####  Delete existing information  
+###  Delete existing records  
 
 To delete a specific record,  
 1.  Click on the record row you wish to delete, then  
