@@ -34,6 +34,13 @@ Some of the upgrade features of Phoenix include:
 - Bulk select and edit multiple records at the same time using Jobs  
 - Import Data from external sources  
 
+## PHOENIX - The First Glimpse  
+
+import ReactPlayer from 'react-player'
+
+
+
+<ReactPlayer controls url='https://www.youtube.com/watch?v=_5J3abMICNw' />
 
 ## Enhanced Navigation  
 
@@ -141,7 +148,7 @@ This makes it easy to use the system because you have access to only those featu
 
 #### Search Panel  
 
-The **Search Panel** displays several boxes called **Fields** where you can type in, or choose specific information _(e.g. type in a **Customer Name**, or select a **Representative** from the list of your Company's Representatives)_.  
+The **Search Panel** displays several boxes called **Fields** where you can type in, or choose specific information _(e.g. type in a **Customer Name**, or select a **Representative** from the drop-down list of your Company's Representatives)_.  
 
 :::important  
 The **Fields** contain information and options that relate to the specific form or function you are using.  
@@ -153,9 +160,9 @@ Once you have entered words or options in the fields on the **Search Panel**, th
 
 ![](../static/img/docs/PHOENIXUI/search.gif)   
 
-Whe you click the **Search icon**, the SEMS program uses the words and/or options you have entered into the fields on the **Search Panel** to find all matching **Records** or **Transactions** that are stored on the Database Server, and then displays this information in the **Grid** on the **List Screen**.  
+Whe you click the **Search icon**, the Phoenix application uses the words and/or options you have entered into the fields on the **Search Panel** to find all matching **Records** or **Transactions** that are stored on the Database Server, and then displays this information in the **Grid** on the **List Screen**.  
 
-In the example above, the system updates the list of Customer Profiles on the screen to show only those Customers that match the name, or part of the name entered.  
+In the example above, the system updates the list of Customer Profiles on the screen to show only those Customers that match the name _(or part of the name)_ entered.  
 
 #### The List Grid Section  
 
@@ -213,7 +220,7 @@ The system will then hide the band and all the columns related to that entity.
 
 In the example above, the **Email and Web**, and the **Summary Rating** Information Bands, and all columns underneath these bands were **hidden**.  
 
-3.  Another way to do this, click **View** on the form Action Bar, then click on **Columns**.  
+3.  Another way to do this - click **View** on the form Action Bar, then click on **Columns**.  
 
 ![](../static/img/docs/PHOENIXUI/image07.png)   
 
@@ -248,7 +255,7 @@ The same principle applies to all columns under an Information Band - right-clic
 
 ### Changing the Column Order  
 
-To change the order of the columns in a list grid, 
+To change the order of the columns in a list grid: 
 1.  Click and hold the mouse button on a column heading, then  
 2.  Drag the column heading to the desired location.  
 _The system will indicate the new position of the column heading with green arrows._  
@@ -357,15 +364,29 @@ These are the three main actions that you can do on the system:
 
 1.  Click on the **Add** button on the **Customer List Action Bar**.  
 
+![](../static/img/docs/PHOENIXUI/image12.png)   
+
 The system opens a **blank form** into which you can enter new information.  
 
+![](../static/img/docs/PHOENIXUI/image13.png)   
+
 This form contains different detail screens, accessed by clicking on the **TABs**.  
+
+![](../static/img/docs/PHOENIXUI/tabs.gif)   
 
 Each screen contains various **Fields** into which you can enter information.  
 
 There are two ways to enter information:  
 1.  You can **type information into a field** that allows this, or  
 2.  **Choose** information from a **drop-down list** of options.   
+
+![](../static/img/docs/PHOENIXUI/field-capture.gif)   
+
+:::important  
+Once you've entered the necessary information in the various fields on the **Primary Profile** screen, in this example, the fields under the **Name & Details** TAB - click the **Save** button on the form Action Bar.
+
+The other **TABs** now become accessible.  
+:::  
 
 Completing a form is simply a matter of working through each field on the different screens under the TABs, entering information using the two entry methods described above.  
 
@@ -375,33 +396,74 @@ To edit or amend an existing record:
 1.  Click on a record row, then  
 2.  Click the **Open** button on the Action bar.  
 
-The system opens the same form as above, but with information previously entered that you can **edit** or **update.**  
+![](../static/img/docs/PHOENIXUI/open-customer.gif)  
 
 :::tip  
+You can **double-click** on a record row to open the detail screen.  
+:::  
+
+The system opens the same form as the _"Add New Customer"_ above, but with information previously entered that you can **edit** or **update.**  
+
+:::important  
 To edit/update information of an existing record, click the **Deactivate** option on the form Action bar.  
 
-Once you have amended the relevant information, click the **Activate** button.  
+![](../static/img/docs/PHOENIXUI/edit-customer.gif)   
+
+Once you have amended the relevant information, click **Save**, and then the **Activate** button on the form Action Bar.  
 :::  
 
 ###  Delete existing records  
 
 To delete a specific record,  
-1.  Click on the record row you wish to delete, then  
-2.  Click the **Delete** button on the Action bar.  
+1.  Click on the record row you wish to delete.  
+2.  Click **Deactivate** on the Action Bar.  
+
+![](../static/img/docs/PHOENIXUI/image14.png)  
+
+:::note  
+An information dialogue box is displayed with the message **"Operation succeeded**.  
+
+![](../static/img/docs/PHOENIXUI/image15.png)  
+
+:::
+
+3.  Click the **Ok** button.  
+
+Once the record has been deactivated, the **Delete** button becomes accessible.  
+
+3.  Click the **Delete** button on the Action bar.  
 
 The system will display a confirmation dialogue box asking you if you are sure you wish to delete the existing record from the database.  
+
+:::warning  
+Chat to HH.  Replace the animation below once the error has been resolved.  
+:::  
+
+![](../static/img/docs/PHOENIXUI/delete-record01.gif)   
 
 3.  Click the **Yes** button.  
 
 
-<!-- ## Screen Layout 
+## Screen Layout 
 
 ### Arrange Screens to View Supplementary Info  
 
+![](../static/img/docs/PHOENIXUI/a-screen-layout.gif)   
+
 ### Dual/Multiple Monitors 
+
+![](../static/img/docs/PHOENIXUI/a-tab2screen.gif)   
+
+![](../static/img/docs/PHOENIXUI/a-multi-screen.gif)   
 
 ###  Docking - the Basics  
 
+![](../static/img/docs/PHOENIXUI/a-docking.gif)   
+
+### "Skins"  
+
+![](../static/img/docs/PHOENIXUI/a-skins.gif)   
+
 ## Jobs - Bulk Select and Edit Multiple Records  
 
-## Data Export & Import    -->
+## Data Export & Import  
