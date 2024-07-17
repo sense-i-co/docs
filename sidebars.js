@@ -42,6 +42,17 @@ const sidebars= {
         items: [
           "SUI-001",
 					"SUI-002",
+					{ type: 'category',
+            label: 'PHOENIX User Interface',
+            items: [
+              "PHX-INT",
+							"PHX-NAV",
+							"PHX-CUSTVIEW",	
+							"PHX-RCRDS",
+							"PHX-SCRNS",
+							"PHX-JOBS",
+            ]
+					},
 					"USS-004",
 					{ type: 'category',
             label: 'SEMS List Information',
