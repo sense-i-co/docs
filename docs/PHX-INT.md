@@ -57,9 +57,9 @@ import ReactPlayer from 'react-player'
 <ReactPlayer controls url='https://www.youtube.com/watch?v=_5J3abMICNw' />
 
 For detailed information on the Phoenix features, please refer to the associated documents below:  
--   **["Phoenix Enhanced Navigation"](https://sense-i.co/docs/PHX-NAV)**  
--   **["Custom Views"](https://sense-i.co/docs/PHX-CUSTVIEW)**  
--   **["View, Add & Edit Records"](https://sense-i.co/docs/PHX-RCRDS)**  
--   **["Phoenix Screen Layout"](https://sense-i.co/docs/PHX-SCRNS)**  
--   **["Jobs - Edit Multiple Records"](https://sense-i.co/docs/PHX-JOBS)**  
+-   **["Phoenix Enhanced Navigation"](https://sense-i.co/docs/PHOENIXNAV)**  
+-   **["Custom Views"](https://sense-i.co/docs/PHXCUSTVIEW)**  
+-   **["View, Add & Edit Records"](https://sense-i.co/docs/PHOENIXRECORDS)**  
+-   **["Phoenix Screen Layout"](https://sense-i.co/docs/PHXSCREENS)**  
+-   **["Jobs - Edit Multiple Records"](https://sense-i.co/docs/PHOENIXJOBS)**  
 

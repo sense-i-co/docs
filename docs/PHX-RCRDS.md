@@ -34,10 +34,18 @@ To view the details pertaining to an exisiting record:
 2.  Click the **Open** button on the Action bar.  
 
 :::tip  
-Double-click on the record row to open the Detail screen.  
+Another way to open the Detail screen, is to simply **Double-click** on the record row .  
 :::  
 
 The program will display the **Detail screen** _(also known as a **Listener**)_
+
+![](../static/img/docs/PHOENIXUI/open-customer.gif)  
+
+This form contains different detail pages, accessed by clicking on the **TABs**.  
+
+![](../static/img/docs/PHOENIXUI/tabs.gif)   
+
+Once you've reviewed all the information, click the **Close** button on the form Action bar.  
 
 ## Add Information  
 
@@ -49,10 +57,6 @@ The system opens a **blank form** into which you can enter new information.
 
 ![](../static/img/docs/PHOENIXUI/image13.png)   
 
-This form contains different detail screens, accessed by clicking on the **TABs**.  
-
-![](../static/img/docs/PHOENIXUI/tabs.gif)   
-
 Each screen contains various **Fields** into which you can enter information.  
 
 There are two ways to enter information:  
@@ -62,12 +66,16 @@ There are two ways to enter information:
 ![](../static/img/docs/PHOENIXUI/field-capture.gif)   
 
 :::important  
-Once you've entered the necessary information in the various fields on the **Primary Profile** screen, in this example, the fields under the **Name & Details** TAB - click the **Save** button on the form Action Bar.
+Once you've entered the necessary information in the various fields on the **Primary Profile** page, in this example, the fields under the **Name & Details** TAB - click the **Save** button on the form Action Bar.
 
 The other **TABs** now become accessible.  
 :::  
 
-Completing a form is simply a matter of working through each field on the different screens under the TABs, entering information using the two entry methods described above.  
+This different detail pages are accessed by clicking on the **TABs**.  
+
+![](../static/img/docs/PHOENIXUI/tabs.gif)   
+
+Completing a form is simply a matter of working through each field on the different pages under the TABs, entering information using the two entry methods described above.  
 
 ## Edit existing information  
 

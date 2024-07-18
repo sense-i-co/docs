@@ -137,6 +137,6 @@ In this example, the **Customer Profile Information** band, spans over the Custo
 
 Under the columns, the **Record Rows** displays all information related to each specific entity, in this case, each specific customer in the grid.  
 
-In the next document, **["Custom Views"](https://sense-i.co/docs/PHX-CUSTVIEW)**, we will explain and illustrate how to change the layout configuration of the list grid.  
+In the next document, **["Custom Views"](https://sense-i.co/docs/PHXCUSTVIEW)**, we will explain and illustrate how to change the layout configuration of the list grid.  
 
 

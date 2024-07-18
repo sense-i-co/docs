@@ -61,11 +61,9 @@ In this example, we will access the Customer List Grid.
 
 2.  Click the **Customer List** option in the drop-down menu.  
 
-The **\<original\>** default view is displayed.  
-
 ![](../static/img/docs/PHOENIXUI/image06.png)   
 
-The **\<original\>** default view is displayed.  
+The **<original\>** default view is displayed.  
 
 If we click the **View** button on the Action bar, we will see that no pre-defined views have been created.  
 
@@ -190,7 +188,7 @@ The system will display the **Columns...** screen.
 ![](../static/img/docs/PHOENIXUI/image07.png)   
 
 :::important  
-If this is the first Custom View that is being been created, the **View Name** field will be displayed as **\<original\>**, and  
+If this is the first Custom View that is being been created, the **View Name** field will be displayed as **<original\>**, and  
 the **Published** checkbox will be ticked.  
 :::  
 
@@ -233,7 +231,7 @@ Once different views have been created and saved, Phoenix users can access the d
 
 The pre-defined views are listed in the drop-down menu, with the current view in use, demarcated with a check-box.  
 
-![](../static/img/docs/PHOENIXUI/image33.png)   
+![](../static/img/docs/PHOENIXUI/image34.png)   
 
 To switch to a different layout:  
 
@@ -285,8 +283,6 @@ When selecting the **Publish** option, the selected layout configuration will be
 
 ![](../static/img/docs/PHOENIXUI/SetPubView.gif)  
 
-7.  Click the **Unpublish** button on the Action Bar.  
-
 :::note  
 When selecting the **Unpublish** option, the selected layout configuration will be NOT be available for other Phoenix login users.  
 :::  
@@ -313,7 +309,7 @@ The system displays the **Copy View** dialogue window.
 
 5.  Click the **Close** button on the Action bar.  
 
-You can now amend the layout by following the steps in the **["Create & Save Custom Views"](https://sense-i.co/docs/PHX-CUSTVIEW/#create-and-save-custom-views)** section as described above.  
+You can now amend the layout by following the steps in the **["Create & Save Custom Views"](https://sense-i.co/docs/PHXCUSTVIEW#create-and-save-custom-views)** section as described above.  
 
 ### Delete a Custom View  
 
