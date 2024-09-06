@@ -378,6 +378,20 @@ const sidebars= {
 					          	"SAF-1912A",
                 ],   
               },
+              { type: 'category',
+              label: 'SEMS Bank Transactions',
+              link: {
+                type: 'doc',
+                id: 'BNKTRNSIMPRT-01',
+              },
+               items: [
+                "BNKTRNSIMPRT-02",
+                "BNKTRNSIMPRT-03",
+                "BNKTRNSIMPRT-04",
+                "BNKTRNSIMPRT-05",
+                              ],   
+                },
+
             ],          
           },
         ],

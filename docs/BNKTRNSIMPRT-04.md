@@ -37,7 +37,7 @@ To search for Bank Transactions previously loaded / imported:
 
 The Import screen will list the relevant records of Bank Transaction records that match the search criteria entered.  
 
-To view the details of a spesific record,
+To view the details of a specific record,
 
 3.  Click on the record row, then  
 
