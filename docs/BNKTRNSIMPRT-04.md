@@ -129,10 +129,10 @@ The information is now Loaded in the database.  The **Import Status** is changed
 
 Once the bank transactions have been loaded, the next steps include:  
 -   Designate **Payment Type** for each transaction  
--   Allot Transactions (credits and debits), to the relevant **Party**  
+-   Allot Transactions to the relevant **Party**  
 -   Specify those transactions that are **Bank Charges**  
--   **Link General Ledger** account to each transaction  
--   **Link Tax** type to each transaction  
+-   **Link General Ledger** account to applicable transactions  
+-   **Link Tax** type to applicable transactions  
 
 ### Payment Type  
 
@@ -165,7 +165,7 @@ Repeat the steps above to assign Payment Type for all relevant transactions.
 
 ### Assign Party  
 
-1.  Click on the record row you you would like to assign a Party to.  
+1.  Click on the transaction record row you you would like to assign a Party to.  
 
 2.  Click the **Party** button in the form Action bar.  
 
@@ -178,6 +178,26 @@ Repeat the steps above to assign Payment Type for all relevant transactions.
 An Information Dialogue window is displayed, confirming the transaction has been updated.  
 
 4.  Click the **OK** button.  
+
+:::important  
+When assigning a **Sundry Customer**, or **Sundry Supplier** which is not listed:  
+
+![](../static/img/docs/BNKTRNSIMPRT/add-sundry-supp.gif)  
+
+5.  Click the **Add** button in the **Select Sundry Supplier** _(or **Select Sundry Customer**)_ form Action bar.  
+
+The **Add New Sundry** screen is displayed.  
+
+6.  Type in the reference name in the **Sundry Name** field.  
+
+7.  Click the **Save**, and then the **Close** buttons in the form Action bar.  
+
+8.  Click on the newly created Sundry party, then click the **Select** button on the form Action bar.  
+
+9.  Click the **OK** button in the Information dialogue window, then  
+
+10.  Click the **Close** button on the Select Sundry Supplier action bar.  
+:::  
 
 :::tip  
 Select multiple record rows, **_[CTRL] click_**, to assign the same party to the applicable transactions.  
@@ -219,6 +239,10 @@ Repeat the steps above to allocate the relevant records as Bank Charges.
 
 ### Link General Ledger  
 
+:::important  
+General ledger account should ONLY be linked to **Sundry** parties, i.e. **Sundry Suppliers** & **Sundry Customers**.  
+:::  
+
 1.  Click on the record row you would like to link to a General Ledger account.  
 
 2.  Click the **Link GL** button in the form Action bar.  
@@ -255,13 +279,17 @@ Select multiple record rows, **_[CTRL] click_**, to link General Ledger accounts
 
 ### Link Tax  
 
+:::important  
+Tax should ONLY be linked to **Sundry** parties, i.e. **Sundry Suppliers** & **Sundry Customers**.  
+:::  
+
 1.  Click on the record row that you want to link Tax type to.  
 
 2.  Click the **Link Tax** button in the form Action bar.  
 
 ![](../static/img/docs/BNKTRNSIMPRT/image37.png)  
 
-The Tax List screen is displayed.  
+The **Tax List** screen is displayed.  
 
 ![](../static/img/docs/BNKTRNSIMPRT/image38.png)  
 
@@ -281,7 +309,7 @@ Select multiple record rows, **_[CTRL] click_**, to link Tax to the applicable t
 ![](../static/img/docs/BNKTRNSIMPRT/multi-tax-link.gif)  
 :::  
 
-Repeat the steps above to link Tax to all the relevant records.  
+Repeat the steps above to link Tax to the relevant records.  
 
 ###  Check Transaction, GL and Tax Information  
 
@@ -343,4 +371,8 @@ Once all transaction attributes have been assigned / rectified;
 The <u>updated</u> **Import-###** screen is displayed.  
 
 ![](../static/img/docs/BNKTRNSIMPRT/image40.png)  
+
+In the next document, we will describe and demonstrate how to define **Rules** that can be applied to subsequent & recurring bank transactions.  
+
+Refer to the document titled **["Define Rules to enable Auto Match"](https://sense-i.co/docs/BNKTRNSIMPRT05)**.  
 
