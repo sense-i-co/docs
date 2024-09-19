@@ -136,11 +136,11 @@ To assign Level of Work to a Task Type, click on the three-dot button in the **L
 
 The system will display the **Select Level of Work** list screen.  
 
-![](../static/img/docs/TSKCDE-001/image21.png)  
+![](../static/img/docs/TSKCDE-001/image22.png)  
 
 8.  Click on the Level of Work definition that you wish to assign to the Task Code and then click the **Select** button.  
 
-The system will close the Select Level of Work screen and display the Level of Work definition you have chosen in the Level of Work field.  
+The system will close the Select Level of Work screen and display the Level of Work definition you have chosen in the **Level of Work** field.  
 
 Next, you can optionally link the Task Code to a Stage.  
 
