@@ -112,6 +112,7 @@ const sidebars= {
 				          "PCP-442",
 				          "POS-001",
 				          "TSKCDE-001",
+				          "TSKCOST-001",
 				          "CSTSET-001",
 				          "CSTFRM-001",
 				          "LBRRTS-001",
@@ -248,6 +249,8 @@ const sidebars= {
 	            { type: 'category',
                 label: 'Task Management Module',
                 items: [
+				          "TSKCDE-001",
+				          "TSKCOST-001",
                   "TM-01",
       						"TM-04",
 			      			"TM-05",
