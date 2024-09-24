@@ -58,6 +58,8 @@ The system will open the Maintain **Company Settings** screen.
 
 The screen is updated, displaying the three settings related to setting Bonus rules.  
 
+![](../static/img/docs/BONUSRULE-01/image10.png)  
+
 ### Session Idle Minutes  
 
 This determines how many minutes are allowed for an operator to be idle before the system automatically logs them out for not being active.  
@@ -70,7 +72,7 @@ To change the number of Session Idle Minutes:
 
 2.  Click the **Edit** button on the Action bar.  
 
-The **Edit Session Ilde Mins** screen is displayed.  
+The **Edit Session Idle Mins** screen is displayed.  
 
 ![](../static/img/docs/BONUSRULE-01/image06.png)  
 
