@@ -1,6 +1,6 @@
 ---
 id: TSKCOST-001
-title: Define Task Code Costs
+title: Task Code Costs
 sidebar_label: Task Code Costs
 slug: /TSKCOST001
 ---
@@ -8,7 +8,7 @@ slug: /TSKCOST001
 ## Introduction  
 ___
 
-The procedure of defining Task Code Costs should be performed <u>after</u> Task Codes have been defined.  Refer to the document titled **["Define Task Codes"](https://sense-i.co/docs/TSKCDE001)**.  
+The procedure of defining Task Code Costs should be performed <u>after</u> Task Codes have been defined.  Refer to the document titled **["Task Codes"](https://sense-i.co/docs/TSKCDE001)**.  
 
 Next, you need to define the **default rates** that the company will charge **for each of the tasks** that are performed.  
 
@@ -40,7 +40,7 @@ The system will display the **Select Department** list screen.
 
 2.  Click on the **Division** OR **Department** you wish to assign to the Task Rate and then click the **Select** button.  
 
-The system will display the "Time OUM is required." warning dialogue box.  
+The system will display the "Time UOM is required." warning dialogue box.  
 
 ![](../static/img/docs/TSKCOST-001/image05.png)  
 

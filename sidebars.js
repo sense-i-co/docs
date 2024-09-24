@@ -251,6 +251,7 @@ const sidebars= {
                 items: [
 				          "TSKCDE-001",
 				          "TSKCOST-001",
+				          "BONUSRULE-01",
                   "TM-01",
       						"TM-04",
 			      			"TM-05",
