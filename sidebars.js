@@ -238,7 +238,7 @@ const sidebars= {
                 items: [
                   "TAA-001",
 				      		"TAA-003",
-      						"TAA-004",
+      						"SAF-1204",
 			      			"TAA-005",
 						      "TAA-006",
 	      					"TAA-007",
@@ -251,6 +251,7 @@ const sidebars= {
                 items: [
 				          "TSKCDE-001",
 				          "TSKCOST-001",
+				          "LBRRTS-001",
 				          "BONUSRULE-01",
                   "TM-01",
       						"TM-04",
@@ -363,6 +364,19 @@ const sidebars= {
 					        "SAF-4005",
                 ],   
               },
+              { type: 'category',
+              label: 'SEMS Bank Transactions',
+              link: {
+                type: 'doc',
+                id: 'BNKTRNSIMPRT-01',
+              },
+               items: [
+                "BNKTRNSIMPRT-02",
+                "BNKTRNSIMPRT-03",
+                "BNKTRNSIMPRT-04",
+                "BNKTRNSIMPRT-05",
+                              ],   
+                },
 	            { type: 'category',
                 label: 'General Ledger & Financial Reporting',
                 items: [
@@ -382,19 +396,6 @@ const sidebars= {
 					          	"SAF-1912A",
                 ],   
               },
-              { type: 'category',
-              label: 'SEMS Bank Transactions',
-              link: {
-                type: 'doc',
-                id: 'BNKTRNSIMPRT-01',
-              },
-               items: [
-                "BNKTRNSIMPRT-02",
-                "BNKTRNSIMPRT-03",
-                "BNKTRNSIMPRT-04",
-                "BNKTRNSIMPRT-05",
-                              ],   
-                },
 
             ],          
           },
