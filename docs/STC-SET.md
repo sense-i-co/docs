@@ -30,7 +30,7 @@ The existing settings will show in the _Reorder Info_ Band
 
 ![](../static/img/docs/STC-SET/SettingAny.png)
 
-- Change those settings you wish to. Leaving the others as <NO CHANGE\>
+- Change those settings you wish to. Leaving the others as &lt;NO CHANGE&gt;
 - Click on the Apply Button
 
 :::tip

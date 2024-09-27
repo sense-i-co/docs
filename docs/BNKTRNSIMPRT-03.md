@@ -23,7 +23,7 @@ This includes moving the information from one place to another, fixing formats, 
 [Download FNB Template](https://elfworks.co.za/docs/FNB-Import-Template.xlsx "download")  
 
 Request a relevant **Bank Statement Import Template** spreadsheet from the **Sense-i Team** by email.  
-<info@sense-i.co>  
+(mailto:info@sense-i.co)  
 :::  
 
 :::note  

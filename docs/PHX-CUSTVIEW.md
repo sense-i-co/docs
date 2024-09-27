@@ -63,7 +63,7 @@ In this example, we will access the Customer List Grid.
 
 ![](../static/img/docs/PHOENIXUI/image06.png)   
 
-The **<original\>** default view is displayed.  
+The **&lt;original&gt;** default view is displayed.  
 
 If we click the **View** button on the Action bar, we will see that no pre-defined views have been created.  
 
@@ -188,7 +188,7 @@ The system will display the **Columns...** screen.
 ![](../static/img/docs/PHOENIXUI/image07.png)   
 
 :::important  
-If this is the first Custom View that is being been created, the **View Name** field will be displayed as **<original\>**, and  
+If this is the first Custom View that is being been created, the **View Name** field will be displayed as **&lt;original&gt;** , and  
 the **Published** checkbox will be ticked.  
 :::  
 
