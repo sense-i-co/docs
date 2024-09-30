@@ -56,7 +56,7 @@ The system will display results to match the search criteria you have entered.
 
 1.  Enter the Total Labour Cost in the **Labour Cost** column for each employee.  
 
-::important  
+:::important  
 This would be the **Gross Wage payable per Hour** to each employee, before any deductions.  
 
 Remember, this is for costing and budgeting purposes and not meant to reflect accurate payroll data, which could change from one pay cycle to the next.  
