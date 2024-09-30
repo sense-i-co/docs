@@ -236,7 +236,7 @@ const sidebars= {
 	            { type: 'category',
                 label: 'Labour Cost - Time & Attendance',
                 items: [
-                  "TAA-001",
+                  "SAF-117",
 				      		"TAA-003",
       						"SAF-1204",
 			      			"TAA-005",
