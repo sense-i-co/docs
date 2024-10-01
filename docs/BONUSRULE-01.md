@@ -10,7 +10,7 @@ ___
 
 In order to implement the **Task Tracking** and **Bonus Management** functionality of the Sense-i System, you will need to enter some information at the company level about the target minutes to recover the default bonus rates.  
 
-In the **["Maintain Calendar"](https://sense-i.co/docs/117)** function you will have defined the details of the Working Calendars for a specific team.  
+In the **["Maintain Calendar"](https://sense-i.co/docs/SAF117)** function you will have defined the details of the Working Calendars for a specific team.  
 
 These calendars determine when the people in the team are supposed to arrive at work, what the various periods in the day are, for example, morning meeting, production periods and break periods.  
 
@@ -125,7 +125,7 @@ The Company Settings, _(JOBTRACK Group)_ screen displays the three updated setti
 
 ![](../static/img/docs/BONUSRULE-01/image09.png)  
 
-Now that you have set the default company settings, close the Company Settings screen and move on to defining **["Working Calendars"](https://sense-i.co/docs/117)** and **["Loading your Employees"](https://sense-i.co/docs/SAF1204)**.  
+Now that you have set the default company settings, close the Company Settings screen and move on to defining **["Working Calendars"](https://sense-i.co/docs/SAF117)** and **["Loading your Employees"](https://sense-i.co/docs/SAF1204)**.  
 
 ___
 **This is the end of this procedure.**
