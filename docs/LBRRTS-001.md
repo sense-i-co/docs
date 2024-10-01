@@ -95,10 +95,12 @@ Say for the purposes of this example that the Charge Out Rate is set at R 100 pe
 
 ![](../static/img/docs/LBRRTS-001/labour-rate-02.gif)  
 
-Repeat the steps above for each employee.  
+2.  Repeat the steps above for each employee.  
+
+Once you have entered the relevant information on this screen:
+
+3.  Click the **Save**, and then **Close** buttons on the Action bar.  
 
 Now that you have set the Labour Rates for each Employee you need to complete the steps in the **["Target Bonus Minute Rules"](https://sense-i.co/docs/BONUSRULE01)** procedure.  
-
-Once you have entered the relevant information on this screen, click the **Save**, and then **Close** buttons on the Action bar.
 ___
 **This is the end of this procedure.**
