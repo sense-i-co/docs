@@ -38,6 +38,7 @@ const sidebars= {
           'GATEWAY',
           'USEGATEWAY',
           'UPDATEGATEWAY',
+          'INSTL-JOB-TRCKR',
         ],
       },        
 	    { type: 'category',
@@ -45,6 +46,7 @@ const sidebars= {
         items: [
           "SUI-001",
 					"SUI-002",
+          "JOB-TRCKR-LOGIN",
 					{ type: 'category',
             label: 'PHOENIX User Interface',
             items: [
@@ -259,6 +261,7 @@ const sidebars= {
                   "TM-01",
       						"TM-04",
 			      			"TM-05",
+                  "JOB-TRCKR-TASKS",
 						      "TM-06",
                 ],   
               },

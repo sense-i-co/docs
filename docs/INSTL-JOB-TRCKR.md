@@ -1,11 +1,17 @@
 ---
 id: INSTL-JOB-TRCKR
-title: Install Job Tracker with API Key
-sidebar_label: Install Job Tracker - API
+title: Install Job Tracker on Android with API Key
+sidebar_label: Install Job Tracker - Android
 slug: /JOBTRCK01
 ---
 
 ## Introduction  
+
+The Job Tracker application can be installed on various devices, including PC, Laptop, and Android tablets.  
+
+:::important  
+If you are installing the Job Tracker application on a PC or Laptop running the Microsoft Windows Operating System, refer to the document titled **["Download & Install Sense-i Gateway"](https://sense-i.co/docs/GATEWAY)**.  
+:::  
 
 This **step-by-step guide** will show you **how to download and install** the **Sense-i Job Tracker** application on an **Android device**.  
 
@@ -132,7 +138,7 @@ Toggle Dark Mode **On** or **Off** to suit your personal preference and or envir
 
 ![](../static/img/docs/JOB-TRCK/image14.png)  
 
-You can now proceed to the document titled **["Logging Tasks in Job Tracker"](https://sense-i.co/docs/JOBTRCK02)** to log into the Job Tracker application on the device.  
+You can now proceed to the document titled **["Job Tracker - Login"](https://sense-i.co/docs/JOBTRCK02)** to log into the Job Tracker application on the device.  
 ___
 
 **End of procedure.**
