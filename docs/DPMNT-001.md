@@ -35,7 +35,7 @@ We will use the above Organisation Tree diagram (also referred to as **Organisat
 
 3.  Then click **Organisation Structure** in the side menu.  
 
-![](../static/img/docs/DPM-001/image01.png)  
+![](../static/img/docs/DPM-001/image001.png)  
 
 The system will display a screen titled **Organisation Structure**.  
 

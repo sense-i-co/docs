@@ -7,7 +7,7 @@ slug: /JOBTRCK03
 
 ## Introduction  
 
-This **step-by-step guide** will show you **how to log Tasks** the **Sense-i Job Tracker** application.  
+This **step-by-step guide** will show you **how to log Tasks** in the **Sense-i Job Tracker** application.  
 
 Once **[Job Tracker has been installed](https://sense-i.co/docs/JOBTRCK01)**, and the user has **[Logged in to the Job Tracker application](https://sense-i.co/docs/JOBTRCK02)**:  
 

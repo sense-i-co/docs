@@ -20,7 +20,6 @@ Once the User has been set up on the system, and the **[Job Tracker application 
 The system will display the Job Tracker Home screen.  
 
 ![](../static/img/docs/JOB-TRCK/image20.png)  
-
   
 ## Enter Login Credentials  
 
@@ -42,27 +41,29 @@ The system will display the **One-Time-Pin** screen.
 
 ![](../static/img/docs/JOB-TRCK/image22.png)  
 
-3.  Enter the OTP into the **Enter One-Time-Pin** field, then click the **Continue** button.  
+3.  Enter the OTP into the **Enter One-Time-Pin** field, then  
+
+4.  Click the **Continue** button.  
 
 The system will display the **Set Password** screen.  
 
 ![](../static/img/docs/JOB-TRCK/image23.png)  
 
-4.  Enter a password in the **New Password** field.  
+5.  Enter a password in the **New Password** field.  
 
 :::note  
 The password can be any combination of alpha-numeric characters, and must consist of at least 2 characters.  
 :::  
 
-5.  Enter your password again in the **Confirm Password** field, then  
+6.  Enter your password again in the **Confirm Password** field, then  
 
-6.  Click the **Set Password** button.  
+7.  Click the **Set Password** button.  
 
 The system will return to the **Login** screen.  
 
 ![](../static/img/docs/JOB-TRCK/image24.png)  
 
-7.  Enter your password in the **Password** field.  
+8.  Enter your password in the **Password** field.  
 
 ::::important[Remember Password - Optional]  
 You can choose to activate the **Remember** check box.  
@@ -74,7 +75,7 @@ This option automatically saves your **User Name** and **Password** allowing you
 :::  
 ::::  
 
-8.  Click the **Login** button.  
+9.  Click the **Login** button.  
 
 ### Login with Existing Password  
 
@@ -118,27 +119,29 @@ The system will display the **One-Time-Pin** screen.
 
 ![](../static/img/docs/JOB-TRCK/image22.png)  
 
-3.  Enter the OTP into the **Enter One-Time-Pin** field, then click the **Continue** button.  
+3.  Enter the OTP into the **Enter One-Time-Pin** field, then  
+
+4.  Click the **Continue** button.  
 
 The system will display the **Set Password** screen.  
 
 ![](../static/img/docs/JOB-TRCK/image23.png)  
 
-4.  Enter a password in the **New Password** field.  
+5.  Enter a password in the **New Password** field.  
 
 :::note  
 The password can be any combination of alpha-numeric characters, and must consist of at least 2 characters.  
 :::  
 
-5.  Enter your password again in the **Confirm Password** field, then  
+6.  Enter your password again in the **Confirm Password** field, then  
 
-6.  Click the **Set Password** button.  
+7.  Click the **Set Password** button.  
 
 The system will return to the **Login** screen.  
 
 ![](../static/img/docs/JOB-TRCK/image24.png)  
 
-7.  Enter your password in the **Password** field.  
+8.  Enter your password in the **Password** field.  
 
 You can now choose to activate the **Remember** check box.  
 
@@ -150,7 +153,7 @@ This option automatically saves your **User Name** and **Password** allowing you
 :::  
 ::::  
 
-8.  Click the **Login** button.  
+9.  Click the **Login** button.  
 
 ## Job Tracker Home screen  
 

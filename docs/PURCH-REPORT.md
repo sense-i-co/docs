@@ -51,6 +51,8 @@ The system will automatically update the list to show those records that are tag
 ![](../static/img/docs/PURCH-REPORT/image05.png)  
 
 This implies that the the Purchase Order price is too low, OR that the price in the Catalogue is too high.  
+
+As you can see in the image above, the _"Unit Price"_ under the **Invoice Excl Amt** column is lower than that of the **Current Catalogue** column.  
 :::  
 
 3.  The steps required to resolve the issue of items tagged as Over Costed include:  
