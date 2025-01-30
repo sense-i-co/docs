@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-MAS-009" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.5.2">
+<title data-rh="true">Capture Material Names and Prices in the Supplier Catalogue (SAF-442) | Sense-i</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://sense-i.co/docs/442OLD"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Capture Material Names and Prices in the Supplier Catalogue (SAF-442) | Sense-i"><meta data-rh="true" name="description" content="Procedure Guideline"><meta data-rh="true" property="og:description" content="Procedure Guideline"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://sense-i.co/docs/442OLD"><link data-rh="true" rel="alternate" href="https://sense-i.co/docs/442OLD" hreflang="en"><link data-rh="true" rel="alternate" href="https://sense-i.co/docs/442OLD" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://OHC9H3SGA1-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="Sense-i" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.e410d0d9.css">
+<script src="/assets/js/runtime~main.299cece9.js" defer="defer"></script>
+<script src="/assets/js/main.d3dbc5b5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.png" alt="Sense-i Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.png" alt="Sense-i Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Sense-i</b></a><div class="navbar__item dropdown dropdown--hoverable"><a class="navbar__link" aria-haspopup="true" aria-expanded="false" role="button" href="/systems">Systems</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/systems/product-design">Product Design &amp; Costing</a></li><li><a class="dropdown__link" href="/systems/operations-management">Operations Management</a></li><li><a class="dropdown__link" href="/systems/financial-management">Financial Management</a></li></ul></div><a class="navbar__item navbar__link" href="/about">About Us</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs">Documentation</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/INTROVID">Videos</a><a class="navbar__item navbar__link" href="/release">Release Notes</a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Capture Material Names and Prices in the Supplier Catalogue (SAF-442)</h1></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="procedure-guideline">Procedure Guideline<a href="#procedure-guideline" class="hash-link" aria-label="Direct link to Procedure Guideline" title="Direct link to Procedure Guideline">​</a></h2>
+<hr>
+<p>This procedure describes how to add the names of new materials and
+update prices for all the items purchased from the company&#x27;s
+suppliers.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="capture-material-details">Capture Material Details<a href="#capture-material-details" class="hash-link" aria-label="Direct link to Capture Material Details" title="Direct link to Capture Material Details">​</a></h2>
+<ol>
+<li>
+<p>Select <strong>Supplier</strong> from the main navigation menu.</p>
+</li>
+<li>
+<p>Then click the <strong>Supplier Catalogue</strong> option.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image1-dd95bda6e8c42a53f6bce28b6dbf9c7c.jpg" width="262" height="120" class="img_ev3q"></p>
+<p>The system will display a screen titled <strong>Maintain Supplier Catalogue</strong>.
+This screen consists of a panel at the top called the <strong>Search Criteria Panel</strong>
+and a Grid at the bottom called the <strong>Supplier Catalogue Grid</strong>.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image3-6433c6e30c458d40ee1a33e7de022a57.jpg" width="1090" height="358" class="img_ev3q"></p>
+<p>The <strong>Search Criteria Panel</strong> enables you to enter information to search
+for specific Materials and to reduce the length of the list of
+Materials you see displayed on the screen. This is useful because
+Material Catalogues often contain hundreds and even thousands of
+records and finding a specific Material can be time consuming.</p>
+<p>The <strong>Supplier Catalogue Grid</strong> underneath the Search Criteria Panel
+consists of a set of columns that display specific information about
+each product, such as its <strong>Code, Name, Unit of Measure, physical Dimensions, Cost Price, Supplier Name</strong> and so on.</p>
+<p>Information about the Materials your company purchases from Supplier
+is stored at three levels of detail in the system. These levels make
+it much easier for you to filter long lists of information to quickly
+find the exact material you need.</p>
+<p>At the highest level, Materials are arranged into <strong>Groups</strong>. Material
+Groups are then broken down into <strong>Material Types</strong> and finally Types
+consist of <strong>specific Instances</strong>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-search-for-material-information">How to Search for Material Information<a href="#how-to-search-for-material-information" class="hash-link" aria-label="Direct link to How to Search for Material Information" title="Direct link to How to Search for Material Information">​</a></h3>
+<p><img decoding="async" loading="lazy" src="/assets/images/image5-d66e2f9de953589a198d06c3b547c8e7.jpg" width="816" height="138" class="img_ev3q"></p>
+<ol start="3">
+<li>
+<p>All Resources consumed and produced by a Company and its Suppliers
+is a result of a specific Process that has been performed. These
+Processes could consist of <strong>Make, Supply, Deliver, Finish</strong> and so on.</p>
+<p>Normally, the Materials provided by Suppliers are the result of a
+Process called &quot;<strong>Supply</strong>&quot; which consists of the Supplier either Making
+and Delivering or Buying and Delivering the Materials to your
+Company.</p>
+<p>The <strong>Process setting defaults to Supply</strong>. You should not
+normally need to change this setting when you are working with
+Materials in the Supplier Catalogue.</p>
+</li>
+<li>
+<p>A company consumes and produces Resources. Because you are working
+in the Supplier Catalogue, the <strong>Resource Category</strong> the system sets
+this to <strong>Materials</strong>.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image7-7bc5a11b73068ce4173495ea1efed5de.jpg" width="811" height="157" class="img_ev3q"></p>
+<ol start="5">
+<li>
+<p>Press <strong>[Tab]</strong> and <strong>[F4]</strong> to move the cursor to the <strong>Material Group</strong> field to
+see a list of the <strong>Material Groups</strong> that have been set up in the
+system. Typing on the key board automatically moves the cursor to
+select the name of the Material Group that matches the letters you
+have entered.</p>
+</li>
+<li>
+<p>Leave the <strong>Catalogue</strong> field as <strong>Supplier</strong>.</p>
+</li>
+<li>
+<p>If you wish to see a list of Materials provided by a specific
+Supplier, you can select the Supplier by clicking on the <strong>Three-Dot</strong>
+button in the <strong>Supplier field</strong>. If you do this you will see a list of
+all Suppliers and you can then search for a specific supplier.</p>
+</li>
+<li>
+<p>(You will need to have read and practiced the <strong>Supplier Profile</strong>
+Procedure to use this feature effectively.)</p>
+</li>
+<li>
+<p>You can also filter the list to show only those records for a
+specific Material Type. To do this click the right mouse button and
+select the &quot;<strong>Indexed View</strong>&quot;.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image9-b51047915ce847e24097094d419d0f0f.jpg" width="134" height="179" class="img_ev3q"></p>
+<ol start="10">
+<li>
+<p>The system will display a list of all
+of the <strong>Material Types</strong> that have been captured in the system. You can
+click on any of the Material Types in the list to quickly and easily
+search through long and complicated <strong>Material Catalogues</strong> to find the
+items you wish to include in your <strong>Purchase Orders</strong> and <strong>Process Models</strong>.</p>
+</li>
+<li>
+<p>Once you have entered the basic Search Criteria, click on the <strong>Search</strong>
+button on the form bar.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image11-139726b4b0f541f868046f49f2942e44.jpg" width="546" height="73" class="img_ev3q"></p>
+<ol start="12">
+<li>The system will now display a list of all Materials that match the
+Search Criteria you have entered. To make the list of items easier
+to read, <strong>right click</strong> anywhere in the grid and select the option
+<strong>Compact Rows</strong>.<br>
+<!-- -->This will change the way the system displays
+Material Names in the grid by wrapping the names and increasing the
+height of each row so that you can read the full product name.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-add-new-materials-to-the-catalogue">How to Add New Materials to the Catalogue<a href="#how-to-add-new-materials-to-the-catalogue" class="hash-link" aria-label="Direct link to How to Add New Materials to the Catalogue" title="Direct link to How to Add New Materials to the Catalogue">​</a></h2>
+<ol start="13">
+<li>To add a new item to the Material Catalogue click the <strong>Add</strong> button.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image13-d922a8fd0cede74e0d916a4b25003da9.jpg" width="980" height="462" class="img_ev3q"></p>
+<p>Before you can add the details of any specific Material to the system,
+you need to <strong>select the Material Type</strong> so that the system knows which
+rules to apply and what kind of product code to use.</p>
+<ol start="14">
+<li>The system will display a screen titled <strong>Select Process Type</strong>.<br>
+<!-- -->Click on the <strong>name of the Material Type</strong> for which you wish to add specific
+<strong>material price information</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image15-013cd3d934d157e85582ecaa36a1cf8c.jpg" width="668" height="242" class="img_ev3q"></p>
+<ol start="15">
+<li>Then click the <strong>Select</strong> button.</li>
+</ol>
+<p>The system will display a screen titled <strong>Add Material</strong>.<br>
+<!-- -->This screen enables you to enter a <strong>Code, a Name</strong>, create a <strong>Description</strong> and enter
+the physical <strong>Dimensions</strong> of the Material you want to add into the
+catalogue.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image17-5df98db6eaff8c196cc42a85997ae2f2.jpg" width="731" height="533" class="img_ev3q"></p>
+<ol start="16">
+<li>
+<p>Enter the <strong>name of the material</strong> in the <strong>Item Name</strong> field.</p>
+</li>
+<li>
+<p>If a <strong>Name Format</strong> has been defined for the Material Type the system
+will open a window titled <strong>Define Item Name and Description</strong>.</p>
+</li>
+</ol>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>If you need to work with <strong>Dictionaries</strong> you should read the document
+titled &quot;<strong>Understanding Material Name Formats</strong>&quot; as this will provide you with useful
+information about how the system uses <strong>drop down dictionaries</strong> to build
+Material Names.</p></div></div>
+<p>If no Name Formats have been set up, then simply type
+the <strong>name of the new material</strong> you wish to store in the database in the
+<strong>Item Name</strong> field.</p>
+<ol start="18">
+<li>The system generates a <strong>unique code</strong> for the new material in the
+<strong>Item Code</strong> field.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAA/AOcDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9PdTvHsbYSIqsxcL82cdD/hWX/wAJDcf884fyP+NXfEH/AB4r/wBdB/I1z1eTfRGyNT/hIbj/AJ5w/kf8aP8AhIbj/nnD+R/xrLoouOxqf8JDcf8APOH8j/jR/wAJDcf884fyP+NZdfjT8C/EHivw/wDDn9m7wr4gX7V4a8RfFHTPEfha7jmMn2dLa8ms9QtZAz5jxK9vMiomw/aJWLliVXSMXIT0P2q/4SG4/wCecP5H/Gj/AISG4/55w/kf8a+NPF37Y2v6T8ZNMsdA06DX/AEvxAtvh5e3c2li0a3v3iAmWO5N80krRSHdzZJGyqyiXO128L0v/gpB8WIfCdp4p1LSvBl3py+Fk8WXOm2um3cEskQ8QDSHtUma7cIxXMolMbAEhfLb7xFCTDQ/T/8A4SG4/wCecP5H/Gj/AISG4/55w/kf8a+KtD/a3+I/iL4uaha2vhfQovAdj8RpPAUst9eW1pI2wBGljupr5XluC5EotY7Jt0eUWUuCa+wah3juPQ1P+EhuP+ecP5H/ABo/4SG4/wCecP5H/GsuilcLGp/wkNx/zzh/I/41hfDPx7qHjTxB8RbG9htoYfDmvx6VaNbqwZ4m0uwuy0mWOW8y7kGRgbVUYyCTZrkvgJ/yOXxu/wCxyg/9MGj0bpiZ7BRXlf7V3/Jrfxi/7E3Wf/SGavIb7wP4p+CS/wDCXeGPBXw5+FE882neGhpnhjzb+x1GXUdY062W8vIo7fTyzWkZn8pcsT9rl+aMbhIKNxH1lRXzF4N+MvinWrrxjZ6AvgjwfpvhCbVdX1RtVtJYrS/iOva1bczpMosmK6VJLNdMlwGe6aTyhsKyavgH47/EDxX8Wktbvwpb2fw/vdf1fw5aX0zWkDCWwe7jMscx1Bprpnewk/0cWMRRZGbzXW3LSvlYH0RRXzE/jTxT4X+KXjXSvCMWjtqXij4pQ6PJPrSytDbRDwZaXRnCxsC7I1qreXlRIAY98W8Sx8rpPxl8U3vxM8U+JZF0eXUtM0zSPBkKTWkrww39z4t1LRpL+BfOzFA7WcU8tqGLSiG2jNwvkCRjlYH2PRXyb42/aV+Ing2+8b6Ox8MXupeCNA8TarqF8NKuY4dUlsdN0m8tFih+1k2y7tYVZA0kxcWxKmPzf3fQSftEeI/h54nv4/H2oaBceG9F1m48Parf6XpFzaurxaC+vNqCKbiciJbdfs5tgruzqZhKARADlYH0lRXyHpvxi+KuvfFzwF4L8TWf/CJ6za+JrG9uJXsY7aLUNNudK18tbva22p3anDaYzLI1xxI0bGDEI8218If2hPFOsfDXwr4ktNM8MaN4U0+bwn4cu/Den6bLGzy6paaS4ltJhPstoIDq8YW3MMpK2pHmr5oMRysD6yorwL4A/Gnxv46/4V0/jK10CP8A4Tnwa/iq1g0OOdf7P8n+z1dJJJXbzvO/tFJAAsfkeW0Za4yJa99qWrARWrtJawuxyzICT+FS1DZf8ecH/XNf5VNSAKKKKAMHVNUhvbZY41kDBw3zAAdD7+9ZVeUfG34o3vgDU/D9iniHw34G07UYbqebxV4uhaXT4pYWgWOy2/aLcedMs0siky522kuEbJaPUs/i01v451fwrrWjT22o6T4WsvEl1JpMdzqMRMst1HNbxlLcF2RrUeWMCSYO2yIeW1VZtXKPQ6K8f1P9qHwjpet6fDN9uj0iTSNZ1XUL2fTbyK40r+zltJZI7q0aDzYd0N15oaUJkeSFD+fHnsPFHxc8LeDtTutM1K/n/tW3htZzp1lYXF3dTLcNcCEQwwxu8zEWd0xWMMypA7sFQbqXKxnYVzNv8L/BtnomjaNb+EdCg0jRbxdQ0zT49NhW3sbpWZ1ngjC7Y5AzuwdQCC7HPJrd0vVLLXNMtNS027g1DTryFLi2u7WVZYp4nUMjo6khlZSCCDggg1ZpAcfqPwb8Aax4uTxVf+BvDd74oSaK4XW7jSLeS9EsQUROJym/cgRNpzldq4xgVV/4UP8ADP8As/7B/wAK78J/Yfsf9n/Zv7EtvL+y/aPtPkbdmPL8/wDfbOnmfPjdzXdUU7sDmf8AhV/g3/hNv+Ey/wCER0L/AIS//oYP7Nh+3/6vyv8Aj42+Z/q/k+9935enFdNRRSAKKKKACsP4Y6FP4L1/4i3188csXiPX49VtFtyWZIl0uwtCsmQMN5lpIcDI2lTnJIG5RTTsBr6tdaRr2l3mmanYLqOm3sL211Z3cCSwzxOpV43RiQyspIKkYIJBo1K60jWrdLfULBb6BJoblYrmBJFWWKRZYpAGJAZJER1bqrKpGCAayK8L+Gf7Tlrr2iaNJ4ptP7Mup/AuheLri8sba4lt5JtQaaI2sSKjkSGWJFih3tLMZdqKxjYmlrsiT2vUPA/w/wBXvNIu7/wZot7daPezajps9xpNvI9ldSzCeWeFiMxyvKBIzrhmcbiSeat2fh3wZp3jK/8AF1p4Y0218V38ItrvXYdOhS+uIgEAjknA3uoEUfykkfu1/uivMLj9pL4f2f2AXOq31pJd/aC8Nzol9FJYpb+QZ5L5GhDWUaLdWzmS5EaCOZJM7GDVa8QfGvSLH4Q+MvHmkQz6mnhrTr29uNLvYJtOullt7cz+RNFPGJYGdNjDfHkpKjgMrKS9ewWR6f8AY/DX9o/2h/Ylr9v+2/2j9q+xxeb9q+z/AGXz93Xzfs/7nf8Ae8v5M7eKqjw74MW31e3HhjTRBrEMltqUX9nQ7b6KSSaWSOYYxIrSXVy5VsgtcSk8uxPnVnrPi3wBb3up/EDX/DeqaCkI23Wi6PdWFzFcGREigS3NxdG6aYybVVCj71RFSUzDyyT4/eDE0y3u1udWuJ5ppIP7JtdA1CbVYmjVGcy2CQG5iVVmgYtJEq4uIDnE0ZZeiA7qx8D/AA/0vQotEs/Bmi2mjQ2V1p0enQaTbpbpa3LK91AIwNoimZVaRANrlQWBIrV+x+Gv7R/tD+xLX7f9t/tH7V9ji837V9n+y+fu6+b9n/c7/veX8mdvFeJ/Cv8AaM0Pxd4O8Bza3dfZvEOu6Rpl1etZaddHTbS8u7aKVLZ7ra0MEjmaMRwyyiRvOgADGWPd7BQ9N0FjM8M/DH4Y+Cbe6t/D3w/8O6DBdzW1zcRaZolrbLNLbyebbyOEUBmik+dGPKNyuDzVq18D/D+y13RNbt/BmiwazodkunaVqMWk263Gn2qqyLBBIBuiiCyOoRCFAdhjBNWaKXMOxc02z8NaP/ZX2DRLWx/sqybTtP8As1nFH9jtT5eYIcY8uI+RDlFwv7pOPlGNX/hILX+7N/3yP8a56ii/kFjfi1y0hjRAsxCgKMqO3407/hILX+7N/wB8j/Gueoov5BY6H/hILX+7N/3yP8aK56ii/kFjmfGmj+K9Q+xzeE/EljoV1DvSaHVtJOo2k6NtIYok0EiyKVwrCXZh5AyOSjR+dzfsy2Vn4dXQ9H12e304eFtK8MPHqNutyLiLTJmktBOFaMSQyrNcxXUOAJ45QqtDht/r8Gk2OseMLCG/s7e+hWwunEdzEsihvMtxnBB5wT+dc18K/Hvw5+JvgHV/F39jaFpGk6XNM1zcXcEaQxWflJd2t28kkaBFmsJ7S6IP+qE5jch43AuKk1oJtHj3hv8AY1stMsfEVtd6tpNjB4gh1fT72y8J6Auk2UNjqFhY20yW0Bmm8qYSabbyiVi6nfMDES6um7qv7P8A4r8Q3fifVtW8e2N7reuWemWjRr4fMWnW4spbySPy40uRcphrtZkdLpZo7iBZFl2YgXutc+K3wks/7Hj0p/Bepf29o2savo2qzXlpDo91/Z3lfaI2u1D7ceaWZkSTYkFwxH7vB7+Gx+H9x9j8q38NS/bL2bTrbYlufPuofN86BMfelj+zz7kHzL5MmQNjYrll3FdFHS7OXT9MtLWe9n1OeCFIpL26WNZbhlUAyOI1RAzEZOxVXJOFA4qzUPgu4+GPxJ0uXU/CMnhPxTpsUxtpLzRWtbyFJQqsYy8e4Bgrqduc4YHuK6D/AIQXw1/0L2lf+AUX/wATU+zY+ZGLRW1/wgvhr/oXtK/8Aov/AImj/hBfDX/QvaV/4BRf/E0vZsOYxaK2v+EF8Nf9C9pX/gFF/wDE0f8ACC+Gv+he0r/wCi/+Jo9mw5jFora/4QXw1/0L2lf+AUX/AMTVXUPBPh2GNWTQNLUjcf8Ajyi7Ix/u+oo5GHMZ9Feb+Jfiz8G/Bet3OjeIPFPw+0LV7bb5+n6ld6fb3EW5Q67o3IZcqysMjkEHvXRaXJo99rGi6joa6a+nX2mTXEF3pccQiuYma3ZHV4xh1KtkHJGDkdamxR01eBP+ybZTeAdP8MXGtQahBD4W0Lw/dLqGmLPbXcuj3H2iyleEyf6l5HnWeAsTIjoqyRFWZ/fa8q1jxl4S8Br8NtL1LQ9PubnxH5Mc07243W8J8m3W4OI28wte3mnW+3IP+meYfkikI83F414NRtFyb7eWpcYcxxv/AAyNAfDOs6bDqehaFJqvhzX9Cmh8NeGItNsIn1JLGMTxW6Slv3a2ClhJJI8jStiSNFSNfRL/AODVlrWi/FjSNS1Gd9O+IM0jXP2VFiltIpNLttPdUZtwZttsZAxXALgbTtydfwhLoHirxB430v8A4RbTbX/hGdYj0nzfJjf7Tv0+zvPMxsGzH2zZtyf9XnPzYHl+j/tEfDvWvgj8L/iHB4c00/8ACeaxpegWem/Zz+7vrm5EFxF5hgGfI2XTbiqrJ9nwpG9TXmRztz+Gk+nVddV+CuaexS6nS6t8L/HHjTR7i08VeONJuHhmtL3TY9E8OvZ2yXdtdwXcMtykt3PJMqyW0a7I5YMpJMCSzRvFmWnwK8TaT4ik8Z6f4v0mPx/eTXbX95daDLLpUkVxDp8LLFaLeLLGwTSbLDNcuMmc7cSIIuq8fXsWh+J9D8L+F/A/h7XPEWq2d5qSpq9wNPtI7W1e2jlJljtp3Mhe8g2p5e0r5hLqVVX4Pw98cdA8XWen+I9I+HumnwLJeaLpt1fXskcWpxXWqQ2MtqI7RYXjkjUanZiRzcIy/v8Aaj7E81wzpzjzRpO3qvT8/vB0VtcyvAv7GWl+CNY8NXYuPDeqvpsOkm51TUfCkFxrDXFhaW1tGbS7kkYWsLizhYx+VI6mScpKjOjR/SNfPNr8dtN/sfQNSvPhro0MHjDTbfVPCKwXayNcxXF5YWkK6hm2UWjeZqtkWEJugqicgsY0EupefFaDRbf7PqPwmtZtVs/FWn+FdZl0q5tZtN06W8k0/wAqXzpVhnlUxalCQEts+ZHIjbU2ytTzeTetJ/ev68vXQXsl3PcqK4P4O2Nj4q8I397qml6bdXMXiHXbFJPsEKYht9Wu7eFMKoHyxRRrnqduSSSSe3/4Q7QP+gHpv/gJH/hWFbPIUKsqUoO8W1v20KjR5kncloqL/hDtA/6Aem/+Akf+FH/CHaB/0A9N/wDASP8AwrH/AFhpf8+395XsH3JaKi/4Q7QP+gHpv/gJH/hR/wAIdoH/AEA9N/8AASP/AAo/1hpf8+394ewfclooWGO3AiijWKKP5UjQAKqjgAAdBRX1UJc8VLucxxXxO8F33xJ0fUvCNlLbwJr+kXOlX0twzKUsJ7i0ivWiIVsTi2efyiwK+b5e8FdwrB8T/s4+LZdcvtStPG1x4unvYdJuLibxYLaCY3GkatDqOnW0RsbSJI4JS+oJNKySyKZIGVXCMjepw/6PfJeR/LcJG0Sv1wrFSwx05KL+VXv7avP+e3/jq/4V0RnyqxDVzxT4lfATxv8AEzR/EWoy2vhDQvEniDwz4j8OXNjp885gj/tCzsoobmW8MAe7lV9MgRswRYhnCjcbVftGr44/Zd/4TfUfiHZtrH2Hw3r+jajFpNpjzotL1XUrdra/u1tsKgwkaSRlHDmTUNVLti4GPVv7avP+e3/jq/4Uf21ef89v/HV/wq/aIXKcR8CfhRqXgPVPEet6zp1vpuparDaWflr4t1bxNM0Vu07oWvNQ2FV3XUm2GOJQpDsZJPMCxev1y/8AbV5/z2/8dX/Cj+2rz/nt/wCOr/hS9og5TqKK5f8Atq8/57f+Or/hR/bV5/z2/wDHV/wo50HKzqKK5f8Atq8/57f+Or/hR/bV5/z2/wDHV/wo50HKzqKpap/qB/wP/wBFvWJ/bV5/z2/8dX/Cquo3E2qWrW9xNKI25JhcxN+DIQR+dLnQcp5J8XP2XPhr8cvF3hXxJ4y8OQatqvh2bfA7cLdRYYi3uV/5bQiRhIEbjcCPuSSo/oVz/wAjVp3/AF5XX/oy3o/4Rmz/AOe2of8Agyuf/jlS2eg2ljdC5jNw84Row091LNhSQSAHY4yVXp6VldlmhXht1+zxqHxStfEV1q/jPVvDeleI/D9l4cax8NCzIvNJS1Y4uTdWszJN597qA3Qso8sw/wAYJr3Kks1Gn2cFrbjy4II1ijXrhVGAMnnoK8jMMNXxEYqg0mu//DPsa05KO55L8OPDvxb8H+KNdu9V0XwXqcHibUrDVNVvbPXru2a1lXS7CzulgtmspA6iS0leMNMpZWQMUOTXHeGP2P7jw74T8JBb2wbxFptn4UhuVVpvs6z6fdaY+pTxyHl/tEGkafGiNGoU2an5TNKa+kftMn979BR9pk/vfoK8NZXjou8JRW21+m3Q19pDrc8z8S/DLXPDvjrS/GfgmK31zUYYdUtrnS/FHiG9jhIvpbKV5YZ2jujCsbWCKtskax4mYqU27X4Twf8As0+J/A2gaf4Htb/SdT8LHUvDer3evzTS297FLpMGmRCGOyEbpIsx0iM+YbhCn2lvkfyh5v0P9pk/vfoKPtMn979BUxynHRVlKP497rp0f/BuP2kD5utv2bfGk/h/wVpd3PoMH/Cu9Hs9J0OWG9nl/tz7LqGlXiSXQMC/Yd/9jRIVQ3W37U5y/kgS9i3wf8T634b8Qz6k2k6fr/iDxtofiq5sbW7luLWzisJtLDxJcNDG0rPDphcExRgPMEPC+Y3sH2mT+9+go+0yf3v0FU8rxz+1Hv1737dWr/8AAF7SHmcZ8DdMvNJ8FalBfWk9lO/ifxFcLHcRtGxjl1q9kicAj7ro6Op6FWBGQRXoNUftMn979BR9pk/vfoKxr5Ji69WdVuK5m3u+rv2KjWjFJF6iqP2mT+9+go+0yf3v0FYf6v4r+aP3v/Ift4l6iqP2mT+9+go+0yf3v0FH+r+K/mj97/yD28Rsv+sf6mimkliSepor7unFwhGL6I43uf/Z" width="231" height="63" class="img_ev3q"></p>
+<ol start="19">
+<li>If you want to give the item a specific code, say to match an
+existing code in your current stock system, simply place the cursor
+in the <strong>Item Code</strong> field, delete the existing code and type in a new
+code.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="data:image/jpeg;base64,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" width="230" height="65" class="img_ev3q"></p>
+<p>You need to define whether the item you are capturing is a
+<strong>Standard Item</strong> or a <strong>Variation</strong> or a <strong>Custom Item</strong>.<br>
+<!-- -->This setting makes it easier for you to search for materials in the catalogue.<br>
+<!-- -->A Standard item is an item that you either purchase regularly and use in
+many different products, or it could be an item that you use simply to store
+a base price.<br>
+<!-- -->A sheet of chipboard is normally a Standard item, as would be a
+sheet of glass 1m x 1m square.</p>
+<p>However, you are unlikely to order a sheet of glass 1m x 1m square and
+instead are more likely to purchase sheets of glass according to
+specific dimensions for each customer order.<br>
+<!-- -->A sheet of glass 0.46 x 0.87 could be a <strong>Variation</strong> of the
+Standard item for a specific job.</p>
+<p>A <strong>custom item</strong>, is an item that is normally <strong>unique and highly specific</strong>.<br>
+<!-- -->For example, a sheet of glass with a <strong>unique sandblasted pattern</strong> could be
+a <strong>Custom item</strong>.</p>
+<p>Note that over time, items can change from being Custom and Variation to
+Standard. This would happen if the company made a product that was
+unique for one customer, but then found that the same product was
+popular among other customers and then decided to promote that product
+more extensively.</p>
+<ol start="20">
+<li>If the item is a standard material, select the <strong>Standard</strong> category.<br>
+<!-- -->If the item is a <strong>variation</strong> of a Standard Material or a <strong>Customised</strong>
+Material, you can select these options from the <strong>Category</strong> drop down
+list. This makes searching for materials in the future easier.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="data:image/jpeg;base64,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" width="109" height="105" class="img_ev3q"></p>
+<ol start="21">
+<li>If the item you are entering into the database is subject to
+<strong>specific physical dimensions</strong>, then type these into the physical
+<strong>Dimension fields</strong> at the bottom of the screen.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="data:image/jpeg;base64,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" width="194" height="45" class="img_ev3q"></p>
+<ol start="22">
+<li>Once you have captured the basic information about the product,
+click on the <strong>Save</strong> button on the Form Bar.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCABTAWMDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9I76+uFvLhVnlCiRgAHOBzUP9oXX/AD8zf99mjUP+P65/66N/M1XrynJ33N0WP7Quv+fmb/vs0f2hdf8APzN/32ar0UuZ9xlj+0Lr/n5m/wC+zR/aF1/z8zf99mq9FHM+4Fj+0Lr/AJ+Zv++zWR4vvrhvCetq08pU2M4ILnB/dtV+srxb/wAirrP/AF5Tf+i2o5n3A37eaSGzmaN2jbzEGVJB6NTf7Quv+fmb/vs0J/x4zf8AXRP5PVei7shFj+0Lr/n5m/77NH9oXX/PzN/32ar0Ucz7jLH9oXX/AD8zf99mj+0Lr/n5m/77NV6KOZ9wLH9oXX/PzN/32aP7Quv+fmb/AL7NV6KOZ9wK9neT/wDCQau/nSb/ALLZLu3nON91xmtD+0Lr/n5m/wC+zWTZ/wDIc1f/AK9rL/0K6q9TcnpqIsf2hdf8/M3/AH2aP7Quv+fmb/vs1XrK0myS7hW+llujdNdT5ZblwoRLiSMII8+XgogGdueSc55pJt9QN3+0Lr/n5m/77NH9oXX/AD8zf99muT8P65dXVvpdtDYXV4BbWcc9wEmdjLJDG5bcIymB5gZi8ikDccHjMn/CTTyTCKGzSYzMotZN0qRSqZ44dxdogCMzIf3fmDGeematMNDqP7Quv+fmb/vs0f2hdf8APzN/32agYbWIBDAHqOhpKnmfcDMjmkm8Wai0jtI32G1GWJJ/1lxWnWVbf8jVqP8A15Wv/oy4rVpDCiiikAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBY1D/j+uf8Aro38zVerGof8f1z/ANdG/mar05bsS2PH/iZ4X0bx98cvAvhzxPpFj4j8PP4c13UG0nVrZLq0a6iudJjinMUgKGREuJ1V8ZUTSAEB2z53HrkXgf49XXhf4cTaTbJrWnaNoNldXAk1Cy0toZvFF1NGIEmQssbWUtssCyxrDlVACwiI/Q/jDwH4Z+ImmRab4q8O6T4m06KYXEdprFjFdxJKFZQ4SRSAwVmGcZwxHeq178L/AAbqWiS6Nd+EdCutIls7bT5NPm02F7d7W2YvbQGMrtMcTMzImMIWJUDNUpaWA8o8P/HbxNq2teHredvDdraR6jc6Nq8jmUGa5j1S506N+HJsFnNpLJbiRbhJpA1qZYZBHJMfs8/G7x38UNT0q48T+GINE0HxJoR8QaO7NawyxxbrciJVS/uJbtdl0m6cwWoQom6MGcJH7BH4D8Mw3Hh+ePw7pMc/h2FrfRpFsYg2mRNGI2S2O3MKmNVQhMAqAOgo8P8AgPwz4S1PWNS0Pw7pOjajrE32jU7vT7GKCW+l3M2+Z0UGRt0jnLEnLse5ouuwG7WV4t/5FXWf+vKb/wBFtWrWV4t/5FXWf+vKb/0W1QM3U/48Zv8Aron8nqvVhP8Ajxm/66J/J6r030EFfPHhHQtN8F/FzT9SvtH0LXLrxH4j1axsPHmkaix1aeci9uTp9/GIlDW9tFbzWoVriYK9nbHyYyo8j6Hrx/w/+zmPD/xAbxonjzXbrxDP5aX19Jo2gR3GoQKY/wBxPPFpiTNGRFGpAkBAVcEFQQ11A4Ww/aM8e32rXkth4a/tnw9qOkTeLPDl0mlCGbUdItruzM0dvDHfXEtxcTWl4DD5sdoRKIw0eJHEVnxJ8fPiFq2p6ZZ+BvDsGqQa9Nql/o13HZRXcj6VYtZW5meKbULON1uLi5kminjnINubc+WxlZo/a9D+F/g3wv4m1DxHo3hHQtJ8Q6j5n23VrHTYYbu58xxJJ5kqqHfc4DHcTkgE80a58L/Bvijwzp/hzWfCOhat4e07y/sWk32mwzWlt5aGOPy4mUom1CVG0DAJA4quZdg1LPgPxJL4x8DeHdfntYLKfVdOt76S1tb2O9ihaWJXKJcR/JMoLYEifKwAYcGt2iisxlGz/wCQ5q//AF7WX/oV1V6qNn/yHNX/AOvay/8AQrqr1U+giK8uorG1muZ22QQo0kjYJwoGScD2FRro9nDdea9szSLJ5gjkml8pXznPlbvLzu+blfvc9eaq+KIZLjw1q0USNJK9pMqogJZiUIAA7mm32lzXfiK7aQX3kzarLG5S4mRPs6WYkAXawCjzhyy4JOVzyQXFX2AtQ6PYQNAVtRtgSNY4zLJ5YMaqqMU3bXYBE+ZgT8i+gpLbRdPtZklS2LSR7AhkuJmVAsiSKqoX2qoaKPhQBhQOlYdvHqt1daM8iXqXbLYLKqWtw4ZXEZndyrCGP78ow6FhszxlSKmy7ZYIon1GC+bTt99LMtwyGQT2omaNSQrbQ0wHk44I2nJU1Vpb3FodnRVHRLWW2sG817pw0rGP7VbyQEJtXgLLI8mN2/lz9BtAq9WbVnYoyrb/AJGrUf8Arytf/RlxWrWVbf8AI1aj/wBeVr/6MuK1aQBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBQvvF+hNeXDLrenFTIxBF3Hg8/Wof+Et0P/oM6f8A+BUf+NYnxI+JC/DuPw+ieH9W8TahrmonTLLTtHNssryi2nuWJa4mhjVRHbSnJfOcAA5q14D8eQeOrTUiNNvtD1PSrz7BqWk6l5RuLOcxRzqjNDJJE26GeGQGORxiQAkMGVafcRo/8Jbof/QZ0/8A8Co/8aP+Et0P/oM6f/4FR/41q0VIzK/4S3Q/+gzp/wD4FR/40f8ACW6H/wBBnT//AAKj/wAa1azPEur3ehaJc31lol94iuotuzTdNe3S4mywB2meWKMYBLHc68KcZOAQBv8Awluh/wDQZ0//AMCo/wDGszxR4o0a48NatFFq1jJK9pMqolyhZiUIAAzyar/Cb4kL8WvA2m+KoPD+reHtO1OGO6sY9YNt5txbSRJJHOBBNKFVlf7rlXBU5UcZ7CnsBHeaxYaVZst7fW1m0kilBcTKhbAbOMnnGR+YrO/4S3Q/+gzp/wD4FR/41q0UAZX/AAluh/8AQZ0//wACo/8AGj/hLdD/AOgzp/8A4FR/41q0UgMr/hLdD/6DOn/+BUf+NH/CW6H/ANBnT/8AwKj/AMa1aKAMr/hLdD/6DOn/APgVH/jR/wAJbof/AEGdP/8AAqP/ABrVryjTv2hLW+vnebwb4k0/w2uuy+HR4nuDYGya8S/bT1AjS6a52vdKIlYwcb1ZtqZYO1wO1tfFWirrGqOdXsAj29oFY3KYYq1zuA55xuXP+8PWrv8Awluh/wDQZ0//AMCo/wDGtWigDK/4S3Q/+gzp/wD4FR/40f8ACW6H/wBBnT//AAKj/wAa1aKQGV/wluh/9BnT/wDwKj/xqCy1/wAMaZG6WV7otksgAf7M0ERfHTcVwT+NblFMDK/4S3Q/+gzp/wD4FR/40f8ACW6H/wBBnT//AAKj/wAa1aKQGFpOo2mp+JdSls7qG7iFpbKXgkDqDvnOMg9eR+dbtFFABRRRQAUUVzPjzx5B4FtNNJ02+1zU9VvPsGm6TpvlC4vJxFJOyK00kcS7YYJpCZJEGIyASxVWAOmorC8H+KJfFWmS3FzoOreG7yCYwT6brEUayxttVgQ8TyQyqVdTuikdQSUJDo6La0jxLpuu6hrdlY3Pn3Wi3i2F/H5bL5M7W8NwEyQA37q4hbK5Hz4zkEAA06KKKACiiigAooooAKKKKACiiigAooooAKK8yf41X19d3w8O/DfxZ4t0y1vLiw/tbTZtKht5Z4JXguEVbm+hl/dzRyxktGAShKllKsSqswD41fDef4k6p8N7cJff2ZpviOS/1KfTdUl064gg/srUIVdZoZI5RmaaFSI2yQ5yNu6uF+In7Oc82t2x8FWv2K+h8I+J7Wz8S6lqMtxeWetXq6fDa3LXcrSXRkEUMyCYFmSKIRghdin3q9jmu9R0eyiu5bNbq6aOSWBUL7RBK+BvVh1Re1X4/DVpNqlxpkfi29fUreGK5ms1e0M0UUjSLHIyeTkK7QyhWIwTG4H3Tio83QTsfJ8/wbvrjUJNR0z4R/2H8OVvLB7/AOF23So/7WeK31NJp/ssdwbF8y3elvmWVXP9m5IzDAHzPiJ+zxr/AIs1bR7mDwxruk6YukR2mg6ToupaRL/wjF19ru5DK9zfQzSWH7uayAbSxIYfspSPzFt7Ut9cR2GjSaFYa2njqV9G1D7P9j1FbiyNvc/aGRLfy5PK2v5rSRqmCd5dQuSRVuTw1aQ6pb6ZJ4tvU1K4hluYbNntBNLFG0aySKnk5Ko00QZgMAyID94Zv3idD5s1b4R6vea98UnPgid7XWoT5l3DrUKXOphp0by4nbct4qwplbfUoljhdpLRJJbK4byfYfhDot74e+G+hafqGkwaDdwwtu0y1lZ4rYF2ZY0UySCFQCALdJJI4BiKOSSONHbvP+EFf/oYdV/75tf/AIzR/wAIK/8A0MOq/wDfNr/8ZqWpMd0fLN5Zal8M/g7+zppE0VjL8RvDv9lxWnhG5v1jk1Gf+zm0y7VZIxK3l2y37XMssccoWO3bIAbeOF+F/wAFH8P+L9Y8M6P4R/tLxL4W8R+GbJfib5FlbfZ7Oy0jRDdW2/zjeJ58EVxH5caPGftexn2tIy/cH/CCv/0MOq/982v/AMZo/wCEFf8A6GHVf++bX/4zT97sLQ+Wf2Wfgdr/AMMfEz32t2uuxamukGy1vUr6bSI7TW78vCTdxiyhFzd/NHOwuNQdZ0E5+V2nmKfTVXP+EFf/AKGHVf8Avm1/+M0f8IK//Qw6r/3za/8Axmk4yk7juinRVz/hBX/6GHVf++bX/wCM0ybwRJGqkeIdU5dV5W27sB/zx96nkY7orUVR/slv+gxq3/fVr/8AI9VLqObTdQ0kJqN9cJcXLRSR3PkFSvkyv/BEpByi96kZ0VjYtfOyqwUqM815p4M/ZR0PwzfXGoX+oalrl7Jrt/rqwXGr339mpLcX815FjTzO1tuhaVCr+XnzIllAV8EehXf9t/8ACP67/wAIz/Z//CSfYJv7M/tbf9j+1bD5Pn+X8/lb9u7b823OOa8g0X4v6v8ADvQvE8esX3i/WfG8P2BrLwn49TTxcSRztcBJLY+H7K4aXetresUCTSKLJmZIo8yHNyltElmZp/7DOl6f8P7Xw4NT017rSvCNroGgal/Y6h9D1OMXJm1m0G/MNxNLNDKxjZXL2sZMjHBXp7n9lCzk0TxVc2+qpp/xC1r+2BF46soHg1KBLxrj7PG8iSLJPHaxzQpHG77B9lgZRGY49lXTf2vYdQ8KvqTeFLi11K70yY6JptzPJC2q6vBqraTcWA8yBXtlW8k05FmuUjJW/Vnij8mZULP9ra6vfGXiGytfht4n1fw9pc2rWcd9o2l6hcXM1xpwuBMuGtEs9sklpLFF5d5LI0klurRoXkEJzVRGZpf7DehaD4R13QrPXJLy01Ga1u003UtJ05dHW4gMhVptNtLa2guFk8wLL5il2EUBSSOSCGSPutL/AGc9O0X4kWni62u5JbiDTksN19NPc3gEaCNALt5DK0LIWaS3lMkbzLFcAJMJJJcPWvjnret/st/FTxvp82gaX4k8P6Nqsluugao+qfYLqCxMypcpc2lu8FzG5G+2mh3JhQ4ySo5/XvjB8RPh78SvHeua34d0e40Pw/4H0vXNf0u08UXMq6fEl3rTSy2CvZKtzPJBbrkSfZgWijQuVAdTmqMD3/8A4R+b/nqn60f8I/N/z1T9a8q8D/tMXXjj4tXPhe18D6wPDy6nqGjx6+llqBWO4snmjmed2s1s0gaS2ljRo7yWQs8AaJC0ghtePvj1rfhaD4narpXhTT9V8N/Dyyun1e4vNZe0vJrqLS01FYreBbaVHiZJ7ZDK8qMrNL+7YIvmRed7Duel/wDCPzf89U/Wj/hH5v8Anqn615p8SP2gtT8G/FfT/AOi+Dv+Ej1XUP7PS2kbVFtED3cGtShpN0bbYov7Gy7LufZMxSN3jWOXA1v9qzVtJ8M3Wqr4AuHNx4sv/CGiRLdXF0dQuLOe/Wedo7K1uJ44PK09ipWGSTzS6tGkSC5d3mFz2r/hH5v+eqfrR/wj83/PVP1rwtv2sPEZ07WdXHw3+w6N4Y8Mx+J/Ea6zqNzp+owwfaNRikFnaS2QabK6ZLLF9oa1MizQ7lhLNt779n/xj4v8aaT4oufEsGntYWvibW9P0q/t7stcXEFvq17bqk0AgjSHy0hijUrJKZANzFWyCm5xV2Fztv8AhH5v+eqfrR/wj83/AD1T9a+TPhH+0Z46034aeEfGV03i/wCJ9rq2jaOdZt9a0WDRPs+rX17pttbxaXK1paRXETi8vnLFpk/0a3BmhEm+T2i5+PWt6brtxFfeFNPTRtH1nSfDGvXlvrLyXFvql+tkY1tYTbKtxbK2pWgaaSSB8CYiElFWSnzp2Fc9L/4R+b/nqn61zPi74VTeKvEHgnU/7RS1/wCEb1eTVfK8ov8AaN1hd2nl5yNmPte/dg/6vGPmyPEZP2kPFN18RPhf4suNAt7LwT4q0Ay6RY22vSyTXUWoaz4etYLm9gNsscM8EV/uCI84y8yCQA729J1D49a3qHxL1zwD4V8KafqXiTTb24RW1jWXsbOW1gstKuJpTJHbTusu/WbeNYvLKlY5HMinajK80Fyx8Zf2fI/jVpmnaPqupWttottM13JC2jWOoSvcBdkTL9tgnhRQrzBsQlyWTEiKHWTzFf2FpL7w3Jpmr+OZNQvNR1HTb3XdWbSLee51mKz0aPT44LkXYuI5lNxGbweckgR3O0BwJh63+z/4x8X+NNJ8UXPiWDT2sLXxNren6Vf292WuLiC31a9t1SaAQRpD5aQxRqVklMgG5irZB821D9sy6h1y/wBJ0/wfb6rPdzW//CNXy3moW2m6tby6tY6cJ2u59ORNpOpW0qtafbI2Xf8AOAYmlpTqX5UBX1r9hHRPEHgnW/DOq6yniW1k8OPomg3HiPTLe7k0Cd5L13urVUWOOLi6to1jgSELHYW6A4RNlrxp+xbB4s0HW0i16107xRrc2uJqfidNLDXt9Y38F9DBYzyeYHlhthdWhRGcqf7PhAVML5fUWfx/8U6x4mk8D6b4M0eT4iWU14uoWd14hli0mOK3g06dnhvFsmlkYprFjhWtoxkXA3YjQy1fhp8U9b0n9mz4DyxW3/CVeMvF+jaVZ2z6zqTwRT3R0l72aW6uhHNIMxWs53CORmkKAgBmdTnqAWNL/Zhg0PxZaappupWun6dZ+KU8RW2lWtgIooIk8PjRktE2sAqqoEoYLgABNv8AFXq//CPzf89U/WvC/Cvxc8bw/FDx34Rs9F0/W/F1zrLXken6p4gng0vTrW20TQDdRQ3ItZZD/pOpKyKLdFffM7GNvlc/4bT0xoP7cbQP7K8Ir4Z/4SeNtdvGsdX1WD+y/wC0XGl2pha3vvLjZI5dl2picSb1CiNpU3UYXPdP+Efm/wCeqfrR/wAI/N/z1T9a8Lt/2svEC+FtQvdR+GmoaVf297bW4vb6DV7PQ4YZUndri6vLrS4Z4Iohav5sotXhjM9qXlVXkaHqfiN8S/F8OmfBm+8GpoGp3/inWVhubRdXJ0u9gbRdQuysd8trI5iDwRyJKkIMnlqCFV2wrz6hc9L/AOEfm/56p+tH/CPzf89U/WvmGT9oTxf8NfhR411PXtP+1aVJrPji10LXLHXTNqnn2U+sXccckFxZtDBEkOnyxxtvuAuyAGEozBPaPAPxquPG3xS8R+FJtL0/Qo9L+0iC11LUJoNcukhnWE3a6fJbKpspG3mO6inlRhsBCuXSMfOgudt/wj83/PVP1o/4R+b/AJ6p+teQah+1FcWPiTxNpb+HdPs5rC9j0vTNK1TVprPWb6ebUbfTYLp7N7TC6bJcXAIvYZZxsxiMyboUtax+0P4h8Fap4mtPFXgW3gg8J+Ex4v1++0TWxeQwW5bUQsFuJYIHmnYWCMoZI48PNukUxRidXmFz1X/hH5v+eqfrR/wj83/PVP1rwCT9sXWrDw+zaj8MdYtfENxqdvpumwLp+tixu2lt7q4bDy6THeM0cdjOXENlMq+Zb5fDyNDbb9rDxGdO1nVx8N/sOjeGPDMfifxGus6jc6fqMMH2jUYpBZ2ktkGmyumSyxfaGtTIs0O5YSzbX+87Bc9O+Hfwqm8A+H7vTP7RS+8/V9U1XzfKMe37Zf3F35eMnOz7Rs3Z+bbnAzgFeiUVHtJDOE/5mTw3/wBfsn/pLPXgHgXx3r7fEbQfijc6B4gtfDfi7WZLGfxJc3Vo2jXGh3hSDQTb2yXLXiytKmnsFmhCxPquqMVjEpKfQfk/8TLTbvP/AB5zNNsx9/MUkeM9v9Zn8K3/APhJP+nf/wAf/wDrV3QkorUJK58Z2PjjwR8Vv2Fvhf8AD7RPiHp//CSfYvAtnfQeGtbg/tjS/wDiZ6TBJKqozPDLE7gBmX5H25GeK7/4X/8ACb65+1J4Y8TePP8AiX6rceDde0ZNHtPPjsY/sV9o0dxdxQzZYfaLt7to5M/vLRLAkK4avo3/AIST/p3/APH/AP61H/CSf9O//j//ANatPaRJ5WbdFYn/AAkn/Tv/AOP/AP1qP+Ek/wCnf/x//wCtU8yCzNuisT/hJP8Ap3/8f/8ArUf8JJ/07/8Aj/8A9ajmQWZt0Vif8JJ/07/+P/8A1qP+Ek/6d/8Ax/8A+tRzILM26huv9Wn/AF0j/wDQxWV/wkn/AE7/APj/AP8AWqC816We2dIIkim4KPJl1DA5BKjGRkdMj60c6CzPHv8AhAfiP/0VT/mbv7Z/5F22/wCQJ/0Bvvf+TX+s9q0fD+g+JNB1Jv8AhI/FX/CU/bfEl1eab/xLo7P+zrJ7aXyrL5CfN8vDfvW+Zt3I4rp/s2uf9BHT/wDwAk/+PUwaXqVxfWM15fWskVrK0ojgtGjZiY3TqZG4+cnp2rC5oWdZ1zStNsbmx1f+1xbalby25fRra9eZVICsVltVLwthvlcMrAjKnIyPLrmT4F6TplxZX1z4mW5nnSYavqM+vyavE8IkjVYdQkJuoVQS3KbI5VUC4uFxiaUN7BWXH4V0aW1Ed/p8d/IJppfMcY/1kryYxz03498VnJdhNHn3h3x78CfCul+G9PsL+/8AI8Pandazpz3cWq3UyXlyt0txO8sqs8zOL26z5jNzKT1CkZMvxD/Z0+26x4m/t++t43+2vNNBc6xDZWEziSO8ubeJSIbO5O64D3EKxzBpZyX3SSFvVv8AhC/C/wD0AYPzH+FUW+FvgR9LutNbwjpradd+d9oszChhm81maXem3Db2dy2R8xYk5yam3r94rHL6B8UPgf4d8Laj4dhvLi/0rVPM/tJNZsdR1KXUfMQRv9qmuUkkuMxKkX71mxGiIPkVVGJpvjb9ny+8L6zZx6xqet6X4m0JdEvru+m1nUJb7Ti106Rm5l3yEf6dc4cPu2yABtqIF9D1v4W+BPE2lzabrHhHTdV06bb5tnfQpNDJtYMu5GUg4YAjI6gGr3/CF+F/+gDB+Y/wot6/eFjz/TfHvwJ0jxk/ie1v79NSM011HA8WqyWNtcShhNcQWbKbeCeTzJd80cayP58+5j50m41bx78Cdc8TXmuXt/fyz38LwahYrFqqabqSvAYGN3YqotrpjDtj3zRu22ONc4jTb6B/whfhf/oAwfmP8KP+EL8L/wDQBg/Mf4UW9fvCx5V4b1j9n7wr4mg8Q22qa/fa5bzQzxahrV5r2pzI0UF5BGA100hCrHqN4Nn3czlsbgpGrqHj34E6j4ZOhPf39tYjU7rWYpbGLVbW7t7y4nmmnnguYlWaFne5uAfLdfkmkj/1bFa9A/4Qvwv/ANAGD8x/hR/whfhf/oAwfmP8KLPz+8LHmkPif9nuHQvEGjq1x9g8QaMNA1VWtdUL3tnuunYSSFd7Su99du8+fNkedmd2bBHQeHPjL8HPCWqa1f6TrF/aPq832m6thbam1oJSzs8kVsyGKBpHkd5GiRDK7F33Mc11f/CF+F/+gDB+Y/wo/wCEL8L/APQBg/Mf4UuX1+8LHEw/FD4H2/gXQfBsd5cL4b0L+zv7OsvsOonyPsEsMtp8+ze3lvbwn5mO7ZhtwJBq6l49+BOr+Mk8T3V/fvqQmhupIEi1WOxubiIKIbiezVRbzzx+XFsmkjaRPIg2sPJj2+gf8IX4X/6AMH5j/Cj/AIQvwv8A9AGD8x/hT5fX7wseOw3H7NlnfTzi71UlrJ9Pt7ea41t7fTYGmgnCWMDEx2OyS1tnjNssZiMEXllNi4bb337OVpayW8GueJIb25vZL59Vj1fxCuqyyvBDFIpvhJ9paNo7S2Bh8zyz9niJXMakep3fw18M3Vw8o0mBA2Pl2g9sVW/4VT4b/tCwuf7NgxaytKY9g+fMbpjPb7+fwq7absLGd4c+Mvwc8JaprV/pOsX9o+rzfabq2FtqbWglLOzyRWzIYoGkeR3kaJEMrsXfcxzXFWbfs4WWsW2pR3GrvJZ+ULG1nn1yWz09Iry1vI4rW2cmG2iWextGEcKIgWBExs+WvYP+EL8L/wDQBg/Mf4Uf8IX4X/6AMH5j/Cos/P7wseaeIPFXwD8SajqGo3GpavY6rf3pv7jU9HfWdNvGkNvb27KJ7by5FiaKztQ0SsI2a3jdlLqGq3c+PfgTceAdB8Grf39poegw28Gk/YYtVtruwWGLyYzBdxqs8beUWjLrIGZHkViVdgfQP+EL8L/9AGD8x/hR/wAIX4X/AOgDB+Y/wos/P7wseVXWsfs/XUbn+1Nftb6SZZ5NWsrzXrbUpGFrbWpD3kbLOyvFZWm9DIVkaCORw0ihqtf8JP8As9tqP2mZri8tVsv7Pg0W8tdUuNItYPs/2Ypb6dIptYMwF4iYolJSWVScSOG9L/4Qvwv/ANAGD8x/hR/whfhf/oAwfmP8KLPz+8LHlUeufAaHS7iyj8SeL0e4mimm1Jda8RjUpRGsgjia98z7QYE82VlgMnlBpHcJuYk7+v8AxQ+B/iLwtp3h2a8uLDStL8v+zU0ax1HTZdO8tDGn2Wa2SOS3xEzxfumXMbuh+RmU9t/whfhf/oAwfmP8KP8AhC/C/wD0AYPzH+FFvX7wseaeIPE/7PfijwsfDmptcXOjG91PUDbfZdUT9/qCXkd6+5VDfvF1C8GM4XzflClU26ugfFL4L+G/FOo+I7bW9XutZvvMDXOqf2vf/Z0kcSSRWyzh1tYnZYy0cARG8qLIIjTb23/CF+F/+gDB+Y/wo/4Qvwv/ANAGD8x/hRy+v3hY80uvFXwD1C81u7v9S1fVLrVt3mT6k+s3T2eZln/0JpdxscSxwyD7L5W17eBhgwxlbeiePfgTodvqcAv7/Vk1TTI9G1A6/FqurNeWaSXMiwTNdLIZFDXtyPmJysm05VVVfQP+EL8L/wDQBg/Mf4Uf8IX4X/6AMH5j/Ciz8/vCx5Sutfs+Q6Tc2kmq69PNNNFP/bF3ea7Nq0LRrIsYh1F2N1CqrNcKEjlVcXNwMYmlD2IfF/7O0OheINHWeX7B4g0YaBqqtbamXvbPddOwkkK72ld767d58+bI87M7s2CPSbvwH4Yurd4hokCFsfNwe+fSs3/hVvhr/oFwf98CqUU92wsWY/2pPhlMu6PxDM65I3LpV4RkHBH+p9RRRonw38M6Rp/2Z9IguD5ssvmYC/fkZwMc9N2PwoqORdmFjo6KKK2KCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//2Q==" width="355" height="83" class="img_ev3q"></p>
+<p>You will now need to add details about the suppliers from whom your
+company purchases the item and their lead times, quality performance
+and cost price.</p>
+<p>You will notice a set of <strong>tabs</strong> on the <strong>Add Material</strong> screen. These tabs
+make it easier to group information in different screens so that you
+see only the information you need to at any time.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-add-sourcing-and-cost-price-information">How to Add Sourcing and Cost Price Information<a href="#how-to-add-sourcing-and-cost-price-information" class="hash-link" aria-label="Direct link to How to Add Sourcing and Cost Price Information" title="Direct link to How to Add Sourcing and Cost Price Information">​</a></h3>
+<ol start="23">
+<li>Select the <strong>Price Information</strong> Tab.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image29-0475c7589bf1e281d342fb8edbc10db7.jpg" width="718" height="469" class="img_ev3q"></p>
+<p>The system will change to a new screen that enables you to enter
+information about the suppliers and prices for the item.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image31-028b9f73fd69e71d4fa2aa2c094c2a5a.jpg" width="856" height="483" class="img_ev3q"></p>
+<p>If your company buys the item from an external Supplier, you will need
+to enter <strong>Cost Price information</strong> in the <strong>Supplier Name</strong> screen.</p>
+<ol start="24">
+<li>To select the <strong>Name of the Supplier</strong> from whom the Company purchases
+the Material, click the <strong>[ Three-Dot ]</strong> button on the <strong>Supplier Name</strong> field
+or press <strong>[F4]</strong> once the cursor is on the Supplier Name field.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image33-2f2b972cf85e70d041e82a5f6e469893.jpg" width="854" height="402" class="img_ev3q"></p>
+<p>The system will open a screen titled <strong>Select Supplier</strong>.</p>
+<ol start="25">
+<li>
+<p>You can type the first few letters of the Supplier&#x27;s Name in the
+<strong>Registered</strong> or <strong>Common Name</strong> fields, then click the <strong>Search</strong> button.</p>
+</li>
+<li>
+<p>The system will then display only those Suppliers where the Names
+match your selection.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image35-75379b1cdc08ca3660c9ca6b1b64be95.jpg" width="817" height="310" class="img_ev3q"></p>
+<ol start="28">
+<li>
+<p>Then click the <strong>Select</strong> button.</p>
+</li>
+<li>
+<p>The system will display the selected Supplier&#x27;s Name in the
+<strong>Supplier Name</strong> field.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image37-f8cd6b2ffe695638307e5c2439468c92.jpg" width="338" height="271" class="img_ev3q"></p>
+<ol start="30">
+<li>
+<p>If your Supplier has their own unique code for the Material, you
+should enter this code in the <strong>Supplier Item Code</strong> field. The system
+will then print this code on all Purchase Orders which will ensure
+that Suppliers deliver the correct item.</p>
+</li>
+<li>
+<p>You can also enter the Name the Supplier has given to the Material
+in the <strong>Supplier Item Name</strong> field.</p>
+</li>
+<li>
+<p>You should enter the <strong>Lead Time</strong> for the Material. This is the
+shortest time normally taken by the Supplier to deliver the item. If
+you do not have this information you should contact the Supplier to
+ask them to quote you a <strong>Standard Lead Time</strong>. The system uses this
+information when planning Material Purchases.</p>
+</li>
+<li>
+<p>You need to enter a <strong>Quality %</strong>. This is the number of times that a
+supplied item meets your company&#x27;s quality standards.</p>
+</li>
+</ol>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>The <strong>Quality %</strong> provides for adding the <strong>cost of waste</strong> onto the
+<strong>net cost</strong> when calculating the cost price of a manufactured item.</p><p>If for example, you know that when the company uses solid timber,
+<strong>30%</strong> of the timber is <strong>wasted</strong> due to planning and cutting operations
+and you want to build this waste into your product costs, then enter <strong>70%</strong> in this
+field.</p></div></div>
+<ol start="34">
+<li>
+<p>Enter the Cost Price charged by the Supplier in the <strong>Unit Cost</strong> field.</p>
+</li>
+<li>
+<p>Select the <strong>Unit of Measure</strong> for which the Cost Price is quoted.</p>
+</li>
+<li>
+<p>If the <strong>Cost Price</strong> is simply <strong>based on the Quantity Purchased</strong>, then
+leave this as <strong>Stock UOM</strong>.<br>
+<!-- -->If the Cost Price is based on a Packlot, then go to relevant step below.</p>
+</li>
+<li>
+<p>Once you have entered the pricing information, click the Apply
+button and then the Save button to store the information in the
+database.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image40-17491f07d401f6d9a4a43e4d07f53093.jpg" width="497" height="171" class="img_ev3q"></p>
+<ol start="38">
+<li>If your company purchases the item from more than one supplier, then
+simply click the drop down arrow next to the <strong>Supplier Name</strong> field and
+select the <strong>[Select New Supplier]</strong> option, then repeat steps 25
+to 37 above.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image42-1c240d3a5f11157589ceff605d714270.jpg" width="332" height="164" class="img_ev3q"></p>
+<ol start="39">
+<li>
+<p>Select <strong>Packlot</strong> from the list and enter the <strong>Packlot Price</strong> and
+<strong>Packlot Quantity</strong>.</p>
+</li>
+<li>
+<p>For example, the Supplier might sell 24 Brackets in a Box and charge
+R 72 per Box. This would then equate to R 3-00 per bracket. You
+would enter the <strong>R 72</strong> in the <strong>Total Price</strong> field, the packlot quantity
+and UOM in the <strong>Packlot Price Data</strong> field and then enter the
+<strong>Conversion</strong> formula so that the system understood that there were 24
+items in a box.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image44-cce26e304eef154b319a46424eba49cc.jpg" width="331" height="126" class="img_ev3q"></p>
+<p>Once you have entered and saved all the information about the supply
+sources for the item, you can then add documents and images to this
+record.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image46-377a4b0e995fede57c53efcedfa5dd13.jpg" width="854" height="481" class="img_ev3q"></p>
+<ol start="41">
+<li>Click on the <strong>Documents Tab</strong>.</li>
+</ol>
+<p>The system will display a list of all documents that have been linked
+to the item previously.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image48-6fb625412a02fefdd0d8b042b74cf514.jpg" width="712" height="235" class="img_ev3q"></p>
+<ol start="42">
+<li>To add a new document to the item, click the <strong>Add</strong> button on the Form
+Bar.</li>
+</ol>
+<p>The system will open a screen titled <strong>Add Documents</strong>. This screen allows
+you to browse the folder structure on your network to find one or more
+images or documents to link to the <strong>Material Profile</strong> you are capturing
+in the SEMS System.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>It is a good idea to store all images on a separate
+shared drive on the network that has the same drive letter for each
+user. This enables every user in the company to access the same
+images, documents and technical details for each Material.</p></div></div>
+<p><img decoding="async" loading="lazy" src="/assets/images/image50-b0e944d38bc2bb664ee4c66e280df150.jpg" width="565" height="419" class="img_ev3q"></p>
+<ol start="43">
+<li>
+<p>Browse the network to find the file or files you wish to link to the
+record you are capturing. Once you have found the correct file,
+click on the file name or image.</p>
+</li>
+<li>
+<p>Once you have clicked on the correct file name, click the <strong>Open</strong>
+button.</p>
+</li>
+</ol>
+<p>The system will return you to the Documents tab and show the name of
+the file and it&#x27;s location on the network (also called a <strong>File Path</strong>) in
+the <strong>Folder</strong> column.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image52-bc56216ad0dd350ed27ebed250af94dc.jpg" width="712" height="214" class="img_ev3q"></p>
+<p>You can link multiple images and documents to a Material Profile by
+repeating steps 40 to 44 for each file you wish to link.</p>
+<ol start="45">
+<li>
+<p>The system also allows you to set one image file as the <strong>default image</strong>
+that is used when printing specification sheets and can be
+printed on order forms. To set a file as the default image, click
+the <strong>Set Image</strong> button.</p>
+</li>
+<li>
+<p>Click the <strong>Name tab</strong> and the system will return to this screen and
+display the linked image.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image54-ebb140dc1e8ad121ae1bcfed73f97297.jpg" width="857" height="485" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-add-selling-price-information">How to Add Selling Price Information<a href="#how-to-add-selling-price-information" class="hash-link" aria-label="Direct link to How to Add Selling Price Information" title="Direct link to How to Add Selling Price Information">​</a></h3>
+<p>If your company sells the item to its customers, you will need to
+enter Selling Prices.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image56-512ae0eda3336c60a1d48e22f35fc743.jpg" width="936" height="267" class="img_ev3q"></p>
+<ol start="47">
+<li>
+<p>Click on the <strong>three dot</strong> button to select the name of the <strong>Department</strong>
+that sells the Product you are adding.</p>
+</li>
+<li>
+<p>Click on the name of the Department to which you wish to link the
+Selling Price. The department you select will be the <strong>Department</strong>
+against which the <strong>Sales Quote</strong> and <strong>Sales Order</strong> must be captured.</p>
+</li>
+<li>
+<p>Then click the <strong>Select</strong> button.</p>
+</li>
+<li>
+<p>The system will display the name of the department you have chosen
+in the <strong>Department Name</strong> field.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image58-f4b56902c40ff1e292695f39e82d694e.jpg" width="967" height="341" class="img_ev3q"></p>
+<p>You can press the <strong>[Tab]</strong> key on your keyboard to quickly move from one
+field to the next.</p>
+<ol start="51">
+<li>
+<p>Enter the <strong>number of days</strong> it takes from when the customer orders the
+product until it can be delivered.</p>
+</li>
+<li>
+<p>Select <strong>&quot;Days&quot;</strong> from the drop down list.</p>
+</li>
+<li>
+<p>Enter the quality as <strong>&quot;100%&quot;</strong>.</p>
+</li>
+<li>
+<p>Enter the <strong>actual</strong> or <strong>target cost price</strong> in the <strong>Unit Price</strong> field.</p>
+</li>
+<li>
+<p>Select a <strong>selling rule</strong>. This is either <strong>&quot;Do Not Sell&quot;</strong>, <strong>&quot;Fixed Price&quot;</strong>
+or <strong>&quot;Dynamic Price&quot;</strong>.</p>
+<p>A <strong>Fixed Price Rule</strong> means that the Selling Price
+you enter is remains fixed until you change it. Any changes in the
+Cost Price do not ripple through to the Selling Price, but rather
+change your Markup.</p>
+<p>A <strong>Dynamic Price</strong> means that your Markup
+Percentage remains constant and changes in the Cost Price
+automatically ripple through to change the Selling Price.</p>
+</li>
+<li>
+<p>Enter the <strong>Markup Type</strong> as either a <strong>&quot;Percentage&quot;</strong> or an <strong>&quot;Amount&quot;</strong>.</p>
+</li>
+<li>
+<p>If you set the Selling Rule to be <strong>Dynamic Price</strong> you will need to
+enter the <strong>Markup Amount</strong>.</p>
+<p>If you set the Selling Rule to be <strong>Fixed</strong> you
+need to enter the <strong>Selling Price</strong>.</p>
+<p>The system works out the variable you have not entered.</p>
+</li>
+<li>
+<p>When you have completed entering price information, click the <strong>Apply</strong>
+button.</p>
+</li>
+<li>
+<p>Then click the <strong>Save</strong> button.</p>
+</li>
+<li>
+<p>Then click the <strong>Close</strong> button and the system will return you to the
+Material Catalogue.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-cost-price-and-selling-price-information">Understanding Cost Price and Selling Price Information<a href="#understanding-cost-price-and-selling-price-information" class="hash-link" aria-label="Direct link to Understanding Cost Price and Selling Price Information" title="Direct link to Understanding Cost Price and Selling Price Information">​</a></h2>
+<p>The SEMS System is focused on helping companies improve their
+productivity and profitability.</p>
+<p>The system stores price information
+about any <strong>resource</strong> (that is any <strong>Material, Component, Machine</strong> and
+<strong>Product</strong>) in two ways. The first is the COST PRICE and the second is
+the SELLING PRICE.</p>
+<p>The COST PRICE is the price that a company pays to <strong>buy an item</strong> from a
+Supplier or to <strong>make an item</strong> in one of its Departments.</p>
+<p>The SELLING PRICE is the price that a company <strong>charges its Customers</strong>
+for the item.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image60-c52906952cbb137b8af50edbb072438f.jpg" width="375" height="221" class="img_ev3q"></p>
+<p>There are several scenarios for capturing PRICE INFORMATION in the SEM
+System. And these scenarios are dependent on two aspects.</p>
+<ul>
+<li>
+<p>Buy or Make</p>
+</li>
+<li>
+<p>Use and / or Sell</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="buy-or-make">Buy or Make<a href="#buy-or-make" class="hash-link" aria-label="Direct link to Buy or Make" title="Direct link to Buy or Make">​</a></h3>
+<p>If the company BUYS an item from another company or person, then the
+item needs to be given a SUPPLIER COST PRICE. This is stored in the
+SUPPLIER PRICE section of the PRICE INFORMATION screen.</p>
+<p>If the company MAKES an item in one of its own Departments, then the
+item needs to be given a DEPARTMENT COST PRICE. This is stored in the
+DEPARTMENT PRICE section of the PRICE NFORMATION screen.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="use-and--or-sell">Use and / or Sell<a href="#use-and--or-sell" class="hash-link" aria-label="Direct link to Use and / or Sell" title="Direct link to Use and / or Sell">​</a></h3>
+<p>If the company only USES an item as part of its OVERHEADS or uses an
+item in its MANUFACTURING or INSTALLATION PROCESS then the item DOES
+NOT NEED A SELLING PRICE.</p>
+<p>If the company SELLS an item to its Customers, regardless of whether
+it Buys it or Makes it, then you must capture a SELLING PRICE for the
+item.</p>
+<p>The following diagram illustrates the relationship between the price
+information of an item.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image61-f6b5b0fcdeafdc61ee207b0274ffee63.jpg" width="426" height="224" class="img_ev3q"></p>
+<p>This structure is then mirrored in the <strong>Price Information</strong> screen in the
+SEMS System.</p>
+<p>The PRICE INFORMATION screen provides you with a single screen on
+which you can view all of the information. The screen consists of
+several components.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-item-information-section">The Item Information section.<a href="#the-item-information-section" class="hash-link" aria-label="Direct link to The Item Information section." title="Direct link to The Item Information section.">​</a></h3>
+<p>This contains the <strong>Item Name</strong>, its <strong>Units of Measure</strong> and the <strong>Accounts</strong> and <strong>Sub-Accounts</strong> to which it is linked in the <strong>Accounting Modules</strong>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-supplier-price-information-section">The Supplier Price Information section.<a href="#the-supplier-price-information-section" class="hash-link" aria-label="Direct link to The Supplier Price Information section." title="Direct link to The Supplier Price Information section.">​</a></h3>
+<p>This contains the <strong>Supplier&#x27;s Cost Price</strong> information for the selected item.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-department-price-information-section">The Department Price Information section.<a href="#the-department-price-information-section" class="hash-link" aria-label="Direct link to The Department Price Information section." title="Direct link to The Department Price Information section.">​</a></h3>
+<p>This contains the name of the <strong>Department</strong> that either makes or sells the item, its
+<strong>Cost Price</strong>, the <strong>Mark-up</strong> and the <strong>Selling Price</strong>.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image62-7bcaceb78b73278fb87451d290a6c834.jpg" width="859" height="389" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary---price-information">Summary - Price Information<a href="#summary---price-information" class="hash-link" aria-label="Direct link to Summary - Price Information" title="Direct link to Summary - Price Information">​</a></h2>
+<p>So then to recap...</p>
+<p>If your company <strong>purchases</strong> the item <strong>from</strong> one of its <strong>Suppliers</strong>,
+then the <strong>cost price</strong> could be the <strong>Purchased Cost</strong> as supplied by a Supplier.<br>
+<!-- -->The <strong>Cost Price</strong> must then be captured in the <strong>Supplier Price Information</strong>
+section of the screen.</p>
+<p>If you company <strong>makes the item</strong> in one of its <strong>Departments</strong> you will need
+to calculate and specify the <strong>COST PRICE</strong> of the item using the
+<strong>Process Model Module</strong>.<br>
+<!-- -->This is either the <strong>combined cost</strong> of all of the <strong>Inputs</strong>
+(that is the <strong>Materials and Components</strong> used in the item) AND the
+<strong>Manufacture Cost</strong> (that is the <strong>time</strong> it takes to make multiplied by the
+<strong>Labour, Machine</strong> and <strong>Overhead Cost</strong> per minute).</p>
+<p>If the <strong>item is sold</strong> to a <strong>Customer</strong>, then the <strong>Selling Price</strong> is the price
+that you will <strong>charge the Customer for the item</strong> and must be captured in the
+<strong>Department Selling Price</strong> section of the screen.<br>
+<!-- -->The <strong>Selling Price</strong> record displays this price and shows the <strong>Gross Profit</strong>
+the company makes on this Selling Price.</p>
+<p>Remember that this Gross Profit is used
+to pay for the rental of the company&#x27;s premises, the machinery and
+vehicles, the salaries of all people working in the company and the
+interest charged on the loans and leases that the company has. In
+addition, the Gross Profit is used to pay for all running costs such
+as Telephones, Computers, Software, Stationery, Insurance and Taxes to
+name just a few.</p>
+<p>In some cases a company will make an item in one of its departments
+and at the same time buy the item from an external supplier. In this
+scenario the system will show two cost price records.<br>
+<!-- -->One the cost
+price of the item based on its <strong>internal manufacture cost</strong> and the
+second for the <strong>cost price paid to the supplier</strong> for providing the item.</p>
+<p>Please keep in mind that it is ABSOLUTELY ESSENTIAL that PRICE
+INFORMATION for all items in the system is COMPLETE, ACCURATE and
+UP-TO-DATE.</p>
+<p>All the reports and the management decisions that are made
+from the information presented in these reports relies on accurate
+information.</p>
+<p>Inaccurate price information leads to spending too much
+money, incorrect prices being charged, lost profits and sometimes lost
+sales. These are mistakes that few companies can afford to make.</p>
+<p><strong>This is the end of this procedure.</strong></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2022-12-02T11:38:27.000Z" itemprop="dateModified">Dec 2, 2022</time></b></span></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#procedure-guideline" class="table-of-contents__link toc-highlight">Procedure Guideline</a></li><li><a href="#capture-material-details" class="table-of-contents__link toc-highlight">Capture Material Details</a><ul><li><a href="#how-to-search-for-material-information" class="table-of-contents__link toc-highlight">How to Search for Material Information</a></li></ul></li><li><a href="#how-to-add-new-materials-to-the-catalogue" class="table-of-contents__link toc-highlight">How to Add New Materials to the Catalogue</a><ul><li><a href="#how-to-add-sourcing-and-cost-price-information" class="table-of-contents__link toc-highlight">How to Add Sourcing and Cost Price Information</a></li><li><a href="#how-to-add-selling-price-information" class="table-of-contents__link toc-highlight">How to Add Selling Price Information</a></li></ul></li><li><a href="#understanding-cost-price-and-selling-price-information" class="table-of-contents__link toc-highlight">Understanding Cost Price and Selling Price Information</a><ul><li><a href="#buy-or-make" class="table-of-contents__link toc-highlight">Buy or Make</a></li><li><a href="#use-and--or-sell" class="table-of-contents__link toc-highlight">Use and / or Sell</a></li><li><a href="#the-item-information-section" class="table-of-contents__link toc-highlight">The Item Information section.</a></li><li><a href="#the-supplier-price-information-section" class="table-of-contents__link toc-highlight">The Supplier Price Information section.</a></li><li><a href="#the-department-price-information-section" class="table-of-contents__link toc-highlight">The Department Price Information section.</a></li></ul></li><li><a href="#summary---price-information" class="table-of-contents__link toc-highlight">Summary - Price Information</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="margin-bottom--sm"><img src="/img/text_logo_white.png" alt="Sense-i Logo" class="footer__logo themedComponent_mlkZ themedComponent--light_NVdE" height="64"><img src="/img/text_logo_white.png" alt="Sense-i Logo" class="footer__logo themedComponent_mlkZ themedComponent--dark_xIcU" height="64"></div><div class="footer__copyright"><span>Copyright © 1998 to 2025 Sense-i Management Systems. All Rights Reserved.</span><span style="display: block; margin-top: 5px; opacity: 0.6;">This process, and all associated documentation, is proprietary and confidential to Sense-i Management Systems. It cannot be used, disclosed or duplicated without the prior written consent of Sense-i. This is an published work protected by copyright laws and no unauthorised copying, adaptation, distribution or display is permitted.</span></div></div></div></footer></div>
+</body>
+</html>

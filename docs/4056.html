@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-SAF-4056" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.5.2">
+<title data-rh="true">Reconcile Supplier Accounts (SAF-4056) | Sense-i</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://sense-i.co/docs/4056"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Reconcile Supplier Accounts (SAF-4056) | Sense-i"><meta data-rh="true" name="description" content="Step-by-step Guideline"><meta data-rh="true" property="og:description" content="Step-by-step Guideline"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://sense-i.co/docs/4056"><link data-rh="true" rel="alternate" href="https://sense-i.co/docs/4056" hreflang="en"><link data-rh="true" rel="alternate" href="https://sense-i.co/docs/4056" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://OHC9H3SGA1-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="Sense-i" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.e410d0d9.css">
+<script src="/assets/js/runtime~main.299cece9.js" defer="defer"></script>
+<script src="/assets/js/main.d3dbc5b5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.png" alt="Sense-i Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.png" alt="Sense-i Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Sense-i</b></a><div class="navbar__item dropdown dropdown--hoverable"><a class="navbar__link" aria-haspopup="true" aria-expanded="false" role="button" href="/systems">Systems</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/systems/product-design">Product Design &amp; Costing</a></li><li><a class="dropdown__link" href="/systems/operations-management">Operations Management</a></li><li><a class="dropdown__link" href="/systems/financial-management">Financial Management</a></li></ul></div><a class="navbar__item navbar__link" href="/about">About Us</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs">Documentation</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/INTROVID">Videos</a><a class="navbar__item navbar__link" href="/release">Release Notes</a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs">Introduction to Sense-i</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/DOWNLOAD">Install your System</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/SUI001">Working with Sense-i Software</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/CMP001">System Setup &amp; Configuration</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/PCPO001">Business Processes</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/PCPO001">Product Costing Process</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/SQOP001">Sales Quote &amp; Order Process</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/OPMO001">Operations Management</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/STOCK">Stock Management</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/docs/FMO001">Financial Management</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/FMO001">Section Overview</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/docs/FMAP001">Accounts Payable</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/FMAP001">Introduction &amp; Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/720">Supplier Payment Terms</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/1203">Supplier Information</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/149">Purchase Order Receipt</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/716">Purchases Report</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/152">Purchase Order Invoice</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/153">Purchase Order Credit Note</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/4050">Open Installments</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/4053">Aged Accounts Payable</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/4051">Supplier Ledger</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/4030">Supplier Journal</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/4014">Supplier Payments</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/4054">Allocate Supplier Payments</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/4056">Reconcile Supplier Accounts</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/4057">Plan Supplier Payments</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/4058">Supplier Payment Run</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/FMAR001">Accounts Receivable</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/4001">Cashbook Management</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/BNKTRNSIMPRT01">SEMS Bank Transactions</a><button aria-label="Expand sidebar category &#x27;SEMS Bank Transactions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/FMGL001">General Ledger &amp; Financial Reporting</a></div></li></ul></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/1218">Additional Features &amp; Modules</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Business Processes</span><meta itemprop="position" content="1"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Financial Management</span><meta itemprop="position" content="2"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Accounts Payable</span><meta itemprop="position" content="3"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Reconcile Supplier Accounts</span><meta itemprop="position" content="4"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Reconcile Supplier Accounts (SAF-4056)</h1></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-by-step-guideline">Step-by-step Guideline<a href="#step-by-step-guideline" class="hash-link" aria-label="Direct link to Step-by-step Guideline" title="Direct link to Step-by-step Guideline">​</a></h2>
+<hr>
+<p>The Account Reconciliation function in the Sense-i system enables you
+to compare the transactions captured in the system to those reflected
+on the statements you receive from your suppliers. Reconciling the
+transactions in the system to those on the statements received enables
+you to identify any problems with the information captured in the
+system and to identify and the correct any errors that have been made
+(either in Sense-i or by the Supplier) before you make payments to
+your suppliers.</p>
+<p>To reconcile a supplier&#x27;s account / bank account you need to perform
+the following steps...</p>
+<ol>
+<li>
+<p>Click on the <strong>Finance</strong> option on the Main Menu.</p>
+</li>
+<li>
+<p>Then click the <strong>Supplier</strong> menu item on the drop down menu.</p>
+</li>
+<li>
+<p>Then select the <strong>Reconcile Account</strong> option on the side menu.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image01-bf4337a11e2c193972caece11e7e85b9.png" width="493" height="325" class="img_ev3q"></p>
+<p>The system will open a screen titled &quot;Maintain Supplier
+Reconciliation.&quot; This screen lists all of the Suppliers that have
+outstanding balances in the system and shows summary reconciliation
+information related to each Supplier&#x27;s Account. In addition, the
+screen provides the details of the last reconciliation completed for
+each of these suppliers. To show all suppliers, including those with
+no outstanding transactions, select the All option from the Show
+field.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image3-4d48f1d785153f9828eb8eb86b9368fa.jpg" width="1100" height="238" class="img_ev3q"></p>
+<p>The Reconcile Suppliers&#x27; Account screen has a search panel at the top
+that you can use to control which Supplier&#x27;s Accounts are displayed by
+the system and a detail grid underneath that displays the information
+about each Supplier, (such as their code and name) and totals related
+to system balances, supplier statement balances and reconciliation
+differences.</p>
+<p>You can show only reconciliation for information with Suppliers who
+have Outstanding Balances, or Zero Balances or you can include both by
+selecting the appropriate option in the System Balance drop down.</p>
+<ol start="4">
+<li>
+<p>To reconcile a Supplier&#x27;s Account, click on a row that contains the
+name of the Supplier whose account you wish to reconcile.</p>
+</li>
+<li>
+<p>Click the Add button on the form bar.</p>
+</li>
+</ol>
+<p>The system will open a screen titled &quot;Reconcile Supplier&#x27;s Account.&quot;
+This screen enables you to enter information from the statement
+received from the Supplier and compare it to the information captured
+in the system.</p>
+<p>The first time you enter the Reconciliation function for a specific
+supplier you will notice that the system displays the Supplier Code
+and Name but that no information about dates and balances is displayed
+in the header. The Opening Date and Balances and Closing Date and
+Balances are blank.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image5-121d176ab3ad94d9b531a9e68901d379.jpg" width="1012" height="211" class="img_ev3q"></p>
+<p>To start a reconciliations you need to enter the following information
+in the header:</p>
+<ol start="6">
+<li>
+<p>Enter the Opening Statement Date in the Opening Date field.<br>
+<strong>SET THIS TO THE START OF SENSE-i.</strong></p>
+</li>
+<li>
+<p>Enter the Opening Statement Balance in the Statement O/B field.
+<strong>SET THIS TO 0.00</strong></p>
+</li>
+<li>
+<p>Enter the Statement No in the Statement No field. If the supplier
+does not number the statements they send for your company&#x27;s account,
+simply enter the number 1 in this field for the first statement that
+you reconcile.</p>
+</li>
+<li>
+<p>Enter the Closing Date on the first statement you are going to
+reconcile in the Statement Date field.<br>
+<strong>SET THIS TO THE DAY IMMEDIATELY PRIOR TO THE FIRST MONTH YOU WISH TO PROCESS.</strong></p>
+</li>
+<li>
+<p>Enter the final closing balance on the first statement you are going
+to reconcile in the Statement C/B (Closing Balance) field.</p>
+</li>
+<li>
+<p>Click the Save button on the form bar.</p>
+</li>
+</ol>
+<p>Once you click Save the system will retrieve the remaining information
+such as the System Opening and Closing Balances from the database for
+the dates you have entered.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image7-aa169316fd3d5c36d1e5866e8f2ea956.jpg" width="820" height="150" class="img_ev3q"></p>
+<ol start="12">
+<li>The status of the current reconciliation will show in the Status
+field.</li>
+</ol>
+<p>The system will display a list of all open and unreconciled
+transactions that make up the closing balance in the reconciliation
+detail section of the screen.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image9-8cee4a26179839eec57476470d43c35e.jpg" width="1011" height="271" class="img_ev3q"></p>
+<ol start="13">
+<li>
+<p>The system will display the following information related to the
+last reconciliation in the header panel.</p>
+</li>
+<li>
+<p>The Account Number assigned to the Supplier in the Account Number
+field.</p>
+</li>
+<li>
+<p>The Name of the Supplier in the Supplier Name field.</p>
+</li>
+<li>
+<p>The date on which this specific Supplier&#x27;s Account was last
+reconciled in the Opening Date field. If this is the first time,
+this field will show a -.</p>
+</li>
+<li>
+<p>The balance as per the supplier&#x27;s statement if the account was
+previously reconciled in the Statement O/B (for Opening Balance)
+field. If this is the first time the account is being reconciled the
+field will show a -.</p>
+</li>
+</ol>
+<p>You will notice too that the system displays a panel underneath the
+list of all the transactions that need to be reconciled. This panel is
+called the Reconciliation Footer.</p>
+<p>The Reconciliation Footer displays the sum of all transactions that
+have been included in the current reconciliation.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image10-e54cb1e8f83fb94f0e9f12d82504b4c0.jpg" width="1000" height="124" class="img_ev3q"></p>
+<p>To successfully reconcile a Supplier&#x27;s Account, you must focus on two
+running balances simultaneously.</p>
+<p>The system calculates the difference between the System Opening
+Balance and the System Closing Balance and displays this in the Not
+Reconciled field. For every system transaction that you include in the
+reconciliation, the system adjusts this total. The goal is for you to
+reduce the Not Reconciled Amount to zero by marking each of the system
+transactions that are listed in the grid as either Matched and
+Reconciled, Reconciled in Error, Missing on Statement or linking the
+transaction to an open Statement record from a previous
+Reconciliation.</p>
+<p>The system also calculated the difference between the Statement
+Opening Balance and the Statement Closing Balance and displays this
+amount in the Statement Variance field. The goal here is for you to
+ensure that the value of all the transactions you enter in the
+Statement Amount column matches the calculated difference. As you mark
+a system transaction are Matched and Reconciled, the system will
+automatically insert the Transaction Amount in the system in the
+Statement Amount column to save you the effort of having to enter each
+amount. If the amount is different, you can double click on the
+Statement Amount field and type in the amount as it appears on the
+Supplier&#x27;s Statement. This would then be considered a Reconciled in
+Error transaction. You can also include transactions from the
+Supplier&#x27;s Statement without changing the System Balance by marking a
+transaction as Missing on System. This would allow you to enter the
+Transaction Number, Date and Amount in the Supplier&#x27;s Statement
+columns but the corresponding columns in the System Information Band
+would remain blank. Any transaction entered as Missing on System would
+be included in the Statement Variance calculation but would not be
+included in the value of transactions needed to reconcile the System
+Balance.</p>
+<p>When both the Not Reconciled Amount and the Statement Variance Amount
+are 0.00, then the account is ready to marked as Reconciled.</p>
+<p>When reconciling a Supplier&#x27;s Account, there are several different
+ways you can reconcile the transactions in Sense-I to the Statement
+you receive from a Supplier. There are:</p>
+<ul>
+<li>Direct Match</li>
+<li>Reconciled In Error</li>
+<li>Missing on Sense-i</li>
+<li>Missing on Statement</li>
+<li>Linked to Open Transaction Carried Forward</li>
+<li>Linked to Another Transaction in the System</li>
+<li>Linked to Another Transaction on the Statement</li>
+</ul>
+<p>To reconcile the system transactions to those appearing on the
+statement received from the supplier you will need to perform the
+following steps.</p>
+<p>It is a good to idea to place the Supplier&#x27;s Statement on your desk
+and place a ruler underneath the first transaction that appears on
+their statement.</p>
+<p>First, check the opening balance on the statement received from the
+Supplier corresponds to the Opening Balance displayed in the Statement
+O/B field on the screen. If it does, it is safe to proceed with the
+reconciliation. If it does not, you will need to retrieve the
+statement received from the supplier for the previous month and go
+back to the previous reconciliation in Sense-I and ensure that the
+account is reconciled.</p>
+<ol start="18">
+<li>You then proceed to reconcile each transaction in the grid in one of
+several ways...</li>
+</ol>
+<p>To reconcile the Supplier&#x27;s Account you need to match each transaction
+in the system to the transactions listed on the printed statement you
+have received. You should use the date, the transaction number
+(although this does not always match) and the amount to match the
+system transaction to those on the statement.</p>
+<p>Identify the first transaction on the Supplier&#x27;s Statement and place a
+ruler underneath this transaction.</p>
+<p>Look for a matching transaction with the same or similar date and
+transaction number and an identical amount among the list of
+transactions in the system.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image11-cf7c586a8b2c66fc9b7fa49bea21d988.jpg" width="1015" height="122" class="img_ev3q"></p>
+<ol start="19">
+<li>
+<p>If you find a transaction on the statement where the Transaction No,
+Date and Amount match, then the fastest way to reconcile a record is
+to find the record you wish to reconcile in the reconciliation
+detail grid, position the cursor in the status column and</p>
+</li>
+<li>
+<p>Right click the mouse and select Match.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image13-e71a926fc9ff7eb4be9d03cfd34649f0.jpg" width="1012" height="141" class="img_ev3q"></p>
+<ol start="21">
+<li>
+<p>The system will copy the transaction number, transaction value and
+date from the system into the Supplier Reconcile information column.
+This will save you from having to enter the information manually.</p>
+</li>
+<li>
+<p>The system also places a  <!-- -->☑️<!-- --> in the Recon column and changes the
+status from Not Reconciled to Reconciled.</p>
+</li>
+<li>
+<p>The system will change the Difference amount to zero and will move
+the transaction you have reconciled up in the sequence and display a
+running balance.</p>
+</li>
+</ol>
+<p>The idea behind this feature is to ensure that the sequence in which
+transactions appear in the reconciliation match the transactions on
+the supplier&#x27;s statement so that the running balances correspond.</p>
+<p>This allows you easily identify at which point the reconciliation has
+gone out of sync with a printed statement and makes finding an error
+that may have occurred in the reconciliation process quick and
+therefore easy to resolve.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reconciled-in-error">Reconciled In Error<a href="#reconciled-in-error" class="hash-link" aria-label="Direct link to Reconciled In Error" title="Direct link to Reconciled In Error">​</a></h3>
+<ol start="24">
+<li>
+<p>If you find a transaction on the statement where the Transaction No
+and Date match but the Amount is different, then position the cursor
+in the status column and</p>
+</li>
+<li>
+<p>Right click the mouse and select Match.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image15-6369b1b99d6f014f2e0556713aa76bd1.jpg" width="1013" height="144" class="img_ev3q"></p>
+<ol start="26">
+<li>
+<p>The system will copy the transaction number, transaction value and
+date from the system into the Supplier Reconcile information column.</p>
+</li>
+<li>
+<p>Position the cursor in the Statement Amount field for the
+transaction you are reconciling and double click the mouse. The
+system will then allow you to edit the Statement Amount. Change the
+amount to match the amount reflected on the Supplier&#x27;s Statement.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image16-4826624ca2ea40f9a9e3ec0cfe379298.jpg" width="1014" height="141" class="img_ev3q"></p>
+<ol start="28">
+<li>
+<p>The system will change the status from Not Reconciled to Reconciled
+in Error.</p>
+</li>
+<li>
+<p>The system will change the Difference amount to show the difference
+between the Transaction Amount as it appears on the System from that
+on the Supplier&#x27;s Statement.</p>
+</li>
+<li>
+<p>The system will again move the transaction you have reconciled up in
+the sequence and display a running balance.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reconciled-on-sense-i">Reconciled On Sense-i<a href="#reconciled-on-sense-i" class="hash-link" aria-label="Direct link to Reconciled On Sense-i" title="Direct link to Reconciled On Sense-i">​</a></h3>
+<ol start="31">
+<li>
+<p>If you find a transaction that appears on the Supplier&#x27;s Statement
+but is not among the list of transactions in Sense-i,</p>
+</li>
+<li>
+<p>Right click the mouse and select Missing on Sense-i.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image18-1a25283ee9d31a5c60ad422da18b94e4.jpg" width="1013" height="129" class="img_ev3q"></p>
+<p>The system will insert a row into the Reconciliation into which you
+can enter the information as it appears on the Supplier&#x27;s Statement.
+Because this transaction is missing from the system, the System
+Information columns for this row will remain blank until this
+transaction has been resolved.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image20-65a37f3286f672f6b4da53e9a59663fd.jpg" width="1012" height="89" class="img_ev3q"></p>
+<ol start="33">
+<li>
+<p>Enter the Transaction Number in the Statement Reference field. This
+will normally be either the Supplier&#x27;s Invoice No, Credit Note No, a
+Journal No, a Payment or Discount Transaction No.</p>
+</li>
+<li>
+<p>Enter the amount as it appears on the Statement in the Statement
+Amount field.</p>
+</li>
+<li>
+<p>Enter the date for the missing transaction as it appears on the
+Supplier&#x27;s Statement in the Statement Date field.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image21-e375878701c09389c5dde2ca1b575b68.jpg" width="1015" height="106" class="img_ev3q"></p>
+<ol start="36">
+<li>
+<p>The system will change the status from Not Reconciled to Missing On
+Sense-i.</p>
+</li>
+<li>
+<p>The system will change the Difference amount to show the difference
+between the Transaction Amount as it appears on the System from that
+on the Supplier&#x27;s Statement.</p>
+</li>
+<li>
+<p>The system will again move the transaction you have reconciled up in
+the sequence and display a running balance.</p>
+</li>
+</ol>
+<p>You will need to investigate the reason for the transaction not
+appearing in Sense-i. Either the transaction is legitimate but has not
+been captured in the System. If this is the case then you need to
+obtain a copy of the original transaction document, match it to an
+authorisation, (usually a Purchase Order and Purchase Order Receipt)
+and once you are satisfied that the transaction is legitimate and
+correct, capture it in the system and then reconcile it.</p>
+<p>Or, if the transaction is not legitimate, enter a reason for this in
+the Notes field. This reason will then print on the Supplier&#x27;s
+Reconciliation and you can email the Reconciliation to the Supplier so
+that they can correct their records.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="missing-on-statement">Missing On Statement<a href="#missing-on-statement" class="hash-link" aria-label="Direct link to Missing On Statement" title="Direct link to Missing On Statement">​</a></h3>
+<ol start="39">
+<li>If you find a transaction that exists on Sense-I but does not appear
+on the supplier&#x27;s statement, right click the mouse on the row
+containing this transaction and select Not on Statement.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image22-e79c98f749293feafb4856982771394b.jpg" width="1013" height="128" class="img_ev3q"></p>
+<ol start="40">
+<li>If you find a transaction on the statement where the Transaction No
+and Date match but the Amount is different, then position the cursor
+in the status column and</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image24-44676befd0d7e603b2f05412a4f3b7a3.jpg" width="1014" height="87" class="img_ev3q"></p>
+<p>The system will insert a blank section in the Supplier&#x27;s Statement
+columns because this transaction is missing from their Statement.</p>
+<ol start="41">
+<li>
+<p>The system will set the Reconciliation Status to Not on Statement
+and will change the sort order of the records by moving this
+transaction up above the Not Reconciled Transactions.</p>
+</li>
+<li>
+<p>You will notice too that by Reconciling the Transaction as Not on
+Statement, the system includes the amount of the Transaction in the
+System Balance but not on the Supplier Balance.</p>
+</li>
+</ol>
+<p>The system will insert a blank section in the Supplier&#x27;s Statement
+columns because this transaction is missing from their Statement.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="linked-to-open-transaction-carried-forward">Linked To Open Transaction Carried Forward<a href="#linked-to-open-transaction-carried-forward" class="hash-link" aria-label="Direct link to Linked To Open Transaction Carried Forward" title="Direct link to Linked To Open Transaction Carried Forward">​</a></h3>
+<p>If any items remain with problems from the previous reconciliation,
+such as transactions that were missing on either the system (such as
+invoices and credit notes not received) or the supplier&#x27;s statement
+(such as payments made but not reflected) and any transactions have
+differences in amounts, that the system lists these in the
+reconciliation detail in the Carried Forward section.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image26-f437e41e019df3866cb1249947bcf006.jpg" width="1011" height="222" class="img_ev3q"></p>
+<p>The system provides a function that allows you to link transactions
+from the current statement that have been captured after the closing
+date of the previous statement or that have been created to correct
+errors to the open transactions from the previous statement that still
+need to be fully reconciled.</p>
+<ol start="43">
+<li>Find the transaction in the current reconciliation that you wish to
+link to an open item carried forward from a previous reconciliation,
+right click the mouse and click Link.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image27-2829b52d23e634c328759887d1e7ba8a.jpg" width="1012" height="309" class="img_ev3q"></p>
+<p>The system will mark the transaction you have selected to link in pale
+green.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image29-9cfa567e07fe7920079aac36b1c6a8a4.jpg" width="1017" height="394" class="img_ev3q"></p>
+<ol start="44">
+<li>Click the row containing the original transaction that you wish to
+link the new transaction to, right click the mouse and select Link.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image31-717cfa6448c5bb063c856fb62c76cfe0.jpg" width="1016" height="395" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image33-2d0347d2a7ef7134fb6f6e82fbcbc16a.jpg" width="1011" height="368" class="img_ev3q"></p>
+<p>The system will display the number of the original transaction to
+which the new transaction has been linked in the Linked Column. You
+will also notice two numbers in brackets behind the Linked Transaction
+Number, such a 1-4. These numbers help you to easily find the linked
+transaction. The first number indicates the Statement Reconciliation
+Number and the second number the number of row containing the
+transaction to which the new transaction has been linked.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image35-375d42be93e47779381479ef6e118f3a.jpg" width="1013" height="243" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="linked-to-another-transaction-on-the-system--statement">Linked To Another Transaction on the System / Statement<a href="#linked-to-another-transaction-on-the-system--statement" class="hash-link" aria-label="Direct link to Linked To Another Transaction on the System / Statement" title="Direct link to Linked To Another Transaction on the System / Statement">​</a></h3>
+<p>The system allows you to link many transactions on the system to many
+transactions on the supplier&#x27;s statement. This is useful in cases
+where you might have an invoice on the system with a journal to
+correct an error that links to one or more transactions on the
+Supplier&#x27;s Statements, also for example an invoice with adjustments or
+journals to correct mistakes.</p>
+<p>The system also allows you to link transactions on one side, either
+the System or the Statement to other transactions on the same side.
+For example, you might find an Invoice on the System for R 500 but on
+the Statement for R 450. After doing an investigation you might find
+that the correct amount is R 450. Because the Supplier&#x27;s Statement is
+correct you would not expect to find an adjustment transaction on
+their statement. You would need to capture a Journal in Sense-I to
+correct the error. Thus you would have on the System an Invoice for R
+500 and a Journal for -- R 50 and on the Supplier&#x27;s Statement an
+Invoice for R 450. You would therefore Reconcile the R 500 System
+Invoice to the R 450 Statement Invoice, capture a Journal and then
+link the -- R50 Journal to the System Invoice of R 500 using the
+linking steps as described above.</p>
+<p>A similar situation in reverse could apply to a mistake made on the
+Supplier&#x27;s Statement and you could treat this in the same way.</p>
+<p>As part of resolving missing and error transactions you will sometimes
+need to capture an Invoice, Credit Note, Journal or Payment in the
+System.</p>
+<p>Because these transactions will be captured after the Reconciliation
+was started, they will not appear in the Reconciliation Detail Grid
+unless you take steps to specifically include them in your
+reconciliation.</p>
+<p>The system allows you to include transactions that you have captured
+after you have started a reconciliation in the reconciliation with
+which you are busy.</p>
+<ol start="45">
+<li>To do this, click the Link Transaction button on the form bar.</li>
+</ol>
+<p>The system will then display a list of all transactions that have been
+captured in the system after you started the current reconciliation in
+the Link Transactions screen.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image36-bc0910072e8172a47d321839ff9f23f3.jpg" width="416" height="269" class="img_ev3q"></p>
+<ol start="46">
+<li>
+<p>Simply click on the row containing the transaction you wish to pull
+into your reconcilation and then</p>
+</li>
+<li>
+<p>Click the select button on the form bar.</p>
+</li>
+<li>
+<p>Once you have matched a transaction on the Supplier / Bank Account
+to one on the system places a tick next to the transaction in the
+Recon column.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="saving-and-closing-a-reconciliation">Saving and closing a Reconciliation<a href="#saving-and-closing-a-reconciliation" class="hash-link" aria-label="Direct link to Saving and closing a Reconciliation" title="Direct link to Saving and closing a Reconciliation">​</a></h3>
+<p>As you proceed with reconciling transactions the system will update
+the Total Errors, Missing on System, Not on their Statement and
+Reconciled totals at the top of the screen.</p>
+<p>You will notice that once you reconcile a transaction, whether it is a
+match, in error or a missing transaction, that the system moves the
+transaction up in the list and sorts the transactions on the screen in
+the order in which they were reconciled. The purpose of this is to
+ensure that the transactions on the screen are listed in the same
+sequence as they appear on the statement.</p>
+<p>The system will recalculate the Statement Running Balance and display
+this in the Running Balance column. The Running Balance allows you to
+easily identify any transaction that is preventing you from fully
+reconciling the selected Supplier&#x27;s Account. If, once you have
+completed reconciling the account the system balance still does not
+match the final balance on the statement, you can compare the running
+balance on the system to the balance on the statement. The moment you
+find that the running balances are not the same, you know you have
+found a transaction that has not been correctly reconciled or missed
+and you can then correct this.</p>
+<p>You will notice that the system displayed a Not Reconciled and
+Statement Variance amount at the bottom of the screen, and that if
+these amounts are not 0.00, the system displays a colour in each of
+these fields to highlight the difference.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image38-5ad639ed5f2cab53ee7713e4ff081d01.jpg" width="749" height="111" class="img_ev3q"></p>
+<p>The system calculated the Not Reconciled amount as the sum of the
+value of all the transactions in Sense-i that have dates that occur
+after the Opening Date and before the Statement Date and that have not
+been marked as reconciled in the current Reconciliation.</p>
+<p>Each of the transactions that have been captured in Sense-i must
+either be matched to a transaction on the Supplier&#x27;s statement or
+marked as Not on Statement. And transactions on the system that have
+not been marked in this way will be included I the balance displayed
+in the Not Reconciled amount.</p>
+<p>The system also calculates the difference between the last Running
+Balance in the grid and the Statement C/B and displays this in the
+Statement Variance field. You need to ensure that the final Running
+Balance in the grid matches the Statement Closing Balance you entered
+in step 13 above.</p>
+<p>If you find that the Statement Variance is not 0.00, you must either
+continue adding transactions to the Reconciliation that appear on the
+Supplier&#x27;s Statement but not your Reconciliation or you must remove
+transactions that appear on the Reconciliation that do not exist on
+the Supplier&#x27;s statement. Right click the mouse and select Remove to
+remove any such entries that have been captured by mistake.</p>
+<p>Once you have completed the Reconciliation and the Difference and
+Reconciled Amounts in the header match and all the items on the
+Statement and the System have been reconciled fully, in error or
+missing transactions have been captured, then the account is fully
+reconciled.</p>
+<ol start="49">
+<li>
+<p>You can save the Reconciliation at any stage.</p>
+</li>
+<li>
+<p>Click Save to save your work.</p>
+</li>
+<li>
+<p>To mark the supplier&#x27;s account as reconciled, click the Reconcile
+button on the form bar.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="data:image/jpeg;base64,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" width="328" height="61" class="img_ev3q"></p>
+<p>The system will ask you if you wish to mark the Supplier&#x27;s Account as
+reconciled.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image41-e4442cd53acaede2d2614f55e252ccba.jpg" width="320" height="126" class="img_ev3q"></p>
+<ol start="52">
+<li>Select Yes if the Account is fully reconciled.</li>
+</ol>
+<p>If the supplier&#x27;s account has not been completely and accurately
+reconciled, the system will present you with a warning message.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/image43-a6b74d36d81d8453829a14ca86b3642c.jpg" width="503" height="128" class="img_ev3q"></p>
+<p>You will need to return to the reconciliation and check the
+transactions and balances.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="starting-a-new-reconciliation-for-the-same-supplier">Starting a New Reconciliation For the Same Supplier<a href="#starting-a-new-reconciliation-for-the-same-supplier" class="hash-link" aria-label="Direct link to Starting a New Reconciliation For the Same Supplier" title="Direct link to Starting a New Reconciliation For the Same Supplier">​</a></h3>
+<ol start="53">
+<li>To add another reconciliation for the same supplier, click the Add
+button. The system will open a new reconciliation, update the
+Statement Number and carry forward details from the previous
+reconciliation (such as Opening Dates and Balances) to the new
+reconciliation.</li>
+</ol>
+<p>You can also scroll back and forwards between each reconciled
+statement for the supplier with whom you are working by clicking the
+left and right arrows that appear above the statement number field.</p>
+<p><img decoding="async" loading="lazy" src="data:image/jpeg;base64,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" width="233" height="46" class="img_ev3q"></p>
+<ol start="54">
+<li>When you have completed Reconciling the selected Supplier&#x27;s Account,
+you can then elect to Close the screen by clicking the Close button
+on the form bar.</li>
+</ol>
+<p>The system will return you to the Maintain Supplier Reconciliations
+Screen and update the information in the grid with the Summary
+Reconciliation information.</p>
+<ol start="55">
+<li>You can now repeat the above steps to reconcile the next supplier&#x27;s
+account or you can exit this function.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="keeping-track-of-the-reconciliation-process">Keeping Track of the Reconciliation Process<a href="#keeping-track-of-the-reconciliation-process" class="hash-link" aria-label="Direct link to Keeping Track of the Reconciliation Process" title="Direct link to Keeping Track of the Reconciliation Process">​</a></h3>
+<p>You can use the Quick Filter function on the Maintain Supplier
+Reconciliation Screen to keep track of which accounts have been
+reconciled and which still need to be reconciled.</p>
+<ol start="56">
+<li>Move the cursor over the right-hand edge of the Status column to
+expose the black downward facing arrow. Click on this arrow.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/image46-2a344e35b753a8a424adf0e49b2fd6c8.jpg" width="1022" height="206" class="img_ev3q"></p>
+<p>The system will display a list of available statuses for Supplier
+Reconciliations.</p>
+<ol start="57">
+<li>To show all Supplier Accounts where the reconciliation procedure has
+not been started, click the square that is blank. To show all
+Supplier Accounts where the reconciliation process has been started
+but is not complete, click the square next to the word Open.</li>
+</ol>
+<p>As you click the quick filter, the system will automatically update
+the information displayed in the list to show only those Supplier
+Accounts that match the Status you have selected.</p>
+<p>By showing all Supplier Accounts that have not been fully reconciled
+you can create a To Do List of all those records that still need to be
+reconciled.</p>
+<p>The system allows you to Un-Reconcile a Supplier&#x27;s Account at any
+point after it has been reconciled. Note that if subsequent months for
+the Supplier have been reconciled these will also be re-opened. The
+system requires that you reconcile Supplier&#x27;s Accounts sequentially in
+month order. You cannot skip any periods not can you have
+Un-reconciled periods interspersed between Reconciled periods.</p>
+<ol start="58">
+<li>To re-open a Supplier Reconciliation, click the Un-Reconcile button
+and then perform the steps to reconciling their account as outlined
+above.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="data:image/jpeg;base64,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" width="72" height="43" class="img_ev3q"></p>
+<ol start="59">
+<li>Once you have completed reconciling the Supplier&#x27;s Accounts, click
+the Close button on the Form bar and the system will close the
+Reconcile Supplier&#x27;s Account screen.</li>
+</ol>
+<p><strong>This is the end of the procedure.</strong></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2021-03-10T07:01:13.000Z" itemprop="dateModified">Mar 10, 2021</time></b></span></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/4054"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Allocate Supplier Payments</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/4057"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Plan Supplier Payments</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#step-by-step-guideline" class="table-of-contents__link toc-highlight">Step-by-step Guideline</a><ul><li><a href="#reconciled-in-error" class="table-of-contents__link toc-highlight">Reconciled In Error</a></li><li><a href="#reconciled-on-sense-i" class="table-of-contents__link toc-highlight">Reconciled On Sense-i</a></li><li><a href="#missing-on-statement" class="table-of-contents__link toc-highlight">Missing On Statement</a></li><li><a href="#linked-to-open-transaction-carried-forward" class="table-of-contents__link toc-highlight">Linked To Open Transaction Carried Forward</a></li><li><a href="#linked-to-another-transaction-on-the-system--statement" class="table-of-contents__link toc-highlight">Linked To Another Transaction on the System / Statement</a></li><li><a href="#saving-and-closing-a-reconciliation" class="table-of-contents__link toc-highlight">Saving and closing a Reconciliation</a></li><li><a href="#starting-a-new-reconciliation-for-the-same-supplier" class="table-of-contents__link toc-highlight">Starting a New Reconciliation For the Same Supplier</a></li><li><a href="#keeping-track-of-the-reconciliation-process" class="table-of-contents__link toc-highlight">Keeping Track of the Reconciliation Process</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="margin-bottom--sm"><img src="/img/text_logo_white.png" alt="Sense-i Logo" class="footer__logo themedComponent_mlkZ themedComponent--light_NVdE" height="64"><img src="/img/text_logo_white.png" alt="Sense-i Logo" class="footer__logo themedComponent_mlkZ themedComponent--dark_xIcU" height="64"></div><div class="footer__copyright"><span>Copyright © 1998 to 2025 Sense-i Management Systems. All Rights Reserved.</span><span style="display: block; margin-top: 5px; opacity: 0.6;">This process, and all associated documentation, is proprietary and confidential to Sense-i Management Systems. It cannot be used, disclosed or duplicated without the prior written consent of Sense-i. This is an published work protected by copyright laws and no unauthorised copying, adaptation, distribution or display is permitted.</span></div></div></div></footer></div>
+</body>
+</html>
