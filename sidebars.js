@@ -251,7 +251,8 @@ const sidebars= {
                 label: 'Process Order Complete',
                 items: [
                   "PMD-001",
-						      "FGC-002",
+						      "POOB-001",
+						      "CPO-001",
                 ],   
               },
 	            { type: 'category',
