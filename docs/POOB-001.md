@@ -8,7 +8,7 @@ slug: /POOB001
 ## Introduction
 ___  
 
-This procedure enables a person in the Production or Finished Goods department to record which Process Orders (a.k.a Job Cards) have been completed. The system will change the status of a Process Order from Active to Closed once the Process Orders has been marked as complete.  
+This procedure enables a person in the Production or Finished Goods department to record which Process Orders _(aka Job Cards)_ have been completed. The system will change the status of a Process Order from Active to Closed once the Process Orders has been marked as complete.  
 
 In addition, the value of the items made will be transferred from work-in-progress stock into Finished Goods stock.  
 
@@ -76,13 +76,13 @@ Once the items have been produced:
 
 6.	Select the Batch record row on the **Process Orders Outstanding Batches** screen, then  
 
-7.	Click on the** Mark Completed** button on the Action bar.  
+7.	Click on the**Mark Completed** button on the Action bar.  
 
 The **Mark Process Order Batch Completed** screen is displayed.  
 
 ![](../static/img/docs/POOB-001/image05.png)  
 
-8.	Type in the number of units produced to complete the order, in the **Actual Qty** field.  
+8.	In the **Actual Qty** field, type in the number of units produced to complete the order.  
 
 9.	Click the **Save** button on the form action bar.  
 
@@ -102,7 +102,7 @@ The Materials not issued confirmation dialogue box may be displayed.
 
 12.	Click the relevant option.  
 
-In this case we chose the **Mark received?** Option, as we did indeed receive the necessary materials required to produce the outstanding items.  
+In this case we chose the **Mark received?** option, as we did indeed receive the necessary materials required to produce the outstanding items.  
 
 Back to the **Process Order Outstanding Batches** screen:  
 13.	Click on the Search button to refresh and update the information saved to the database.  
